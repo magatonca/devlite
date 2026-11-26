@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policyconfig>
+  <vendor>DevLite OS</vendor>
+  <action id="org.devlite.v7.vscode.install">
+    <description>Instalar Visual Studio Code oficial</description>
+    <message>Autentique-se para instalar o Visual Studio Code oficial da Microsoft.</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/devlite-install-vscode</annotate>
+  </action>
+</policyconfig>

@@ -20,3 +20,7 @@ Orquestrador futuro em Python 3.12, com comandos explícitos por etapa, logs sem
 Etapas devem validar pré-condições e permitir retomada apenas com hashes de entrada correspondentes. Limpeza futura atua somente no workspace registrado e exige proteção contra caminho vazio, /, links simbólicos e volumes externos. Usar finalização garantida para desmontar recursos; falha não autoriza apagar evidências.
 
 Registrar versões efetivas dos pacotes e ferramentas. Reprodutibilidade inicial significa receita e proveniência auditáveis; igualdade binária depende de fontes fixadas, timestamps e repositórios preservados, a validar posteriormente.
+
+## Refinamento da Fase 2
+
+A ISO autenticada contém duas camadas, `minimal.squashfs` e `minimal.live.squashfs`. O initrd seleciona a folha live, e o catálogo do instalador seleciona a base. Há EFI anexada que deve ser preservada além da árvore visível. Ver [evidências](fase2-aquisicao-validacao.md) e [estratégia](estrategia-camadas.md) antes de implementar as etapas 3–7.

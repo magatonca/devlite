@@ -1,0 +1,22 @@
+#!/usr/bin/python3 -I
+"""Administrative action restricted to the official Microsoft VS Code snap."""
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+if os.geteuid() != 0 or len(sys.argv) != 1:
+    raise SystemExit(2)
+identity = json.loads(Path('/usr/share/devlite-os/identity.json').read_text())
+command = Path('/proc/cmdline').read_text().split()
+if (identity.get('name') != 'DevLite OS' or 'boot=casper' in command
+        or any(arg.startswith('layerfs-path=') for arg in command)):
+    raise SystemExit(2)
+if Path('/usr/bin/code').is_file() or Path('/snap/bin/code').is_file():
+    raise SystemExit(0)
+raise SystemExit(subprocess.run(
+    ['/usr/bin/snap', 'install', 'code', '--channel=latest/stable', '--classic'],
+    env={'PATH': '/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'HOME': '/root'},
+    stdin=subprocess.DEVNULL, timeout=600, check=False,
+).returncode)

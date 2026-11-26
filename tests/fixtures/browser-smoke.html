@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><title>Teste local do navegador DevLite</title>
+<h1>Teste gráfico do navegador</h1><p>Português: ação, conexão, ç, ã, õ, á.</p>
+<p id="javascript">JavaScript ainda não executado.</p>
+<button id="button">Testar interação</button><p id="interaction">Aguardando clique.</p>
+<script>
+document.getElementById('javascript').textContent = 'JavaScript OK';
+document.getElementById('button').addEventListener('click', () => {
+ document.getElementById('interaction').textContent = 'Interação OK';
+});
+</script></html>

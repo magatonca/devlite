@@ -1,0 +1,25 @@
+#!/bin/sh
+set -eu
+app=${1:?}
+shift
+case "$app" in firefox|devlite-installer) ;; *) exit 2 ;; esac
+error() {
+    printf '%s\n' "$1" >&2
+    /usr/bin/timeout 5 /usr/bin/notify-send -u critical 'DevLite OS' "$1" || :
+}
+if ! /usr/bin/timeout 180 /bin/sh -c '
+    until /usr/bin/systemctl is-active --quiet snapd.seeded.service &&
+          /usr/bin/snap list "$1" >/dev/null 2>&1; do
+        sleep 2
+    done
+' devlite "$app"; then
+    error "O aplicativo $app não ficou disponível. Verifique o serviço snapd.seeded."
+    exit 1
+fi
+if /usr/bin/snap run "$app" "$@"; then
+    exit 0
+else
+    status=$?
+    error "O aplicativo $app encerrou com código $status. Abra pelo terminal para ver o erro."
+    exit "$status"
+fi

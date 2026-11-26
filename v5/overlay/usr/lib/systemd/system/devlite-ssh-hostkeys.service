@@ -1,0 +1,11 @@
+[Unit]
+Description=DevLite unique SSH host keys
+Before=ssh.service ssh.socket
+After=local-fs.target
+ConditionPathExists=/usr/bin/ssh-keygen
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ssh-keygen -A
+RemainAfterExit=yes
+UMask=0077

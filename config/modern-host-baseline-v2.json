@@ -1,0 +1,90 @@
+{
+  "authorized_host_transition": {
+    "approved_copy": {
+      "path": "/var/backups/dpkg.status.0",
+      "sha256": "c89700b29c7b3095f1262c16b80543726ea1541d54021c09c4b99183c359e06a"
+    },
+    "changed_host_critical_paths": [
+      "/var/lib/dpkg/status"
+    ],
+    "current_status": {
+      "path": "/var/lib/dpkg/status",
+      "sha256": "4b167d947d7c25a2343f2dff02a85e777c06ce50c846635ac14557af38be6277"
+    },
+    "evidence": {
+      "apt_history": {
+        "path": "/var/log/apt/history.log",
+        "sha256": "a72cbb5605da4cb57ed58e81757a142c1cee5994dcb669bd11395fffd21e95d5",
+        "transaction": "2026-11-21 06:58:45; /usr/bin/unattended-upgrade; python3-jwt 2.7.0-1ubuntu0.4 -> 2.7.0-1ubuntu0.5"
+      },
+      "dpkg_log": {
+        "path": "/var/log/dpkg.log",
+        "sha256": "5677edbc0c3fd29ee0908e1652f9bf94f5cce16383b5989da74a1c011dcac3d7",
+        "transaction": "2026-11-21 06:58:51 unpack/configure; python3-jwt 2.7.0-1ubuntu0.4 -> 2.7.0-1ubuntu0.5; installed at 06:58:52"
+      },
+      "read_only_comparison_report": {
+        "path": "work/host-dpkg-baseline-diff-2026-11-21.json",
+        "sha256": "9eec89dcd354e47eaf09c6ac455b99ee0833fa833542f71ec115fc222daca603"
+      }
+    },
+    "package_record": {
+      "added_records": 0,
+      "architecture": "all",
+      "current_installed_size": 117,
+      "current_version": "2.7.0-1ubuntu0.5",
+      "installation_state_changes": 0,
+      "package": "python3-jwt",
+      "previous_installed_size": 116,
+      "previous_version": "2.7.0-1ubuntu0.4",
+      "removed_records": 0,
+      "status_before_and_after": "install ok installed"
+    }
+  },
+  "baseline_id": "devlite-modern-host-baseline-v2-2026-11-21",
+  "created_utc": "2026-11-21T10:24:53Z",
+  "current_host_critical_files": {
+    "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+    "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+    "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f",
+    "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+    "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+    "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+    "/var/lib/apt/extended_states": "874c5ee29eb26b405bd24b9c15879f466cd51311e1866039342ff3263ccd81fb",
+    "/var/lib/dpkg/status": "4b167d947d7c25a2343f2dff02a85e777c06ce50c846635ac14557af38be6277"
+  },
+  "schema": 1,
+  "scope": "host-critical-files-only; target Base/Live inventories, source images and ISO are unchanged",
+  "supersedes": {
+    "baseline_id": "devlite-modern-host-baseline-v1-embedded-in-source-contract",
+    "host_critical_files": {
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/var/lib/apt/extended_states": "874c5ee29eb26b405bd24b9c15879f466cd51311e1866039342ff3263ccd81fb",
+      "/var/lib/dpkg/status": "c89700b29c7b3095f1262c16b80543726ea1541d54021c09c4b99183c359e06a"
+    },
+    "source_contract": "work/modern-apply-5w334rzl/contract.json",
+    "source_contract_sha256": "153cd14745cdddb20d1c9f00448b9a4fbcf1376387e9cdcdcc017fdb6e8771e2"
+  },
+  "target_artifacts_unchanged": {
+    "accepted_source_images": {
+      "base": {
+        "bytes": 12884901888,
+        "file": "/home/magaton/DevLite-OS/work/release-browser-2f24tvsg/attempt/base.ext4",
+        "sha256": "dcd5692cc7cfbb1a50487b1d332842a46d8184eff729b4528368484a11b44ded"
+      },
+      "live": {
+        "bytes": 12884901888,
+        "file": "/home/magaton/DevLite-OS/work/release-browser-2f24tvsg/attempt/live.ext4",
+        "sha256": "91bc8a6b4b042c151a56fd70c91c54fcccd702b4e76027fb03157a3eb856b676"
+      }
+    },
+    "approved_iso_sha256": "7373cb9be11ebda5218f20795fec87eab20c2cebef3c763ae6e5c63d4e7cd7bd",
+    "base_live_package_diff_report_sha256": "992b54276e905fbbe6f8d75c968f31fa47224524c607820867966cb607719dba",
+    "package_plan_sha256": "c52397214c302ee071f57e413784da2d887bd8a2b80c506a7cf4376f5212567a",
+    "previous_pack_report_source_images_modified": false
+  }
+}

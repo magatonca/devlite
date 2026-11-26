@@ -1,0 +1,31 @@
+[Unit]
+Description=Empacotamento isolado da candidata DevLite OS v7
+
+[Service]
+Type=oneshot
+WorkingDirectory=/
+StateDirectory=devlite-v7
+StateDirectoryMode=0755
+ProtectSystem=strict
+ProtectHome=yes
+PrivateNetwork=yes
+PrivateMounts=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictRealtime=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+Environment=PATH=/usr/sbin:/usr/bin:/sbin:/bin
+UnsetEnvironment=LD_PRELOAD LD_LIBRARY_PATH PYTHONPATH PYTHONHOME PYTHONUSERBASE
+MemoryMax=2684354560
+MemorySwapMax=1073741824
+CPUQuota=100%
+TasksMax=128
+LimitCORE=0
+TimeoutStartSec=10800
+TimeoutStopSec=60
+KillMode=control-group
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_SYS_CHROOT CAP_KILL CAP_CHOWN CAP_DAC_OVERRIDE CAP_DAC_READ_SEARCH CAP_FOWNER CAP_FSETID CAP_MKNOD CAP_SETFCAP CAP_SETPCAP CAP_SETUID CAP_SETGID
+ExecStart=/usr/bin/unshare --mount --propagation private --pid --fork --kill-child --mount-proc --ipc --uts /usr/bin/python3 -ISB /etc/devlite-v7/bootstrap.py --execute-authorized

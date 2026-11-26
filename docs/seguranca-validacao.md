@@ -14,3 +14,8 @@
 Fase 1: estrutura consistente, JSON válido, diagnósticos sem efeitos externos e revisão Git sem artefatos grandes ou segredos. Fases seguintes: assinatura e hash da base válidos, zero instalação de fonte desconhecida, ausência de credenciais e identidade do host, nenhum serviço exposto inesperado.
 
 A matriz detalhada está em [tests/aceitacao.md](../tests/aceitacao.md). Falhas bloqueantes: boot ou instalação falha, perda de localização após instalar, elevação arbitrária de privilégio, pacote essencial quebrado, segredo embarcado ou porta inesperada. Publicação exige registro de evidências e aprovação de todas as linhas obrigatórias. Segurança não equivale a garantia de ausência de vulnerabilidades.
+
+`config/projeto.json` é registro de estado, não autorização operacional. O
+validador exige `build_habilitado: false` em todas as fases; texto histórico em
+`autorizacao_build` não libera build. Cada preparação ou execução exige sua
+aprovação específica e os contratos próprios do pipeline.

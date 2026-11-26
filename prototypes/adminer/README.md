@@ -1,0 +1,11 @@
+# Adminer: integração preparada, não instalada
+
+Destino futuro: /usr/share/devlite-os/adminer; copiar index.php, policy.php e o artefato exato indicado em manifest.json; criar empty/ vazio. Configuração Apache em apache.conf. Nenhum arquivo foi aplicado às imagens.
+
+A origem é o artefato oficial 6.3.0 MySQL já adquirido: SHA-256 conferido novamente contra o manifesto. A validação anterior usou HTTPS e digest publicado pela API oficial; não equivale a assinatura GPG do autor. A sintaxe do upstream passou anteriormente em PHP 8.3; os wrappers novos ainda precisam de php -n -l e test-policy.php em ambiente isolado autorizado.
+
+O VirtualHost usa exclusivamente 127.0.0.1:8081 e [::1]:8081. Não alterar os listeners de desenvolvimento da porta 80. Falhar se porta ocupada ou IPv6 indisponível, sem fallback para wildcard. Exigir PHP 8.3 ativo e driver MySQL; testar apache2 -t no alvo antes de habilitar. Nunca servir PHP como texto. O Alias permite somente o entrypoint; arquivos brutos devem continuar negados. Validar ACLs efetivas via HTTP, inclusive caminhos codificados e aliases preexistentes. Nenhum listener foi iniciado neste trabalho.
+
+O wrapper fixa banco localhost, bloqueia usuários reservados, exige senha, mantém verificações nativas de login/CSRF, desativa login permanente e consultas de versão. Não cria conta nem armazena credenciais no Control. Sessões transitórias do Adminer continuam necessárias. Porta dedicada separa a origem HTTP, mas cookies não são isolados por porta e aplicações PHP no mesmo usuário Unix podem compartilhar riscos de sessão. Não constitui isolamento contra usuários locais hostis. Não conceder privilégios globais por padrão: seguir o exemplo de usuário próprio, limitado ao schema de desenvolvimento, em docs/devlite-control2-adminer.md; preservar autenticação root existente.
+
+Integração futura: abrir URL constante pelo navegador padrão somente após verificar Apache e MariaDB, sem iniciar serviços implicitamente. Testar login com usuário próprio, falha para root e destinos remotos, IPv4/IPv6, rejeição externa, navegação real e funcionamento Live/instalado. Bloquear publicação se qualquer requisito falhar. Adminer e visual ainda não integrados às imagens aceitas.

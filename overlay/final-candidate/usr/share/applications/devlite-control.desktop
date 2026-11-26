@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=DevLite Control
+Comment=Consultar e controlar os serviços com autenticação
+Exec=xfce4-terminal --hold --command="devlite-control --interactive"
+TryExec=devlite-control
+Icon=devlite
+Terminal=false
+Categories=System;X-DevLite;

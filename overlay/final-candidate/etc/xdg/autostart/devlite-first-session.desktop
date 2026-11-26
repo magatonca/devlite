@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=DevLite OS — primeira sessão
+Exec=/usr/libexec/devlite-first-session
+OnlyShowIn=XFCE;
+NoDisplay=true

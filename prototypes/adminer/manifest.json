@@ -1,0 +1,8 @@
+{
+  "stage": "prototype_not_installed",
+  "vendor_source": "work/adminer-review-11po9k_l/adminer-6.3.0-mysql.php",
+  "vendor_destination": "/usr/share/devlite-os/adminer/adminer-6.3.0-mysql.php",
+  "sha256": "33af3816a08213ae7579f8416e66d7d70054d6bcd70516d4ad3124f4b8b5c1e0",
+  "runtime_validation": "pending",
+  "url": "http://127.0.0.1:8081/devlite-adminer"
+}

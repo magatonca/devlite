@@ -1,0 +1,15 @@
+{
+  "source_commit": "2e8d70ee20871c2683e36cbde3a360a0a73108c9",
+  "subiquity_commit": "62f93c2c1ccead33436d07a5f64157e4ddffce84",
+  "curtin_commit": "8bc0121d6809719a611f3f9db9630122b0e8ed8f",
+  "official_reference": {
+    "name": "ubuntu-desktop-bootstrap",
+    "revision": 572,
+    "sha256": "ab32053904ba5ac6355e0b89644d60b5f405bd2fd1e60bc17567e43d9d8009f6"
+  },
+  "candidate_name": "devlite-installer",
+  "base": "core22",
+  "runtime_socket": "/run/subiquity/socket",
+  "local_candidate_sha256": "1a63e51a94b2ca522b03f98e56624a232f9f7c4b24fcc182a585185ef4b11c89",
+  "status": "core22_bundle_verified_snap_assertions_pending"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "status": "optional_not_bundled",
+  "user_decision": "public distribution; VS Code optional",
+  "binary_in_public_iso": false,
+  "download_authorized": false,
+  "installation_authorized": false,
+  "repository_addition_authorized": false,
+  "entry_url": "https://code.visualstudio.com/docs/setup/linux",
+  "metadata_authenticated_artifact": {
+    "id": "vscode",
+    "version": "1.146.0-1794340865",
+    "filename": "code_1.146.0-1794340865_amd64.deb",
+    "url": "https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.146.0-1794340865_amd64.deb",
+    "algorithm": "sha256",
+    "digest": "f83565f7f11a60b256807fe2216da8405f9728f193754959695242eecd148992",
+    "download_bytes": 291523322,
+    "unpacked_bytes": 1138659328,
+    "authentication": "OpenPGP InRelease → SHA256 Packages.gz → SHA256 deb; API agrees",
+    "installation": "dpkg/APT isolated only; code/add-microsoft-repo=false; review maintainer scripts before execution"
+  },
+  "metadata_evidence": "docs/evidencias/autenticacao-metadados-externos.json",
+  "license": "https://code.visualstudio.com/license",
+  "behavior": "Open official documentation after explicit user click; user controls any later download/installation"
+}

@@ -1,0 +1,9 @@
+--- snap/local/launcher
++++ snap/local/launcher
+@@ -42,5 +42,5 @@
+ 
+ # Disable storage automounting (/usr/lib/udisks2/udisks2-inhibit)
+ trap "sudo systemctl stop udisks2-inhibit.service" EXIT HUP INT QUIT ILL ABRT FPE KILL SEGV PIPE ALRM TERM BUS
+-sudo systemctl start udisks2-inhibit.service
++sudo systemctl start udisks2-inhibit.service || exit "$?"
+ "$@"

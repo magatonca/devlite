@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "name": "DevLite OS 1.0 Modern — Developer + Network Edition",
+  "status": "awaiting_manual_authenticated_pack",
+  "root_worker_entrypoint": "python3 -m pipeline.devlite.modern_candidate_root",
+  "baseline": {
+    "iso": "artifacts/modern-release-vz4edu99/devlite-os-1.0-amd64.iso",
+    "sha256": "7373cb9be11ebda5218f20795fec87eab20c2cebef3c763ae6e5c63d4e7cd7bd",
+    "base_squashfs_sha256": "40f1cff14631a749cd900054595d38c5bfd21ccaf923f824375c8b63a9eef45d",
+    "live_squashfs_sha256": "bbbe5adbe3144f3ead1c5540d801791cc395ac900c908862a9243738edbb8232"
+  },
+  "accepted_full_views": {
+    "base": {
+      "path": "work/modern-apply-5w334rzl/attempt/base.ext4",
+      "sha256": "b8af978223c9a1db12a8bd9b0e4af7e600c0a01129a11385079762923bbb5e09"
+    },
+    "live": {
+      "path": "work/modern-apply-5w334rzl/attempt/live.ext4",
+      "sha256": "3010e3b5c8b73fac32fa030f002da744081f94069868bac11d4bcb600ede5d8a"
+    },
+    "policy": "read-only sources; copy to a new isolated workspace before any future integration"
+  },
+  "storage_expansion": {
+    "backup_confirmed_externally_by_user": true,
+    "root_filesystem": "EXT4 on /dev/ubuntu-vg/ubuntu-lv",
+    "disk_bytes": 230000000000,
+    "partition": "/dev/xvda3",
+    "logical_volume_bytes": 228000000000,
+    "free_bytes_after_expansion": 123205206016,
+    "growpart_pvresize_lvextend_resize2fs": "completed",
+    "host_destruction_performed": false
+  },
+  "reuse": {
+    "modern_wallpaper_and_xfce": {
+      "source": "work/modern-apply-5w334rzl/bundles",
+      "scope": [
+        "Base",
+        "Live"
+      ],
+      "status": "already_present_in_accepted_layers"
+    },
+    "development_and_network_packages": {
+      "source": "packages/public-selection.json",
+      "status": "already_in_accepted_candidate; verify in new candidate"
+    },
+    "vscode": {
+      "binary_in_iso": false,
+      "entry": "overlay/final-candidate/usr/share/applications/devlite-get-vscode.desktop",
+      "distribution_choice": "launcher_only",
+      "status": "official Microsoft binary excluded from redistribution"
+    }
+  },
+  "next_candidate_changes": {
+    "grub": {
+      "transform": "pipeline/devlite/modern_identity.py:brand_grub_titles",
+      "source_tree": "work/modern-iso-w4u3uoq7/result-tree/boot/grub",
+      "preserve_kernel_arguments_and_boot_flow": true
+    },
+    "installer": {
+      "scope": "Live only",
+      "desktop": "overlay/modern-release-v1/usr/share/applications/devlite-installer.desktop",
+      "systemd_dropin": "overlay/modern-release-v1/etc/systemd/user/xubuntu-installer.service.d/10-devlite-branding.conf",
+      "preserve_existing_service_execstart": true
+    },
+    "devcontrol": {
+      "source": "prototypes/devcontrol",
+      "scope": [
+        "Base",
+        "Live"
+      ],
+      "target": "/usr/lib/devlite/devcontrol",
+      "desktop_entry": "/usr/share/applications/devcontrol.desktop",
+      "privileged_operations": false
+    }
+  },
+  "capacity_gate": {
+    "current_free_bytes": 112307113984,
+    "existing_pack_preflight_required_bytes": 66739003392,
+    "recommended_free_bytes": 75161927680,
+    "cleanup_authorized": false,
+    "build_started": false,
+    "superseded_pack_jobs": [
+      "work/modern-candidate-pack-z8mi78pb",
+      "work/modern-candidate-pack-vy8ar3l6",
+      "work/modern-candidate-pack-du6scrj3",
+      "work/modern-candidate-pack-8zkhk1an"
+    ],
+    "pack_job_prepared": "work/modern-candidate-pack-o371w6fo",
+    "pack_contract_sha256": "4b2d76fda67f7e146194a3fd77d408744b4cdfd1871976e8b3bd982c5890cdd1",
+    "resume_from_pack_job": "work/modern-candidate-pack-8zkhk1an",
+    "privileged_runner_started": false,
+    "manual_runner": "scripts/executar-modern-candidata-manual.sh",
+    "blocker": "privileged resume execution deferred pending user review of diagnosis and plan"
+  },
+  "build": {
+    "candidate_count": 0,
+    "pack_layers_verified": false,
+    "iso_generated": false,
+    "release_approved": false
+  }
+}

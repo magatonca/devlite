@@ -1,0 +1,5 @@
+command-switchuser=dm-tool switch-to-greeter
+button-title=Menu DevLite OS
+button-icon=/usr/share/icons/hicolor/scalable/apps/devlite.svg
+show-button-title=false
+show-button-icon=true

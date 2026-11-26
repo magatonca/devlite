@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Instalar DevLite OS 1.0
+Name[pt_BR]=Instalar DevLite OS 1.0
+Comment=Iniciar o instalador do sistema DevLite
+Exec=/usr/bin/systemctl --user start xubuntu-installer.service
+TryExec=/usr/bin/systemctl
+Icon=devlite
+Terminal=false
+Categories=System;X-DevLite;
+StartupNotify=false

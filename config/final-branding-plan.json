@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "status": "staged_not_applied",
+  "scope": "installed-and-live",
+  "overlay": "overlay/final-candidate",
+  "apply_to_full_views_before_delta": true,
+  "preserve_installer": true,
+  "new_users_only": true,
+  "theme": "Greybird",
+  "icons": "elementary-xfce-dark",
+  "compositing": false,
+  "service_actions": "prepared helper/polkit; administrative authentication and real service actions untested",
+  "image_modified": false,
+  "files": {
+    "etc/skel/.config/devlite/apply-initial-defaults": {
+      "sha256": "a625235f30f97de6678b012d8635402236ed4f46980366437720385924886bbc",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "etc/xdg/autostart/devlite-first-session.desktop": {
+      "sha256": "1e5ac9809540d6e96e5d21ce99a2e0becb18f3be3221776c78225bfa54b4d000",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "etc/xdg/menus/xfce-applications-merged/devlite.menu": {
+      "sha256": "002f3b9a4da99d4f412cdd5d64b97671ee1a7f28a56c7febb57f850bc00b3560",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/bin/devlite-control": {
+      "sha256": "f50eea5f1c1fa4d64ed1818886ab3f8f0de95dbc8c8ebc0c672fcde0cf1abf66",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/libexec/devlite-first-session": {
+      "sha256": "7bb08c4918d1c4ffde8ba0267c799f7de4d3d5a4b67d4a18e92a0fce4bdd2476",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/libexec/devlite-service-control": {
+      "sha256": "7715b8a613d04b262212c98627531b6f8bf2a0c8de6c50884bcffe3ca1150843",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/applications/devlite-control.desktop": {
+      "sha256": "bcfa9631eeb8e896155841fbd63dc01fa03864f2bdc00bf9f33928b93edc61b1",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/applications/devlite-get-vscode.desktop": {
+      "sha256": "e1fee010e783392bfdced7c6c90bbc34d63b7e360f2da77762d82c4053256873",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/backgrounds/devlite/devlite-wallpaper.svg": {
+      "sha256": "929c6aaec4e85709912a0e338f66cba6849806498447b3d6b95691ee5c5379b3",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/desktop-directories/devlite-development.directory": {
+      "sha256": "1967f9f5b6d02e58ccebac3595dd85d7df440e44ad703b6747adea402451ce73",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/desktop-directories/devlite-network.directory": {
+      "sha256": "e3c227aecb0b87b49c431ba1c7f13ee70943cd5351daaf6f5156cb42fe3b7356",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/desktop-directories/devlite-office.directory": {
+      "sha256": "f013b3f0f18397891acf69540f20e0f0d758e33dda6a9b1566f17d31552e0b5a",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/desktop-directories/devlite.directory": {
+      "sha256": "8f863e09d03a68a3d0d72bc8089de4b13659c251f4d640103ddab9525852e457",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/icons/hicolor/scalable/apps/devlite.svg": {
+      "sha256": "4bf73bffa5d0acb6e3529cecdb2dce0970e31dc805705e183a7f5c704d44f7d5",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    },
+    "usr/share/polkit-1/actions/org.devlite.services.policy": {
+      "sha256": "62e5a3909901ece5c80e8fe4d2f502542d84952fdf928e39377f13a4069db523",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0
+    }
+  },
+  "public_release": true,
+  "vscode": "optional official documentation launcher; binary excluded"
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/python3 -I
+# Compatibility entry point; no masks, no shell, same restricted backend.
+import sys
+sys.path.insert(0, '/usr/lib/devlite/devcontrol')
+from services import main
+main()

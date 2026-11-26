@@ -1,0 +1,41 @@
+# Visual overrides for ubuntu-desktop-bootstrap. Keep the technical flavor.
+flavor: xubuntu
+app-name: "Instalar DevLite OS 1.0"
+theme:
+  light:
+    accent-color: "#20517D"
+    elevated-button-color: "#102B46"
+    elevated-button-text-color: "#F0F6FC"
+  dark:
+    accent-color: "#58DFC8"
+    elevated-button-color: "#58DFC8"
+    elevated-button-text-color: "#102B46"
+pages:
+  locale:
+    image: "devlite.png"
+  try-or-install:
+    image: "devlite.png"
+  accessibility:
+    visible: false
+  keyboard:
+    image: "devlite.png"
+  network:
+    image: "devlite.png"
+  refresh:
+    image: "devlite.png"
+  source-selection:
+    image: "devlite.png"
+  storage:
+    image: "devlite.png"
+  storage-icon:
+    image: "devlite.png"
+  guided-resize:
+    image: "devlite.png"
+  guided-reformat:
+    image: "devlite.png"
+  identity:
+    image: "devlite.png"
+  confirm:
+    image: "devlite.png"
+  done:
+    image: "devlite.png"

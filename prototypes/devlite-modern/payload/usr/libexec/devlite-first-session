@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+"""DevLite Modern: primeira sessão XFCE de novos usuários opt-in."""
+import json,os,subprocess
+from pathlib import Path
+
+def apply(root=Path('/'),home=None,env=None,runner=subprocess.run):
+ env=os.environ if env is None else env;home=Path.home() if home is None else Path(home)
+ identity=root/'usr/share/devlite-os/identity.json'
+ if os.geteuid()==0 or not identity.is_file():return 'not-devlite-user'
+ if json.loads(identity.read_text()).get('name')!='DevLite OS':return 'wrong-identity'
+ if 'xfce' not in env.get('XDG_CURRENT_DESKTOP','').lower().split(':') or not env.get('DBUS_SESSION_BUS_ADDRESS'):return 'not-xfce-session'
+ config=Path(env.get('XDG_CONFIG_HOME',str(home/'.config')))
+ if not config.resolve().is_relative_to(home.resolve()):return 'unsafe-config-path'
+ folder=config/'devlite';marker=folder/'initial-defaults-modern-v2.json'
+ if not folder.resolve().is_relative_to(home.resolve()):return 'unsafe-config-path'
+ if not (folder/'apply-initial-defaults').is_file() or marker.exists() or (folder/'initial-defaults-v1.json').exists() or (folder/'keep-user-settings').exists():return 'preserved'
+ def query(args):return runner(['xfconf-query',*args],capture_output=True,text=True,timeout=15)
+ wallpaper='/usr/share/backgrounds/devlite/devlite-modern.svg'
+ if not (root/wallpaper.lstrip('/')).is_file():return 'wallpaper-missing'
+ listing=query(['-c','xfce4-desktop','-l'])
+ if listing.returncode:return 'xfdesktop-not-ready'
+ keys=[line.strip() for line in listing.stdout.splitlines() if line.startswith('/backdrop/') and line.endswith('/last-image')]
+ if not keys:return 'xfdesktop-not-ready'
+ for key in keys:
+  if query(['-c','xfce4-desktop','-p',key,'-s',wallpaper]).returncode:return 'wallpaper-failed'
+ for channel,key,value,kind in [('xsettings','/Net/ThemeName','Greybird-dark','string'),('xsettings','/Net/IconThemeName','elementary-xfce-dark','string'),('xfwm4','/general/theme','Greybird-dark','string'),('xfwm4','/general/use_compositing','false','bool'),('xsettings','/Gtk/EnableAnimations','false','bool'),('xsettings','/Gtk/CursorThemeName','DMZ-White','string')]:
+  exists=query(['-c',channel,'-p',key]).returncode==0
+  args=['-c',channel,'-p',key,'-s',value]+([] if exists else ['-n','-t',kind])
+  if query(args).returncode:return 'settings-failed'
+ dark=runner(['gsettings','set','org.gnome.desktop.interface','color-scheme','prefer-dark'],capture_output=True,text=True,timeout=15)
+ if dark.returncode:return 'dark-preference-failed'
+ with marker.open('x') as stream:json.dump({'version':'modern-v2','properties':keys,'theme':'Greybird-dark'},stream)
+ return 'applied'
+if __name__=='__main__':print(apply())

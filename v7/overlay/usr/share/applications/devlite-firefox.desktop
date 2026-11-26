@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Firefox
+Comment=Navegue na internet
+Exec=/usr/libexec/devlite-launch-snap firefox %u
+Icon=firefox
+Terminal=false
+NoDisplay=true
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "name": "DevControl",
+  "version": "1.0",
+  "status": "isolated-read-only-prototype",
+  "entrypoint": "app.py",
+  "desktop_entry": "devcontrol.desktop",
+  "target_paths": {
+    "app.py": "/usr/lib/devlite/devcontrol/app.py",
+    "collector.py": "/usr/lib/devlite/devcontrol/collector.py",
+    "devcontrol.desktop": "/usr/share/applications/devcontrol.desktop"
+  },
+  "runtime_dependencies": [
+    "python3",
+    "python3-gi",
+    "gir1.2-gtk-3.0"
+  ],
+  "privileged_operations": false,
+  "network_access": false,
+  "downloads": false,
+  "host_installation": false,
+  "base_live_integration": "pending-separate-approval"
+}

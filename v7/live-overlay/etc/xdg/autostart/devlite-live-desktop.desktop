@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Configuração da sessão Live DevLite
+Exec=/usr/libexec/devlite-live-desktop
+OnlyShowIn=XFCE;
+NoDisplay=true

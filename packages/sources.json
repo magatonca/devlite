@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "sources": {
+    "ubuntu": {
+      "kind": "apt",
+      "external": false,
+      "suites": [
+        "noble",
+        "noble-updates",
+        "noble-security"
+      ],
+      "components": [
+        "main",
+        "universe"
+      ],
+      "signed_metadata_required": true
+    },
+    "node-upstream": {
+      "kind": "signed-tarball",
+      "external": true,
+      "enabled": false,
+      "candidate_version": "26.13.1",
+      "lts": true,
+      "url_template": "https://nodejs.org/dist/v{version}/node-v{version}-linux-x64.tar.xz",
+      "authentication": "SHASUMS256.txt.asc + chave de release Node com fingerprint previamente conferido",
+      "documentation": "https://github.com/nodejs/node#verifying-binaries",
+      "runtime_prefix": "/opt/devlite/node"
+    },
+    "npm-upstream": {
+      "kind": "npm-artifact",
+      "external": true,
+      "enabled": false,
+      "registry": "https://registry.npmjs.org/",
+      "package": "typescript",
+      "authentication": "versão exata, package-lock e dist.integrity (SRI) conferidos; instalação futura offline sem scripts",
+      "documentation": "https://www.typescriptlang.org/download/",
+      "runtime_prefix": "/opt/devlite/typescript"
+    },
+    "microsoft-vscode": {
+      "kind": "apt",
+      "external": true,
+      "enabled": false,
+      "uri": "https://packages.microsoft.com/repos/code",
+      "suite": "stable",
+      "component": "main",
+      "key_url": "https://packages.microsoft.com/keys/microsoft.asc",
+      "key_fingerprint": null,
+      "signed_by": "/usr/share/keyrings/devlite-vscode.gpg",
+      "documentation": "https://code.visualstudio.com/docs/setup/linux",
+      "redistribution_review_required": true
+    }
+  }
+}

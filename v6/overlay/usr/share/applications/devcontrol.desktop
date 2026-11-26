@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DevControl 3.0
+Comment=Serviços e informações do DevLite OS
+Exec=/usr/bin/python3 -I /usr/lib/devlite/devcontrol/app.py
+TryExec=/usr/bin/python3
+Icon=devlite
+Terminal=false
+Categories=System;Development;X-DevLite;
+StartupNotify=true

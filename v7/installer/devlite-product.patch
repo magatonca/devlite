@@ -1,0 +1,482 @@
+--- a/packages/ubuntu_bootstrap/lib/installer.dart
++++ b/packages/ubuntu_bootstrap/lib/installer.dart
+@@ -229,7 +229,7 @@
+       onGenerateTitle: (context) {
+         if (windowTitle != null) return windowTitle!;
+         return UbuntuBootstrapLocalizations.of(context)
+-            .windowTitle(flavor.displayName);
++            .windowTitle(flavor.installerProductName);
+       },
+       locale: ref.watch(localeProvider),
+       localizationsDelegates: GlobalUbuntuBootstrapLocalizations.delegates,
+--- a/packages/ubuntu_bootstrap/lib/l10n/ubuntu_bootstrap_localizations_pt.dart
++++ b/packages/ubuntu_bootstrap/lib/l10n/ubuntu_bootstrap_localizations_pt.dart
+@@ -987,7 +987,7 @@
+ 
+   @override
+   String autoinstallHeader(String DISTRO) {
+-    return 'Como você gostaria de instalar a $DISTRO?';
++    return 'Como você gostaria de instalar o $DISTRO?';
+   }
+ 
+   @override
+@@ -1396,6 +1396,11 @@
+   String get allocateDiskSpaceInvalidMountPointSpace => 'Pontos de montagem não podem conter espaços';
+ 
+   @override
++  String allocateDiskSpaceInvalidMountPointFormat(Object format, Object mountpoint) {
++    return 'O sistema de arquivos $format não é compatível com $mountpoint.';
++  }
++
++  @override
+   String get diskHeadersDevice => 'Dispositivo';
+ 
+   @override
+@@ -1579,7 +1584,7 @@
+ 
+   @override
+   String readyToUse(String system) {
+-    return '$system está instalado e pronto pra uso';
++    return '$system está instalado e pronto para uso';
+   }
+ 
+   @override
+--- a/packages/ubuntu_bootstrap/lib/l10n/ubuntu_bootstrap_pt_BR.arb
++++ b/packages/ubuntu_bootstrap/lib/l10n/ubuntu_bootstrap_pt_BR.arb
+@@ -140,6 +140,7 @@
+   "@allocateDiskSpace": {},
+   "confirmInstallButton": "Instalar",
+   "@confirmInstallButton": {},
++  "allocateDiskSpaceInvalidMountPointFormat": "O sistema de arquivos {format} não é compatível com {mountpoint}.",
+   "diskHeadersDevice": "Dispositivo",
+   "@diskHeadersDevice": {},
+   "diskHeadersType": "Tipo",
+@@ -202,7 +203,7 @@
+   "@confirmPartitionChanges": {},
+   "installationCompleteTitle": "Instalação concluída",
+   "@installationCompleteTitle": {},
+-  "readyToUse": "{system} está instalado e pronto pra uso",
++  "readyToUse": "{system} está instalado e pronto para uso",
+   "@readyToUse": {
+     "type": "text",
+     "placeholders": {
+@@ -745,7 +746,7 @@
+   "@fullInstallationTitle": {},
+   "autoinstallTitle": "Tipo de instalação",
+   "@autoinstallTitle": {},
+-  "autoinstallHeader": "Como você gostaria de instalar a {DISTRO}?",
++  "autoinstallHeader": "Como você gostaria de instalar o {DISTRO}?",
+   "@autoinstallHeader": {
+     "placeholders": {
+       "DISTRO": {
+--- a/packages/ubuntu_bootstrap/lib/pages/autoinstall/autoinstall_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/autoinstall/autoinstall_page.dart
+@@ -25,7 +25,7 @@
+ 
+     return HorizontalPage(
+       windowTitle: lang.autoinstallTitle,
+-      title: lang.autoinstallHeader(flavor.displayName),
++      title: lang.autoinstallHeader(flavor.installerProductName),
+       bottomBar: WizardBar(
+         leading: const BackWizardButton(),
+         trailing: [
+--- a/packages/ubuntu_bootstrap/lib/pages/confirm/confirm_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/confirm/confirm_page.dart
+@@ -208,11 +208,11 @@
+       switch (ref.watch(storageModelProvider.select((s) => s.type))) {
+         StorageType.alongside => StoragePage.formatAlongside(
+             lang,
+-            ref.watch(flavorProvider).displayName,
++            ref.watch(flavorProvider).installerProductName,
+             confirmModel.existingOS ?? [],
+           ),
+         StorageType.erase =>
+-          lang.installationTypeErase(ref.watch(flavorProvider).displayName),
++          lang.installationTypeErase(ref.watch(flavorProvider).installerProductName),
+         StorageType.manual => lang.installationTypeManual,
+         _ => '',
+       },
+--- a/packages/ubuntu_bootstrap/lib/pages/install/done_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/install/done_page.dart
+@@ -37,8 +37,8 @@
+                 const SizedBox(),
+                 Text(
+                   isCoreDesktop
+-                      ? lang.rebootToConfigure(model.productInfo.toString())
+-                      : lang.readyToUse(model.productInfo.toString()),
++                      ? lang.rebootToConfigure(ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString()))
++                      : lang.readyToUse(ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString())),
+                   style: theme.textTheme.headlineSmall,
+                   textAlign: TextAlign.center,
+                 ),
+--- a/packages/ubuntu_bootstrap/lib/pages/install/install_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/install/install_page.dart
+@@ -67,7 +67,7 @@
+       headerPadding: EdgeInsets.zero,
+       contentPadding: EdgeInsets.zero,
+       title: YaruWindowTitleBar(
+-        title: Text(model.productInfo.toString()),
++        title: Text(ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString())),
+       ),
+       content: Stack(
+         children: [
+--- a/packages/ubuntu_bootstrap/lib/pages/loading/loading_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/loading/loading_page.dart
+@@ -23,7 +23,7 @@
+ 
+     return WizardPage(
+       title: YaruWindowTitleBar(
+-        title: Text(lang.loadingPageTitle(flavor.displayName)),
++        title: Text(lang.loadingPageTitle(flavor.installerProductName)),
+       ),
+       content: Column(
+         mainAxisAlignment: MainAxisAlignment.center,
+@@ -36,7 +36,7 @@
+             ),
+           ),
+           const SizedBox(height: kWizardSpacing * 2),
+-          Text(lang.loadingHeader(flavor.displayName), style: style),
++          Text(lang.loadingHeader(flavor.installerProductName), style: style),
+         ],
+       ),
+     );
+--- a/packages/ubuntu_bootstrap/lib/pages/rst/rst_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/rst/rst_page.dart
+@@ -33,7 +33,7 @@
+         leading: BackWizardButton(),
+       ),
+       children: [
+-        Text(lang.rstDescription(flavor.displayName)),
++        Text(lang.rstDescription(flavor.installerProductName)),
+         const SizedBox(height: kWizardSpacing),
+         Html(
+           data: lang.rstInstructions('help.ubuntu.com/rst'),
+@@ -50,7 +50,7 @@
+             final confirmed = await showConfirmationDialog(
+               context,
+               title: lang.restartIntoWindowsTitle,
+-              message: lang.restartIntoWindowsDescription(flavor.displayName),
++              message: lang.restartIntoWindowsDescription(flavor.installerProductName),
+               okLabel: UbuntuLocalizations.of(context).restartLabel,
+               okElevated: true,
+             );
+--- a/packages/ubuntu_bootstrap/lib/pages/source/codecs_and_drivers_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/source/codecs_and_drivers_page.dart
+@@ -40,7 +40,7 @@
+         await model.save();
+       },
+       children: [
+-        Text(lang.codecsAndDriversPageBody(flavor.displayName)),
++        Text(lang.codecsAndDriversPageBody(flavor.installerProductName)),
+         const SizedBox(height: kWizardSpacing),
+         // TODO(Lukas): Add a proper check when we know where to get this information.
+         if (false)
+--- a/packages/ubuntu_bootstrap/lib/pages/source/not_enough_disk_space/not_enough_disk_space_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/source/not_enough_disk_space/not_enough_disk_space_page.dart
+@@ -28,12 +28,12 @@
+ 
+     return HorizontalPage(
+       windowTitle: lang.notEnoughDiskSpaceTitle,
+-      title: lang.notEnoughDiskSpaceUbuntu(flavor.displayName),
++      title: lang.notEnoughDiskSpaceUbuntu(flavor.installerProductName),
+       bottomBar: const WizardBar(
+         leading: BackWizardButton(),
+       ),
+       children: [
+-        Text(lang.notEnoughDiskSpaceBody(flavor.displayName)),
++        Text(lang.notEnoughDiskSpaceBody(flavor.installerProductName)),
+         Table(
+           defaultColumnWidth: const IntrinsicColumnWidth(),
+           defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/bitlocker/bitlocker_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/bitlocker/bitlocker_page.dart
+@@ -31,7 +31,7 @@
+       children: [
+         Text(
+           lang.bitlockerDescription(
+-            lang.installationTypeErase(flavor.displayName),
++            lang.installationTypeErase(flavor.installerProductName),
+           ),
+         ),
+         const SizedBox(height: kWizardSpacing),
+@@ -50,7 +50,7 @@
+             final confirmed = await showConfirmationDialog(
+               context,
+               title: lang.bitlockerTitle,
+-              message: lang.restartIntoWindowsDescription(flavor.displayName),
++              message: lang.restartIntoWindowsDescription(flavor.installerProductName),
+               okLabel: UbuntuLocalizations.of(context).restartLabel,
+               okElevated: true,
+             );
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/guided_reformat/guided_reformat_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/guided_reformat/guided_reformat_page.dart
+@@ -38,9 +38,9 @@
+     final lang = UbuntuBootstrapLocalizations.of(context);
+     final flavor = ref.watch(flavorProvider);
+     return HorizontalPage(
+-      windowTitle: lang.selectGuidedStoragePageTitle(flavor.displayName),
++      windowTitle: lang.selectGuidedStoragePageTitle(flavor.installerProductName),
+       title:
+-          lang.guidedStoragePageHeader(ref.watch(flavorProvider).displayName),
++          lang.guidedStoragePageHeader(ref.watch(flavorProvider).installerProductName),
+       bottomBar: WizardBar(
+         leading: const BackWizardButton(),
+         trailing: [
+@@ -89,13 +89,13 @@
+                     SizedBox.square(
+                       dimension: 32,
+                       child: StorageIcon(
+-                        name: flavor.displayName,
++                        name: flavor.installerProductName,
+                         useCustomIcon: true,
+                       ),
+                     ),
+                     const SizedBox(width: kWizardBarSpacing),
+                     Text(
+-                      flavor.displayName,
++                      flavor.installerProductName,
+                       style: Theme.of(context).textTheme.titleMedium,
+                     ),
+                     const SizedBox(width: kWizardSpacing),
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/guided_resize_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/guided_resize_page.dart
+@@ -22,21 +22,21 @@
+     switch (model.existingOS.length) {
+       case 0:
+         return lang
+-            .installationTypeAlongsideUnknown(model.productInfo.toString());
++            .installationTypeAlongsideUnknown(ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString()));
+       case 1:
+         return lang.installationTypeAlongside(
+-          model.productInfo.toString(),
++          ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString()),
+           model.existingOS.single.long,
+         );
+       case 2:
+         return lang.installationTypeAlongsideDual(
+-          model.productInfo.toString(),
++          ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString()),
+           model.existingOS.first.long,
+           model.existingOS.last.long,
+         );
+       default:
+         return lang
+-            .installationTypeAlongsideMulti(model.productInfo.toString());
++            .installationTypeAlongsideMulti(ref.watch(flavorProvider).installerProductVersion(model.productInfo.toString()));
+     }
+   }
+ 
+@@ -47,7 +47,7 @@
+     return HorizontalPage(
+       windowTitle: _formatTitle(context, ref),
+       title:
+-          lang.guidedStoragePageHeader(ref.watch(flavorProvider).displayName),
++          lang.guidedStoragePageHeader(ref.watch(flavorProvider).installerProductName),
+       bottomBar: WizardBar(
+         leading: const BackWizardButton(),
+         trailing: [
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/storage_dialogs.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/storage_dialogs.dart
+@@ -1,3 +1,4 @@
++import 'package:ubuntu_provision/ubuntu_provision.dart' show InstallerProductName;
+ import 'package:collection/collection.dart';
+ import 'package:flutter/material.dart';
+ import 'package:flutter_html/flutter_html.dart';
+@@ -142,7 +143,7 @@
+     if (target == null) return const SizedBox();
+ 
+     final tpmInfo =
+-        lang.installationTypeTPMInfo(flavor.displayName, model.tpmInfoUrl);
++        lang.installationTypeTPMInfo(flavor.installerProductName, model.tpmInfoUrl);
+     final disallowedCapability = target.disallowed.firstWhereOrNull(
+       (e) =>
+           e.capability == GuidedCapability.CORE_BOOT_ENCRYPTED ||
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/storage_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/storage_page.dart
+@@ -51,7 +51,7 @@
+ 
+     return HorizontalPage(
+       windowTitle: lang.installationTypeTitle,
+-      title: lang.installationTypeHeader(flavor.displayName),
++      title: lang.installationTypeHeader(flavor.installerProductName),
+       bottomBar: WizardBar(
+         leading: const BackWizardButton(),
+         trailing: [
+@@ -74,7 +74,7 @@
+             title: Text(
+               formatAlongside(
+                 lang,
+-                ref.watch(flavorProvider).displayName,
++                ref.watch(flavorProvider).installerProductName,
+                 model.existingOS ?? [],
+               ),
+             ),
+@@ -83,7 +83,7 @@
+         if (model.canEraseDisk) ...[
+           _InstallationTypeTile(
+             storageType: StorageType.erase,
+-            title: Text(lang.installationTypeErase(flavor.displayName)),
++            title: Text(lang.installationTypeErase(flavor.installerProductName)),
+             subtitle: Text(lang.installationTypeEraseInfo),
+             trailing: model.hasAdvancedFeatures
+                 ? Padding(
+@@ -113,7 +113,7 @@
+           _InstallationTypeTile(
+             storageType: StorageType.manual,
+             title: Text(lang.installationTypeManual),
+-            subtitle: Text(lang.installationTypeManualInfo(flavor.displayName)),
++            subtitle: Text(lang.installationTypeManualInfo(flavor.installerProductName)),
+           ),
+       ],
+     );
+--- a/packages/ubuntu_bootstrap/lib/pages/try_or_install/try_or_install_page.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/try_or_install/try_or_install_page.dart
+@@ -24,8 +24,8 @@
+     final flavor = ref.watch(flavorProvider);
+ 
+     return HorizontalPage(
+-      windowTitle: lang.tryOrInstallTitle(flavor.displayName),
+-      title: lang.tryOrInstallHeader(flavor.displayName),
++      windowTitle: lang.tryOrInstallTitle(flavor.installerProductName),
++      title: lang.tryOrInstallHeader(flavor.installerProductName),
+       bottomBar: WizardBar(
+         leading: const BackWizardButton(),
+         trailing: [
+@@ -48,16 +48,16 @@
+         OptionButton(
+           value: TryOrInstallOption.installUbuntu,
+           groupValue: model.option,
+-          title: Text(lang.installOption(flavor.displayName)),
+-          subtitle: Text(lang.installDescription(flavor.displayName)),
++          title: Text(lang.installOption(flavor.installerProductName)),
++          subtitle: Text(lang.installDescription(flavor.installerProductName)),
+           onChanged: (value) => model.selectOption(value!),
+         ),
+         const SizedBox(height: kWizardSpacing / 2),
+         OptionButton(
+           value: TryOrInstallOption.tryUbuntu,
+           groupValue: model.option,
+-          title: Text(lang.tryOption(flavor.displayName)),
+-          subtitle: Text(lang.tryDescription(flavor.displayName)),
++          title: Text(lang.tryOption(flavor.installerProductName)),
++          subtitle: Text(lang.tryDescription(flavor.installerProductName)),
+           onChanged: (value) => model.selectOption(value!),
+         ),
+       ],
+--- a/packages/ubuntu_bootstrap/lib/slides/slides_provider.dart
++++ b/packages/ubuntu_bootstrap/lib/slides/slides_provider.dart
+@@ -13,7 +13,7 @@
+ import 'package:ubuntu_provision/ubuntu_provision.dart';
+ 
+ final slidesProvider = Provider(
+-  (ref) => SlidesModel(flavorName: ref.watch(flavorProvider).displayName),
++  (ref) => SlidesModel(flavorName: ref.watch(flavorProvider).installerProductName),
+ );
+ 
+ final _log = Logger('slides');
+--- a/packages/ubuntu_provision/lib/src/accessibility/accessibility_page.dart
++++ b/packages/ubuntu_provision/lib/src/accessibility/accessibility_page.dart
+@@ -22,13 +22,13 @@
+ 
+     return HorizontalPage(
+       windowTitle: lang.accessibilityPageTitle,
+-      title: lang.accessibilityPageHeader(flavor.displayName),
++      title: lang.accessibilityPageHeader(flavor.installerProductName),
+       bottomBar: const WizardBar(
+         leading: BackWizardButton(),
+         trailing: [NextWizardButton()],
+       ),
+       children: [
+-        Text(lang.accessibilityPageBody(flavor.displayName)),
++        Text(lang.accessibilityPageBody(flavor.installerProductName)),
+         const SizedBox(height: kWizardSpacing),
+         YaruExpansionPanel(
+           headers: [
+--- a/packages/ubuntu_provision/lib/src/active_directory/active_directory_page.dart
++++ b/packages/ubuntu_provision/lib/src/active_directory/active_directory_page.dart
+@@ -44,7 +44,7 @@
+         ],
+       ),
+       children: [
+-        Text(lang.activeDirectoryInfo(ref.watch(flavorProvider).displayName)),
++        Text(lang.activeDirectoryInfo(ref.watch(flavorProvider).installerProductName)),
+         const SizedBox(height: kWizardSpacing),
+         const DomainNameFormField(),
+         const SizedBox(height: kWizardSpacing),
+--- a/packages/ubuntu_provision/lib/src/locale/locale_page.dart
++++ b/packages/ubuntu_provision/lib/src/locale/locale_page.dart
+@@ -28,7 +28,7 @@
+     final nextFocusNode = ref.watch(_nextFocusNodeProvider);
+ 
+     return HorizontalPage(
+-      windowTitle: lang.localePageTitle(flavor.displayName),
++      windowTitle: lang.localePageTitle(flavor.installerProductName),
+       title: lang.localeHeader,
+       managedScrolling: false,
+       contentFlex: 4,
+--- a/packages/ubuntu_provision/lib/src/services/flavor_service.dart
++++ b/packages/ubuntu_provision/lib/src/services/flavor_service.dart
+@@ -40,3 +40,12 @@
+     return UbuntuFlavor.ubuntu;
+   }
+ }
++
++/// Product name for installer presentation. The base flavor stays unchanged.
++extension InstallerProductName on UbuntuFlavor {
++  String get installerProductName =>
++      this == UbuntuFlavor.xubuntu ? 'DevLite OS' : displayName;
++
++  String installerProductVersion(String original) =>
++      this == UbuntuFlavor.xubuntu ? 'DevLite OS 1.0' : original;
++}
+--- a/packages/ubuntu_provision/lib/src/services/product_service.dart
++++ b/packages/ubuntu_provision/lib/src/services/product_service.dart
+@@ -12,6 +12,10 @@
+ 
+   final String name;
+   final String? version;
++
++  String get installerLabel => name == 'Xubuntu' || name == 'Xubuntu Minimal'
++      ? 'DevLite OS 1.0'
++      : toString();
+ 
+   @override
+   String toString() => [name, version].whereType<String>().join(' ');
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/storage_slider_view.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/storage_slider_view.dart
+@@ -84,13 +84,13 @@
+                   SizedBox.square(
+                     dimension: 32,
+                     child: StorageIcon(
+-                      name: widget.productInfo.toString(),
++                      name: widget.productInfo.installerLabel,
+                       useCustomIcon: true,
+                     ),
+                   ),
+                   const SizedBox(width: kWizardBarSpacing),
+                   Text(
+-                    widget.productInfo.toString(),
++                    widget.productInfo.installerLabel,
+                     style: Theme.of(context).textTheme.titleMedium,
+                   ),
+                   const SizedBox(width: kWizardSpacing / 2),
+--- a/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/storage_split_view.dart
++++ b/packages/ubuntu_bootstrap/lib/pages/storage/guided_resize/storage_split_view.dart
+@@ -117,7 +117,7 @@
+           },
+         ),
+         StorageButton(
+-          name: widget.productInfo.toString(),
++          name: widget.productInfo.installerLabel,
+           size: widget.totalSize - widget.currentSize,
+           format: 'ext4', // FIXME
+           newOS: true,
+@@ -125,7 +125,7 @@
+             final size = await showStorageSizeDialog(
+               context,
+               title: lang.installAlongsideAllocateSpace,
+-              name: widget.productInfo.toString(),
++              name: widget.productInfo.installerLabel,
+               initialSize: widget.totalSize - widget.currentSize,
+               minimumSize: widget.totalSize - widget.maximumSize,
+               maximumSize: widget.totalSize - widget.minimumSize,

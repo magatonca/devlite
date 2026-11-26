@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "status": "prepared_not_executed",
+  "release_profile": "public-release",
+  "target_iso_name": "devlite-os-1.0-amd64.iso",
+  "baseline_iso": "artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+  "baseline_sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db",
+  "baseline_release_contract": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+  "source_installed_pair": "work/phase4b3-wnej6dpv/attempt/accepted-pair.json",
+  "source_installed_pair_policy": "preserve; never modify accepted images in place",
+  "public_catalog": "packages/public-selection.json",
+  "upstream_plan": "packages/final-external-plan.json",
+  "branding_plan": "config/final-branding-plan.json",
+  "acceptance_template": "config/acceptance-public-template.json",
+  "read_only_scripts": [
+    "scripts/coletar-evidencias-guest.py",
+    "scripts/verificar-metadados-externos.py",
+    "scripts/verificar-cache-final.py",
+    "scripts/inspecionar-arquivo-final.py",
+    "scripts/auditar-armazenamento-final.py",
+    "scripts/validar-aceitacao-publica.py"
+  ],
+  "actions": [
+    {
+      "action": "baseline BIOS/UEFI guest tests",
+      "execution": "manual in existing Windows VMware lab after authorization",
+      "status": "pending"
+    },
+    {
+      "action": "authorized cleanup or capacity expansion",
+      "execution": "requires exact list/authorization; no cleanup now",
+      "status": "pending"
+    },
+    {
+      "action": "acquire three Node/TypeScript archives",
+      "execution": "separate approval; authenticate bytes, inspect archives without scripts",
+      "status": "pending"
+    },
+    {
+      "action": "prepare bounded prefix/overlay application adapter",
+      "execution": "reuse isolated runner; no APT/dpkg for public payloads; bind exact code/artifact hashes before root approval",
+      "status": "unprivileged staging adapter implemented and fixture-tested; actual payload inspection and isolated application contract pending"
+    },
+    {
+      "action": "isolated customization of disposable full Base and Live copies",
+      "execution": "separate root authorization; services remain masked, metadata/installer audit, rebuild delta",
+      "status": "not authorized"
+    },
+    {
+      "action": "final-profile ISO builder",
+      "execution": "new sealed public-release contract; preserve hybrid boot and EFI; external provenance manifest; generate one candidate only after approval",
+      "status": "not authorized, profile integration pending"
+    },
+    {
+      "action": "test final candidate and promote same hash",
+      "execution": "BIOS/UEFI live/install/reboot/programs/admin auth/branding; no rebuild after acceptance without retest",
+      "status": "pending"
+    }
+  ],
+  "permissions": {
+    "cleanup": false,
+    "program_download": false,
+    "root_image_customization": false,
+    "new_iso": false,
+    "vm_execution": false
+  },
+  "storage": {
+    "existing_install_guard_gib": 56,
+    "source_full_view_upper_budgets_gib": {
+      "base": 4,
+      "live": 6
+    },
+    "extra_public_payload_budget_per_view_gib": 0.5,
+    "clone_views_budget_gib": 11,
+    "estimated_packing_guard_after_cloning_gib": 56,
+    "sequential_minimum_estimate_gib": 67,
+    "recommended_free_gib": 70,
+    "formula": "copies (4.5+6.5) + packing (3*4.5+5*6.5+10) = 67 GiB; recommend 70. Actual guards recalculated; never reduced."
+  },
+  "resources": {
+    "ram_limit_bytes": 2684354560,
+    "swap_limit_bytes": 1073741824,
+    "cpu_percent": 100,
+    "tasks": 128,
+    "squashfs_processors": 1,
+    "squashfs_memory": "256M",
+    "build_node_from_source": false
+  },
+  "public_vscode_policy": "no Microsoft binary or installer payload in ISO; only explicit official documentation entry",
+  "frozen_pipeline_policy": "existing experimental pipeline unchanged. Implement public-profile adaptations in a new contract; do not rewrite historical receipts.",
+  "node_typescript_manifest": "record upstream runtimes separately from dpkg inventory; preserve license/notice files",
+  "collector_sha256": "b1b839fb42fd65f05d147c1b2f69d8efc904e1d1352ef66c3c2187bb773de3c2",
+  "prepared_controlled_scripts": [
+    "scripts/preparar-payload-publico.py",
+    "scripts/adquirir-payload-publico.py",
+    "scripts/limpeza-controlada-final.py"
+  ],
+  "candidate_build_count": 1,
+  "approval_proposal": "docs/autorizacao-conclusao.md"
+}

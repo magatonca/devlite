@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "suite": "noble",
+  "architecture": "amd64",
+  "provider": "ubuntu",
+  "package": "epiphany-browser",
+  "requested": [
+    "epiphany-browser",
+    "epiphany-browser-data",
+    "ca-certificates",
+    "dbus-user-session"
+  ],
+  "scope": "installed-and-live",
+  "native_deb": true,
+  "snap_required": false,
+  "desktop_id": "org.gnome.Epiphany.desktop",
+  "xfce_helper": "epiphany",
+  "input_job": "work/release-cezaiofx",
+  "application_sha256": "e62d4a700ff770fa24b0afe9b013c3b14eb841db60e5a5c3e9bdfd9d79f9c6b3",
+  "visual_changes": false,
+  "generate_iso": false,
+  "install_authorized": false,
+  "download_authorized": false
+}

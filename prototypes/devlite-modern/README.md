@@ -1,0 +1,7 @@
+# DevLite Modern — proposta consolidada
+
+payload/ contém sete arquivos pequenos, incluindo a primeira sessão Modern v2 previamente preparadas, agora com manifesto SHA-256. Não foram aplicadas. Apenas Greybird-dark, elementary-xfce-dark, cursor DMZ, wallpaper SVG grafite/azul e painel XFCE nativo inferior. Sem dock adicional, animações pesadas ou serviços residentes. Compositor desabilitado na proposta; medir efeitos sobre vídeo e desempenho em sessão real antes de homologar.
+
+Pontos de integração: xsettings.xml (GTK/ícones), xfwm4.xml (decoração/compositor), panel/default.xml (painel/plugins), lightdm-gtk-greeter.conf (login), background SVG e rascunho dconf (preferência escura). Preservar plugins, lançadores e atalhos existentes. O payload contém uma nova versão do script de primeira sessão, com testes simulados; conferir e mesclar as preimages reais antes de substituir a versão existente; não sobrescrever perfis de usuários existentes. Configurar o wallpaper do desktop por xfconf para monitores reais: o SVG e a tela de login preparados não provam a aplicação no desktop. O rascunho dconf exige perfil e compilação futura no alvo.
+
+Aplicação futura tanto à Base quanto à visão Live reconciliada, mediante aprovação. Testar 1024x768, HiDPI, múltiplos monitores, login, sessão live, usuário criado pelo instalador, contraste e navegação por teclado. Sem medição gráfica nesta VM: impacto de RAM/CPU não homologado. Arquivos estáticos não acrescentam processos; meta de hardware 6 GiB exige medição real.

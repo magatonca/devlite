@@ -1,0 +1,727 @@
+{
+  "schema": 1,
+  "iso": {
+    "path": "",
+    "sha256": "",
+    "experimental": false
+  },
+  "profile": "public-release",
+  "runs": {
+    "bios": {
+      "vm_id": "",
+      "virtual_disk_id": "",
+      "disk_disposable": false,
+      "firmware": "bios",
+      "environment": {
+        "operator": "",
+        "date": "",
+        "hypervisor": "",
+        "ram_mib": 4096,
+        "cpu": 2,
+        "disk_gib": 40,
+        "secure_boot": false
+      },
+      "checks": {
+        "disco_descartavel": {
+          "status": "pending",
+          "evidence": []
+        },
+        "hash_iso": {
+          "status": "pending",
+          "evidence": []
+        },
+        "boot_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "firmware_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "xfce_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pt_br_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "abnt2_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "timezone_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "programas_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "servicos_bloqueados_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "instalador_preservado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "instalacao": {
+          "status": "pending",
+          "evidence": []
+        },
+        "boot_sem_iso": {
+          "status": "pending",
+          "evidence": []
+        },
+        "firmware_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "xfce_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pt_br_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "abnt2_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "timezone_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "programas_instalados": {
+          "status": "pending",
+          "evidence": []
+        },
+        "servicos_bloqueados_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "persistencia_reboot": {
+          "status": "pending",
+          "evidence": []
+        },
+        "desligamento": {
+          "status": "pending",
+          "evidence": []
+        },
+        "writer_calc_impress": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pdf_visual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "remmina_visual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vpn_networkmanager": {
+          "status": "pending",
+          "evidence": []
+        },
+        "wireshark_capture_policy": {
+          "status": "pending",
+          "evidence": []
+        },
+        "docker_ativacao_manual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "php_extensoes": {
+          "status": "pending",
+          "evidence": []
+        },
+        "branding_xfce": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vscode_optional_entry": {
+          "status": "pending",
+          "evidence": []
+        },
+        "devlite_control_admin": {
+          "status": "pending",
+          "evidence": []
+        },
+        "licenses_and_notices": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "programs": {
+        "live": {
+          "php": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "composer": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "apache": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "mariadb": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "docker": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "compose": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "git": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "gh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "nmap": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "wireshark": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "tcpdump": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "iperf3": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "remmina": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "ssh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "openvpn": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "libreoffice": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "pdf": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "node": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "typescript": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "vscode": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          }
+        },
+        "installed": {
+          "php": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "composer": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "apache": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "mariadb": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "docker": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "compose": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "git": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "gh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "nmap": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "wireshark": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "tcpdump": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "iperf3": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "remmina": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "ssh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "openvpn": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "libreoffice": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "pdf": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "node": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "typescript": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "vscode": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          }
+        }
+      }
+    },
+    "uefi": {
+      "vm_id": "",
+      "virtual_disk_id": "",
+      "disk_disposable": false,
+      "firmware": "uefi",
+      "environment": {
+        "operator": "",
+        "date": "",
+        "hypervisor": "",
+        "ram_mib": 4096,
+        "cpu": 2,
+        "disk_gib": 40,
+        "secure_boot": false
+      },
+      "checks": {
+        "disco_descartavel": {
+          "status": "pending",
+          "evidence": []
+        },
+        "hash_iso": {
+          "status": "pending",
+          "evidence": []
+        },
+        "boot_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "firmware_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "xfce_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pt_br_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "abnt2_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "timezone_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "programas_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "servicos_bloqueados_live": {
+          "status": "pending",
+          "evidence": []
+        },
+        "instalador_preservado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "instalacao": {
+          "status": "pending",
+          "evidence": []
+        },
+        "boot_sem_iso": {
+          "status": "pending",
+          "evidence": []
+        },
+        "firmware_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "xfce_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pt_br_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "abnt2_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "timezone_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "programas_instalados": {
+          "status": "pending",
+          "evidence": []
+        },
+        "servicos_bloqueados_instalado": {
+          "status": "pending",
+          "evidence": []
+        },
+        "persistencia_reboot": {
+          "status": "pending",
+          "evidence": []
+        },
+        "desligamento": {
+          "status": "pending",
+          "evidence": []
+        },
+        "writer_calc_impress": {
+          "status": "pending",
+          "evidence": []
+        },
+        "pdf_visual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "remmina_visual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vpn_networkmanager": {
+          "status": "pending",
+          "evidence": []
+        },
+        "wireshark_capture_policy": {
+          "status": "pending",
+          "evidence": []
+        },
+        "docker_ativacao_manual": {
+          "status": "pending",
+          "evidence": []
+        },
+        "php_extensoes": {
+          "status": "pending",
+          "evidence": []
+        },
+        "branding_xfce": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vscode_optional_entry": {
+          "status": "pending",
+          "evidence": []
+        },
+        "devlite_control_admin": {
+          "status": "pending",
+          "evidence": []
+        },
+        "licenses_and_notices": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "programs": {
+        "live": {
+          "php": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "composer": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "apache": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "mariadb": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "docker": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "compose": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "git": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "gh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "nmap": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "wireshark": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "tcpdump": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "iperf3": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "remmina": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "ssh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "openvpn": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "libreoffice": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "pdf": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "node": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "typescript": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "vscode": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          }
+        },
+        "installed": {
+          "php": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "composer": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "apache": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "mariadb": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "docker": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "compose": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "git": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "gh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "nmap": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "wireshark": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "tcpdump": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "iperf3": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "remmina": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "ssh": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "openvpn": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "libreoffice": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "pdf": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "node": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "typescript": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          },
+          "vscode": {
+            "status": "pending",
+            "version": "",
+            "evidence": []
+          }
+        }
+      }
+    }
+  },
+  "release_state": "candidate_not_generated",
+  "release_policy": {
+    "vscode_binary_bundled": false,
+    "vscode_entry": "official installation documentation; explicit user click",
+    "node_typescript_bundled": true
+  }
+}

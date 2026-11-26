@@ -1,0 +1,7 @@
+{
+  "version": "6.3.1",
+  "asset": "adminer-6.3.1-mysql.php",
+  "url": "https://www.adminer.org/static/download/6.3.1/adminer-6.3.1-mysql.php",
+  "release": "https://api.github.com/repos/vrana/adminer/releases/tags/v6.3.1",
+  "sha256": "97fdb49c3e941636fe4b0559b2b042de3ac105dff0daafec3c255cd6bd81d4b6"
+}

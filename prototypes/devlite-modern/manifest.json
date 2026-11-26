@@ -1,0 +1,16 @@
+{
+  "stage": "prototype_only",
+  "applied": false,
+  "files": {
+    "etc/lightdm/lightdm-gtk-greeter.conf": "f1ca87dc21a5b040d88981d8566ae2a6a302e5d8f63ffeefc6f06e6425d6f59d",
+    "etc/dconf/db/devlite.d/00-modern": "7dfbfea318901905fce9c29756ad3c1ba6178c5570d57a1c8e9d95701da25279",
+    "etc/xdg/xdg-xubuntu/xfce4/panel/default.xml": "e065198eec7a95f519eedc9326fcbe1cb491174009765b2d96fe67e71764f21e",
+    "etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml": "e5b083b85c300ba1fbcbc6d758128eda36136b6b1d8ff61785c0d9b21b27c95c",
+    "etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml": "554ad151f2e12bfd0fa9a1018864509b70f6ea0f2244284cae054f2712833317",
+    "usr/share/backgrounds/devlite/devlite-modern.svg": "51bb75ff7573fd22ae7fa85039b7d82c8173c736a485ac1649394451d8450f19",
+    "usr/libexec/devlite-first-session": "a246eb3719441b268c317068fe0df0640e699c808bc9c209ee9bf7671bee0a52"
+  },
+  "browser": "accepted_work_images; graphical_launch_pending",
+  "resident_services_added": 0,
+  "first_session_mode": "0755"
+}

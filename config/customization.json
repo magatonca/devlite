@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "locale": "pt_BR.UTF-8",
+  "language": "pt_BR:pt",
+  "keyboard": {
+    "model": "abnt2",
+    "layout": "br",
+    "variant": "",
+    "options": ""
+  },
+  "timezone": "America/Sao_Paulo",
+  "desktop": "XFCE",
+  "theme": "Greybird",
+  "icon_theme": "elementary-xfce-dark",
+  "identity": {
+    "name": "DevLite OS",
+    "version": "1.0",
+    "edition": "Developer + Network Edition"
+  },
+  "services": {
+    "disabled_until_explicit_activation": [
+      "apache2.service",
+      "mariadb.service",
+      "docker.service",
+      "docker.socket",
+      "containerd.service",
+      "iperf3.service"
+    ],
+    "wireshark_non_root_capture": false,
+    "automatic_docker_group": false
+  }
+}

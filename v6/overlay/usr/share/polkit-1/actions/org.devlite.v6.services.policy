@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policyconfig><vendor>DevLite OS</vendor><action id="org.devlite.v6.services.manage">
+<description>Gerenciar serviços DevLite</description><message>Autentique como administrador para alterar o serviço.</message>
+<defaults><allow_any>no</allow_any><allow_inactive>no</allow_inactive><allow_active>auth_admin</allow_active></defaults>
+<annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/devlite-services-v6</annotate>
+</action></policyconfig>

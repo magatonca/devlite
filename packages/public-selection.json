@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "suite": "noble",
+  "architecture": "amd64",
+  "categories": {
+    "sistema": [
+      {
+        "id": "ca-certificates",
+        "provider": "ubuntu",
+        "package": "ca-certificates",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "locales",
+        "provider": "ubuntu",
+        "package": "locales",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "keyboard-configuration",
+        "provider": "ubuntu",
+        "package": "keyboard-configuration",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "console-setup",
+        "provider": "ubuntu",
+        "package": "console-setup",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "tzdata",
+        "provider": "ubuntu",
+        "package": "tzdata",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "language-pack-pt",
+        "provider": "ubuntu",
+        "package": "language-pack-pt",
+        "depends_on": [
+          "locales",
+          "language-pack-pt-base"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "language-pack-pt-base",
+        "provider": "ubuntu",
+        "package": "language-pack-pt-base",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "network-manager",
+        "provider": "ubuntu",
+        "package": "network-manager",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "openssh-client",
+        "provider": "ubuntu",
+        "package": "openssh-client",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      }
+    ],
+    "desenvolvimento": [
+      {
+        "id": "php-cli",
+        "provider": "ubuntu",
+        "package": "php-cli",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "php-mysql",
+        "provider": "ubuntu",
+        "package": "php-mysql",
+        "depends_on": [
+          "php-cli"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "php-xml",
+        "provider": "ubuntu",
+        "package": "php-xml",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "php-mbstring",
+        "provider": "ubuntu",
+        "package": "php-mbstring",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "php-curl",
+        "provider": "ubuntu",
+        "package": "php-curl",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "php-zip",
+        "provider": "ubuntu",
+        "package": "php-zip",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "apache2",
+        "provider": "ubuntu",
+        "package": "apache2",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "libapache2-mod-php",
+        "provider": "ubuntu",
+        "package": "libapache2-mod-php",
+        "depends_on": [
+          "apache2",
+          "php-cli"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "composer",
+        "provider": "ubuntu",
+        "package": "composer",
+        "depends_on": [
+          "php-cli"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "mariadb-server",
+        "provider": "ubuntu",
+        "package": "mariadb-server",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "git",
+        "provider": "ubuntu",
+        "package": "git",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "gh",
+        "provider": "ubuntu",
+        "package": "gh",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "docker.io",
+        "provider": "ubuntu",
+        "package": "docker.io",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "docker-compose-v2",
+        "provider": "ubuntu",
+        "package": "docker-compose-v2",
+        "depends_on": [
+          "docker.io"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "node-lts",
+        "provider": "node-upstream",
+        "package": "node-lts",
+        "depends_on": [
+          "ca-certificates"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "typescript",
+        "provider": "npm-upstream",
+        "package": "typescript",
+        "depends_on": [
+          "node-lts"
+        ],
+        "scope": "installed-and-live"
+      }
+    ],
+    "redes": [
+      {
+        "id": "nmap",
+        "provider": "ubuntu",
+        "package": "nmap",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "wireshark",
+        "provider": "ubuntu",
+        "package": "wireshark",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "tcpdump",
+        "provider": "ubuntu",
+        "package": "tcpdump",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "iperf3",
+        "provider": "ubuntu",
+        "package": "iperf3",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "remmina",
+        "provider": "ubuntu",
+        "package": "remmina",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "remmina-plugin-rdp",
+        "provider": "ubuntu",
+        "package": "remmina-plugin-rdp",
+        "depends_on": [
+          "remmina"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "remmina-plugin-vnc",
+        "provider": "ubuntu",
+        "package": "remmina-plugin-vnc",
+        "depends_on": [
+          "remmina"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "openvpn",
+        "provider": "ubuntu",
+        "package": "openvpn",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "network-manager-openvpn",
+        "provider": "ubuntu",
+        "package": "network-manager-openvpn",
+        "depends_on": [
+          "network-manager",
+          "openvpn"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "network-manager-openvpn-gnome",
+        "provider": "ubuntu",
+        "package": "network-manager-openvpn-gnome",
+        "depends_on": [
+          "network-manager-openvpn"
+        ],
+        "scope": "installed-and-live"
+      }
+    ],
+    "escritorio": [
+      {
+        "id": "libreoffice-writer",
+        "provider": "ubuntu",
+        "package": "libreoffice-writer",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "libreoffice-calc",
+        "provider": "ubuntu",
+        "package": "libreoffice-calc",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "libreoffice-impress",
+        "provider": "ubuntu",
+        "package": "libreoffice-impress",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "libreoffice-l10n-pt-br",
+        "provider": "ubuntu",
+        "package": "libreoffice-l10n-pt-br",
+        "depends_on": [
+          "libreoffice-writer",
+          "libreoffice-calc",
+          "libreoffice-impress"
+        ],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "libreoffice-help-pt-br",
+        "provider": "ubuntu",
+        "package": "libreoffice-help-pt-br",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "atril",
+        "provider": "ubuntu",
+        "package": "atril",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      }
+    ],
+    "interface": [
+      {
+        "id": "xfce4",
+        "provider": "ubuntu",
+        "package": "xfce4",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "xubuntu-default-settings",
+        "provider": "ubuntu",
+        "package": "xubuntu-default-settings",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "language-pack-gnome-pt",
+        "provider": "ubuntu",
+        "package": "language-pack-gnome-pt",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "greybird-gtk-theme",
+        "provider": "ubuntu",
+        "package": "greybird-gtk-theme",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      },
+      {
+        "id": "elementary-xfce-icon-theme",
+        "provider": "ubuntu",
+        "package": "elementary-xfce-icon-theme",
+        "depends_on": [],
+        "scope": "installed-and-live"
+      }
+    ]
+  },
+  "forbidden_apt": [
+    "nodejs",
+    "npm",
+    "node-typescript",
+    "docker-ce",
+    "docker-ce-cli",
+    "containerd.io",
+    "docker-compose-plugin"
+  ],
+  "profile": "public-release",
+  "optional_post_install": {
+    "vscode": {
+      "entry": "devlite-get-vscode.desktop",
+      "documentation": "https://code.visualstudio.com/docs/setup/linux",
+      "binary_bundled": false
+    }
+  }
+}

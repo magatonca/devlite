@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PROPOSTA SOMENTE: NÃO INSTALAR NESTA ETAPA. Helper ainda não implementado. -->
+<policyconfig><vendor>DevLite OS</vendor>
+<action id="org.devlite.control2.manage">
+<description>Gerenciar serviços autorizados do DevLite OS</description>
+<description xml:lang="pt_BR">Gerenciar serviços autorizados do DevLite OS</description>
+<message>Autentique como administrador para esta operação do DevLite Control.</message>
+<defaults><allow_any>no</allow_any><allow_inactive>no</allow_inactive><allow_active>auth_admin</allow_active></defaults>
+<annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/devlite-control2-helper</annotate>
+</action></policyconfig>

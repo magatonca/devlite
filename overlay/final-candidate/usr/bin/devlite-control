@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+"""Protótipo de consulta: nenhuma operação administrativa implementada."""
+import argparse,json,subprocess,os
+from pathlib import Path
+UNITS=('apache2.service','mariadb.service','docker.service','docker.socket','containerd.service','iperf3.service')
+def status(root=Path('/'),runner=subprocess.run):
+ p=root/'usr/share/devlite-os/identity.json'
+ if not p.is_file() or json.loads(p.read_text()).get('name')!='DevLite OS':raise ValueError('Executar somente no DevLite OS')
+ values={}
+ for unit in UNITS:
+  result=runner(['systemctl','show',unit,'--property=LoadState,ActiveState,UnitFileState','--no-pager'],capture_output=True,text=True,timeout=15)
+  values[unit]={'returncode':result.returncode,'state':result.stdout,'error':result.stderr}
+ return {'mode':'consulta','actions_require_administrator':True,'services':values}
+def request(action,service,runner=subprocess.run):
+ if action not in ('start','stop','restart') or service not in ('apache','mariadb','docker'):raise ValueError('Seleção inválida')
+ return runner(['/usr/bin/pkexec','/usr/libexec/devlite-service-control',action,service],text=True).returncode
+
+def interactive():
+ while True:
+  print('DevLite Control — serviços de desenvolvimento')
+  print(json.dumps(status(),ensure_ascii=False,indent=2))
+  print('1 Apache | 2 MariaDB | 3 Docker (inclui containerd/socket) | 0 sair')
+  choice=input('Serviço: ').strip()
+  if choice=='0':return
+  service={'1':'apache','2':'mariadb','3':'docker'}.get(choice)
+  if service is None:continue
+  action=input('i iniciar | p parar | r reiniciar | outra tecla voltar: ').strip().lower()
+  action={'i':'start','p':'stop','r':'restart'}.get(action)
+  if action:
+   print('A ação exige autenticação administrativa. Docker pode interromper contêineres.')
+   request(action,service)
+
+if __name__=='__main__':
+ p=argparse.ArgumentParser(description='Consultar e administrar os serviços DevLite com autenticação explícita.')
+ group=p.add_mutually_exclusive_group(required=True);group.add_argument('--status',action='store_true');group.add_argument('--interactive',action='store_true');a=p.parse_args()
+ try:
+  if a.status:print(json.dumps(status(),ensure_ascii=False,indent=2))
+  else:interactive()
+ except (ValueError,OSError) as error:raise SystemExit(str(error))

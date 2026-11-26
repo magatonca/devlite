@@ -20,3 +20,9 @@ Reservar adicionalmente pelo menos 10 GiB livres para o host. Planejar 60–80 G
 Meta provisória do sistema instalado: testar em VM com 2 vCPU e 4 GiB, registrar memória em repouso e com cargas representativas. IDE, navegador, Docker e banco simultâneos podem exigir mais RAM. Fixar limites finais apenas após medições.
 
 O runner acessou o diretório por modo alternativo após falha do sandbox. Git detectou dono diferente do processo de execução; inspeção usou safe.directory apenas na invocação, sem alterar configuração global. Não foi executado comando privilegiado.
+
+## Atualização da Fase 2 — 16/11/2026
+
+Filesystem expandido para 97 GiB; 84 GiB disponíveis antes da aquisição. RAM e swap mantidas. Há margem para aquisição e inspeção; build e VMs continuam sujeitos a medição de pico e execução sequencial. A propriedade dos arquivos da Fase 1 foi corrigida para magaton:magaton, excluindo .git, com autorização explícita do usuário. Operações da Fase 2 executadas como magaton.
+
+Após download, cópia de casper e extração de inspeção do initrd: aproximadamente 79 GiB livres. Os tamanhos expandidos declarados pela base são inferiores à estimativa conservadora inicial; o tamanho do DevLite com todos os pacotes ainda não foi medido. Nenhum build foi iniciado.

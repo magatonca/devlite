@@ -1,0 +1,36 @@
+#!/usr/bin/python3 -I
+"""Helper proposto: root autenticado, ações/units fixos, remáscara após ação."""
+import argparse,json,os,subprocess
+from pathlib import Path
+GROUPS={'apache':('apache2.service',),'mariadb':('mariadb.service','mysql.service'),'docker':('containerd.service','docker.socket','docker.service')}
+ACTIONS={'start','stop','restart'}
+
+def act(action,service,root=Path('/'),runner=subprocess.run):
+ if os.geteuid()!=0:raise ValueError('Exige autorização administrativa via PolicyKit')
+ p=root/'usr/share/devlite-os/identity.json'
+ if not p.is_file() or json.loads(p.read_text()).get('name')!='DevLite OS':raise ValueError('Somente DevLite OS')
+ if action not in ACTIONS or service not in GROUPS:raise ValueError('Ação/serviço fora da lista permitida')
+ units=GROUPS[service];history=[]
+ def call(operation,targets):
+  argv=['/usr/bin/systemctl','--no-ask-password',operation,'--',*targets]
+  result=runner(argv,capture_output=True,text=True,timeout=60,env={'PATH':'/usr/sbin:/usr/bin:/sbin:/bin','LANG':'C.UTF-8','SYSTEMD_PAGER':'cat'})
+  history.append({'argv':argv,'returncode':result.returncode,'stderr':result.stderr[-4000:]});return result.returncode
+ failure=None
+ try:
+  if action!='stop' and call('unmask',units):raise ValueError('Falha ao liberar temporariamente os serviços')
+  if call(action,tuple(reversed(units)) if action=='stop' else units):raise ValueError('A ação do serviço falhou')
+ except (ValueError,OSError,subprocess.TimeoutExpired) as error:
+  failure=str(error)
+  if action!='stop':
+   try:call('stop',tuple(reversed(units)))
+   except (OSError,subprocess.TimeoutExpired):pass
+ finally:
+  try:
+   if call('mask',units):failure=(failure or '')+' Não foi possível restaurar todas as máscaras.'
+  except (OSError,subprocess.TimeoutExpired) as error:failure=(failure or '')+' '+str(error)
+ if failure:raise ValueError(failure+' Histórico: '+json.dumps(history))
+ return {'status':'completed','action':action,'service':service,'units':units,'boot_masks_restored':True,'history':history}
+if __name__=='__main__':
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('action',choices=sorted(ACTIONS));p.add_argument('service',choices=sorted(GROUPS));a=p.parse_args()
+ try:print(json.dumps(act(a.action,a.service),ensure_ascii=False,indent=2))
+ except (ValueError,OSError) as error:raise SystemExit(str(error))

@@ -1,6 +1,6 @@
 # Matriz de aceitação futura
 
-Todas as linhas estão **pendentes**; não houve build ou teste da ISO nesta fase.
+A autenticidade da base foi aprovada na Fase 2. Os testes de execução e da futura distribuição permanecem **pendentes**. A reconstrução experimental da Fase 3B foi validada estruturalmente, com os testes manuais adiados por decisão do usuário. A preparação BIOS/UEFI da Fase 3A está em [procedimento específico](../docs/fase3a-testes-iso.md).
 
 | Área | Ensaio e resultado esperado |
 |---|---|

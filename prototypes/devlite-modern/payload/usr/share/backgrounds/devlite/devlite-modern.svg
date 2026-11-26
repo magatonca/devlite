@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#171c24"/>
+<path d="M0 820 H1920 M1280 0 V1080" stroke="#263342" stroke-width="2"/>
+<path d="M260 450 V620 H430" fill="none" stroke="#348bd6" stroke-width="8"/>
+<text x="470" y="550" font-family="sans-serif" font-size="64" fill="#e3e9f0">DevLite OS</text>
+<text x="474" y="600" font-family="sans-serif" font-size="24" fill="#91a3b7">Developer + Network Edition</text>
+</svg>

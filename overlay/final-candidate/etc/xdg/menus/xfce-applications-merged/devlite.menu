@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu><Name>Xfce</Name><Menu><Name>DevLite</Name><Directory>devlite.directory</Directory>
+<Include><Category>X-DevLite</Category></Include>
+<Menu><Name>DevLiteDevelopment</Name><Directory>devlite-development.directory</Directory><Include><Category>Development</Category></Include></Menu>
+<Menu><Name>DevLiteNetwork</Name><Directory>devlite-network.directory</Directory><Include><Category>Network</Category></Include></Menu>
+<Menu><Name>DevLiteOffice</Name><Directory>devlite-office.directory</Directory><Include><Category>Office</Category></Include></Menu>
+</Menu></Menu>

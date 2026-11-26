@@ -1,0 +1,156 @@
+{
+  "iso": "xubuntu-24.04.5-minimal-amd64.iso",
+  "sha256": "9d47f975696ce496b8be882b6d7cc9079c1ea89fb625ac2c86caa63a4f180033",
+  "execucoes": {
+    "bios": {
+      "ambiente": {
+        "data": "",
+        "operador": "",
+        "versao_workstation": "",
+        "windows": "",
+        "vm": "",
+        "cpu": "",
+        "ram": "",
+        "disco_virtual": "",
+        "rede": "",
+        "secure_boot": "",
+        "modo_instalacao": "",
+        "atualizacao_instalador": "",
+        "idioma_live": ""
+      },
+      "criterios": {
+        "isolamento_disco": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "hash_iso": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "boot_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "firmware_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "xfce_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "teclado_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "instalador": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "instalacao": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "boot_sem_iso": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "firmware_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "xfce_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "locale_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "persistencia_reboot": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "desligamento": {
+          "status": "pendente",
+          "evidencia": ""
+        }
+      }
+    },
+    "uefi": {
+      "ambiente": {
+        "data": "",
+        "operador": "",
+        "versao_workstation": "",
+        "windows": "",
+        "vm": "",
+        "cpu": "",
+        "ram": "",
+        "disco_virtual": "",
+        "rede": "",
+        "secure_boot": "",
+        "modo_instalacao": "",
+        "atualizacao_instalador": "",
+        "idioma_live": ""
+      },
+      "criterios": {
+        "isolamento_disco": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "hash_iso": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "boot_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "firmware_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "xfce_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "teclado_live": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "instalador": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "instalacao": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "boot_sem_iso": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "firmware_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "xfce_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "locale_instalado": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "persistencia_reboot": {
+          "status": "pendente",
+          "evidencia": ""
+        },
+        "desligamento": {
+          "status": "pendente",
+          "evidencia": ""
+        }
+      }
+    }
+  }
+}

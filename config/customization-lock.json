@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "resolved": false,
+  "suite": "noble",
+  "architecture": "amd64",
+  "apt_packages": {},
+  "external_artifacts": {},
+  "note": "Modelo não resolvido. Antes da 4B: resolver dependências em alvo descartável e fixar versões, origens, hashes e evidências de assinatura."
+}

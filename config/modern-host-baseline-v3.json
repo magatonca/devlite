@@ -1,0 +1,57 @@
+{
+  "authorized_host_transition": {
+    "apt_commandline": "apt-get -y --no-install-recommends install xvfb gir1.2-gtk-3.0",
+    "changed_host_critical_paths": [
+      "/var/lib/apt/extended_states",
+      "/var/lib/dpkg/status"
+    ],
+    "current_hashes": {
+      "/var/lib/apt/extended_states": "00306f277d9c2157221470ba65ce665e8faabe72f0479256f296f4c38bc49b43",
+      "/var/lib/dpkg/status": "790d119695327b07fb3b2222a498fc95219cb514b46915a21859853fec02e0d0"
+    },
+    "evidence_report": {
+      "path": "reports/host-baseline-v3-apt-transaction.json",
+      "sha256": "2e7974bafee7ada5a449dfa8d8c8ff33585acce3b8a8da03088e017beef6ccf0"
+    },
+    "id": "authorized-gtk3-xvfb-test-tools-2026-11-22",
+    "previous_hashes": {
+      "/var/lib/apt/extended_states": "874c5ee29eb26b405bd24b9c15879f466cd51311e1866039342ff3263ccd81fb",
+      "/var/lib/dpkg/status": "4b167d947d7c25a2343f2dff02a85e777c06ce50c846635ac14557af38be6277"
+    }
+  },
+  "baseline_id": "devlite-modern-host-baseline-v3-2026-11-22",
+  "created_utc": "2026-11-22T21:19:11Z",
+  "current_host_critical_files": {
+    "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+    "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+    "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f",
+    "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+    "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+    "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+    "/var/lib/apt/extended_states": "00306f277d9c2157221470ba65ce665e8faabe72f0479256f296f4c38bc49b43",
+    "/var/lib/dpkg/status": "790d119695327b07fb3b2222a498fc95219cb514b46915a21859853fec02e0d0"
+  },
+  "schema": 1,
+  "scope": "host-critical-files-only; target Base/Live inventories, source images and ISO are unchanged",
+  "supersedes": {
+    "baseline_id": "devlite-modern-host-baseline-v2-2026-11-21",
+    "host_critical_files": {
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/var/lib/apt/extended_states": "874c5ee29eb26b405bd24b9c15879f466cd51311e1866039342ff3263ccd81fb",
+      "/var/lib/dpkg/status": "4b167d947d7c25a2343f2dff02a85e777c06ce50c846635ac14557af38be6277"
+    },
+    "path": "config/modern-host-baseline-v2.json",
+    "sha256": "683648417001f9491780f11575d1ad4e90c9fcd68ff85221aa4d8e7b7b73c7f2"
+  },
+  "target_artifacts_unchanged": {
+    "base_squashfs_sha256": "72c74045749b790d01ceae52387a0ca1054c3a99848a93520d5057fef6fea4a0",
+    "iso_v2_sha256": "d32779839ad6bd67dbc1f157b5d3f646ac1df55ab4afef430c5d6f9abef12e75",
+    "live_squashfs_sha256": "013cd6ec9b6b934128a755f3c384d05337e741cc7021f76ab17fb4915e68b0d9",
+    "pack_contract_sha256": "babdc55e0604d96180f7df8c2a89d6cd3712934ee7442b60216f9e66f00b25b1"
+  }
+}

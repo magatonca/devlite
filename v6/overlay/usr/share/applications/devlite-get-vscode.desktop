@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Obter Visual Studio Code
+Comment=Instalação opcional pela fonte oficial
+Exec=xdg-open https://code.visualstudio.com/docs/setup/linux
+TryExec=xdg-open
+Icon=internet-web-browser
+Terminal=false
+Categories=Development;X-DevLite;

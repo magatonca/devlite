@@ -1,0 +1,11 @@
+[Configuration]
+FontName=DejaVu Sans Mono 10
+ColorForeground=#F0F6FC
+ColorBackground=#131926
+ColorPalette=#131926;#FF7B86;#87DDA1;#F5D778;#8CBDF8;#D6AEF5;#58DFC8;#D6E4F0;#687D98;#FFAAB1;#B3EDB5;#FFE7A1;#AED4FF;#E8CCFF;#94EFE2;#F0F6FC
+ColorSelection=#254B69
+ColorSelectionUseDefault=FALSE
+ColorCursor=#58DFC8
+ColorBold=#FFFFFF
+ColorBoldUseDefault=FALSE
+TabActivityColor=#58DFC8
