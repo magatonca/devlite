@@ -1,0 +1,272 @@
+{
+  "scope": "44 pacotes Ubuntu presentes nos manifests auditados; não é teste funcional",
+  "packages": {
+    "apache2": {
+      "package": "apache2",
+      "base": "2.4.58-1ubuntu8.19",
+      "live": "2.4.58-1ubuntu8.19",
+      "functional_test": "pending"
+    },
+    "atril": {
+      "package": "atril",
+      "base": "1.26.2-3build2",
+      "live": "1.26.2-3build2",
+      "functional_test": "pending"
+    },
+    "ca-certificates": {
+      "package": "ca-certificates",
+      "base": "20260816ubuntu0.24.04.2",
+      "live": "20260816ubuntu0.24.04.2",
+      "functional_test": "pending"
+    },
+    "php-cli": {
+      "package": "php-cli",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "composer": {
+      "package": "composer",
+      "base": "2.7.1-2",
+      "live": "2.7.1-2",
+      "functional_test": "pending"
+    },
+    "console-setup": {
+      "package": "console-setup",
+      "base": "1.226ubuntu1.1",
+      "live": "1.226ubuntu1.1",
+      "functional_test": "pending"
+    },
+    "docker.io": {
+      "package": "docker.io",
+      "base": "29.1.3-0ubuntu3~24.04.2",
+      "live": "29.1.3-0ubuntu3~24.04.2",
+      "functional_test": "pending"
+    },
+    "docker-compose-v2": {
+      "package": "docker-compose-v2",
+      "base": "2.40.3+ds1-0ubuntu1~24.04.1",
+      "live": "2.40.3+ds1-0ubuntu1~24.04.1",
+      "functional_test": "pending"
+    },
+    "elementary-xfce-icon-theme": {
+      "package": "elementary-xfce-icon-theme",
+      "base": "0.19-1",
+      "live": "0.19-1",
+      "functional_test": "pending"
+    },
+    "gh": {
+      "package": "gh",
+      "base": "2.45.0-1ubuntu0.3",
+      "live": "2.45.0-1ubuntu0.3",
+      "functional_test": "pending"
+    },
+    "git": {
+      "package": "git",
+      "base": "1:2.43.0-1ubuntu7.4",
+      "live": "1:2.43.0-1ubuntu7.4",
+      "functional_test": "pending"
+    },
+    "greybird-gtk-theme": {
+      "package": "greybird-gtk-theme",
+      "base": "3.23.3-1",
+      "live": "3.23.3-1",
+      "functional_test": "pending"
+    },
+    "iperf3": {
+      "package": "iperf3",
+      "base": "3.16-1build2",
+      "live": "3.16-1build2",
+      "functional_test": "pending"
+    },
+    "keyboard-configuration": {
+      "package": "keyboard-configuration",
+      "base": "1.226ubuntu1.1",
+      "live": "1.226ubuntu1.1",
+      "functional_test": "pending"
+    },
+    "language-pack-gnome-pt": {
+      "package": "language-pack-gnome-pt",
+      "base": "1:24.04+20260905",
+      "live": "1:24.04+20260905",
+      "functional_test": "pending"
+    },
+    "language-pack-pt-base": {
+      "package": "language-pack-pt-base",
+      "base": "1:24.04+20260905",
+      "live": "1:24.04+20260905",
+      "functional_test": "pending"
+    },
+    "locales": {
+      "package": "locales",
+      "base": "2.39-0ubuntu8.12",
+      "live": "2.39-0ubuntu8.12",
+      "functional_test": "pending"
+    },
+    "language-pack-pt": {
+      "package": "language-pack-pt",
+      "base": "1:24.04+20260905",
+      "live": "1:24.04+20260905",
+      "functional_test": "pending"
+    },
+    "libapache2-mod-php": {
+      "package": "libapache2-mod-php",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "libreoffice-calc": {
+      "package": "libreoffice-calc",
+      "base": "4:24.2.7-0ubuntu0.24.04.7",
+      "live": "4:24.2.7-0ubuntu0.24.04.7",
+      "functional_test": "pending"
+    },
+    "libreoffice-help-pt-br": {
+      "package": "libreoffice-help-pt-br",
+      "base": "4:24.2.7-0ubuntu0.24.04.7",
+      "live": "4:24.2.7-0ubuntu0.24.04.7",
+      "functional_test": "pending"
+    },
+    "libreoffice-impress": {
+      "package": "libreoffice-impress",
+      "base": "4:24.2.7-0ubuntu0.24.04.7",
+      "live": "4:24.2.7-0ubuntu0.24.04.7",
+      "functional_test": "pending"
+    },
+    "libreoffice-writer": {
+      "package": "libreoffice-writer",
+      "base": "4:24.2.7-0ubuntu0.24.04.7",
+      "live": "4:24.2.7-0ubuntu0.24.04.7",
+      "functional_test": "pending"
+    },
+    "libreoffice-l10n-pt-br": {
+      "package": "libreoffice-l10n-pt-br",
+      "base": "4:24.2.7-0ubuntu0.24.04.7",
+      "live": "4:24.2.7-0ubuntu0.24.04.7",
+      "functional_test": "pending"
+    },
+    "mariadb-server": {
+      "package": "mariadb-server",
+      "base": "1:10.11.14-0ubuntu0.24.04.1",
+      "live": "1:10.11.14-0ubuntu0.24.04.1",
+      "functional_test": "pending"
+    },
+    "network-manager": {
+      "package": "network-manager",
+      "base": "1.46.0-1ubuntu2.8",
+      "live": "1.46.0-1ubuntu2.8",
+      "functional_test": "pending"
+    },
+    "openvpn": {
+      "package": "openvpn",
+      "base": "2.6.19-0ubuntu0.24.04.5",
+      "live": "2.6.19-0ubuntu0.24.04.5",
+      "functional_test": "pending"
+    },
+    "network-manager-openvpn": {
+      "package": "network-manager-openvpn",
+      "base": "1.10.2-4ubuntu0.2",
+      "live": "1.10.2-4ubuntu0.2",
+      "functional_test": "pending"
+    },
+    "network-manager-openvpn-gnome": {
+      "package": "network-manager-openvpn-gnome",
+      "base": "1.10.2-4ubuntu0.2",
+      "live": "1.10.2-4ubuntu0.2",
+      "functional_test": "pending"
+    },
+    "nmap": {
+      "package": "nmap",
+      "base": "7.94+git20230807.3be01efb1+dfsg-3build2",
+      "live": "7.94+git20230807.3be01efb1+dfsg-3build2",
+      "functional_test": "pending"
+    },
+    "openssh-client": {
+      "package": "openssh-client",
+      "base": "1:9.6p1-3ubuntu13.20",
+      "live": "1:9.6p1-3ubuntu13.20",
+      "functional_test": "pending"
+    },
+    "php-curl": {
+      "package": "php-curl",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "php-mbstring": {
+      "package": "php-mbstring",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "php-mysql": {
+      "package": "php-mysql",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "php-xml": {
+      "package": "php-xml",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "php-zip": {
+      "package": "php-zip",
+      "base": "2:8.3+93ubuntu2",
+      "live": "2:8.3+93ubuntu2",
+      "functional_test": "pending"
+    },
+    "remmina": {
+      "package": "remmina",
+      "base": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "live": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "functional_test": "pending"
+    },
+    "remmina-plugin-rdp": {
+      "package": "remmina-plugin-rdp",
+      "base": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "live": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "functional_test": "pending"
+    },
+    "remmina-plugin-vnc": {
+      "package": "remmina-plugin-vnc",
+      "base": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "live": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "functional_test": "pending"
+    },
+    "tcpdump": {
+      "package": "tcpdump",
+      "base": "4.99.4-3ubuntu4.24.04.1",
+      "live": "4.99.4-3ubuntu4.24.04.1",
+      "functional_test": "pending"
+    },
+    "tzdata": {
+      "package": "tzdata",
+      "base": "2026e-0ubuntu0.24.04.1",
+      "live": "2026e-0ubuntu0.24.04.1",
+      "functional_test": "pending"
+    },
+    "wireshark": {
+      "package": "wireshark",
+      "base": "4.2.2-1.1build3",
+      "live": "4.2.2-1.1build3",
+      "functional_test": "pending"
+    },
+    "xfce4": {
+      "package": "xfce4",
+      "base": "4.18",
+      "live": "4.18",
+      "functional_test": "pending"
+    },
+    "xubuntu-default-settings": {
+      "package": "xubuntu-default-settings",
+      "base": "24.04.4",
+      "live": "24.04.4",
+      "functional_test": "pending"
+    }
+  },
+  "node_typescript": "not acquired, not installed",
+  "vscode": "optional documentation entry staged; binary excluded",
+  "actual_guest_tests": false
+}

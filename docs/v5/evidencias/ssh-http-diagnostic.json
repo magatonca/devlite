@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh-server_9.6p1-3ubuntu13.20_amd64.deb",
+    "code": 403,
+    "headers": {
+      "Date": "Tue, 24 Nov 2026 13:41:27 GMT",
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "17",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "Referrer-Policy": "same-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "set-cookie": "__cf_bm=KWsYhbcfXfnRTjI72L8u5lSC7KXjTlo8bg54ms2_VHk-1795527687.6487577-1.0.1.1-kFFwbrIzRkubf8.jdoUY_d56qtfBvs8cSxc4OzonYIgKLTU5R0ZSIvHLjlJJuCg8kVQV8qXJMf9m1nrtlelsZq1ug4Pu8pBdjHdC_nzgTDufKVwl15DSBNb21Qz0t3We; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=ubuntu.com; Expires=Tue, 24 Nov 2026 14:11:27 GMT",
+      "Server": "cloudflare",
+      "CF-RAY": "a5f8d4cfccfd8ffb-GRU"
+    },
+    "body": "error code: 1010\n"
+  },
+  {
+    "url": "https://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh-server_9.6p1-3ubuntu13.20_amd64.deb",
+    "code": 403,
+    "headers": {
+      "Date": "Tue, 24 Nov 2026 13:41:28 GMT",
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "17",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "Referrer-Policy": "same-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "set-cookie": "__cf_bm=8wl5PKEBYfVV3qQQVNNXQwuKO9dogqeZR3jAsTWZTIs-1795527688.4146085-1.0.1.1-nEO8WEAlwIgycGMjg584G.ncjgv5CgfIgZzJgSDzCLBgsICbI2AV0yg8H4hiZg5YlkZ_MJyjEj5A5nx0EeFq5cMnoq4FKBq2afyxeT9Ot6IgbSLsNL3lfAmDblCNm9Yr; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=ubuntu.com; Expires=Tue, 24 Nov 2026 14:11:28 GMT",
+      "Server": "cloudflare",
+      "CF-RAY": "a5f8d4d49df9052c-GRU"
+    },
+    "body": "error code: 1010\n"
+  }
+]

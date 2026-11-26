@@ -1,0 +1,22 @@
+{
+  "status": "existing_candidate_independently_verified",
+  "checked_utc": "2026-11-18T19:20:59.419881+00:00",
+  "iso": "/home/magaton/DevLite-OS/artifacts/release-1hu5dx5v/devlite-os-1.0-amd64.iso",
+  "bytes": 3603496960,
+  "sha256": "2c699f3facb3f84ced392fd37bc25a9b7e46c74022c62816be2119af7f294d77",
+  "sha256_full_read_verified": true,
+  "release_report": "/home/magaton/DevLite-OS/artifacts/release-1hu5dx5v/release-report.json",
+  "release_report_sha256": "14114ea47b092a5573977f81f22a8a71490bef65657ab0b6b0af4c5494a08fe9",
+  "iso_contract_sha256": "b47bc900132ada42a80d33892f981e429dd42d2ff341dece185d4734599159fe",
+  "build_count": 1,
+  "no_second_build": true,
+  "host_critical_unchanged": true,
+  "host_config_unchanged": true,
+  "gates_disabled": true,
+  "root_operations_for_iso": false,
+  "boot_vm": "not_tested",
+  "installation_vm": "not_tested",
+  "qemu_available": false,
+  "kvm_available": false,
+  "free_bytes": 41218682880
+}

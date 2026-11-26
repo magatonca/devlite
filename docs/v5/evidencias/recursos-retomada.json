@@ -1,0 +1,13 @@
+{
+  "free_bytes": 48120717312,
+  "free_gib": 44.82,
+  "minimum_reserve_gib": 20,
+  "memory": {
+    "MemTotal": "4001308 kB",
+    "MemAvailable": "2649024 kB",
+    "SwapTotal": "4000764 kB",
+    "SwapFree": "3426812 kB"
+  },
+  "thermal_sensors": [],
+  "thermal_hypervisor_validation_required": true
+}

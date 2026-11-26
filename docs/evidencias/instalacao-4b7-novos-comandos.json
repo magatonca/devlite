@@ -1,0 +1,24 @@
+{
+  "probe": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/executar-programas.py",
+    "--probe",
+    "--job",
+    "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4",
+    "--approval-sha256",
+    "66d2ff9a40ac8a63a851db8524a690ba188d298a92aad4b0a5c1eee012f147e6"
+  ],
+  "install": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/instalar-release-root.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-00j3px2e",
+    "--approval-sha256",
+    "de1ff81e62960adf05cb9079cdb71136e7f75025fff08d4465d805309f4ab8b2"
+  ],
+  "sequence": "probe; somente se aprovado, instalar Base → Live; restaurar flags em finally",
+  "scope": "nova tentativa em novos diretórios; sem integração, ISO ou VMs",
+  "permissions_enabled": false
+}

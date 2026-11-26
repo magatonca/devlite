@@ -1,0 +1,235 @@
+{
+  "captured_utc": "2026-11-17T12:47:10.532337+00:00",
+  "release_job": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv",
+  "result": {
+    "status": "installed_and_audited",
+    "iso_generated": false,
+    "rootfs_integration_executed": false,
+    "contract_sha256": "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1",
+    "receipt": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/accepted-pair.json",
+    "results": {
+      "base": {
+        "target": "base",
+        "status": "validated",
+        "protected_entries": 477,
+        "final_status_sha256": "9d9a17b3990eaf6bb23dc1547b570477648e2f0a8ee88d1f5167a761dc6e687c",
+        "base_live_reconciliation": "full views; delta ainda não gerado",
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4",
+          "bytes": 12884901888,
+          "sha256": "1afd8b0caba906a555099faca6066acf4826e9de14867358f9d908be6679f30b"
+        }
+      },
+      "live": {
+        "target": "live",
+        "status": "validated",
+        "protected_entries": 43701,
+        "final_status_sha256": "c21d232f74c7eb999bde728e1b0aa9a1b8f175e51e8ee7371bba5443899d04f3",
+        "base_live_reconciliation": "full views; delta ainda não gerado",
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4",
+          "bytes": 12884901888,
+          "sha256": "b69ca4b77ef71470aec0deb74b9bad54bbc1d25a83ae574ab318f6c03d288394"
+        }
+      }
+    },
+    "rebase_required": true
+  },
+  "state": {
+    "state": "accepted",
+    "job_sha256": "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115"
+  },
+  "accepted_pair": {
+    "job_sha256": "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115",
+    "results": {
+      "base": {
+        "target": "base",
+        "status": "validated",
+        "protected_entries": 477,
+        "final_status_sha256": "9d9a17b3990eaf6bb23dc1547b570477648e2f0a8ee88d1f5167a761dc6e687c",
+        "base_live_reconciliation": "full views; delta ainda não gerado",
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4",
+          "bytes": 12884901888,
+          "sha256": "1afd8b0caba906a555099faca6066acf4826e9de14867358f9d908be6679f30b"
+        }
+      },
+      "live": {
+        "target": "live",
+        "status": "validated",
+        "protected_entries": 43701,
+        "final_status_sha256": "c21d232f74c7eb999bde728e1b0aa9a1b8f175e51e8ee7371bba5443899d04f3",
+        "base_live_reconciliation": "full views; delta ainda não gerado",
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4",
+          "bytes": 12884901888,
+          "sha256": "b69ca4b77ef71470aec0deb74b9bad54bbc1d25a83ae574ab318f6c03d288394"
+        }
+      }
+    },
+    "rebase_required": true,
+    "iso_generated": false
+  },
+  "host_guard": {
+    "before": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "after": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "unchanged": true,
+    "critical_before": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    },
+    "critical_after": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    }
+  },
+  "probe_attestation": {
+    "job_sha256": "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115",
+    "status": "probe_passed"
+  },
+  "probe_results": {
+    "job_sha256": "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115",
+    "results": {
+      "base": {
+        "target": "base",
+        "status": "probe_validated",
+        "actual_cgroup_limits": {
+          "memory.max": "2684354560",
+          "memory.swap.max": "1073741824",
+          "pids.max": "128",
+          "cpu.max": "100000 100000"
+        },
+        "checks": {
+          "bundle_write_errno": 30,
+          "capabilities": {
+            "CapAmb": 0,
+            "CapBnd": 2147484155,
+            "CapEff": 2147484155,
+            "CapInh": 0,
+            "CapPrm": 2147484155
+          },
+          "chroot_denied": true,
+          "devices": [
+            "fd",
+            "null",
+            "random",
+            "stderr",
+            "stdin",
+            "stdout",
+            "urandom",
+            "zero"
+          ],
+          "host_sentinel_read_errno": 2,
+          "host_sentinel_write_open_errno": 2,
+          "mount_denied_returncode": 32,
+          "mount_flags": {
+            "/": [
+              "nodev",
+              "nosuid",
+              "relatime",
+              "rw"
+            ],
+            "/proc": [
+              "nodev",
+              "noexec",
+              "nosuid",
+              "relatime",
+              "ro"
+            ],
+            "/run/devlite": [
+              "nodev",
+              "nosuid",
+              "relatime",
+              "ro"
+            ],
+            "/run/devlite/debs": [
+              "nodev",
+              "noexec",
+              "nosuid",
+              "relatime",
+              "ro"
+            ]
+          },
+          "namespaces": {
+            "cgroup": "cgroup:[4026532256]",
+            "ipc": "ipc:[4026532254]",
+            "mnt": "mnt:[4026532252]",
+            "net": "net:[4026532257]",
+            "pid": "pid:[4026532255]",
+            "uts": "uts:[4026532253]"
+          },
+          "network_denied_errno": 101,
+          "network_interfaces": [
+            "lo"
+          ],
+          "parent_root": "access_denied",
+          "target_write_verified": true,
+          "visible_pids": [
+            1,
+            22
+          ]
+        },
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/base.ext4",
+          "bytes": 12884901888,
+          "sha256": "1d8eb99c2bf4376dbdb03c87b5c42ee09a3cb83c057c551deec37e676748370d"
+        }
+      }
+    },
+    "critical_host_unchanged": true,
+    "sentinel_unchanged": true
+  },
+  "fsck_logs": {
+    "base": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\n/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4: 113883/786432 files (0.1% non-contiguous), 1047959/3145728 blocks\ne2fsck 1.47.0 (5-Feb-2023)\n",
+    "live": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\n/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4: 176553/786432 files (0.2% non-contiguous), 1539979/3145728 blocks\ne2fsck 1.47.0 (5-Feb-2023)\n"
+  },
+  "image_allocated_bytes": {
+    "base": 4079443968,
+    "live": 6141853696
+  },
+  "private_evidence_sha256": {
+    "state.json": "4ca7ff3312dc72c92f2139b774608152b919d6720453723f494e1240b8a13ae7",
+    "accepted-pair.json": "50da9eb4552485c833ca66d263965cd3e136e8318bba46e42bd11ac965eb49fa",
+    "host-before.json": "ebe2fd9f879a1484825b89cd6eb73060725516096e7b7471c9434fcdf7d08682",
+    "host-guard.json": "989b3fc7cb1f430a4edaa652ed8e9ee7f83af6928e6f044ee6de0fced8063781",
+    "authentication.json": "7003ef6a4e9a27722c07069d5d73af599640626de8ce9d89787dbe9b5af2c9b4",
+    "base-fsck.log": "54fff82ef911b708dcc28b02fd30d52b2c1955e1fe4f6f868e67d6e840cd9492",
+    "live-fsck.log": "6087ccabac6b171b57056a883f0e05483c2bff01a1bcec416bd677b08734040b",
+    "devlite-wnej6dpv-base.log": "7379608a79b1ecfa31181f4bb0977207e4e9364b1137ef7cd42acf24323951e4",
+    "devlite-wnej6dpv-live.log": "953f64787d6f5ee8d2cb6cfa98f9351cc682a9858142155a438b4148a928eae8"
+  },
+  "mounts_residual": [],
+  "loop_backings_residual": [],
+  "units": {
+    "base": "ActiveState=inactive\nSubState=dead",
+    "live": "ActiveState=inactive\nSubState=dead"
+  },
+  "free_bytes": 44319162368,
+  "flags": {
+    "build_habilitado": false,
+    "criacao_vms_autorizada": false,
+    "instalacao_xubuntu_autorizada": false,
+    "personalizacao_habilitada": false,
+    "executor_autorizado": false,
+    "probe_autorizado": false,
+    "recuperacao_autorizada": false,
+    "download_pacotes_autorizado": false,
+    "integracao_camadas_autorizada": false,
+    "iso_final_autorizada": false
+  },
+  "iso_generated": false,
+  "pack_executed": false
+}

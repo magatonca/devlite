@@ -1,0 +1,398 @@
+"""Read-only, bounded host information for the DevControl GTK prototype."""
+import json
+import os
+import platform
+import re
+import shutil
+import subprocess
+from pathlib import Path
+
+
+COMMANDS = {
+    'systemctl': '/usr/bin/systemctl',
+    'ip': '/usr/sbin/ip',
+    'resolvectl': '/usr/bin/resolvectl',
+    'nmcli': '/usr/bin/nmcli',
+    'xfconf-query': '/usr/bin/xfconf-query',
+    'php': '/usr/bin/php',
+    'node': '/usr/bin/node',
+    'npm': '/usr/bin/npm',
+    'tsc': '/usr/bin/tsc',
+    'git': '/usr/bin/git',
+    'docker': '/usr/bin/docker',
+    'code': '/usr/bin/code',
+    'openvpn': '/usr/sbin/openvpn',
+    'apt-check': '/usr/lib/update-notifier/apt-check',
+}
+COMMAND_TIMEOUT = 3
+OUTPUT_LIMIT = 8192
+ENVIRONMENT = {
+    'PATH': '/usr/sbin:/usr/bin:/sbin:/bin',
+    'LANG': 'C.UTF-8',
+    'LC_ALL': 'C.UTF-8',
+    'HOME': '/nonexistent',
+}
+SESSION_ENVIRONMENT = (
+    'DBUS_SESSION_BUS_ADDRESS',
+    'XDG_RUNTIME_DIR',
+    'DISPLAY',
+    'WAYLAND_DISPLAY',
+    'XAUTHORITY',
+)
+SERVICE_UNITS = {
+    'Docker': 'docker.service',
+    'Firewall UFW': 'ufw.service',
+    'OpenVPN': 'openvpn.service',
+}
+VERSION_CHECKS = (
+    ('PHP', 'php', ('--version',)),
+    ('Node.js', 'node', ('--version',)),
+    ('npm', 'npm', ('--version',)),
+    ('TypeScript', 'tsc', ('--version',)),
+    ('Git', 'git', ('--version',)),
+    ('Docker CLI', 'docker', ('--version',)),
+    ('Visual Studio Code', 'code', ('--version',)),
+    ('OpenVPN', 'openvpn', ('--version',)),
+)
+
+
+class DevControlCollector:
+    """Collect a fresh snapshot; no command changes system state."""
+
+    def __init__(self, root=Path('/'), runner=subprocess.run, disk_usage=shutil.disk_usage):
+        self.root = Path(root)
+        self.runner = runner
+        self.disk_usage = disk_usage
+
+    def _read(self, path):
+        try:
+            return (self.root / path.lstrip('/')).read_text(errors='replace')
+        except OSError:
+            return ''
+
+    def _run(self, command, *arguments):
+        executable = COMMANDS.get(command)
+        if executable is None:
+            return None, 'Comando de consulta não permitido'
+        environment = ENVIRONMENT.copy()
+        for key in SESSION_ENVIRONMENT:
+            value = os.environ.get(key)
+            if value and '\x00' not in value and len(value) <= 4096:
+                environment[key] = value
+        try:
+            result = self.runner(
+                [executable, *arguments],
+                capture_output=True,
+                text=True,
+                timeout=COMMAND_TIMEOUT,
+                check=False,
+                shell=False,
+                env=environment,
+            )
+        except subprocess.TimeoutExpired:
+            return None, 'tempo limite excedido'
+        except OSError as error:
+            if isinstance(error, FileNotFoundError):
+                return None, 'componente não instalado'
+            return None, 'falha ao consultar o sistema'
+        stdout = (result.stdout or '')[:OUTPUT_LIMIT]
+        stderr = (result.stderr or '')[:OUTPUT_LIMIT]
+        return (result.returncode, stdout, stderr), None
+
+    @staticmethod
+    def _reason(error, stderr=''):
+        if error:
+            return error
+        detail = stderr.strip().splitlines()
+        if not detail:
+            return 'consulta indisponível'
+        return detail[0][:240]
+
+    def _service(self, unit):
+        result, error = self._run(
+            'systemctl', 'show', unit,
+            '--property=LoadState,ActiveState,SubState,UnitFileState',
+            '--no-pager',
+        )
+        if error:
+            return {'state': 'Indisponível: ' + self._reason(error)}
+        returncode, output, stderr = result
+        if returncode:
+            return {'state': 'Indisponível: ' + self._reason(None, stderr)}
+        properties = {}
+        for line in output.splitlines():
+            key, separator, value = line.partition('=')
+            if separator:
+                properties[key] = value
+        load = properties.get('LoadState', 'unknown')
+        active = properties.get('ActiveState', 'unknown')
+        if load == 'not-found':
+            state = 'Não instalado'
+        else:
+            state = {
+                'active': 'Ativo',
+                'inactive': 'Parado',
+                'failed': 'Falhou',
+                'activating': 'Iniciando',
+                'deactivating': 'Parando',
+            }.get(active, 'Desconhecido')
+        startup = {
+            'enabled': 'ativada',
+            'enabled-runtime': 'ativada até reiniciar',
+            'disabled': 'desativada',
+            'masked': 'bloqueada',
+            'masked-runtime': 'bloqueada até reiniciar',
+            'static': 'gerenciada por dependências',
+            'indirect': 'indireta',
+        }.get(properties.get('UnitFileState'), 'desconhecida')
+        substate = properties.get('SubState')
+        if substate and active in ('activating', 'deactivating', 'failed'):
+            state += ' (' + substate + ')'
+        return {'state': state, 'startup': startup}
+
+    @staticmethod
+    def _version_line(output):
+        for line in output.splitlines():
+            if line.strip():
+                return line.strip()[:240]
+        return 'Versão não informada'
+
+    def overview(self):
+        identity = {}
+        try:
+            identity = json.loads(self._read('/usr/share/devlite-os/identity.json') or '{}')
+        except (ValueError, TypeError):
+            pass
+        release = self._read('/etc/os-release')
+        pretty_name = next(
+            (line.split('=', 1)[1].strip().strip('"') for line in release.splitlines()
+             if line.startswith('PRETTY_NAME=')),
+            'Distribuição não identificada',
+        )
+        version = identity.get('version')
+        system_name = identity.get('name', pretty_name)
+        if version:
+            system_name += ' ' + str(version)
+
+        cpu_info = self._read('/proc/cpuinfo')
+        cpu_model = next(
+            (line.split(':', 1)[1].strip() for line in cpu_info.splitlines()
+             if line.lower().startswith(('model name', 'hardware')) and ':' in line),
+            platform.machine() or 'Não identificado',
+        )
+        memory = {}
+        for line in self._read('/proc/meminfo').splitlines():
+            match = re.match(r'^(MemTotal|MemAvailable):\s+(\d+)\s+kB$', line)
+            if match:
+                memory[match.group(1)] = int(match.group(2)) * 1024
+        total = memory.get('MemTotal')
+        available = memory.get('MemAvailable')
+        if total is None:
+            memory_text = 'Indisponível'
+        else:
+            memory_text = f'{total // (1024 ** 2)} MiB total'
+            if available is not None:
+                memory_text += f'; {available // (1024 ** 2)} MiB disponíveis'
+        try:
+            disk = self.disk_usage(self.root)
+            disk_text = (
+                f'{disk.free // (1024 ** 3)} GiB livres de '
+                f'{disk.total // (1024 ** 3)} GiB'
+            )
+        except OSError:
+            disk_text = 'Indisponível'
+        vendor = self._read('/sys/class/dmi/id/sys_vendor').strip()
+        product = self._read('/sys/class/dmi/id/product_name').strip()
+        hardware = ' '.join(value for value in (vendor, product) if value) or 'Não identificado'
+        return [
+            ('Sistema', system_name),
+            ('Distribuição base', pretty_name),
+            ('CPU', f'{cpu_model} ({os.cpu_count() or "?"} CPUs lógicas)'),
+            ('Memória RAM', memory_text),
+            ('Armazenamento raiz', disk_text),
+            ('Equipamento', hardware),
+        ]
+
+    def network(self):
+        details = []
+        result, error = self._run('ip', '-j', 'address')
+        if error or result[0]:
+            details.append(('Interfaces e endereços', 'Indisponível: ' + self._reason(error, '' if error else result[2])))
+        else:
+            try:
+                interfaces = json.loads(result[1])
+                rows = []
+                for interface in interfaces:
+                    addresses = [
+                        f'{item.get("local")}/{item.get("prefixlen")}'
+                        for item in interface.get('addr_info', [])
+                        if item.get('scope') != 'host' and item.get('local')
+                    ]
+                    state = interface.get('operstate', 'UNKNOWN')
+                    rows.append(
+                        f'{interface.get("ifname", "?")} ({state})'
+                        + (': ' + ', '.join(addresses) if addresses else '')
+                    )
+                details.append(('Interfaces e endereços', '\n'.join(rows[:12]) or 'Nenhuma interface encontrada'))
+            except (ValueError, TypeError, AttributeError):
+                details.append(('Interfaces e endereços', 'Resposta do sistema inválida'))
+
+        result, error = self._run('ip', '-j', 'route', 'show', 'default')
+        if error or result[0]:
+            details.append(('Gateway', 'Indisponível: ' + self._reason(error, '' if error else result[2])))
+        else:
+            try:
+                routes = json.loads(result[1])
+                gateways = [
+                    f'{route.get("gateway", "não anunciado")} ({route.get("dev", "interface desconhecida")})'
+                    for route in routes if route.get('dst') == 'default'
+                ]
+                details.append(('Gateway', ', '.join(gateways) or 'Nenhuma rota padrão'))
+            except (ValueError, TypeError, AttributeError):
+                details.append(('Gateway', 'Resposta do sistema inválida'))
+
+        result, error = self._run('resolvectl', 'dns')
+        if error or result[0]:
+            details.append(('DNS', 'Indisponível: ' + self._reason(error, '' if error else result[2])))
+        else:
+            lines = [line.strip() for line in result[1].splitlines() if line.strip()]
+            details.append(('DNS por interface', '\n'.join(lines[:12]) or 'Nenhum servidor anunciado'))
+
+        result, error = self._run('nmcli', '-t', '-f', 'NAME,TYPE,DEVICE', 'connection', 'show', '--active')
+        if error or result[0]:
+            details.append(('Conexões ativas', 'Indisponível: ' + self._reason(error, '' if error else result[2])))
+        else:
+            names = [
+                line for line in result[1].splitlines()
+                if line.strip() and (':vpn:' in line.lower() or ':wireguard:' in line.lower())
+            ]
+            details.append(('VPN ativa', '\n'.join(names[:8]) or 'Nenhuma VPN ativa detectada'))
+        return details
+
+    def development(self):
+        details = []
+        for label, command, arguments in VERSION_CHECKS:
+            result, error = self._run(command, *arguments)
+            if error:
+                value = 'Não disponível: ' + self._reason(error)
+            elif result[0]:
+                value = 'Indisponível: ' + self._reason(None, result[2])
+            else:
+                value = self._version_line(result[1])
+            details.append((label, value))
+        return details
+
+    def docker(self):
+        service = self._service('docker.service')
+        details = [('Serviço Docker', service['state'])]
+        if 'startup' in service:
+            details.append(('Inicialização automática', service['startup']))
+        result, error = self._run(
+            'docker', 'ps', '--format', '{{.Names}}\t{{.Image}}\t{{.Status}}',
+        )
+        if error:
+            value = 'Indisponível: ' + self._reason(error)
+        elif result[0]:
+            value = 'Indisponível: ' + self._reason(None, result[2])
+        else:
+            rows = [line for line in result[1].splitlines() if line.strip()]
+            value = '\n'.join(rows[:10]) if rows else 'Nenhum contêiner em execução'
+            if len(rows) > 10:
+                value += f'\n… e mais {len(rows) - 10}'
+        details.append(('Contêineres em execução', value))
+        return details
+
+    def vpn(self):
+        details = []
+        result, error = self._run('openvpn', '--version')
+        if error:
+            details.append(('OpenVPN', 'Não disponível: ' + self._reason(error)))
+        elif result[0]:
+            details.append(('OpenVPN', 'Indisponível: ' + self._reason(None, result[2])))
+        else:
+            details.append(('OpenVPN', self._version_line(result[1])))
+        details.append(('Serviço OpenVPN', self._service('openvpn.service')['state']))
+        result, error = self._run('nmcli', '-t', '-f', 'NAME,TYPE,DEVICE', 'connection', 'show', '--active')
+        if error or result[0]:
+            value = 'Indisponível: ' + self._reason(error, '' if error else result[2])
+        else:
+            active = [
+                line for line in result[1].splitlines()
+                if line.strip() and (':vpn:' in line.lower() or ':wireguard:' in line.lower())
+            ]
+            value = '\n'.join(active[:8]) or 'Nenhuma VPN ativa detectada'
+        details.append(('Conexões VPN ativas', value))
+        return details
+
+    def appearance(self):
+        details = []
+        for label, command, arguments in (
+            ('Tema GTK', 'xfconf-query', ('-c', 'xsettings', '-p', '/Net/ThemeName')),
+            ('Ícones', 'xfconf-query', ('-c', 'xsettings', '-p', '/Net/IconThemeName')),
+            ('Wallpaper por monitor', 'xfconf-query', ('-c', 'xfce4-desktop', '-l', '-v')),
+            ('Painel XFCE', 'xfconf-query', ('-c', 'xfce4-panel', '-l', '-v')),
+        ):
+            result, error = self._run(command, *arguments)
+            if error or result[0]:
+                details.append((label, 'Indisponível: ' + self._reason(error, '' if error else result[2])))
+                continue
+            value = result[1].strip()
+            if label == 'Wallpaper por monitor':
+                wallpapers = [
+                    line.partition(':')[2].strip()
+                    for line in value.splitlines()
+                    if '/backdrop/' in line and '/last-image' in line and ':' in line
+                ]
+                value = '\n'.join(dict.fromkeys(wallpapers)) or 'Não informado'
+            elif label == 'Painel XFCE':
+                selected = [
+                    line for line in value.splitlines()
+                    if any(token in line for token in ('/panels:', '/position:', '/size:', '/plugin-ids:'))
+                ]
+                value = '\n'.join(selected[:16]) or 'Configuração não informada'
+            details.append((label, value[:OUTPUT_LIMIT] or 'Não informado'))
+        return details
+
+    def security(self):
+        details = []
+        firewall = self._service('ufw.service')
+        details.append(('Firewall UFW', firewall['state']))
+        if 'startup' in firewall:
+            details.append(('Inicialização do firewall', firewall['startup']))
+        result, error = self._run('apt-check', '--human-readable')
+        if error:
+            updates = 'Indisponível: ' + self._reason(error)
+        elif result[0]:
+            updates = 'Indisponível: ' + self._reason(None, result[2])
+        else:
+            updates = self._version_line(result[1])
+        details.append(('Atualizações no cache local', updates))
+        result, error = self._run('systemctl', 'is-system-running', '--no-pager')
+        if error:
+            diagnostics = 'Indisponível: ' + self._reason(error)
+        else:
+            output = result[1].strip()
+            diagnostics = output or self._reason(None, result[2])
+            if result[0] and output not in ('degraded', 'maintenance'):
+                diagnostics = 'Indisponível: ' + diagnostics
+        details.append(('Estado do systemd', diagnostics))
+        details.append(('Escopo', 'Somente consulta; nenhuma alteração, atualização ou privilégio foi solicitado.'))
+        return details
+
+    def snapshot(self):
+        sections = (
+            ('Visão geral', self.overview),
+            ('Rede', self.network),
+            ('Desenvolvimento', self.development),
+            ('Docker', self.docker),
+            ('VPN', self.vpn),
+            ('Aparência', self.appearance),
+            ('Segurança e manutenção', self.security),
+        )
+        snapshot = {}
+        for label, collect in sections:
+            try:
+                snapshot[label] = collect()
+            except Exception:
+                snapshot[label] = [('Consulta', 'Falha inesperada; as demais áreas continuam disponíveis.')]
+        return snapshot

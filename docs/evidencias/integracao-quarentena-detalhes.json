@@ -1,0 +1,146 @@
+{
+  "report": {
+    "status": "quarantined",
+    "iso_generated": false,
+    "error": "[Errno 95] Operation not supported: '/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-merged'"
+  },
+  "journal": "2026-11-17T13:30:49+00:00 magaton systemd[1]: Started devlite-pack-ku78mn3t.service - /usr/bin/unshare --mount --propagation private /usr/bin/python3 /home/magaton/DevLite-OS/scripts/integrar-release-root.py --job /home/magaton/DevLite-OS/work/release-ku78mn3t --approval-sha256 9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1.\n2026-11-17T15:30:49+00:00 magaton systemd[1]: devlite-pack-ku78mn3t.service: Service reached runtime time limit. Stopping.\n2026-11-17T15:30:50+00:00 magaton systemd[1]: devlite-pack-ku78mn3t.service: Main process exited, code=exited, status=1/FAILURE\n2026-11-17T15:30:50+00:00 magaton systemd[1]: devlite-pack-ku78mn3t.service: Failed with result 'timeout'.\n2026-11-17T15:30:50+00:00 magaton systemd[1]: devlite-pack-ku78mn3t.service: Consumed 1h 1min 34.133s CPU time, 2.5G memory peak, 5.1M memory swap peak.\n",
+  "commands": {
+    "01-private.command.json": [
+      "mount",
+      "--make-rprivate",
+      "/"
+    ],
+    "02-mount-base.command.json": [
+      "mount",
+      "-t",
+      "ext4",
+      "-o",
+      "loop,ro,noload,nodev,nosuid",
+      "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/base"
+    ],
+    "03-mount-live.command.json": [
+      "mount",
+      "-t",
+      "ext4",
+      "-o",
+      "loop,ro,noload,nodev,nosuid",
+      "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/live"
+    ],
+    "04-pack-minimal.command.json": [
+      "mksquashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/base",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.squashfs",
+      "-noappend",
+      "-no-recovery",
+      "-comp",
+      "xz",
+      "-b",
+      "131072",
+      "-processors",
+      "1",
+      "-mem",
+      "256M",
+      "-no-progress",
+      "-exit-on-error",
+      "-mkfs-time",
+      "1788856610",
+      "-root-time",
+      "1788852470",
+      "-root-mode",
+      "755",
+      "-root-uid",
+      "0",
+      "-root-gid",
+      "0",
+      "-e",
+      "var/lib/devlite-executor"
+    ],
+    "05-extract-minimal.command.json": [
+      "unsquashfs",
+      "-strict-errors",
+      "-processors",
+      "1",
+      "-data-queue",
+      "64",
+      "-frag-queue",
+      "64",
+      "-d",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.squashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.squashfs"
+    ],
+    "06-pack-minimal.live.command.json": [
+      "mksquashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/delta",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.live.squashfs",
+      "-noappend",
+      "-no-recovery",
+      "-comp",
+      "xz",
+      "-b",
+      "131072",
+      "-processors",
+      "1",
+      "-mem",
+      "256M",
+      "-no-progress",
+      "-exit-on-error",
+      "-mkfs-time",
+      "1788856610",
+      "-root-time",
+      "1788852878",
+      "-root-mode",
+      "755",
+      "-root-uid",
+      "0",
+      "-root-gid",
+      "0"
+    ],
+    "07-extract-minimal.live.command.json": [
+      "unsquashfs",
+      "-strict-errors",
+      "-processors",
+      "1",
+      "-data-queue",
+      "64",
+      "-frag-queue",
+      "64",
+      "-d",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.live.squashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.live.squashfs"
+    ],
+    "08-mount-new-base.command.json": [
+      "mount",
+      "-t",
+      "squashfs",
+      "-o",
+      "loop,ro,nodev,nosuid",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.squashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-base"
+    ],
+    "09-mount-new-delta.command.json": [
+      "mount",
+      "-t",
+      "squashfs",
+      "-o",
+      "loop,ro,nodev,nosuid",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed/minimal.live.squashfs",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-delta"
+    ],
+    "10-mount-new-merged.command.json": [
+      "mount",
+      "-t",
+      "overlay",
+      "overlay",
+      "-o",
+      "ro,lowerdir=/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-delta:/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-base",
+      "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/mounted-merged"
+    ]
+  },
+  "packed_bytes": {
+    "minimal.squashfs": 1040076800,
+    "minimal.live.squashfs": 1303134208
+  }
+}

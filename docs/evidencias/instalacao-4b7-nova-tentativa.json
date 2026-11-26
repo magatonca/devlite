@@ -1,0 +1,18 @@
+{
+  "status": "prepared_awaiting_new_probe_and_install_approval",
+  "workspace": "/home/magaton/DevLite-OS/work/release-00j3px2e",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4",
+  "contract_sha256": "de1ff81e62960adf05cb9079cdb71136e7f75025fff08d4465d805309f4ab8b2",
+  "executor_sha256": "66d2ff9a40ac8a63a851db8524a690ba188d298a92aad4b0a5c1eee012f147e6",
+  "previous_quarantined_release": "/home/magaton/DevLite-OS/work/release-zii8eoas",
+  "previous_evidence": "docs/evidencias/instalacao-4b7-tentativa1.json",
+  "cache_files": 243,
+  "cache_bytes": 338284668,
+  "cache_manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "cache_reverified": true,
+  "inherited_authenticated_preflight": "/home/magaton/DevLite-OS/work/release-zii8eoas/report.json",
+  "inherited_preflight_sha256": "35b195afe97ffdae7ce1f5ebab274af8be5ab948db56b75c32b850677373d853",
+  "new_probe_executed": false,
+  "installation_executed": false,
+  "free_bytes": 67418083328
+}

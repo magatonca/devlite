@@ -1,0 +1,248 @@
+{
+  "captured_utc": "2026-11-18T11:01:22.605357+00:00",
+  "tests": 259,
+  "test_report": "reports/testes-conclusao-acelerada.txt",
+  "free_bytes": 22812008448,
+  "cleanup_executed": false,
+  "new_program_downloads_executed": false,
+  "new_iso_generated": false,
+  "application_to_images_executed": false,
+  "root_metadata_only_previously_authorized": true,
+  "practical_boot_install_tests": "not executed; external Windows VMware lab required",
+  "approval_proposal": "docs/autorizacao-conclusao.md",
+  "mounts_current_namespace": [],
+  "loops": {
+    "returncode": 0,
+    "stdout": "{\n   \"loopdevices\": [\n\n   ]\n}\n"
+  },
+  "units": {
+    "returncode": 0,
+    "stdout": "UNIT LOAD ACTIVE SUB DESCRIPTION\n\n0 loaded units listed.\nTo show all installed unit files use 'systemctl list-unit-files'.\n"
+  },
+  "candidate_top_level_metadata": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/source-tree",
+      "device": 64512,
+      "inode": 5127257,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794965289884097259,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/result-tree",
+      "device": 64512,
+      "inode": 5128184,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794965495429634500,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/source-tree",
+      "device": 64512,
+      "inode": 4629733,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794962828041241825,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/result-tree",
+      "device": 64512,
+      "inode": 4630660,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794963149092884055,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es/source-tree",
+      "device": 64512,
+      "inode": 2129705,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794847780931063160,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es/result-tree",
+      "device": 64512,
+      "inode": 2130654,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794848112147337121,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv/reproduced.iso",
+      "device": 64512,
+      "inode": 2131597,
+      "mode": 33188,
+      "size": 3193634816,
+      "mtime_ns": 1794848730033098813,
+      "ctime_ns": 1794848730033098813,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+      "device": 64512,
+      "inode": 3186828,
+      "mode": 33188,
+      "size": 3550609408,
+      "mtime_ns": 1794965131095209738,
+      "ctime_ns": 1794966481112715250,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/source-iso-tree",
+      "device": 64512,
+      "inode": 2137943,
+      "mode": 16749,
+      "size": 4096,
+      "mtime_ns": 1788856601000000000,
+      "ctime_ns": 1794858485817785888,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root",
+      "device": 64512,
+      "inode": 2228910,
+      "mode": 16877,
+      "size": 4096,
+      "mtime_ns": 1788852470000000000,
+      "ctime_ns": 1794855019584794891,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root",
+      "device": 64512,
+      "inode": 2132343,
+      "mode": 16877,
+      "size": 4096,
+      "mtime_ns": 1788852878000000000,
+      "ctime_ns": 1794855368244216293,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root",
+      "device": 64512,
+      "inode": 2134930,
+      "mode": 16877,
+      "size": 4096,
+      "mtime_ns": 1788852470000000000,
+      "ctime_ns": 1794856290763625678,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root",
+      "device": 64512,
+      "inode": 2131674,
+      "mode": 16877,
+      "size": 4096,
+      "mtime_ns": 1788852878000000000,
+      "ctime_ns": 1794857184901349166,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.live.squashfs",
+      "status": "private_metadata_preflight_pending"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.squashfs",
+      "status": "private_metadata_preflight_pending"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/delta",
+      "status": "private_metadata_preflight_pending"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/rebuilt-casper/minimal.squashfs",
+      "device": 64512,
+      "inode": 2265071,
+      "mode": 33188,
+      "size": 685363200,
+      "mtime_ns": 1794856192160123194,
+      "ctime_ns": 1794856192160123194,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/rebuilt-casper/minimal.live.squashfs",
+      "device": 64512,
+      "inode": 2266503,
+      "mode": 33188,
+      "size": 1301176320,
+      "mtime_ns": 1794857071631653323,
+      "ctime_ns": 1794857071631653323,
+      "root_symlink": false,
+      "status": "top_level_metadata_read"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/base.ext4",
+      "status": "private_metadata_preflight_pending"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/layers/minimal.squashfs",
+      "status": "private_metadata_preflight_pending"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/layers/minimal.live.squashfs",
+      "status": "private_metadata_preflight_pending"
+    }
+  ],
+  "private_directory_totals": {
+    "work/phase4b1-dhzezpnz": {
+      "before": 19508273152,
+      "now": 19508273152,
+      "same": true
+    },
+    "work/release-ku78mn3t/pack-attempt": {
+      "before": 10792128512,
+      "now": 10792128512,
+      "same": true
+    },
+    "work/phase4b3-wnej6dpv/probe-attempt": {
+      "before": 4578869248,
+      "now": 4578869248,
+      "same": true
+    }
+  },
+  "host_critical_files_unchanged": true,
+  "sealed_contract_unchanged": true,
+  "project_validation_errors": 0,
+  "tracked_diff_whitespace_errors": 0,
+  "duplicate_isos_revalidated": [
+    {
+      "candidate": "work/phase3b-reproduction-jvzarclv/reproduced.iso",
+      "preserve": "artifacts/phase3b-9adp_k5i/devlite-os-1.0-experimental-rebuild.iso",
+      "sha256": "2e3a6eecf59d535a4825ff41655c542f6ef2017ccce9a9672891ace2672f2bc7",
+      "equal": true
+    },
+    {
+      "candidate": "artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+      "preserve": "artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+      "sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db",
+      "equal": true
+    }
+  ]
+}

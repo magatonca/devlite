@@ -1,0 +1,48 @@
+{
+  "fase": 2,
+  "data": "2026-11-16",
+  "usuario_operacoes": "magaton",
+  "iso": "xubuntu-24.04.5-minimal-amd64.iso",
+  "bytes": 3193516032,
+  "origem": "https://cdimage.ubuntu.com/xubuntu/releases/24.04/release/",
+  "sha256": "9d47f975696ce496b8be882b6d7cc9079c1ea89fb625ac2c86caa63a4f180033",
+  "gpg_fingerprint": "843938DF228D22F7B3742BC0D94AA3F0EFE21092",
+  "fonte_fingerprint": "https://ubuntu.com/tutorials/how-to-verify-ubuntu#4-retrieve-the-correct-signature-key",
+  "gpg_valido": true,
+  "sha256_valido": true,
+  "hash_original_apos_inspecao_valido": true,
+  "camadas": [
+    {
+      "caminho": "/casper/minimal.squashfs",
+      "bytes": 685113344,
+      "funcao": "base instalada"
+    },
+    {
+      "caminho": "/casper/minimal.live.squashfs",
+      "bytes": 1301176320,
+      "funcao": "delta live sobre minimal"
+    }
+  ],
+  "squashfs": {
+    "versao": "4.0",
+    "compressao": "xz",
+    "bloco_bytes": 131072,
+    "hierarquia_confirmada_initrd": "minimal.squashfs -> minimal.live.squashfs"
+  },
+  "fonte_instalacao": {
+    "id": "xubuntu-desktop-minimal",
+    "path": "minimal.squashfs",
+    "type": "fsimage-layered",
+    "size": 2382868480
+  },
+  "boot_estrutural": [
+    "BIOS El Torito GRUB i386-pc",
+    "UEFI El Torito EFI anexada GPT",
+    "MBR protetor e GRUB2 MBR"
+  ],
+  "boot_em_vm_testado": false,
+  "secure_boot_testado": false,
+  "build_executado": false,
+  "gpg_casper_valido": true,
+  "hashes_camadas_extraidas_validos": true
+}

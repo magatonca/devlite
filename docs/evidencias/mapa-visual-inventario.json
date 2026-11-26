@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-18T21:28:37.166479+00:00",
+  "source": "/home/magaton/DevLite-OS/work/release-cezaiofx/published-casper/minimal.squashfs",
+  "method": "unsquashfs -l only",
+  "visual_changes": false,
+  "paths": {
+    "etc/lightdm/lightdm-gtk-greeter.conf": true,
+    "usr/share/lightdm/lightdm.conf.d/60-xubuntu.conf": true,
+    "etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml": true,
+    "etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml": true,
+    "etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml": true,
+    "etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml": true,
+    "etc/xdg/xdg-xubuntu/xfce4/panel/default.xml": true,
+    "usr/share/themes/Greybird": true,
+    "usr/share/icons/elementary-xfce-dark": true,
+    "usr/share/icons/DMZ-White": true,
+    "usr/share/plymouth/themes/xubuntu-logo/logo.png": true,
+    "usr/share/backgrounds/devlite/devlite-wallpaper.svg": true,
+    "usr/share/icons/hicolor/scalable/apps/devlite.svg": true,
+    "usr/share/devlite-os/identity.json": true,
+    "usr/bin/devlite-control": true,
+    "usr/libexec/devlite-first-session": true
+  }
+}

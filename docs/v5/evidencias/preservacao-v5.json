@@ -1,0 +1,7 @@
+{
+  "checked_existing_entries": 427,
+  "changes": [],
+  "passed": true,
+  "large_artifacts": "metadata checked; v4 full SHA-256 is required again by assembly before build",
+  "scope_added": "v5/, docs/v5/, new isolated work jobs; originals untouched"
+}

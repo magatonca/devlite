@@ -1,0 +1,140 @@
+{
+  "captured_utc": "2026-11-18T09:32:35.051009+00:00",
+  "scope": "somente metadados oficiais; nenhum pacote adquirido",
+  "metadata": {
+    "typescript": {
+      "url": "https://registry.npmjs.org/typescript/7.0.2",
+      "value": {
+        "name": "typescript",
+        "version": "7.0.2",
+        "engines": {
+          "node": ">=16.20.0"
+        },
+        "dist": {
+          "shasum": "9ec773d7954a8c182c17cc5bbd575aa28bc51582",
+          "tarball": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+          "fileCount": 416,
+          "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+          "signatures": [
+            {
+              "sig": "MEUCIHn8lVrLBbTJToaOcV3IJ0oVPREmFT5BhqmO2niVNCaSAiEAjbubGExGAYMSJN39iEgX/eDYhwBGnh/iyyGTRigXGjY=",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 2497498
+        },
+        "dependencies": {
+          "@typescript/typescript-aix-ppc64": "7.0.2",
+          "@typescript/typescript-linux-arm": "7.0.2",
+          "@typescript/typescript-linux-x64": "7.0.2",
+          "@typescript/typescript-sunos-x64": "7.0.2",
+          "@typescript/typescript-win32-x64": "7.0.2",
+          "@typescript/typescript-darwin-x64": "7.0.2",
+          "@typescript/typescript-netbsd-x64": "7.0.2",
+          "@typescript/typescript-freebsd-x64": "7.0.2",
+          "@typescript/typescript-linux-arm64": "7.0.2",
+          "@typescript/typescript-linux-ppc64": "7.0.2",
+          "@typescript/typescript-linux-s390x": "7.0.2",
+          "@typescript/typescript-openbsd-x64": "7.0.2",
+          "@typescript/typescript-win32-arm64": "7.0.2",
+          "@typescript/typescript-darwin-arm64": "7.0.2",
+          "@typescript/typescript-netbsd-arm64": "7.0.2",
+          "@typescript/typescript-freebsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-loong64": "7.0.2",
+          "@typescript/typescript-linux-riscv64": "7.0.2",
+          "@typescript/typescript-openbsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-mips64el": "7.0.2"
+        },
+        "optionalDependencies": {
+          "@typescript/typescript-aix-ppc64": "7.0.2",
+          "@typescript/typescript-linux-arm": "7.0.2",
+          "@typescript/typescript-linux-x64": "7.0.2",
+          "@typescript/typescript-sunos-x64": "7.0.2",
+          "@typescript/typescript-win32-x64": "7.0.2",
+          "@typescript/typescript-darwin-x64": "7.0.2",
+          "@typescript/typescript-netbsd-x64": "7.0.2",
+          "@typescript/typescript-freebsd-x64": "7.0.2",
+          "@typescript/typescript-linux-arm64": "7.0.2",
+          "@typescript/typescript-linux-ppc64": "7.0.2",
+          "@typescript/typescript-linux-s390x": "7.0.2",
+          "@typescript/typescript-openbsd-x64": "7.0.2",
+          "@typescript/typescript-win32-arm64": "7.0.2",
+          "@typescript/typescript-darwin-arm64": "7.0.2",
+          "@typescript/typescript-netbsd-arm64": "7.0.2",
+          "@typescript/typescript-freebsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-loong64": "7.0.2",
+          "@typescript/typescript-linux-riscv64": "7.0.2",
+          "@typescript/typescript-openbsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-mips64el": "7.0.2"
+        },
+        "license": "Apache-2.0"
+      }
+    },
+    "typescript_linux_x64": {
+      "url": "https://registry.npmjs.org/%40typescript%2Ftypescript-linux-x64/7.0.2",
+      "value": {
+        "name": "@typescript/typescript-linux-x64",
+        "version": "7.0.2",
+        "engines": {
+          "node": ">=16.20.0"
+        },
+        "os": [
+          "linux"
+        ],
+        "cpu": [
+          "x64"
+        ],
+        "dist": {
+          "shasum": "73269cb0baba50aea0ca060445a6b88e583f1ce2",
+          "tarball": "https://registry.npmjs.org/@typescript/typescript-linux-x64/-/typescript-linux-x64-7.0.2.tgz",
+          "fileCount": 114,
+          "integrity": "sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==",
+          "signatures": [
+            {
+              "sig": "MEQCID5HnnxMfpqvK60MvUY0mrH43XXckjsaCowg3RUutmw7AiB8k8eQ1fJRg/fgDXqFeQApMd2iZuIXimCW7bduggkezw==",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 27945990
+        },
+        "license": "Apache-2.0"
+      }
+    },
+    "vscode_latest": {
+      "url": "https://update.code.visualstudio.com/api/update/linux-deb-x64/stable/latest",
+      "value": {
+        "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/69047191fc427f2f92828279aae1d90d8eeda7ab/code_1.146.0-1794340865_amd64.deb",
+        "name": "1.146.0",
+        "version": "69047191fc427f2f92828279aae1d90d8eeda7ab",
+        "productVersion": "1.146.0",
+        "hash": "63d04e99120eba84f3dcc6fa05e65d72ecfd6b61",
+        "timestamp": 1794339449048,
+        "sha256hash": "f83565f7f11a60b256807fe2216da8405f9728f193754959695242eecd148992",
+        "supportsFastUpdate": true,
+        "notes": "69047191fc427f2f92828279aae1d90d8eeda7ab"
+      }
+    },
+    "npm_keys": {
+      "url": "https://registry.npmjs.org/-/npm/v1/keys",
+      "value": {
+        "keys": [
+          {
+            "expires": "2025-01-29T00:00:00.000Z",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "keytype": "ecdsa-sha2-nistp256",
+            "scheme": "ecdsa-sha2-nistp256",
+            "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1Olb3zMAFFxXKHiIkQO5cJ3Yhl5i6UPp+IhuteBJbuHcA5UogKo0EWtlWwW6KSaKoTNEYL7JlCQiVnkhBktUgg=="
+          },
+          {
+            "expires": null,
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "keytype": "ecdsa-sha2-nistp256",
+            "scheme": "ecdsa-sha2-nistp256",
+            "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEY6Ya7W++7aUPzvMTrezH6Ycx3c+HOKYCcNGybJZSCJq/fd7Qa8uuAKtdIkUQtQiEKERhAmE5lMMJhP8OkDOa2g=="
+          }
+        ]
+      }
+    }
+  },
+  "errors": {}
+}

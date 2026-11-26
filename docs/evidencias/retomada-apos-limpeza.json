@@ -1,0 +1,44 @@
+{
+  "release_job": "/home/magaton/DevLite-OS/work/release-qqkumja7",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1",
+  "release_sha256": "e8e8a0f9ba2427fecdb06cdf8f9055a879542333783c86a9974f79dae7e809a1",
+  "executor_sha256": "a6eb77b71206587013cf3ea28c8d746926982ad23193673cacd8421fba75223c",
+  "source_cache_verified_files": 243,
+  "staged_cache_verified_files": 243,
+  "contracts_code_and_plan_valid": true,
+  "permissions_enabled": false,
+  "probe_executed": false,
+  "installation_executed": false,
+  "cleanup_evidence": "docs/evidencias/limpeza-autorizada.json",
+  "free_bytes": 65346838528,
+  "tests": {
+    "passed": 162,
+    "failed": 0,
+    "report": "reports/testes-retomada-apos-limpeza.txt"
+  },
+  "status": "prepared_awaiting_privileged_probe_and_install_approval",
+  "commands": {
+    "probe": [
+      "sudo",
+      "/usr/bin/python3",
+      "/home/magaton/DevLite-OS/scripts/executar-programas.py",
+      "--probe",
+      "--job",
+      "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1",
+      "--approval-sha256",
+      "a6eb77b71206587013cf3ea28c8d746926982ad23193673cacd8421fba75223c"
+    ],
+    "install": [
+      "sudo",
+      "/usr/bin/python3",
+      "/home/magaton/DevLite-OS/scripts/instalar-release-root.py",
+      "--job",
+      "/home/magaton/DevLite-OS/work/release-qqkumja7",
+      "--approval-sha256",
+      "e8e8a0f9ba2427fecdb06cdf8f9055a879542333783c86a9974f79dae7e809a1"
+    ],
+    "sequence": "novo probe; somente com atestado válido, instalação Base → Live",
+    "blocked_reason": "espaço abaixo do mínimo de 56 GiB para probe; contratos anteriores invalidados pelo código corrigido",
+    "permissions_enabled": false
+  }
+}

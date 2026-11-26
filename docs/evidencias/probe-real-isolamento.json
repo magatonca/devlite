@@ -1,0 +1,52 @@
+{
+  "status": "probe_real_aprovado",
+  "job": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz",
+  "job_sha256": "e1bc8013b0a10b8e2eea8884b38d697c51263866eb2d7f4d545b98e6f82203a8",
+  "executor_exit_code": 0,
+  "root_owned_attestation": {
+    "job_sha256": "e1bc8013b0a10b8e2eea8884b38d697c51263866eb2d7f4d545b98e6f82203a8",
+    "status": "probe_passed"
+  },
+  "host_checkpoint_comparison": {
+    "critical_files_unchanged": true,
+    "differences": {},
+    "same_mount_namespace": true,
+    "mountinfo_unchanged": true,
+    "loop_backings_unchanged": true
+  },
+  "actual_cgroup_limits": {
+    "memory.max": "2684354560",
+    "memory.swap.max": "1073741824",
+    "pids.max": "128",
+    "cpu.max": "100000 100000",
+    "memory.current": "1421545472",
+    "pids.current": "3"
+  },
+  "space_free_bytes": 73846026240,
+  "overlay_loaded_after": true,
+  "probe_flag_restored": true,
+  "installation_authorized": false,
+  "recovery_executed": false,
+  "apt_dpkg_executed_in_image": false,
+  "iso_generated": false,
+  "private_evidence_paths": [
+    "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt/probe-results.json",
+    "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt/host-guard.json",
+    "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt/base-fsck.log",
+    "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt/devlite-1ibq_emz-base-probe.log"
+  ],
+  "evidence_note": "Atestado root-owned lido como magaton. Registros internos root 0700 preservados; valores detalhados do guest não foram exportados.",
+  "remaining": [
+    "interrupção/recuperação reais não exercitadas; apenas mocks aprovados",
+    "instalação e scripts de manutenção não autorizados nem executados",
+    "rebase live e boot/instalação real pendentes"
+  ],
+  "unit_after": [
+    "LoadState=not-found",
+    "ActiveState=inactive",
+    "SubState=dead"
+  ],
+  "worker_processes_remaining": [],
+  "cgroup_remaining": false,
+  "completed_local": "2026-11-16T19:17:07.264224-03:00"
+}

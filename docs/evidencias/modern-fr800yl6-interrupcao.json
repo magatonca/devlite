@@ -1,0 +1,15 @@
+{
+  "status": "modern_application_interrupted",
+  "execution_report": "/home/magaton/DevLite-OS/work/modern-apply-fr800yl6/result.json",
+  "host_critical_unchanged_rechecked": true,
+  "base": "partial disposable clone, quarantined; no completed diff or final hash",
+  "live": "not started",
+  "original_raw_hashes_after_failure": "not recomputed; original files outside sole writable job exception",
+  "free_bytes": 87407349760,
+  "focused_correction_tests": 13,
+  "future_pack_controller_tests": 5,
+  "future_iso_controller_tests": 4,
+  "new_job": "/home/magaton/DevLite-OS/work/modern-apply-5w334rzl",
+  "new_contract_sha256": "153cd14745cdddb20d1c9f00448b9a4fbcf1376387e9cdcdcc017fdb6e8771e2",
+  "new_execution_started": false
+}

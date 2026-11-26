@@ -1,0 +1,129 @@
+{
+  "captured_utc": "2026-11-17T10:00:34.059778+00:00",
+  "free_bytes": 57918476288,
+  "target_free_bytes": 64424509440,
+  "recommended_candidates": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt/base.ext4",
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 2477404160,
+      "device": 64512,
+      "inode": 3282813,
+      "uid": 0,
+      "links": 1,
+      "job_state": "probe_passed",
+      "job_sha256": "e1bc8013b0a10b8e2eea8884b38d697c51263866eb2d7f4d545b98e6f82203a8",
+      "reason": "imagem descartável de probe concluído; preservar atestado, logs, recibos e hashes",
+      "risk": "perda da inspeção binária desta cópia; regenerável a partir das camadas preservadas, sem retomar in-place"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/probe-attempt/base.ext4",
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 2477441024,
+      "device": 64512,
+      "inode": 3283835,
+      "uid": 0,
+      "links": 1,
+      "job_state": "probe_passed",
+      "job_sha256": "66d2ff9a40ac8a63a851db8524a690ba188d298a92aad4b0a5c1eee012f147e6",
+      "reason": "imagem descartável de probe concluído; preservar atestado, logs, recibos e hashes",
+      "risk": "perda da inspeção binária desta cópia; regenerável a partir das camadas preservadas, sem retomar in-place"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/attempt/base.ext4",
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 2479874048,
+      "device": 64512,
+      "inode": 3283755,
+      "uid": 0,
+      "links": 1,
+      "job_state": "quarantined",
+      "job_sha256": "e1bc8013b0a10b8e2eea8884b38d697c51263866eb2d7f4d545b98e6f82203a8",
+      "reason": "imagem da primeira instalação abortada; preservar evidências e imagem da falha mais recente",
+      "risk": "perda da inspeção binária desta cópia; regenerável a partir das camadas preservadas, sem retomar in-place"
+    }
+  ],
+  "recoverable_allocated_bytes": 7434719232,
+  "projected_free_bytes": 65353195520,
+  "open_candidate_files": [],
+  "mounts": [],
+  "loop_backings": [],
+  "deleted": false,
+  "cleanup_authorized": false,
+  "preserved_latest_failure_image": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/attempt/base.ext4",
+  "next_preparation": {
+    "status": "blocked_disk_before_probe",
+    "workspace": "/home/magaton/DevLite-OS/work/release-qqkumja7",
+    "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1",
+    "contract_sha256": "e8e8a0f9ba2427fecdb06cdf8f9055a879542333783c86a9974f79dae7e809a1",
+    "executor_sha256": "a6eb77b71206587013cf3ea28c8d746926982ad23193673cacd8421fba75223c",
+    "previous_quarantined_release": "/home/magaton/DevLite-OS/work/release-00j3px2e",
+    "previous_execution_evidence": "docs/evidencias/instalacao-4b7-tentativa2.json",
+    "cache_files": 243,
+    "cache_bytes": 338284668,
+    "cache_reverified": true,
+    "cache_manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+    "new_probe_executed": false,
+    "installation_executed": false,
+    "free_bytes": 57913950208,
+    "required_probe_free_bytes": 60129542144,
+    "tests": {
+      "passed": 162,
+      "report": "reports/testes-release-cache-isolado.txt"
+    },
+    "fix": "cache APT gravável no alvo com links temporários ao bundle RO; partial/lock não escritos no bundle"
+  },
+  "largest_consumers": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz",
+      "allocated_regular_file_bytes": 19391172608,
+      "assessment": "Extratos/rootfs, camadas e árvores ISO da personalização mínima; preservar entradas usadas pelo pipeline."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz",
+      "allocated_regular_file_bytes": 9838460928,
+      "assessment": "Probe e primeira instalação em quarentena; remover somente duas imagens selecionadas."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4",
+      "allocated_regular_file_bytes": 9838403584,
+      "assessment": "Segundo probe e falha mais recente; remover somente a imagem do probe selecionada."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es",
+      "allocated_regular_file_bytes": 6374977536,
+      "assessment": "Árvores intermediárias source/result da reconstrução; regeneráveis, fora da limpeza mínima."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv",
+      "allocated_regular_file_bytes": 3193671680,
+      "assessment": "Segunda ISO usada para provar reprodução; fora da limpeza mínima."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/phase4b1-lgpa3zc7",
+      "allocated_regular_file_bytes": 3193913344,
+      "assessment": "ISO personalizada mínima de referência; preservar."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/phase3b-9adp_k5i",
+      "allocated_regular_file_bytes": 3193659392,
+      "assessment": "ISO experimental 3B; preservar."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/sources/xubuntu-24.04.5-minimal-amd64.iso",
+      "allocated_regular_file_bytes": 3193520128,
+      "assessment": "ISO original autenticada; preservar."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase2",
+      "allocated_regular_file_bytes": 2261999616,
+      "assessment": "Camadas/inspeções da ISO oficial; regeneráveis, fora da limpeza mínima."
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc",
+      "allocated_regular_file_bytes": 568643584,
+      "assessment": "Cache de pacotes e metadados autenticados; preservar."
+    }
+  ],
+  "inventory_method": "Varredura somente leitura dos arquivos regulares; hardlinks deduplicados dentro de cada pasta, não entre pastas. Totais não devem ser somados como espaço único global. Exclui overhead dos diretórios."
+}

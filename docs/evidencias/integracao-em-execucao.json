@@ -1,0 +1,20 @@
+{
+  "captured_utc": "2026-11-17T14:51:52.610630+00:00",
+  "status": "quarantined",
+  "unit": "devlite-pack-ku78mn3t.service",
+  "release_job": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+  "approval_sha256": "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1",
+  "cleanup_completed": "docs/evidencias/limpeza-para-integracao-executada.json",
+  "last_observed_stage": "duas camadas comprimidas e reextraídas; falha na auditoria da visão combinada, no limite de duas horas",
+  "pack_complete": false,
+  "iso_generated": false,
+  "code_changed": false,
+  "performance_note": "compose percorre repetidamente o inventário; preservar contrato durante a execução e revisar complexidade em build futuro",
+  "unit_state": "MemoryCurrent=1615687680\nCPUUsageNSec=1722840620000\nActiveState=active\n",
+  "delta_recipe": {
+    "directories": 10841,
+    "put": 59606,
+    "whiteouts": 12
+  },
+  "superseded_by": "docs/evidencias/integracao-encerrada.json"
+}

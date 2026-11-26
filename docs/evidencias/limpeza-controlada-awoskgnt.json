@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-18T11:40:16.053276+00:00",
+  "deleted": [
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/source-tree",
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/result-tree",
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/source-tree",
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/result-tree",
+    "/home/magaton/DevLite-OS/work/phase3b-frka50es/source-tree",
+    "/home/magaton/DevLite-OS/work/phase3b-frka50es/result-tree",
+    "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv/reproduced.iso",
+    "/home/magaton/DevLite-OS/artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/source-iso-tree",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root",
+    "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.live.squashfs",
+    "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/verify-minimal.squashfs",
+    "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/delta",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/rebuilt-casper/minimal.squashfs",
+    "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/rebuilt-casper/minimal.live.squashfs",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/base.ext4",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/layers/minimal.squashfs",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt/layers/minimal.live.squashfs"
+  ],
+  "status": "completed",
+  "plan_sha256": "c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90",
+  "resource_checks": [
+    {
+      "status": "clear",
+      "events": [],
+      "processes_examined": 125
+    },
+    {
+      "status": "clear",
+      "events": [],
+      "processes_examined": 127
+    }
+  ],
+  "unique_allocated_bytes": 53558140928,
+  "entries": 552420,
+  "free_bytes_after": 76366995456
+}

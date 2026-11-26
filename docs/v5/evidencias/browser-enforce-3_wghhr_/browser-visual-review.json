@@ -1,0 +1,17 @@
+{
+  "contract_sha256": "c62025dd286b462df4b4b6c2c430bf0f724219105d5cb87ab7ecc49c3ff76f54",
+  "profile_sha256": "32b0aad9d83e7e994405c28a444d0579e0ea737ea5194d0561bfb7ab73c72756",
+  "method": "Visual inspection of both captured PNGs: DevLite page, rendering OK and JAVASCRIPT OK visible; enforce mode and native sandbox checked in root result",
+  "targets": {
+    "base": {
+      "rendered_page": true,
+      "javascript_ok": true,
+      "screenshot_sha256": "8d1690c3b41c3af4ab1f5c36f1f85b24c660550383ea6af9a8f7b62e5e1eb80c"
+    },
+    "live": {
+      "rendered_page": true,
+      "javascript_ok": true,
+      "screenshot_sha256": "8d1690c3b41c3af4ab1f5c36f1f85b24c660550383ea6af9a8f7b62e5e1eb80c"
+    }
+  }
+}

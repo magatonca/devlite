@@ -1,0 +1,18 @@
+{
+  "free_bytes": 61422333952,
+  "browser_contract_code_verified": 51,
+  "browser_reinstallation_needed": false,
+  "browser_gui_validation": "pending",
+  "modern_payload_hashes_verified": 6,
+  "modern_applied": false,
+  "new_full_views_allocated_estimate": 10812211200,
+  "new_full_views_logical_upper_budget": 25769803776,
+  "existing_pack_required": 56001552384,
+  "free_after_estimated_clones": 50610122752,
+  "pack_shortfall_after_estimated_clones": 5391429632,
+  "conservative_start_budget_clones_and_pack": 81771356160,
+  "control2": "excluded_until_real_tests_pass",
+  "adminer": "excluded_until_real_tests_pass",
+  "iso_generation_authorized": false,
+  "new_images_created": false
+}

@@ -1,0 +1,76 @@
+{
+  "captured_utc": "2026-11-17T00:21:53.393495+00:00",
+  "release_job": "/home/magaton/DevLite-OS/work/release-zii8eoas",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz",
+  "result": {
+    "status": "quarantined",
+    "iso_generated": false,
+    "rootfs_integration_executed": false,
+    "contract_sha256": "583f72f05346d2d96fe589e2486a201231ebac62ee02fd33a14987ded0b86f5f",
+    "error": "Worker falhou: devlite-1ibq_emz-base"
+  },
+  "state": {
+    "state": "quarantined",
+    "job_sha256": "e1bc8013b0a10b8e2eea8884b38d697c51263866eb2d7f4d545b98e6f82203a8",
+    "error": "Worker falhou: devlite-1ibq_emz-base",
+    "host_guard_error": null
+  },
+  "host_guard": {
+    "before": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "after": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "unchanged": true,
+    "critical_before": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    },
+    "critical_after": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    }
+  },
+  "private_evidence_sha256": {
+    "state.json": "136e18733a0aff32a88d596c893742a5ad5836d655982dd75e60f1af420a1096",
+    "host-before.json": "ebe2fd9f879a1484825b89cd6eb73060725516096e7b7471c9434fcdf7d08682",
+    "host-guard.json": "989b3fc7cb1f430a4edaa652ed8e9ee7f83af6928e6f044ee6de0fced8063781",
+    "authentication.json": "7003ef6a4e9a27722c07069d5d73af599640626de8ce9d89787dbe9b5af2c9b4",
+    "devlite-1ibq_emz-base.log": "2ff4f57fbb2681eba729f732b5b644b0ac811dc945c77647defe5050a2adcfe9"
+  },
+  "mounts_residual": [],
+  "loop_backings_residual": [],
+  "units": {
+    "base": "ActiveState=inactive\nSubState=dead",
+    "live": "ActiveState=inactive\nSubState=dead"
+  },
+  "free_bytes": 67419172864,
+  "unpacking_seen": false,
+  "setting_up_seen": false,
+  "live_started": false,
+  "accepted_pair": false,
+  "flags": {
+    "build_habilitado": false,
+    "criacao_vms_autorizada": false,
+    "instalacao_xubuntu_autorizada": false,
+    "personalizacao_habilitada": false,
+    "executor_autorizado": false,
+    "probe_autorizado": false,
+    "recuperacao_autorizada": false,
+    "download_pacotes_autorizado": false,
+    "integracao_camadas_autorizada": false,
+    "iso_final_autorizada": false
+  },
+  "failure": "APT --no-download sem Dir::Cache::archives apontando para bundle local",
+  "network_download_executed": false,
+  "iso_generated": false
+}

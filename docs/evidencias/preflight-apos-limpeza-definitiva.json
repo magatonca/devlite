@@ -1,0 +1,25 @@
+{
+  "status": "passed_no_dpkg_execution",
+  "workspace": "/home/magaton/DevLite-OS/work/apt-full-preflight-2s85umho",
+  "dpkg_executed": false,
+  "packages_installed": false,
+  "targets": {
+    "base": {
+      "changes": 240,
+      "epoch_packages": 55,
+      "absolute_deb_commands_verified": 240,
+      "status_unchanged": true,
+      "simulation_exact": true,
+      "returncode": 0
+    },
+    "live": {
+      "changes": 239,
+      "epoch_packages": 51,
+      "absolute_deb_commands_verified": 239,
+      "status_unchanged": true,
+      "simulation_exact": true,
+      "returncode": 0
+    }
+  },
+  "critical_host_unchanged": true
+}

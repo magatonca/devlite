@@ -1,0 +1,10 @@
+{
+  "checked_existing_entries": 427,
+  "changes_to_existing_entries": [],
+  "passed": true,
+  "scope_written": "docs/v5 only; test-owned temporary fixtures",
+  "iso_v4_verified_sha256": "4adf369ea22ef5dd6c49da2db9fd70ea5620219d4636489a0933a2bb57bb5564",
+  "iso_v3_verified_sha256": "7373cb9be11ebda5218f20795fec87eab20c2cebef3c763ae6e5c63d4e7cd7bd",
+  "candidate_pack_metadata_and_existing_small_file_hashes_unchanged": true,
+  "free_bytes": 48508227584
+}

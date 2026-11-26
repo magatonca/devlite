@@ -1,0 +1,60 @@
+{
+  "job": "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+  "report": {
+    "status": "layers_verified",
+    "iso_generated": false,
+    "resumed_from": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+    "installation_repeated": false,
+    "compression_repeated": false,
+    "logical_composition_verified": true,
+    "verified_layers": {
+      "minimal.squashfs": {
+        "sha256": "d33c784d13ea16f99a6e386ffde7bc76fc508806e19a036c10b96ab7ca2f923f",
+        "entries": 113885,
+        "uncompressed_bytes": 3734156800
+      },
+      "minimal.live.squashfs": {
+        "sha256": "fae422b8d9dfc13b354947aee23f5088220dd3f843de29b30a92cc7a86c6eee5",
+        "entries": 70459,
+        "uncompressed_bytes": 2078521856
+      }
+    },
+    "kernel_composition_verified": true,
+    "roundtrip_verified": true,
+    "job_sha256": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+    "layers": {
+      "minimal.squashfs": {
+        "sha256": "d33c784d13ea16f99a6e386ffde7bc76fc508806e19a036c10b96ab7ca2f923f",
+        "entries": 113885,
+        "uncompressed_bytes": 3734156800
+      },
+      "minimal.live.squashfs": {
+        "sha256": "fae422b8d9dfc13b354947aee23f5088220dd3f843de29b30a92cc7a86c6eee5",
+        "entries": 70459,
+        "uncompressed_bytes": 2078521856
+      }
+    },
+    "published": "/home/magaton/DevLite-OS/work/release-63m6oz2_/published-casper",
+    "files": {
+      "devlite-base.manifest.full": "f66082285bb0f5fbcd186e49631ab8a483e11338d7bfb93b253846c6a20612c6",
+      "filesystem.manifest": "1cbef689bcb7ea3545265dd3e09f64bedd7a957652279e411551192177aaff52",
+      "filesystem.size": "ac1c25d04e1ef9e09f1dabd8ad97d655393123e3fbe27fc380150d83d9a80720",
+      "install-sources.yaml": "4a59d510ccbc748d9287dd1b71ddd5831e5a27362207779d8529131f53d90e6e",
+      "minimal.live.manifest": "d44e192ea413da8e89e57e8c5801e2a951c19a37f355b314fb0d6ea4a3c1d3c4",
+      "minimal.live.size": "c12c411b2d4297175fbfaafdc4e931fadf0b871c06864ebc25668601a88879d0",
+      "minimal.live.squashfs": "fae422b8d9dfc13b354947aee23f5088220dd3f843de29b30a92cc7a86c6eee5",
+      "minimal.manifest": "db00094b1b7c48e476d0a2febdcb0de38c5ce7ec8705f95d082e6507463d67fd",
+      "minimal.size": "cc85070203234697ef0e228c37dce3000fc288a4fdd25ebbd60e784c64ac8344",
+      "minimal.squashfs": "d33c784d13ea16f99a6e386ffde7bc76fc508806e19a036c10b96ab7ca2f923f"
+    },
+    "xattr_absence_proof": {
+      "minimal.squashfs": 0,
+      "minimal.live.squashfs": 70459
+    },
+    "roundtrip_method": "SquashFS mounted read-only: complete content, metadata, hardlinks and xattrs compared to installed source/delta recipe",
+    "reproducibility": "second construction pending"
+  },
+  "journal": "2026-11-17T19:32:37+00:00 magaton systemd[1]: Started devlite-pack-63m6oz2_.service - /usr/bin/unshare --mount --propagation private /usr/bin/python3 /home/magaton/DevLite-OS/scripts/integrar-release-root.py --job /home/magaton/DevLite-OS/work/release-63m6oz2_ --approval-sha256 bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d.\n2026-11-17T20:38:43+00:00 magaton systemd[1]: devlite-pack-63m6oz2_.service: Deactivated successfully.\n2026-11-17T20:38:43+00:00 magaton systemd[1]: devlite-pack-63m6oz2_.service: Consumed 12min 31.557s CPU time, 2.5G memory peak, 0B memory swap peak.\n",
+  "unit": "ActiveState=inactive\nSubState=dead\n",
+  "loop_backings": ""
+}

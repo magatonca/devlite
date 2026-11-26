@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "prototype_awaiting_design_approval",
+  "checked_utc": "2026-11-19T10:00:48.002990+00:00",
+  "original_control_sha256": {
+    "overlay/final-candidate/usr/bin/devlite-control": "f50eea5f1c1fa4d64ed1818886ab3f8f0de95dbc8c8ebc0c672fcde0cf1abf66",
+    "overlay/final-candidate/usr/libexec/devlite-service-control": "7715b8a613d04b262212c98627531b6f8bf2a0c8de6c50884bcffe3ca1150843",
+    "overlay/final-candidate/usr/share/polkit-1/actions/org.devlite.services.policy": "62e5a3909901ece5c80e8fe4d2f502542d84952fdf928e39377f13a4069db523",
+    "overlay/final-candidate/usr/share/applications/devlite-control.desktop": "bcfa9631eeb8e896155841fbd63dc01fa03864f2bdc00bf9f33928b93edc61b1"
+  },
+  "original_control_unchanged": true,
+  "prototype_sha256": {
+    "prototypes/control2/app.py": "8fb1ade887e8c8686c99ed097db18a751c4718111d3834d07627ed09eb045a37",
+    "prototypes/control2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prototypes/control2/model.py": "bc13f64f3519b42061910e191b8f618a9a7fb74ea09e595c689d48c08da91728",
+    "prototypes/control2/policy-proposal.xml": "5aa2a4fcf98e25cd999e1b18c5cffc08d60bd88baeac81cc527703077bbaa545",
+    "prototypes/control2/README.md": "d8a344c369dade090d80de3d8ad50b6e8f8fa4df6a3b416170d3f875a3d77fdd",
+    "prototypes/control2/preview.html": "402eb791cdd8d5d96ebe589f6869abc7beaffecfe53a4766f263076bbed171f4"
+  },
+  "dependencies_from_accepted_manifests": {
+    "base": {
+      "python3-gi": "3.48.2-1",
+      "gir1.2-gtk-3.0": "3.24.41-4ubuntu1.3",
+      "gir1.2-glib-2.0": "2.80.0-6ubuntu3.8",
+      "policykit-1": "124-2ubuntu1.24.04.3",
+      "polkitd": "124-2ubuntu1.24.04.3",
+      "pkexec": "124-2ubuntu1.24.04.3",
+      "policykit-1-gnome": "0.105-7ubuntu5"
+    },
+    "live": {
+      "python3-gi": "3.48.2-1",
+      "gir1.2-gtk-3.0": "3.24.41-4ubuntu1.3",
+      "gir1.2-glib-2.0": "2.80.0-6ubuntu3.8",
+      "policykit-1": "124-2ubuntu1.24.04.3",
+      "polkitd": "124-2ubuntu1.24.04.3",
+      "pkexec": "124-2ubuntu1.24.04.3",
+      "policykit-1-gnome": "0.105-7ubuntu5"
+    }
+  },
+  "tests": {
+    "suite_passed": 449,
+    "specific_passed": 19,
+    "full_log": "reports/testes-control2-prototipo.txt",
+    "specific_log": "reports/testes-control2-prototipo-direcionados.txt"
+  },
+  "gtk_host_check": {
+    "passed": false,
+    "reason": "gi available; Namespace Gtk not available; no graphical session",
+    "packages_installed": false
+  },
+  "gtk_window_rendered": false,
+  "graphical_acceptance": "not_tested",
+  "real_service_operations": false,
+  "real_polkit_tested": false,
+  "backend": "simulated-only",
+  "policy_installed": false,
+  "current_control_replaced": false,
+  "layers_modified": false,
+  "iso_generated": false,
+  "browser_executor_seal_preserved": true,
+  "free_bytes": 63658799104
+}

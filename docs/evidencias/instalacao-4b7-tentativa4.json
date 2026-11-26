@@ -1,0 +1,162 @@
+{
+  "captured_utc": "2026-11-17T11:31:47.261878+00:00",
+  "release_job": "/home/magaton/DevLite-OS/work/release-o9fx0a_a",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2",
+  "result": {
+    "status": "quarantined",
+    "iso_generated": false,
+    "rootfs_integration_executed": false,
+    "contract_sha256": "4c26607d67825165b7017993bc0068b0dca26ac02711287a8148f63e2e0667f2",
+    "error": "Worker falhou: devlite-yqj_nck2-base"
+  },
+  "state": {
+    "state": "quarantined",
+    "job_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd",
+    "error": "Worker falhou: devlite-yqj_nck2-base",
+    "host_guard_error": null
+  },
+  "host_guard": {
+    "before": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "after": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+    "unchanged": true,
+    "critical_before": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    },
+    "critical_after": {
+      "/var/lib/dpkg/status": "ea22860336be48cd48406bb4a5ff0d38fca25f58e3be9ac2c7ec092abf795499",
+      "/var/lib/apt/extended_states": "256aa2c6744cc945937b9d984b0b10ba8dc560131874fca34c78496a9395669d",
+      "/etc/passwd": "1ec97eb1d065435e2eabc5af3c1ef1df2a79f237faf0e1ae51e8cd7b4a56cdd1",
+      "/etc/group": "44614eb75fbbb1e58fbb945de19735dfe386b813c42d1127761ddfc6ca196688",
+      "/etc/fstab": "61b7946623a7b56286b0fc5b2914f0d74e21b9b377714d930aedecc55c38b38a",
+      "/etc/apt/sources.list": "6ca480b27cd0e31195ab5edde222ed273931844b2fded26d86eb533923fc86be",
+      "/etc/apt/sources.list.d/ubuntu.sources": "9737734af34f8f1795e2035cf2583290c99d09c185a8c9c98a57bdbb9d5073bc",
+      "/etc/apt/sources.list.d/ubuntu.sources.curtin.orig": "9a4af756e974a7a6b0a447705d1d12366cfa4d860d8722b652d69d8e1b44e34f"
+    }
+  },
+  "probe_attestation": {
+    "job_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd",
+    "status": "probe_passed"
+  },
+  "probe_results": {
+    "job_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd",
+    "results": {
+      "base": {
+        "target": "base",
+        "status": "probe_validated",
+        "actual_cgroup_limits": {
+          "memory.max": "2684354560",
+          "memory.swap.max": "1073741824",
+          "pids.max": "128",
+          "cpu.max": "100000 100000"
+        },
+        "checks": {
+          "bundle_write_errno": 30,
+          "capabilities": {
+            "CapAmb": 0,
+            "CapBnd": 2147484155,
+            "CapEff": 2147484155,
+            "CapInh": 0,
+            "CapPrm": 2147484155
+          },
+          "chroot_denied": true,
+          "devices": [
+            "fd",
+            "null",
+            "random",
+            "stderr",
+            "stdin",
+            "stdout",
+            "urandom",
+            "zero"
+          ],
+          "host_sentinel_read_errno": 2,
+          "host_sentinel_write_open_errno": 2,
+          "mount_denied_returncode": 32,
+          "mount_flags": {
+            "/": [
+              "nodev",
+              "nosuid",
+              "relatime",
+              "rw"
+            ],
+            "/proc": [
+              "nodev",
+              "noexec",
+              "nosuid",
+              "relatime",
+              "ro"
+            ],
+            "/run/devlite": [
+              "nodev",
+              "nosuid",
+              "relatime",
+              "ro"
+            ],
+            "/run/devlite/debs": [
+              "nodev",
+              "noexec",
+              "nosuid",
+              "relatime",
+              "ro"
+            ]
+          },
+          "namespaces": {
+            "cgroup": "cgroup:[4026532256]",
+            "ipc": "ipc:[4026532254]",
+            "mnt": "mnt:[4026532252]",
+            "net": "net:[4026532257]",
+            "pid": "pid:[4026532255]",
+            "uts": "uts:[4026532253]"
+          },
+          "network_denied_errno": 101,
+          "network_interfaces": [
+            "lo"
+          ],
+          "parent_root": "access_denied",
+          "target_write_verified": true,
+          "visible_pids": [
+            1,
+            22
+          ]
+        },
+        "image": {
+          "file": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt/base.ext4",
+          "bytes": 12884901888,
+          "sha256": "85759b60a611185271d87ba94bc54e36fc15000b16892a0d423773e7c16153e4"
+        }
+      }
+    },
+    "critical_host_unchanged": true,
+    "sentinel_unchanged": true
+  },
+  "private_evidence_sha256": {
+    "state.json": "690563f4fe36452d8be5165ef05584f1cdcb2ed01be0eefa7606c380b3275b06",
+    "host-before.json": "ebe2fd9f879a1484825b89cd6eb73060725516096e7b7471c9434fcdf7d08682",
+    "host-guard.json": "989b3fc7cb1f430a4edaa652ed8e9ee7f83af6928e6f044ee6de0fced8063781",
+    "authentication.json": "7003ef6a4e9a27722c07069d5d73af599640626de8ce9d89787dbe9b5af2c9b4",
+    "devlite-yqj_nck2-base.log": "0a2165605264facf1da866d226bf753da0df031f54e40b00613cb4a4f8955a7d"
+  },
+  "mounts_residual": [],
+  "loop_backings_residual": [],
+  "units": {
+    "base": "ActiveState=inactive\nSubState=dead",
+    "live": "ActiveState=inactive\nSubState=dead"
+  },
+  "apt_install_command_completed": true,
+  "dpkg_audit_empty": true,
+  "apt_check_seen": true,
+  "locale_ptbr_seen": true,
+  "live_started": false,
+  "accepted_pair": false,
+  "free_bytes": 61561839616,
+  "executor_permission": false,
+  "failure": "apache2ctl -t: /var/lock -> /run/lock ausente no tmpfs privado",
+  "iso_generated": false
+}

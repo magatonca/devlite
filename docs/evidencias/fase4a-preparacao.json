@@ -1,0 +1,62 @@
+{
+  "fase": "4A",
+  "status": "preparacao_sem_aplicacao",
+  "workspace": "work/phase4a-m4cmg7q9",
+  "selected_items": 47,
+  "ubuntu_candidates": 44,
+  "external_items": [
+    "node-lts",
+    "typescript",
+    "vscode"
+  ],
+  "external_sources_enabled": false,
+  "prepared_files": 11,
+  "layer_audit": {
+    "base_entries": 80893,
+    "live_entries": 64655,
+    "overlapping_non_directories": 50,
+    "sensitive_overlaps": [
+      "var/lib/apt/extended_states",
+      "var/lib/dpkg/diversions",
+      "var/lib/dpkg/diversions-old",
+      "var/lib/dpkg/status"
+    ],
+    "dpkg_status_shadowed": true,
+    "prepared_files_masked_by_old_live": [],
+    "listing_sha256": {
+      "base": "b8d9c889173ad6729a4ae0489b41e1310e271b049035079a0e9bda8434ab9077",
+      "live": "2cb606e23a2002395b0f4cb5515ce73f38692118c25fdda352ea6ae0a662a26e"
+    }
+  },
+  "limits": [
+    "listagens históricas sem novo hash binário das camadas",
+    "resolução APT transitiva não executada",
+    "chroot/rebase/montagens não executados",
+    "boot e instalação não executados"
+  ],
+  "ready_to_apply": false,
+  "tests_passed": 47,
+  "blockers": [
+    "Resolver e congelar a transação APT completa no contexto do alvo, incluindo dependências transitivas.",
+    "Origem externa não autorizada/habilitada: node-upstream.",
+    "Fixar versão, origem e SHA-256 do artefato externo: node-lts.",
+    "Conferir chave/fingerprint e assinatura de origem: node-lts.",
+    "Origem externa não autorizada/habilitada: npm-upstream.",
+    "Fixar versão, origem e SHA-256 do artefato externo: typescript.",
+    "TypeScript requer dist.integrity SHA-512 e lock npm; nenhum script de ciclo de vida autorizado.",
+    "Origem externa não autorizada/habilitada: microsoft-vscode.",
+    "Fixar versão, origem e SHA-256 do artefato externo: vscode.",
+    "Conferir chave/fingerprint e assinatura de origem: vscode.",
+    "Lock APT ainda incompleto: apache2, atril, ca-certificates, composer, console-setup, docker-compose-v2, docker.io, elementary-xfce-icon-theme, gh, git, greybird-gtk-theme, iperf3, keyboard-configuration, language-pack-gnome-pt, language-pack-pt, language-pack-pt-base, libapache2-mod-php, libreoffice-calc, libreoffice-help-pt-br, libreoffice-impress, libreoffice-l10n-pt-br, libreoffice-writer, locales, mariadb-server, network-manager, network-manager-openvpn, network-manager-openvpn-gnome, nmap, openssh-client, openvpn, php-cli, php-curl, php-mbstring, php-mysql, php-xml, php-zip, remmina, remmina-plugin-rdp, remmina-plugin-vnc, tcpdump, tzdata, wireshark, xfce4, xubuntu-default-settings",
+    "Aprovação explícita para operações privilegiadas da Fase 4B ainda necessária.",
+    "Validar extração, whiteouts, diretórios opacos, capabilities e regeneração do delta live em laboratório.",
+    "Definir política de assinatura dos componentes modificados e validar instalador, BIOS e UEFI.",
+    "Executor de instalação/rebase não implementado nesta fase; apenas plano e arquivos preparados."
+  ],
+  "source_files_sha256": {
+    "packages/selection.json": "daad733b01353b12711d65e9b158486c3d608e83497b92ba3a6c6a9d1e41af7a",
+    "packages/sources.json": "e3c7b59fc1a60868c2b05738caf760724b874344322b4e121ce7d1c77dd45f7c",
+    "config/customization.json": "baa42c6635e410b08125e098b86dc4644960eaf0ffb3e1b5e45664be1323c70f",
+    "config/customization-lock.json": "984b7774abf634659694c76ef05d858aa06ec7d5de03a3074dcc730663e67e7c"
+  }
+}

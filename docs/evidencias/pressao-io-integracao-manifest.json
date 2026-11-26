@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-11-17T19:59:52.479859+00:00",
+  "job": "release-63m6oz2_",
+  "pressure": {
+    "io": "some avg10=98.44 avg60=97.36 avg300=95.13 total=21448112973\nfull avg10=90.04 avg60=93.09 avg300=91.69 total=18725747177\n",
+    "memory": "some avg10=0.00 avg60=0.00 avg300=1.32 total=1637743501\nfull avg10=0.00 avg60=0.00 avg300=1.22 total=1304108354\n",
+    "cpu": "some avg10=2.48 avg60=1.61 avg300=1.92 total=2448593773\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n"
+  },
+  "loadavg": "2.68 2.38 2.02 1/205 100459\n",
+  "configuration_changed": false
+}

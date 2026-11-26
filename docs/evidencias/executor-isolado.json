@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "implementado_validado_sem_execucao_privilegiada",
+  "job": "/home/magaton/DevLite-OS/work/phase4b3-8k8e4q49",
+  "job_sha256": "ad2bd28cdaab297cef1034df3a66ecc342989c589fa1a1d80f41ad2da989d1c9",
+  "source_plan": "/home/magaton/DevLite-OS/work/phase4b2-whqtc4yu/installation-plan.json",
+  "source_plan_sha256": "5a9a73590def78f5cc14576a0e33797bfb89ab8c66fdbe8055a734b474ad1c86",
+  "code_sha256": {
+    "scripts/executar-programas.py": "a9814b5fef676fcc84d79f59205aaab3b376244553135313e060f22269e88526",
+    "pipeline/devlite/customize/executor_contract.py": "7554ece8af8e5eb6f13c8c3b8a6813371c04e67593a4c072ea49fe51957451fa",
+    "pipeline/devlite/customize/executor.py": "7772ffaa28e39d7af5bf109b0b09331c62e68373dd6d0a18ea4c32e6ddbe08c7",
+    "pipeline/devlite/customize/executor_worker.py": "6d1d2db881a150a375f127dac59b80c6161cd07741e1f529b9c2b6f09f65ce58",
+    "pipeline/devlite/customize/guest_runner.py": "b4f838054ff2267060721db10f6dc6a9a9e4cd66369a8e3d9b04dc264621cf8d",
+    "pipeline/devlite/customize/reconcile.py": "a62bbf62d1fe1a6dc75ba2485268cc65b3d4884598bc759618e558acc8d85a88",
+    "pipeline/devlite/customize/installation.py": "e90126464073075d621a54f5e2f9666b6b9058377b22d111f5a0a5ee99bafe79",
+    "pipeline/devlite/customize/service_profiles.py": "568f7064ca2e7e89d082b4e4f4aa7c835d651683fd04136b6dd72e0fc8581dec",
+    "pipeline/devlite/customize/manifest.py": "8984948ff41de642fd0328420fa4f4e610fb51fa11b99a65a7d3feac0a51a904",
+    "pipeline/devlite/runtime.py": "14a0327ccec52943ea6f52fe36825922f6958ebf8782102e5fbf238d36643427"
+  },
+  "tests": {
+    "passed": 105,
+    "new": 30,
+    "failed": 0,
+    "report": "reports/testes-fase4b3.txt"
+  },
+  "chroot_executed": false,
+  "mounts_executed": false,
+  "namespaces_executed": false,
+  "probe_executed": false,
+  "package_installation_executed": false,
+  "iso_generated": false,
+  "commits_created": false,
+  "limits": {
+    "image_bytes": 12884901888,
+    "reserve_bytes": 12884901888,
+    "memory_bytes": 2684354560,
+    "swap_bytes": 1073741824,
+    "tasks": 128,
+    "seconds": 3600,
+    "cpu_percent": 100,
+    "file_bytes": 2147483648
+  },
+  "resources": {
+    "free_bytes": 48021757952,
+    "whole_sequence_budget_bytes": 60129542144,
+    "whole_sequence_sufficient": false
+  },
+  "dependencies": {
+    "systemd-run": "/usr/bin/systemd-run",
+    "systemctl": "/usr/bin/systemctl",
+    "unshare": "/usr/bin/unshare",
+    "mount": "/usr/bin/mount",
+    "umount": "/usr/bin/umount",
+    "mkfs.ext4": "/usr/sbin/mkfs.ext4",
+    "e2fsck": "/usr/sbin/e2fsck",
+    "cp": "/usr/bin/cp",
+    "gpgv": "/usr/bin/gpgv",
+    "python3": "/usr/bin/python3"
+  },
+  "pending": [
+    "expandir espaço: orçamento conservador 56 GiB livres; ideal 60 GiB",
+    "autorizar probe privilegiado sem pacotes",
+    "adquirir debs autenticados em etapa de rede autorizada",
+    "autorizar instalação real separadamente",
+    "validar cenários reais de OOM/disco/sinais/reboot",
+    "aplicar/capturar delta live e comprovar equivalência em fase posterior",
+    "boot e instalação reais permanecem pendentes"
+  ]
+}

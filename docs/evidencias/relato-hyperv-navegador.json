@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-18T21:30:58.548036+00:00",
+  "source": "user report in current request",
+  "hypervisor": "Hyper-V",
+  "reported_passed": [
+    "BIOS Legacy installation and boot",
+    "UEFI installation and boot",
+    "Apache PHP MariaDB",
+    "Docker Composer Git",
+    "Node.js TypeScript",
+    "network tools",
+    "DevLite Control",
+    "XFCE pt-BR keyboard persistence"
+  ],
+  "reported_failure": "no functional graphical browser",
+  "raw_guest_evidence_attached": false,
+  "automated_acceptance_statuses_changed": false
+}

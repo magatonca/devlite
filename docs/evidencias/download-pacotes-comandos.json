@@ -1,0 +1,13 @@
+{
+  "approval_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "download": [
+    "python3",
+    "/home/magaton/DevLite-OS/scripts/pacotes-controlados.py",
+    "--download",
+    "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/download-plan.json",
+    "--approval-sha256",
+    "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b"
+  ],
+  "permission": "download_pacotes_autorizado permanece false; autorização específica necessária; nenhuma instalação habilitada",
+  "execution_result": "Usuário autorizou exclusivamente este manifesto; download concluído com código 0 e 243 arquivos verificados. Flag temporária restaurada; instalação não autorizada."
+}

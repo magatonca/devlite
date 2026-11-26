@@ -1,0 +1,24 @@
+{
+  "status": "prepared_awaiting_privileged_approval",
+  "workspace": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv",
+  "contract_sha256": "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1",
+  "executor_sha256": "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115",
+  "previous_quarantined_release": "/home/magaton/DevLite-OS/work/release-o9fx0a_a",
+  "previous_execution_evidence": "docs/evidencias/instalacao-4b7-tentativa4.json",
+  "cache_files": 243,
+  "cache_bytes": 338284668,
+  "cache_reverified": true,
+  "cache_manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "new_probe_executed": false,
+  "installation_executed": false,
+  "free_bytes": 61560758272,
+  "required_probe_free_bytes": 60129542144,
+  "tests": {
+    "passed": 168,
+    "report": "reports/testes-runtime-apache.txt"
+  },
+  "complete_apt_preflight": "docs/evidencias/preflight-apos-limpeza-definitiva.json",
+  "apt_code_unchanged_since_preflight": true,
+  "fix": "preparar /run/lock 1777 no tmpfs privado antes do guest, sem ampliar permissões de namespace/capabilities"
+}

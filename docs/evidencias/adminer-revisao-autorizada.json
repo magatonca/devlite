@@ -1,0 +1,171 @@
+{
+  "status": "artifacts_verified_not_installed",
+  "checked_utc": "2026-11-19T10:40:29.197995+00:00",
+  "ubuntu_package": {
+    "version": "4.8.1-2",
+    "bytes": 798606,
+    "sha256": "78f71ebaefe916be6a7cb7bab722f80c1964e36cba68fac5042e0a5a97611d4f",
+    "hash_verified": true,
+    "security_approved": false
+  },
+  "upstream_review": {
+    "status": "verified_for_review_only",
+    "version": "6.3.0",
+    "variant": "mysql-multilingual",
+    "origin": "https://github.com/vrana/adminer/releases/download/v6.3.0/adminer-6.3.0-mysql.php",
+    "final_origin_host": "release-assets.githubusercontent.com",
+    "bytes": 441747,
+    "sha256": "33af3816a08213ae7579f8416e66d7d70054d6bcd70516d4ad3124f4b8b5c1e0",
+    "digest_source": "official GitHub releases API asset.digest via HTTPS",
+    "independent_gpg_signature_verified": false,
+    "source_commit_signature": "unsigned per GitHub git API",
+    "installed": false,
+    "php_executed": false,
+    "security_review_complete": false,
+    "checked_utc": "2026-11-19T10:37:25.869310+00:00"
+  },
+  "advisories_reviewed": 22,
+  "public_advisory_patched_versions": [
+    {
+      "ghsa": "GHSA-r9r5-j5q8-8c59",
+      "patched": [
+        "6.1.1"
+      ]
+    },
+    {
+      "ghsa": "GHSA-7c5h-q78c-fpxx",
+      "patched": [
+        "6.0.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-q8h3-4cx4-prgm",
+      "patched": [
+        "6.0.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-77qq-q8fv-x45v",
+      "patched": [
+        "6.0.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-rwxg-xph9-82cj",
+      "patched": [
+        "6.0.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-fr74-9mf9-gf44",
+      "patched": [
+        "5.5.1"
+      ]
+    },
+    {
+      "ghsa": "GHSA-8478-xrj3-h9c2",
+      "patched": [
+        "5.5.0"
+      ]
+    },
+    {
+      "ghsa": "GHSA-58cq-mgw2-38m5",
+      "patched": [
+        "5.5.0"
+      ]
+    },
+    {
+      "ghsa": "GHSA-75xm-qwfq-9wp5",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-6pg3-chwq-wgqc",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-vcvj-rwwm-x6g5",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-gmx3-g29w-77wf",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-h6jr-7pr6-grgj",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-r4x9-5m63-3vxw",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-33j4-hc95-pggg",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-c533-9qwm-8w5h",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-3582-q6xq-5vf7",
+      "patched": [
+        "5.4.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-q4f2-39gr-45jh",
+      "patched": [
+        "5.4.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-2v82-5746-vwqc",
+      "patched": [
+        "4.8.1"
+      ]
+    },
+    {
+      "ghsa": "GHSA-43f8-p5w3-5m25",
+      "patched": [
+        "4.7.8"
+      ]
+    },
+    {
+      "ghsa": "GHSA-x5r2-hj5c-8jx6",
+      "patched": [
+        "4.7.9"
+      ]
+    },
+    {
+      "ghsa": "GHSA-9pgx-gcph-mpqr",
+      "patched": [
+        "4.7.9"
+      ]
+    }
+  ],
+  "apache_proposal_sha256": "a377b5124bb635ff1db3b41c8d18380a2d1fa36c2a49d1338ead970946dd68ed",
+  "tests": {
+    "full_suite": 463,
+    "new_adminer_regression_total": 14,
+    "log": "reports/testes-autorizacao-geral-adminer.txt"
+  },
+  "installed": false,
+  "php_executed": false,
+  "homologated_layers_modified": false
+}

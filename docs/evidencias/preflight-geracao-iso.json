@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "contract_valid": true,
+  "root_receipt_owner": 0,
+  "base_packages": 1393,
+  "live_packages": 1534,
+  "snap_records_preserved_exactly": [
+    "snap:core22\tstable\t2437",
+    "snap:snapd\tstable\t27738",
+    "snap:ubuntu-desktop-bootstrap\t24.04/stable/ubuntu-24.04\t572"
+  ],
+  "size_metadata_verified": true,
+  "empty_acceptance_template_rejected": true,
+  "source_iso_bytes": 3193516032,
+  "packed_bytes": 2343211008,
+  "free_bytes": 44214231040,
+  "single_build_guard_bytes": 24154083328,
+  "conservative_per_build_persistent_bytes": 14266970112,
+  "conservative_two_builds_plus_reserve_bytes": 39271358464,
+  "space_sufficient_two_builds": true,
+  "controller_sha256": "3b71fac66711c846327fc87996536c8c852f3a4d12d35586657b4f985a356bc8",
+  "iso_generated": false,
+  "permissions_enabled": false
+}

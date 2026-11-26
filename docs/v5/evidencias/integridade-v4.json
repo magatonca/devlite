@@ -1,0 +1,17 @@
+{
+  "iso": "/home/magaton/DevLite-OS/artifacts/modern-release-owcgr3mg/devlite-os-1.0-amd64.iso",
+  "bytes": 3645308928,
+  "expected_sha256": "4adf369ea22ef5dd6c49da2db9fd70ea5620219d4636489a0933a2bb57bb5564",
+  "verified_sha256": "4adf369ea22ef5dd6c49da2db9fd70ea5620219d4636489a0933a2bb57bb5564",
+  "verification": "sha256sum executado nesta auditoria antes das altera\u00e7\u00f5es",
+  "metadata_before_documentation": {
+    "dev": 64512,
+    "ino": 5899002,
+    "mode": 33204,
+    "uid": 1000,
+    "gid": 1000,
+    "size": 3645308928,
+    "mtime_ns": 1795451305084778736,
+    "ctime_ns": 1795452790440745142
+  }
+}

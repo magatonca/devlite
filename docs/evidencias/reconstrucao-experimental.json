@@ -1,0 +1,30 @@
+{
+  "status": "validado_estruturalmente",
+  "saida": "/home/magaton/DevLite-OS/artifacts/phase3b-9adp_k5i/devlite-os-1.0-experimental-rebuild.iso",
+  "bytes": 3193634816,
+  "iso_sha256": "2e3a6eecf59d535a4825ff41655c542f6ef2017ccce9a9672891ace2672f2bc7",
+  "original_sha256": "9d47f975696ce496b8be882b6d7cc9079c1ea89fb625ac2c86caa63a4f180033",
+  "source_date_epoch": 1788856610,
+  "workspace": "/home/magaton/DevLite-OS/work/phase3b-frka50es",
+  "efi_sha256": "056ff3b6fb3beebdf108b207ff727ba569088f3e26848bbd93849037f2f4f051",
+  "md5_entradas_verificadas": 191,
+  "sha256_camadas_verificadas": 2,
+  "metadados_iso_comparados": 923,
+  "arquivos_boot_relocalizados": [
+    "boot/grub/i386-pc/eltorito.img",
+    "boot.catalog"
+  ],
+  "boot_vm": "adiado pelo usuário; não testado",
+  "instalacao": "não testada",
+  "codigo_mbr_e_carga_eltorito_verificados": true,
+  "testes_automatizados_aprovados": 29,
+  "reproducibilidade_binaria": {
+    "status": "identidade_binaria_confirmada",
+    "referencia": "/home/magaton/DevLite-OS/artifacts/phase3b-9adp_k5i/devlite-os-1.0-experimental-rebuild.iso",
+    "workspace": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv",
+    "sha256": "2e3a6eecf59d535a4825ff41655c542f6ef2017ccce9a9672891ace2672f2bc7",
+    "segunda_imagem": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv/reproduced.iso",
+    "bytes": 3193634816
+  },
+  "disco_livre_final_aproximado_gib": 67
+}

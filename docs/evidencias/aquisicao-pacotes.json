@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "download_verificado_e_reauditado",
+  "exit_code": 0,
+  "manifest": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/download-plan.json",
+  "manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "cache": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/debs",
+  "receipt": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/acquisition-1cqnoodi/receipt.json",
+  "receipt_sha256": "ad354b3c463c1d766a40735e9c31d3ed4bed893c532aa76b39ec51e48aa89839",
+  "files_verified_independently": 243,
+  "bytes_verified": 338284668,
+  "cached_files_reused": 0,
+  "new_files_downloaded": 243,
+  "completed_local": "2026-11-16T20:05:11.205332-03:00",
+  "host_checkpoint_comparison": {
+    "critical_files_unchanged": true,
+    "differences": {},
+    "same_mount_namespace": true,
+    "mountinfo_unchanged": true,
+    "loop_backings_unchanged": true
+  },
+  "free_bytes_after": 73149743104,
+  "permissions_restored_false": true,
+  "installation_authorized": false,
+  "apt_dpkg_executed_in_image": false,
+  "remote_indices_updated": false,
+  "iso_generated": false,
+  "partial_files_remaining": 0,
+  "download_lock_remaining": false,
+  "archive_origins": [
+    "archive.ubuntu.com",
+    "security.ubuntu.com"
+  ]
+}

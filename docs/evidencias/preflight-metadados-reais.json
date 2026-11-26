@@ -1,0 +1,20 @@
+{
+  "status": "passed_nonprivileged_metadata_preflight",
+  "base_packages": 1393,
+  "live_packages": 1534,
+  "snap_records_preserved_exactly": [
+    "snap:core22\tstable\t2437",
+    "snap:snapd\tstable\t27738",
+    "snap:ubuntu-desktop-bootstrap\t24.04/stable/ubuntu-24.04\t572"
+  ],
+  "catalog_size_fields": 1,
+  "catalog_layered_type": true,
+  "manifest_sha256": {
+    "minimal.manifest": "db00094b1b7c48e476d0a2febdcb0de38c5ce7ec8705f95d082e6507463d67fd",
+    "minimal.live.manifest": "d44e192ea413da8e89e57e8c5801e2a951c19a37f355b314fb0d6ea4a3c1d3c4",
+    "filesystem.manifest": "1cbef689bcb7ea3545265dd3e09f64bedd7a957652279e411551192177aaff52",
+    "devlite-base.manifest.full": "f66082285bb0f5fbcd186e49631ab8a483e11338d7bfb93b253846c6a20612c6"
+  },
+  "actual_sizes": "computed only during approved RO mounts; placeholder zero used only to validate catalog format",
+  "root_operations_executed": false
+}

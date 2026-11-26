@@ -1,0 +1,24 @@
+{
+  "probe": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/executar-programas.py",
+    "--probe",
+    "--job",
+    "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2",
+    "--approval-sha256",
+    "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd"
+  ],
+  "install": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/instalar-release-root.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-o9fx0a_a",
+    "--approval-sha256",
+    "4c26607d67825165b7017993bc0068b0dca26ac02711287a8148f63e2e0667f2"
+  ],
+  "permissions_enabled": false,
+  "blocked_reason": "aguarda autorização específica para novo probe e instalação; espaço recuperado",
+  "free_bytes": 72646578176
+}

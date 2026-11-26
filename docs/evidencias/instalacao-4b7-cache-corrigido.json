@@ -1,0 +1,22 @@
+{
+  "status": "blocked_disk_before_probe",
+  "workspace": "/home/magaton/DevLite-OS/work/release-qqkumja7",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1",
+  "contract_sha256": "e8e8a0f9ba2427fecdb06cdf8f9055a879542333783c86a9974f79dae7e809a1",
+  "executor_sha256": "a6eb77b71206587013cf3ea28c8d746926982ad23193673cacd8421fba75223c",
+  "previous_quarantined_release": "/home/magaton/DevLite-OS/work/release-00j3px2e",
+  "previous_execution_evidence": "docs/evidencias/instalacao-4b7-tentativa2.json",
+  "cache_files": 243,
+  "cache_bytes": 338284668,
+  "cache_reverified": true,
+  "cache_manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "new_probe_executed": false,
+  "installation_executed": false,
+  "free_bytes": 57913950208,
+  "required_probe_free_bytes": 60129542144,
+  "tests": {
+    "passed": 162,
+    "report": "reports/testes-release-cache-isolado.txt"
+  },
+  "fix": "cache APT gravável no alvo com links temporários ao bundle RO; partial/lock não escritos no bundle"
+}

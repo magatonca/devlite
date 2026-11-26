@@ -1,0 +1,38 @@
+{
+  "status": "readonly_prototype_checks_passed",
+  "source_report": "/home/magaton/DevLite-OS/work/prototype-review-wt6wd6a1/result.json",
+  "views": {
+    "base": {
+      "status": "passed",
+      "outputs": [
+        "PHP 8.3.6 (cli) (built: Oct 19 2026 15:16:58) (NTS)\nCopyright (c) The PHP Group\nZend Engine v4.3.6, Copyright (c) Zend Technologies\n",
+        "No syntax errors detected in /run/prototype-review/policy.php\n",
+        "No syntax errors detected in /run/prototype-review/index.php\n",
+        "No syntax errors detected in /run/prototype-review/test-policy.php\n",
+        "No syntax errors detected in /run/prototype-review/adminer-6.3.0-mysql.php\n",
+        "25 verifica\u00e7\u00f5es PHP aprovadas\n",
+        "CONTROL_MOCK_GTK3_OK\n"
+      ]
+    },
+    "live": {
+      "status": "passed",
+      "outputs": [
+        "PHP 8.3.6 (cli) (built: Oct 19 2026 15:16:58) (NTS)\nCopyright (c) The PHP Group\nZend Engine v4.3.6, Copyright (c) Zend Technologies\n",
+        "No syntax errors detected in /run/prototype-review/policy.php\n",
+        "No syntax errors detected in /run/prototype-review/index.php\n",
+        "No syntax errors detected in /run/prototype-review/test-policy.php\n",
+        "No syntax errors detected in /run/prototype-review/adminer-6.3.0-mysql.php\n",
+        "25 verifica\u00e7\u00f5es PHP aprovadas\n",
+        "CONTROL_MOCK_GTK3_OK\n"
+      ]
+    }
+  },
+  "host_critical_unchanged": true,
+  "source_metadata_unchanged": true,
+  "tests": 507,
+  "free_bytes": 91825049600,
+  "modern_application_prepared": "/home/magaton/DevLite-OS/work/modern-apply-fr800yl6",
+  "modern_application_executed": false,
+  "graphical_tested": false,
+  "http_database_tested": false
+}

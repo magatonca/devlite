@@ -1,0 +1,36 @@
+{
+  "captured_utc": "2026-11-18T11:38:49.135014+00:00",
+  "original_failure_report": "docs/evidencias/limpeza-controlada-dbaxme6_.json",
+  "original_pid": 112774,
+  "original_pid_present": false,
+  "cause": "unconfirmed: old report contains PID only; process reference/name no longer recoverable from procfs",
+  "hypotheses": [
+    "temporary reader or another legitimate active reference",
+    "controller reference cannot be retrospectively ruled out; no controller exemption added"
+  ],
+  "code_changes": [
+    "structured process/reference evidence persisted in report",
+    "confirm PID/start_ticks and reread reference before declaring active use",
+    "ENOENT/ESRCH from terminated processes handled; active holders, PID reuse, permissions and incomplete metadata remain blocking"
+  ],
+  "tests": 271,
+  "cleanup_tests": 20,
+  "test_report": "reports/testes-correcao-diagnostico-limpeza.txt",
+  "sha256": {
+    "pipeline/devlite/final_cleanup.py": "e0d611fabfd2466a316f695e8f1713f7fd2ba4224b35637aab1fbe4dd6c0cb2d",
+    "scripts/limpeza-controlada-final.py": "6e28b0c8975726e1e46addf39de028de48fae8a2e92c6bc300a75a43ae4c737f",
+    "tests/test_final_cleanup.py": "4cfd5ef65a7169d61b9e260b151af1e38a4b90e3a41b4efb9e19a553ddb112af",
+    "docs/evidencias/plano-limpeza-final.json": "c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90"
+  },
+  "manifest": "config/limpeza-diagnostico.sha256",
+  "manifest_sha256": "3a15d88bb8ead6f5085733dfd8f43e3b4eed617b19055c8ef51c86189de8e620",
+  "candidate_list_unchanged": true,
+  "candidate_count": 21,
+  "plan_sha256": "c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90",
+  "cleanup_command": "sudo env PYTHONDONTWRITEBYTECODE=1 python3 /home/magaton/DevLite-OS/scripts/limpeza-controlada-final.py --plan /home/magaton/DevLite-OS/docs/evidencias/plano-limpeza-final.json --plan-sha256 c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90 --execute-authorized",
+  "cleanup_executed": false,
+  "global_privileged_preflight_executed": false,
+  "host_critical_files_unchanged": true,
+  "sealed_release_contract_unchanged": true,
+  "requires_new_cleanup_approval": true
+}

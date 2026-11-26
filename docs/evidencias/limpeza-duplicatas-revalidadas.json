@@ -1,0 +1,14 @@
+[
+  {
+    "candidate": "work/phase3b-reproduction-jvzarclv/reproduced.iso",
+    "preserve": "artifacts/phase3b-9adp_k5i/devlite-os-1.0-experimental-rebuild.iso",
+    "sha256": "2e3a6eecf59d535a4825ff41655c542f6ef2017ccce9a9672891ace2672f2bc7",
+    "equal": true
+  },
+  {
+    "candidate": "artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+    "preserve": "artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+    "sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db",
+    "equal": true
+  }
+]

@@ -1,0 +1,5372 @@
+{
+  "pipeline/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126028,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3198,
+      "mtime_ns": 1794873425138495342,
+      "ctime_ns": 1794873425138495342
+    },
+    "sha256": "fbbb1d7276aed9dd19830ce2c2e2a746d324ea804e418efe78059209b157700f"
+  },
+  "pipeline/devlite/release_layers.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138305,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7854,
+      "mtime_ns": 1794943683574878795,
+      "ctime_ns": 1794943683574878795
+    },
+    "sha256": "45bb6e6b57873412a13262756a1c43733dae1db28a34b17be42481c37a35f9e6"
+  },
+  "pipeline/devlite/validation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129660,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3716,
+      "mtime_ns": 1794847596402157301,
+      "ctime_ns": 1794847596402157301
+    },
+    "sha256": "9b4130809818b366f0aa7756803b2988d696b2cac8591c75f02b6cb414df2292"
+  },
+  "pipeline/devlite/public_isolation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129719,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5172,
+      "mtime_ns": 1795008109896772872,
+      "ctime_ns": 1795008109896772872
+    },
+    "sha256": "2567fb06396bf7e324e6aad10ca3da4ce59804000db7eb0ff21f1c9d018cbf62"
+  },
+  "pipeline/devlite/release_install.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138317,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1716,
+      "mtime_ns": 1794873586453638402,
+      "ctime_ns": 1794873586453638402
+    },
+    "sha256": "5af53951f56a3ea651da57ba3c95d22b071f373ce6cdf09a89f0c5cf781ed34e"
+  },
+  "pipeline/devlite/minimal_root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131708,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 14399,
+      "mtime_ns": 1794940758837775420,
+      "ctime_ns": 1794940758837775420
+    },
+    "sha256": "a0d5b34c58baab3403bdf7573c34e35bc463ced471db46fa35ffe0ef7b1cfacb"
+  },
+  "pipeline/devlite/public_acceptance.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140396,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2919,
+      "mtime_ns": 1794996440509052898,
+      "ctime_ns": 1794996440509052898
+    },
+    "sha256": "fd81c68920381426a1fcae8713e665d76c29dffcae82f5488784c0f27e3b446a"
+  },
+  "pipeline/devlite/modern_identity.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125598,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 2649,
+      "mtime_ns": 1795308073563890004,
+      "ctime_ns": 1795308073563890004
+    },
+    "sha256": "ffc8241d677c3ad2bf2ce7bbcdbab1ccf2cb07c523b98ed00c0e95ee82b5dbcd"
+  },
+  "pipeline/devlite/modern_layers_v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101952,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2122,
+      "mtime_ns": 1795438376482977256,
+      "ctime_ns": 1795438376482977256
+    },
+    "sha256": "fa2e2dc6af06d79d630a2f628f901cd20b09e81f76d3c69acd4478da8d8715a4"
+  },
+  "pipeline/devlite/minimal_config.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2132332,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4821,
+      "mtime_ns": 1794852108157571966,
+      "ctime_ns": 1794852108157571966
+    },
+    "sha256": "517025aa8db50585fbcbaa6094c871832c4e7ea088ff2f96b32b5096c6ca54eb"
+  },
+  "pipeline/devlite/final_storage.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138404,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2528,
+      "mtime_ns": 1794994699603627942,
+      "ctime_ns": 1794994699603627942
+    },
+    "sha256": "95495cba94542cd5cffeb9d840d21c9991e162011e1e80a6a9e763fc266529b9"
+  },
+  "pipeline/devlite/final_payload.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138401,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9989,
+      "mtime_ns": 1794999127835662103,
+      "ctime_ns": 1794999127835662103
+    },
+    "sha256": "a84ec4fdec0b742a2dbfe9e64a22b56a785ffa00f282f6f54f1bae4ddd6ebb4b"
+  },
+  "pipeline/devlite/final_acquisition.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140427,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3912,
+      "mtime_ns": 1794999487886266897,
+      "ctime_ns": 1794999487886266897
+    },
+    "sha256": "559a8280989d7ae46b1cb458df0685cf82796ded134415ef0641f9f60fb24821"
+  },
+  "pipeline/devlite/__init__.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129657,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 72,
+      "mtime_ns": 1794847453214333340,
+      "ctime_ns": 1794847453214333340
+    },
+    "sha256": "9138109b5d9986520e3b3f6a00ef40d8539e97a1f5908dcc49da8754fff98b34"
+  },
+  "pipeline/devlite/final_cleanup.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140422,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11153,
+      "mtime_ns": 1795001731825355738,
+      "ctime_ns": 1795001731825355738
+    },
+    "sha256": "e0d611fabfd2466a316f695e8f1713f7fd2ba4224b35637aab1fbe4dd6c0cb2d"
+  },
+  "pipeline/devlite/public_apply.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129709,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5207,
+      "mtime_ns": 1795213062980427931,
+      "ctime_ns": 1795213062980427931
+    },
+    "sha256": "6b3b467201fdb9e4661935dd116e85b1a26f4c7ffbdd3e09064fc93944cfcc5c"
+  },
+  "pipeline/devlite/modern_preview.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126387,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6443,
+      "mtime_ns": 1795051494499541166,
+      "ctime_ns": 1795051494499541166
+    },
+    "sha256": "9420adc6f5c34e6df1cec25a6fc46b37a8618712f2539d1c10ecedea3e890939"
+  },
+  "pipeline/devlite/minimal_build.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131723,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13018,
+      "mtime_ns": 1795308645374124870,
+      "ctime_ns": 1795308645374124870
+    },
+    "sha256": "292f46eb9a90c174d5617504a8fed6185a21f08c3ac86b8b0681816543f48443"
+  },
+  "pipeline/devlite/modern_visual.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101932,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 19541,
+      "mtime_ns": 1795426443512990966,
+      "ctime_ns": 1795426443512990966
+    },
+    "sha256": "c658e203a0fc5aee06d8033e1cdb5ddcad43ef0df951424a8fa4c62505259bf5"
+  },
+  "pipeline/devlite/public_attestation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129718,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5885,
+      "mtime_ns": 1795008643200371918,
+      "ctime_ns": 1795008643200371918
+    },
+    "sha256": "45ecbe3dd032b0494743b9c0eb815f210914d4d1e3a65cab9927228a0730ece7"
+  },
+  "pipeline/devlite/release_flow.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138308,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11923,
+      "mtime_ns": 1794873586454638459,
+      "ctime_ns": 1794873586454638459
+    },
+    "sha256": "f41eefd3fb0bd4a3eda00627d5a1866986b05d3b90b1157ac2e2c478440543db"
+  },
+  "pipeline/devlite/modern_identity_v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101943,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1436,
+      "mtime_ns": 1795438178939850467,
+      "ctime_ns": 1795438178939850467
+    },
+    "sha256": "dd6d908abb6b0d83735a1b068de1146b11708272d4050c4573384442645fa41f"
+  },
+  "pipeline/devlite/modern_catalog_v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101950,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1194,
+      "mtime_ns": 1795438331239425892,
+      "ctime_ns": 1795438331239425892
+    },
+    "sha256": "419ccb92f740c5d51e836f75b1e044cfe8027b87e3b5e34b452395a056115d36"
+  },
+  "pipeline/devlite/public_execution.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129710,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 19648,
+      "mtime_ns": 1795008737775809163,
+      "ctime_ns": 1795008737775809163
+    },
+    "sha256": "4f16ae297008d7c730aa80da71bd522497398e17f297fa47fc3df453380813f6"
+  },
+  "pipeline/devlite/release_contract.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138306,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2047,
+      "mtime_ns": 1794938006515204945,
+      "ctime_ns": 1794938006515204945
+    },
+    "sha256": "9f8e873c36752fc65067a0b219185d301eaaf00462a6e3d0a67d4b4b94093624"
+  },
+  "pipeline/devlite/runtime.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129658,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1851,
+      "mtime_ns": 1794847613711456544,
+      "ctime_ns": 1794847613711456544
+    },
+    "sha256": "14a0327ccec52943ea6f52fe36825922f6958ebf8782102e5fbf238d36643427"
+  },
+  "pipeline/devlite/browser_executor.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126386,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 22191,
+      "mtime_ns": 1795081351894654384,
+      "ctime_ns": 1795081351894654384
+    },
+    "sha256": "c5cfb58d5f3e5a4fd29a4e2de740269c4e5b68b418f813f799409f2f3460d2cf"
+  },
+  "pipeline/devlite/public_iso_control.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129731,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6202,
+      "mtime_ns": 1795015519391565138,
+      "ctime_ns": 1795015519391565138
+    },
+    "sha256": "a5642dd94ed0a739c3c608c87b77ed73800f6a715ac407d89e85981033e78062"
+  },
+  "pipeline/devlite/build.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129661,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12142,
+      "mtime_ns": 1795308768205358243,
+      "ctime_ns": 1795308768205358243
+    },
+    "sha256": "efbffc52eaa44d4aa68f90ca925cbb00e5e627369c52ca195d573ab25b192c12"
+  },
+  "pipeline/devlite/browser_guest.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126395,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6862,
+      "mtime_ns": 1795080948567055329,
+      "ctime_ns": 1795080948567055329
+    },
+    "sha256": "0aed2a13bc8e45cee2c1db91ae7a0d2651f06784f0e247b7e6063dd16ae23e61"
+  },
+  "pipeline/devlite/public_iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129730,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10578,
+      "mtime_ns": 1795308773289656205,
+      "ctime_ns": 1795308773289656205
+    },
+    "sha256": "4ffa2c1fd42eacb94abd6f0c936879b115d411f0a469f44ac7cc87f4b3628211"
+  },
+  "pipeline/devlite/release_resume.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138356,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9569,
+      "mtime_ns": 1794943683574878795,
+      "ctime_ns": 1794943683574878795
+    },
+    "sha256": "b24236a2bea917adfd60d43020968668cfcc8ce071444d77586897766189d6b5"
+  },
+  "pipeline/devlite/structure.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129659,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3972,
+      "mtime_ns": 1794848263391545056,
+      "ctime_ns": 1794848263391545056
+    },
+    "sha256": "08a94beca97b53ae416b1b159af1f49388e6d6311e99ecb877248f933f1a2fa7"
+  },
+  "pipeline/devlite/browser.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129750,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 17995,
+      "mtime_ns": 1795037247617201506,
+      "ctime_ns": 1795037247617201506
+    },
+    "sha256": "0ca8f5d070bec30ad69bca454f6a2aa0c6657659fc4ede19fe15a97649336362"
+  },
+  "pipeline/devlite/modern_candidate.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101863,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 20868,
+      "mtime_ns": 1795427506931360425,
+      "ctime_ns": 1795427506931360425
+    },
+    "sha256": "143f7f9a5dcda54790eb55c168759e1bb4e9ab0c701d5d47f73d32fe4e54cd33"
+  },
+  "pipeline/devlite/modern_validation_v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101939,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3608,
+      "mtime_ns": 1795449477923857167,
+      "ctime_ns": 1795449477923857167
+    },
+    "sha256": "24cd68298d7d34db09fe969ae85f6d8870208640e9520ea763dd2c738aaa9489"
+  },
+  "pipeline/devlite/modern_integration_v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101953,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2039,
+      "mtime_ns": 1795438428390906286,
+      "ctime_ns": 1795438428390906286
+    },
+    "sha256": "d3b792ce52075d6da543bf9f7641e50b8c5772bb6a11d45e7c93ec19de27bb8a"
+  },
+  "pipeline/devlite/final_archive.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140405,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2471,
+      "mtime_ns": 1794996614535629459,
+      "ctime_ns": 1794996614535629459
+    },
+    "sha256": "f607d0c96e8e5cd9596803d9c10577f99543bfc36d176bb80b3df32f0059ad4c"
+  },
+  "pipeline/devlite/release_acceptance.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138307,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5001,
+      "mtime_ns": 1794872741748573609,
+      "ctime_ns": 1794872741748573609
+    },
+    "sha256": "1e8dc89b5d5ec3ff417c1e455b3d2ad512971d7b3095058875d1534fc700770e"
+  },
+  "pipeline/devlite/modern_candidate_root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101864,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 26787,
+      "mtime_ns": 1795257429402456128,
+      "ctime_ns": 1795257429402456128
+    },
+    "sha256": "524638b192611cf7eb2012193e8d98ea4e1f33b4134cfe6d6b142929ba0b7a3d"
+  },
+  "pipeline/devlite/cleanup_eight.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129761,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 16087,
+      "mtime_ns": 1795047029363314363,
+      "ctime_ns": 1795047029363314363
+    },
+    "sha256": "484e80bd8e33c1d1ba516c378e926bcb2e527442160b90cbba85e0a3a038d95c"
+  },
+  "pipeline/devlite/pseudo.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131721,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9396,
+      "mtime_ns": 1794851247700787443,
+      "ctime_ns": 1794851247700787443
+    },
+    "sha256": "fdce90ab58375babbc4ebbe3fd5fd2d3d37aa9601e3b8007b747c93204dc75c8"
+  },
+  "pipeline/devlite/release_pack.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138291,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7634,
+      "mtime_ns": 1794940806628516917,
+      "ctime_ns": 1794940806628516917
+    },
+    "sha256": "20ffefbd5f6e884767df3dbb78d0747b3453a1998924ef9b64cc0d400f3ef0b1"
+  },
+  "pipeline/devlite/final_artifacts.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140390,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2097,
+      "mtime_ns": 1794995379059852501,
+      "ctime_ns": 1794995379059852501
+    },
+    "sha256": "8b81f5622276c9ac21d70f92b6251476fccb1a438a8ddfb549bb29edd469130b"
+  },
+  "pipeline/devlite/release_iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138311,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9496,
+      "mtime_ns": 1794872741747573552,
+      "ctime_ns": 1794872741747573552
+    },
+    "sha256": "da536323d77c6dc3c165703344ac9922c3532eefe2863dff3cb879df60c1d091"
+  },
+  "pipeline/devlite/customize/planner.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131611,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10249,
+      "mtime_ns": 1794850358463567131,
+      "ctime_ns": 1794850358463567131
+    },
+    "sha256": "b941dbfdaf88c2d1a7bc639d380d697d4ec3c3174dd8c7990ba5f9b55b66f30a"
+  },
+  "pipeline/devlite/customize/service_profiles.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138275,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2624,
+      "mtime_ns": 1794862362369639963,
+      "ctime_ns": 1794862362369639963
+    },
+    "sha256": "568f7064ca2e7e89d082b4e4f4aa7c835d651683fd04136b6dd72e0fc8581dec"
+  },
+  "pipeline/devlite/customize/installation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2135296,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 17917,
+      "mtime_ns": 1794862759794440424,
+      "ctime_ns": 1794862759794440424
+    },
+    "sha256": "e90126464073075d621a54f5e2f9666b6b9058377b22d111f5a0a5ee99bafe79"
+  },
+  "pipeline/devlite/customize/__init__.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131607,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 64,
+      "mtime_ns": 1794849623136409109,
+      "ctime_ns": 1794849623136409109
+    },
+    "sha256": "653e5e74fda20948c8cc102dc8a0fbf4df2518b604467ff81f1046cba062e1ec"
+  },
+  "pipeline/devlite/customize/executor.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138282,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11865,
+      "mtime_ns": 1794866291358301967,
+      "ctime_ns": 1794866291358301967
+    },
+    "sha256": "3eef9fe1bc68fe1b02a184eaa938032c2868d6fdbcc7a76609387eab44003462"
+  },
+  "pipeline/devlite/customize/integrity.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131642,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2881,
+      "mtime_ns": 1794849976018940159,
+      "ctime_ns": 1794849976018940159
+    },
+    "sha256": "afa0f4a945c3461e66550ebe431bd5818d12f2703de0db3b967e3d23d099153e"
+  },
+  "pipeline/devlite/customize/reconcile.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138288,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1525,
+      "mtime_ns": 1794864095183904403,
+      "ctime_ns": 1794864095183904403
+    },
+    "sha256": "a62bbf62d1fe1a6dc75ba2485268cc65b3d4884598bc759618e558acc8d85a88"
+  },
+  "pipeline/devlite/customize/executor_worker.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138284,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13473,
+      "mtime_ns": 1794915191082675873,
+      "ctime_ns": 1794915191082675873
+    },
+    "sha256": "ba87d69289db9705a7e6e2f9f0051d9ad8e726e301650eef480c3a752c2d9b26"
+  },
+  "pipeline/devlite/customize/layers.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131610,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3997,
+      "mtime_ns": 1794849934422637357,
+      "ctime_ns": 1794849934422637357
+    },
+    "sha256": "8b3f9fe8ca2d9f41ff9928bca1752326044b300407b7c4351f7da6117b496a40"
+  },
+  "pipeline/devlite/customize/manifest.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131608,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3715,
+      "mtime_ns": 1794850026098287020,
+      "ctime_ns": 1794850026098287020
+    },
+    "sha256": "8984948ff41de642fd0328420fa4f4e610fb51fa11b99a65a7d3feac0a51a904"
+  },
+  "pipeline/devlite/customize/isolation_validation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138281,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3524,
+      "mtime_ns": 1794866360605566459,
+      "ctime_ns": 1794866360605566459
+    },
+    "sha256": "d084d28dffa1f3e831ef097be75312d0722ec088d7e73af805bd58be55fa9b89"
+  },
+  "pipeline/devlite/customize/package_acquisition.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126296,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13506,
+      "mtime_ns": 1794868233579803891,
+      "ctime_ns": 1794868233579803891
+    },
+    "sha256": "f28823681009c1684fa8dbe3d2a282b40d1b880cc52b20d5025b2746b5e3cdc4"
+  },
+  "pipeline/devlite/customize/settings.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125871,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5390,
+      "mtime_ns": 1794850198311074538,
+      "ctime_ns": 1794850198311074538
+    },
+    "sha256": "9a4ce821a38624edfa10bfdfbd12f3261101b7e4177106543926182180c5803a"
+  },
+  "pipeline/devlite/customize/executor_contract.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138273,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9458,
+      "mtime_ns": 1794866055038354836,
+      "ctime_ns": 1794866055038354836
+    },
+    "sha256": "76d51d887f34b7118e68ce19ce80c81d6798d9fbf402bfb2a9b63830471613a5"
+  },
+  "pipeline/devlite/customize/guest_runner.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138283,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12303,
+      "mtime_ns": 1794911787440097483,
+      "ctime_ns": 1794911787440097483
+    },
+    "sha256": "875f224c3b718b53ad093537c1cd3cb4da66919513c517a94978e43857eaff2c"
+  },
+  "scripts/preparar-aplicacao-publica.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129711,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 666,
+      "mtime_ns": 1795008502916311339,
+      "ctime_ns": 1795008502916311339
+    },
+    "sha256": "baefe9e8ad5aded628acc89e1ef73c4aa7cf89f08a8585e8d0d4ede21bcee554"
+  },
+  "scripts/preparar-payload-publico.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140420,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 767,
+      "mtime_ns": 1794999084642347557,
+      "ctime_ns": 1794999084642347557
+    },
+    "sha256": "a9bdff5f7d7f2c021e243111ef6ba2e11f38102df59910b5353fa7c30ca384b3"
+  },
+  "scripts/verificar-cache-final.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140391,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 654,
+      "mtime_ns": 1794995379060852556,
+      "ctime_ns": 1794995379060852556
+    },
+    "sha256": "7f474391ec2f7e46e23dda523fbc0b68caa4363b75bf8f4290d0ccb5433c87f1"
+  },
+  "scripts/camadas-minimas-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131709,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 741,
+      "mtime_ns": 1794852309258104882,
+      "ctime_ns": 1794852309258104882
+    },
+    "sha256": "89c439c2eb7133a6348bbb6fb03d4aead3a882adb885ca8db06bbe4ebed44db8"
+  },
+  "scripts/devlite-release.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138313,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1866,
+      "mtime_ns": 1794872741747573552,
+      "ctime_ns": 1794872741747573552
+    },
+    "sha256": "5c912909d88986ca0dc0e83dbbbcef6a219d35a2e255871505d81a4f77da250c"
+  },
+  "scripts/inspecionar-arquivo-final.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140406,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1254,
+      "mtime_ns": 1794996614535629459,
+      "ctime_ns": 1794996614535629459
+    },
+    "sha256": "50fbb7bbfe47b1fafa64b7670ca332b557e11d04ced716492446db3284612ff1"
+  },
+  "scripts/validar-relatorio-iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129644,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3209,
+      "mtime_ns": 1794846884382170404,
+      "ctime_ns": 1794846884382170404
+    },
+    "sha256": "214200542019fbe6b6c2f0249a54c23cf0473067d11146730e15b6f5a0cae19f"
+  },
+  "scripts/verificar-projeto.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126255,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8459,
+      "mtime_ns": 1795381306192921509,
+      "ctime_ns": 1795381306192921509
+    },
+    "sha256": "b3eb1b4d1ad4ddcbf81233beb4175dc446826670a163a9259898a7bf9d7237d6"
+  },
+  "scripts/instalar-release-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138320,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 868,
+      "mtime_ns": 1794873586453638402,
+      "ctime_ns": 1794873586453638402
+    },
+    "sha256": "bebf46aab3474102a7fcd0259110e1064d6e11e1ccfb9d5eb91a8c1ed21022b5"
+  },
+  "scripts/diagnostico-virtualizacao.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126280,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3319,
+      "mtime_ns": 1794846884382170404,
+      "ctime_ns": 1794846884382170404
+    },
+    "sha256": "5199f187430b56364f2b1f97b8d3b0855d80fdda248807cc614dce16f6f96341"
+  },
+  "scripts/preparar-programas.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138274,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 932,
+      "mtime_ns": 1794862305343364033,
+      "ctime_ns": 1794862305343364033
+    },
+    "sha256": "1529c8dda8fc644bd80996bc0101894ee317813fc8bcd409a65c42c2e204f29d"
+  },
+  "scripts/validar-iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126374,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2094,
+      "mtime_ns": 1794845407117089737,
+      "ctime_ns": 1794845407117089737
+    },
+    "sha256": "2dbde9673bc9b13b7bb9363ae4aac14c2ff792aedde49a11e3e519eccfec9f55"
+  },
+  "scripts/diagnostico-isolamento.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138292,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 493,
+      "mtime_ns": 1794865982622034506,
+      "ctime_ns": 1794865982622034506
+    },
+    "sha256": "d46231ec5c9501e7ae040768164587e7c7cec385b37dbddefeb8a330f40aeaa2"
+  },
+  "scripts/pacotes-controlados.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138298,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1005,
+      "mtime_ns": 1794868087192699108,
+      "ctime_ns": 1794868087192699108
+    },
+    "sha256": "1efbb80ed86d4a35c74b6c1e3554ce7c0012f3658bca99dc9ad92ca56f448526"
+  },
+  "scripts/auditar-programas.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138278,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1377,
+      "mtime_ns": 1794862494707237360,
+      "ctime_ns": 1794862494707237360
+    },
+    "sha256": "bf35109189825e5121ac2d3d7c5d9cfb4f72ce7b94100d84354b8c0a94d9ca4c"
+  },
+  "scripts/limpar-continuacao-controlado.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129788,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5085,
+      "mtime_ns": 1795089753799484254,
+      "ctime_ns": 1795089753799484254
+    },
+    "sha256": "f87d2fc120d1e7cae4434c4b38a10392259a2c4089b4979ae2b8e71cacdf0f7b"
+  },
+  "scripts/empacotar-modern-candidata.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101871,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 23077,
+      "mtime_ns": 1795257529270159537,
+      "ctime_ns": 1795257529270159537
+    },
+    "sha256": "d783e113c013f0b2d6ccfe253eebbca1980357e23a8bf0684edb8f29f37e66f6"
+  },
+  "scripts/verificar-php-adminer.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129783,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9789,
+      "mtime_ns": 1795088065285306354,
+      "ctime_ns": 1795088065285306354
+    },
+    "sha256": "a8bd4f524cc1a3384247fb84f72854456252a98bc0ba200087472d878c657c22"
+  },
+  "scripts/preparar-retomada-camadas.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138368,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3619,
+      "mtime_ns": 1794938258503394518,
+      "ctime_ns": 1794938258503394518
+    },
+    "sha256": "5bbcb47d1309c09dc0d5ca57bd19e143b19ba5b24ab33a3a044a1246c4eccc86"
+  },
+  "scripts/integrar-release-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138309,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 871,
+      "mtime_ns": 1794938047051660427,
+      "ctime_ns": 1794938047051660427
+    },
+    "sha256": "29408191f33f04287c9a9c1d3795386951581eeda17c72edbe7706c98cf6a461"
+  },
+  "scripts/inspecionar-iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126347,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2284,
+      "mtime_ns": 1794846299621673841,
+      "ctime_ns": 1794846299621673841
+    },
+    "sha256": "313d40f30a049ef8c30423e678b3083bfc0aa41c7eca5ad882dafc2922ec68aa"
+  },
+  "scripts/executar-programas.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138285,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1640,
+      "mtime_ns": 1794864652478129521,
+      "ctime_ns": 1794864652478129521
+    },
+    "sha256": "a9814b5fef676fcc84d79f59205aaab3b376244553135313e060f22269e88526"
+  },
+  "scripts/gerar-isos-controladas.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138386,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2771,
+      "mtime_ns": 1794948125637184552,
+      "ctime_ns": 1794948125637184552
+    },
+    "sha256": "3b71fac66711c846327fc87996536c8c852f3a4d12d35586657b4f985a356bc8"
+  },
+  "scripts/aplicar-publico-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129712,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1085,
+      "mtime_ns": 1795008109897772929,
+      "ctime_ns": 1795008109897772929
+    },
+    "sha256": "9fe1f8fdaeb84d2ce492008b12ffaf3e28e6cedd903958b5dc1c6a67673e9cb5"
+  },
+  "scripts/limpar-oito-controlado.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129764,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2149,
+      "mtime_ns": 1795046602157196024,
+      "ctime_ns": 1795046602157196024
+    },
+    "sha256": "3adce5c0984638c4b793a5828aefebc10351e83658134ccfde62fe4c6c5ad76e"
+  },
+  "scripts/aplicar-modern-isolado.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125610,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10128,
+      "mtime_ns": 1795106148243147257,
+      "ctime_ns": 1795114476033436599
+    },
+    "sha256": "40a426ac445561dae03600b4516210e15c9c48d18b9ff3fc5fff488a93dfeba7"
+  },
+  "scripts/aplicar-modern-isolado.py.com-traceback": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125612,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10290,
+      "mtime_ns": 1795111501100047036,
+      "ctime_ns": 1795114476029436370
+    },
+    "sha256": "ad99d1a107912c1544ede05be3bf39048e3e3d4fa3192b0f8549426e69dab8d5"
+  },
+  "scripts/preparar-devlite-modern.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126388,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 416,
+      "mtime_ns": 1795051494499541166,
+      "ctime_ns": 1795051494499541166
+    },
+    "sha256": "310a1cd30be98643411cc2034cc5c833078dc5ea9c0e9939e09ed0131d11b0cf"
+  },
+  "scripts/executar-navegador.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126396,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1849,
+      "mtime_ns": 1795080825089187188,
+      "ctime_ns": 1795080825089187188
+    },
+    "sha256": "bb17cf340627659a7c4ea2d95bfee53f33d78046059db9260a9dd30f463a44c7"
+  },
+  "scripts/gerar-iso-modern-v4.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101929,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 31061,
+      "mtime_ns": 1795440599748942849,
+      "ctime_ns": 1795440599748942849
+    },
+    "sha256": "dbbd0d308401e8cf56c14e1aea26f3cc8c65b410de16c3f98e8b185a51fa0a51"
+  },
+  "scripts/auditar-armazenamento-final.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138405,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3664,
+      "mtime_ns": 1794996952767597455,
+      "ctime_ns": 1794996952767597455
+    },
+    "sha256": "ddd03a71d201150fe0bcad2ad47f28e060a0e3c8963891e4cd51221977ff8a61"
+  },
+  "scripts/iniciar-publico-isolado-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129708,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1602,
+      "mtime_ns": 1795008109897772929,
+      "ctime_ns": 1795008109897772929
+    },
+    "sha256": "50701a5ae7ba436b652965324e3cf93de84b4d3d94919fe5d4220e26a23b3537"
+  },
+  "scripts/verificar-metadados-externos.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138402,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7864,
+      "mtime_ns": 1794995779049000513,
+      "ctime_ns": 1794995779049000513
+    },
+    "sha256": "0294073f259d37b7a9304bc8e96e620a9a68d36f0620fd240f6cec1c0cd1c802"
+  },
+  "scripts/validar-aceitacao-publica.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140397,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1065,
+      "mtime_ns": 1794995957143942641,
+      "ctime_ns": 1794995957143942641
+    },
+    "sha256": "b76727cd3b6b22558b6c4378ef2feb65be5fe059cc16bc40d5dbf9415d7cc88a"
+  },
+  "scripts/construir-iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129662,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1295,
+      "mtime_ns": 1794847966367481015,
+      "ctime_ns": 1794847966367481015
+    },
+    "sha256": "176470cc8b7c99d562cca72f52ddccc8ea6fe3ffbbf0ef13dc68ec4ff7c11269"
+  },
+  "scripts/empacotar-modern-isolado.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125620,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12649,
+      "mtime_ns": 1795106216196997050,
+      "ctime_ns": 1795106216196997050
+    },
+    "sha256": "2da14b37d53f93aa8449f43a8a0014120ee739a10dd03ef701de54a8dd9b65f2"
+  },
+  "scripts/gerar-iso-publica.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129736,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1204,
+      "mtime_ns": 1795014998025082423,
+      "ctime_ns": 1795014998025082423
+    },
+    "sha256": "f5c3d606ee7fd9837ff2c5f15e144614c3e33b60e171cfb21e601297437f06c0"
+  },
+  "scripts/auditar-imagens-navegador.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129778,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9452,
+      "mtime_ns": 1795086950114205132,
+      "ctime_ns": 1795086950114205132
+    },
+    "sha256": "8f10d5b12c0f39926264b472de347eb8a96ed2bb51d684fd58fa364baf520a1c"
+  },
+  "scripts/coletar-evidencias-guest.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138408,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5095,
+      "mtime_ns": 1794995121807837869,
+      "ctime_ns": 1794995121807837869
+    },
+    "sha256": "b1b839fb42fd65f05d147c1b2f69d8efc904e1d1352ef66c3c2187bb773de3c2"
+  },
+  "scripts/gerar-iso-modern-candidata.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101875,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 28302,
+      "mtime_ns": 1795427268718750172,
+      "ctime_ns": 1795427268718750172
+    },
+    "sha256": "67ac96364055d0f9c5abb9d9f108057c12003f757e958a11f2ee7e4bb7118eba"
+  },
+  "scripts/planejar-personalizacao.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131612,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2454,
+      "mtime_ns": 1794849976018940159,
+      "ctime_ns": 1794849976018940159
+    },
+    "sha256": "11b2ca29f40a8ce702062a8f76fe5297b090c35ca550ff85b8377a8de17d94f9"
+  },
+  "scripts/executar-modern-candidata-manual.sh": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101906,
+      "mode": 33261,
+      "uid": 0,
+      "gid": 0,
+      "size": 3560,
+      "mtime_ns": 1795208225226055006,
+      "ctime_ns": 1795208644269768708
+    },
+    "sha256": "aea94fc67bceab2df8aa48e1c889c47d7c4ab140a1097681e64431cefad86862"
+  },
+  "scripts/diagnostico.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126254,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1595,
+      "mtime_ns": 1794841636083288548,
+      "ctime_ns": 1794845334536583306
+    },
+    "sha256": "7101ead5393c7e49571b642ce8a55788296775d693847f7bd33e2dee2bb8fe54"
+  },
+  "scripts/gerar-iso-modern-controlada.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125804,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8895,
+      "mtime_ns": 1795108444770133483,
+      "ctime_ns": 1795108444770133483
+    },
+    "sha256": "706aaa8481946ccc20175af8db05428af16ee7d03bcb684a12cd7b5042e985e5"
+  },
+  "scripts/iniciar-modern-candidata-root.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101873,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 1899,
+      "mtime_ns": 1795212093729024703,
+      "ctime_ns": 1795212093729024703
+    },
+    "sha256": "9d4a1d7c917a0bba825f1ccbfde5b7bec4665ab5711a17738c00da2e99b0a4cc"
+  },
+  "scripts/aplicar-modern-isolado.py.bak-20261119-180501": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125810,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 10128,
+      "mtime_ns": 1795106148243147257,
+      "ctime_ns": 1795111501100047036
+    },
+    "sha256": "40a426ac445561dae03600b4516210e15c9c48d18b9ff3fc5fff488a93dfeba7"
+  },
+  "scripts/personalizar-minima.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2132339,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1060,
+      "mtime_ns": 1794852425579345080,
+      "ctime_ns": 1794852425579345080
+    },
+    "sha256": "9797dcda791a2916de76632b2a379a56f1d0a3e1ad3c2c1699387bd6fa8b5598"
+  },
+  "scripts/preparar-navegador.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129751,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 441,
+      "mtime_ns": 1795036950421244179,
+      "ctime_ns": 1795036950421244179
+    },
+    "sha256": "71e373562e658cda1f18418cc7bbda29392da15aafe68865b95414019fc9aced"
+  },
+  "scripts/validar-prototipos-isolados.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125609,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11203,
+      "mtime_ns": 1795104069249571362,
+      "ctime_ns": 1795104069249571362
+    },
+    "sha256": "b326c91a9444e00be318af71b0de1b0861996cf6fb6d54a5f2f947c85a3d7bd0"
+  },
+  "scripts/adquirir-payload-publico.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140428,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 634,
+      "mtime_ns": 1794999463967951108,
+      "ctime_ns": 1794999463967951108
+    },
+    "sha256": "446249d125c191c8b8bdc7ebcb7acce2d390c6aebda7827ffc7b1794bb314dab"
+  },
+  "scripts/limpeza-controlada-final.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140423,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2043,
+      "mtime_ns": 1795001731825355738,
+      "ctime_ns": 1795001731825355738
+    },
+    "sha256": "6e28b0c8975726e1e46addf39de028de48fae8a2e92c6bc300a75a43ae4c737f"
+  },
+  "overlay/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126240,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 609,
+      "mtime_ns": 1794850426353910326,
+      "ctime_ns": 1794850426353910326
+    },
+    "sha256": "c3e9b8b0c17a7fa61ca2d76ce6f7d10806f46bb03e00dff9b34e51ac2a07b8b5"
+  },
+  "overlay/modern-release-v1/etc/systemd/user/xubuntu-installer.service.d/10-devlite-branding.conf": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259096,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 48,
+      "mtime_ns": 1795181993607947361,
+      "ctime_ns": 1795181993607947361
+    },
+    "sha256": "8ccb045c2139f61a87656cb82843d113946d3f2cc1bc12a7a2b0a34f492b9670"
+  },
+  "overlay/modern-release-v1/usr/share/applications/devlite-installer.desktop": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259100,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 313,
+      "mtime_ns": 1795181993625948352,
+      "ctime_ns": 1795181993625948352
+    },
+    "sha256": "4bebe7eac579e55240df41344a5c4ea37d51f42700f956a537f2546cbe239a91"
+  },
+  "overlay/final-candidate/etc/skel/.config/devlite/apply-initial-defaults": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139004,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 72,
+      "mtime_ns": 1794995075348336401,
+      "ctime_ns": 1794995075348336401
+    },
+    "sha256": "a625235f30f97de6678b012d8635402236ed4f46980366437720385924886bbc"
+  },
+  "overlay/final-candidate/etc/xdg/autostart/devlite-first-session.desktop": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139006,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 142,
+      "mtime_ns": 1794995075348336401,
+      "ctime_ns": 1794995075348336401
+    },
+    "sha256": "1e5ac9809540d6e96e5d21ce99a2e0becb18f3be3221776c78225bfa54b4d000"
+  },
+  "overlay/final-candidate/etc/xdg/menus/xfce-applications-merged/devlite.menu": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139000,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 611,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "002f3b9a4da99d4f412cdd5d64b97671ee1a7f28a56c7febb57f850bc00b3560"
+  },
+  "overlay/final-candidate/usr/bin/devlite-control": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139010,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2297,
+      "mtime_ns": 1794996952767597455,
+      "ctime_ns": 1794996952767597455
+    },
+    "sha256": "f50eea5f1c1fa4d64ed1818886ab3f8f0de95dbc8c8ebc0c672fcde0cf1abf66"
+  },
+  "overlay/final-candidate/usr/libexec/devlite-service-control": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140399,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2370,
+      "mtime_ns": 1794996146390539788,
+      "ctime_ns": 1794996146390539788
+    },
+    "sha256": "7715b8a613d04b262212c98627531b6f8bf2a0c8de6c50884bcffe3ca1150843"
+  },
+  "overlay/final-candidate/usr/libexec/devlite-first-session": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139008,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2252,
+      "mtime_ns": 1794995075348336401,
+      "ctime_ns": 1794995075348336401
+    },
+    "sha256": "7bb08c4918d1c4ffde8ba0267c799f7de4d3d5a4b67d4a18e92a0fce4bdd2476"
+  },
+  "overlay/final-candidate/usr/share/applications/devlite-control.desktop": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139012,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 266,
+      "mtime_ns": 1794996146391539844,
+      "ctime_ns": 1794996146391539844
+    },
+    "sha256": "bcfa9631eeb8e896155841fbd63dc01fa03864f2bdc00bf9f33928b93edc61b1"
+  },
+  "overlay/final-candidate/usr/share/applications/devlite-get-vscode.desktop": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140395,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 265,
+      "mtime_ns": 1794995896686563737,
+      "ctime_ns": 1794995896686563737
+    },
+    "sha256": "e1fee010e783392bfdced7c6c90bbc34d63b7e360f2da77762d82c4053256873"
+  },
+  "overlay/final-candidate/usr/share/desktop-directories/devlite-development.directory": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138993,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 82,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "1967f9f5b6d02e58ccebac3595dd85d7df440e44ad703b6747adea402451ce73"
+  },
+  "overlay/final-candidate/usr/share/desktop-directories/devlite.directory": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138992,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 60,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "8f863e09d03a68a3d0d72bc8089de4b13659c251f4d640103ddab9525852e457"
+  },
+  "overlay/final-candidate/usr/share/desktop-directories/devlite-office.directory": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138995,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 73,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "f013b3f0f18397891acf69540f20e0f0d758e33dda6a9b1566f17d31552e0b5a"
+  },
+  "overlay/final-candidate/usr/share/desktop-directories/devlite-network.directory": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138994,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 65,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "e3c227aecb0b87b49c431ba1c7f13ee70943cd5351daaf6f5156cb42fe3b7356"
+  },
+  "overlay/final-candidate/usr/share/polkit-1/actions/org.devlite.services.policy": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140402,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 596,
+      "mtime_ns": 1794996146390539788,
+      "ctime_ns": 1794996146390539788
+    },
+    "sha256": "62e5a3909901ece5c80e8fe4d2f502542d84952fdf928e39377f13a4069db523"
+  },
+  "overlay/final-candidate/usr/share/backgrounds/devlite/devlite-wallpaper.svg": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138990,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1021,
+      "mtime_ns": 1794995075344336186,
+      "ctime_ns": 1794995075344336186
+    },
+    "sha256": "929c6aaec4e85709912a0e338f66cba6849806498447b3d6b95691ee5c5379b3"
+  },
+  "overlay/final-candidate/usr/share/icons/hicolor/scalable/apps/devlite.svg": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138987,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 407,
+      "mtime_ns": 1794995075340335972,
+      "ctime_ns": 1794995075340335972
+    },
+    "sha256": "4bf73bffa5d0acb6e3529cecdb2dce0970e31dc805705e183a7f5c704d44f7d5"
+  },
+  "prototypes/modern_adapter.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2229019,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4705,
+      "mtime_ns": 1795104603685800254,
+      "ctime_ns": 1795104603685800254
+    },
+    "sha256": "da91589e4c66cc12e5dd9e626a4d5d5d2e371c8ba9671b01a322d8e4675a88d3"
+  },
+  "prototypes/__init__.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228920,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 0,
+      "mtime_ns": 1795081974359780677,
+      "ctime_ns": 1795081974359780677
+    },
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "prototypes/devcontrol/app.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259075,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 6910,
+      "mtime_ns": 1795382464006189997,
+      "ctime_ns": 1795382464006189997
+    },
+    "sha256": "14b6b7c5b4f87e110ff3f63c3b284487603c224eba1b7769639bd3068d9bc247"
+  },
+  "prototypes/devcontrol/collector.py.bak-v4": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5243202,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 16438,
+      "mtime_ns": 1795180427403534280,
+      "ctime_ns": 1795435802811983612
+    },
+    "sha256": "c82fa2038d961c18893dcee494bef05adddfda246a6c4c028802dea30b00807e"
+  },
+  "prototypes/devcontrol/__init__.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259073,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "mtime_ns": 1795180190906977432,
+      "ctime_ns": 1795180190906977432
+    },
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "prototypes/devcontrol/manifest.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259077,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 641,
+      "mtime_ns": 1795180190985981972,
+      "ctime_ns": 1795180190985981972
+    },
+    "sha256": "5207ee20f50794aa78aeced7e9406183617487c1f6950c9109638b183ee0bb65"
+  },
+  "prototypes/devcontrol/devcontrol.desktop": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259076,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 274,
+      "mtime_ns": 1795180190968980995,
+      "ctime_ns": 1795180190968980995
+    },
+    "sha256": "3116b8039a466b2fcedbce74c090400f59d959f54fe601f246907a843b45df95"
+  },
+  "prototypes/devcontrol/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259078,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 2983,
+      "mtime_ns": 1795208209700392316,
+      "ctime_ns": 1795208209700392316
+    },
+    "sha256": "8203862e75e6e227bd950e384df0fb00e73dd14806e6f267e633aa42c35fae83"
+  },
+  "prototypes/devcontrol/collector.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5259074,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 16456,
+      "mtime_ns": 1795435802871987036,
+      "ctime_ns": 1795435802871987036
+    },
+    "sha256": "4fd7e3af4a4e520dd4ce8d75d781789c5d161e4d294d40a91612b9f768475f12"
+  },
+  "prototypes/devlite-modern/manifest.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228957,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1048,
+      "mtime_ns": 1795104492688886334,
+      "ctime_ns": 1795104492688886334
+    },
+    "sha256": "3e61a6f36736c79611a1073911dd6b54b91e7cdcb61773a52a8ab8736e03d5c5"
+  },
+  "prototypes/devlite-modern/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228960,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1567,
+      "mtime_ns": 1795104237676567279,
+      "ctime_ns": 1795104237676567279
+    },
+    "sha256": "016c3ddc30f9c9c63124318a9d07731d15da31876c19552103ac00bb07121944"
+  },
+  "prototypes/control2/adminer_plan.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228927,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3186,
+      "mtime_ns": 1795082703620334078,
+      "ctime_ns": 1795082703620334078
+    },
+    "sha256": "4eb52fd69f995d9c896c3a59df38022c58235beec8be86267f34ff520abb4880"
+  },
+  "prototypes/control2/app.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228923,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9700,
+      "mtime_ns": 1795104102464259194,
+      "ctime_ns": 1795104102464259194
+    },
+    "sha256": "e8a629f8a9b97c5d41f60a760b0ff902e9518c3f59a4ce3aab2542f1eea094fc"
+  },
+  "prototypes/control2/__init__.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228921,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 0,
+      "mtime_ns": 1795081974359780677,
+      "ctime_ns": 1795081974359780677
+    },
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "prototypes/control2/model.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228922,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3708,
+      "mtime_ns": 1795089506273374368,
+      "ctime_ns": 1795089506273374368
+    },
+    "sha256": "56f788d39443f32f7ecac3271a3f7c36dad862b5c24cbd518bac2977010978a4"
+  },
+  "prototypes/control2/policy-proposal.xml": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228925,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 708,
+      "mtime_ns": 1795082101534974314,
+      "ctime_ns": 1795082101534974314
+    },
+    "sha256": "5aa2a4fcf98e25cd999e1b18c5cffc08d60bd88baeac81cc527703077bbaa545"
+  },
+  "prototypes/control2/adminer_model.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228928,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2074,
+      "mtime_ns": 1795089506158367823,
+      "ctime_ns": 1795089506158367823
+    },
+    "sha256": "1e8f0a10c52e57a74220fed7bd97d719ada66d940270ebefa24993f7d3ab015b"
+  },
+  "prototypes/control2/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228926,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2089,
+      "mtime_ns": 1795089626304210961,
+      "ctime_ns": 1795089626304210961
+    },
+    "sha256": "4118e2c611042f799ec7454b965c38b76b9f9156b65092995d91adbc276aef5b"
+  },
+  "prototypes/control2/preview.html": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228924,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4356,
+      "mtime_ns": 1795089626290210163,
+      "ctime_ns": 1795089626290210163
+    },
+    "sha256": "326a2bf3e27761c19abd24d471d4b6bf0e7b05afae26a25235258e8df9afcabb"
+  },
+  "prototypes/adminer/policy.php": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228931,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1364,
+      "mtime_ns": 1795104102464259194,
+      "ctime_ns": 1795104102464259194
+    },
+    "sha256": "fa0c40fb1eb11825dbf398ec29c3e6dc206c6224c3bd167aacb4ccfdaa908faf"
+  },
+  "prototypes/adminer/test-policy.php": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228958,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1598,
+      "mtime_ns": 1795104102464259194,
+      "ctime_ns": 1795104102464259194
+    },
+    "sha256": "34f42428ead9f51e2ee62a395ba5e5efcbeda4f5c2de581722283987bbba1991"
+  },
+  "prototypes/adminer/manifest.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228933,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 362,
+      "mtime_ns": 1795089506158367823,
+      "ctime_ns": 1795089506158367823
+    },
+    "sha256": "00f5252b2190db5a144bdb133ac66f670404d93735bd52feef49784483494a36"
+  },
+  "prototypes/adminer/apache.conf": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228930,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 975,
+      "mtime_ns": 1795089506157367766,
+      "ctime_ns": 1795089506157367766
+    },
+    "sha256": "104bbebf416705355a15288ad05f0943ca0e9f15530aeed100a660c64bc4b161"
+  },
+  "prototypes/adminer/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228959,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2275,
+      "mtime_ns": 1795089600899763032,
+      "ctime_ns": 1795089600899763032
+    },
+    "sha256": "beb19b99463ce31d824461422ed31eeb6cf506073aadb1340f0b758a2b589a8a"
+  },
+  "prototypes/adminer/index.php": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228932,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1412,
+      "mtime_ns": 1795089506158367823,
+      "ctime_ns": 1795089506158367823
+    },
+    "sha256": "4fd73500704c69d969c4cf1ec30a49a908e966473c47e258ce90cc08c0a23c21"
+  },
+  "prototypes/devlite-modern/payload/etc/lightdm/lightdm-gtk-greeter.conf": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228938,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3773,
+      "mtime_ns": 1795089506176368848,
+      "ctime_ns": 1795089506176368848
+    },
+    "sha256": "f1ca87dc21a5b040d88981d8566ae2a6a302e5d8f63ffeefc6f06e6425d6f59d"
+  },
+  "prototypes/devlite-modern/payload/etc/dconf/db/devlite.d/00-modern": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228942,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 81,
+      "mtime_ns": 1795089506178368962,
+      "ctime_ns": 1795089506178368962
+    },
+    "sha256": "7dfbfea318901905fce9c29756ad3c1ba6178c5570d57a1c8e9d95701da25279"
+  },
+  "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/panel/default.xml": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228947,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3732,
+      "mtime_ns": 1795089506221371409,
+      "ctime_ns": 1795089506221371409
+    },
+    "sha256": "e065198eec7a95f519eedc9326fcbe1cb491174009765b2d96fe67e71764f21e"
+  },
+  "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228950,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3354,
+      "mtime_ns": 1795089506254373287,
+      "ctime_ns": 1795089506254373287
+    },
+    "sha256": "e5b083b85c300ba1fbcbc6d758128eda36136b6b1d8ff61785c0d9b21b27c95c"
+  },
+  "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228951,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1313,
+      "mtime_ns": 1795089506265373912,
+      "ctime_ns": 1795089506265373912
+    },
+    "sha256": "554ad151f2e12bfd0fa9a1018864509b70f6ea0f2244284cae054f2712833317"
+  },
+  "prototypes/devlite-modern/payload/usr/libexec/devlite-first-session": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2229004,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2662,
+      "mtime_ns": 1795104492688886334,
+      "ctime_ns": 1795104492688886334
+    },
+    "sha256": "a246eb3719441b268c317068fe0df0640e699c808bc9c209ee9bf7671bee0a52"
+  },
+  "prototypes/devlite-modern/payload/usr/share/backgrounds/devlite/devlite-modern.svg": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228956,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 506,
+      "mtime_ns": 1795089506268374083,
+      "ctime_ns": 1795089506268374083
+    },
+    "sha256": "51bb75ff7573fd22ae7fa85039b7d82c8173c736a485ac1649394451d8450f19"
+  },
+  "packages/selection.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131602,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9322,
+      "mtime_ns": 1794849750268444102,
+      "ctime_ns": 1794849750268444102
+    },
+    "sha256": "daad733b01353b12711d65e9b158486c3d608e83497b92ba3a6c6a9d1e41af7a"
+  },
+  "packages/public-selection.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140407,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9348,
+      "mtime_ns": 1794996952766597394,
+      "ctime_ns": 1794996952766597394
+    },
+    "sha256": "7bcded3089539c285a6d03fdc2d7801012896740d43e7a0f6729b17225f513d8"
+  },
+  "packages/optional-vscode-plan.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140394,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1224,
+      "mtime_ns": 1794995896686563737,
+      "ctime_ns": 1794995896686563737
+    },
+    "sha256": "770e715304b9d1e0529c24ec53ff83f4213f94ad6cb9ad55d496b7794bd9d82b"
+  },
+  "packages/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126238,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 626,
+      "mtime_ns": 1794850426352910262,
+      "ctime_ns": 1794850426352910262
+    },
+    "sha256": "c64624bd8ec6157d13c6f1b8fe027393a6390dd5cc643ba813181e5ad3826b33"
+  },
+  "packages/browser.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129749,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 647,
+      "mtime_ns": 1795036831446452715,
+      "ctime_ns": 1795036831446452715
+    },
+    "sha256": "0e7c1eb997baf024674718be3fa26ee67ae86794e15f023f88094db8d1726cc1"
+  },
+  "packages/sources.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131603,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1719,
+      "mtime_ns": 1794849623135409054,
+      "ctime_ns": 1794849623135409054
+    },
+    "sha256": "e3c7b59fc1a60868c2b05738caf760724b874344322b4e121ce7d1c77dd45f7c"
+  },
+  "packages/final-external-plan.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140389,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3739,
+      "mtime_ns": 1794996440522053628,
+      "ctime_ns": 1794996440522053628
+    },
+    "sha256": "2c1be7aae26b6e4969480dafdfaf01dd949a97ecc6ab4d0d95b1bf82762bd261"
+  },
+  "config/final-branding-plan.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2139014,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3572,
+      "mtime_ns": 1794996952768597515,
+      "ctime_ns": 1794996952768597515
+    },
+    "sha256": "ae9739d39eecdfc2aae2b5325760af8893902c6481239db14b59fee8192ca9db"
+  },
+  "config/modern-finalization-v2.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125822,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 3961,
+      "mtime_ns": 1795220482782088728,
+      "ctime_ns": 1795220482782088728
+    },
+    "sha256": "c22e8c6280975320e6d42cbc331c7b7a5f67dd033007e71cf32577ff413a06a6"
+  },
+  "config/customization.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131604,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 701,
+      "mtime_ns": 1794849623136409109,
+      "ctime_ns": 1794849623136409109
+    },
+    "sha256": "baa42c6635e410b08125e098b86dc4644960eaf0ffb3e1b5e45664be1323c70f"
+  },
+  "config/projeto.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125990,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2307,
+      "mtime_ns": 1794966835067585165,
+      "ctime_ns": 1794966835067585165
+    },
+    "sha256": "5e9214cc1e9e2ad295741d60d75f93df120aee8f74013edebd7df862cd4354bc"
+  },
+  "config/limpeza-diagnostico.sha256": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140437,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 403,
+      "mtime_ns": 1795001929107562631,
+      "ctime_ns": 1795001929107562631
+    },
+    "sha256": "3a15d88bb8ead6f5085733dfd8f43e3b4eed617b19055c8ef51c86189de8e620"
+  },
+  "config/final-release-plan.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140410,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4399,
+      "mtime_ns": 1794999583211524858,
+      "ctime_ns": 1794999583211524858
+    },
+    "sha256": "a928336f431f520ab9effa61f64d72c6640e551d1e055d4e5d2b47f41d64e60c"
+  },
+  "config/systemctl-handoff-review.sha256": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129727,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1254,
+      "mtime_ns": 1795009055428049274,
+      "ctime_ns": 1795009055428049274
+    },
+    "sha256": "8df2b0237fed6eac0c815448d4ae16c4cb0686f3dbfa2f1048cdb9194d28206d"
+  },
+  "config/modern-host-baseline-v2.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101927,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4700,
+      "mtime_ns": 1795256693301931759,
+      "ctime_ns": 1795256693301931759
+    },
+    "sha256": "683648417001f9491780f11575d1ad4e90c9fcd68ff85221aa4d8e7b7b73c7f2"
+  },
+  "config/public-isolation-review.sha256": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129722,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 631,
+      "mtime_ns": 1795007452055385167,
+      "ctime_ns": 1795007452055385167
+    },
+    "sha256": "c9755e292204155aa5b36876a86e756f32e6d16cb7183cb22af701f4154bce95"
+  },
+  "config/customization-lock.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131605,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 292,
+      "mtime_ns": 1794849623136409109,
+      "ctime_ns": 1794849623136409109
+    },
+    "sha256": "984b7774abf634659694c76ef05d858aa06ec7d5de03a3074dcc730663e67e7c"
+  },
+  "config/acceptance-public-template.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140403,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 17396,
+      "mtime_ns": 1794996440521053572,
+      "ctime_ns": 1794996440521053572
+    },
+    "sha256": "6f23a358681187f56bd0b36a5728b070b611e1956fd03645dcb4321dfa6b9776"
+  },
+  "config/modern-host-baseline-v3.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101948,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 3486,
+      "mtime_ns": 1795427209559392226,
+      "ctime_ns": 1795427209559392226
+    },
+    "sha256": "4ba5cf3ca70d817f44d2aeea3cf8e2ef9f7a1187a782461ca1c506c605729fcb"
+  },
+  "tests/test_verificar_projeto.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101941,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 1705,
+      "mtime_ns": 1795381310754177784,
+      "ctime_ns": 1795381310754177784
+    },
+    "sha256": "e6d51ffc96a27552ca33594d28b1b98ac1d56e9b50eb1e7a8f9e55cf60120ad1"
+  },
+  "tests/test_final_cleanup.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140425,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10217,
+      "mtime_ns": 1795001833366125721,
+      "ctime_ns": 1795001833366125721
+    },
+    "sha256": "4cfd5ef65a7169d61b9e260b151af1e38a4b90e3a41b4efb9e19a553ddb112af"
+  },
+  "tests/test_modern_iso_controller.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125805,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1263,
+      "mtime_ns": 1795105437301805205,
+      "ctime_ns": 1795105437301805205
+    },
+    "sha256": "984a01ab539ca1dbbbafd228899124d9e40cb54bc786f5bd4388bf95bd92e854"
+  },
+  "tests/test_pipeline.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129663,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8627,
+      "mtime_ns": 1794848263431547233,
+      "ctime_ns": 1794848263431547233
+    },
+    "sha256": "3caaf74f8e69b4b305d901f44c207b161a516f51bf4266f9287663dd85839f0b"
+  },
+  "tests/test_public_attestation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129717,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 14273,
+      "mtime_ns": 1795008643200371918,
+      "ctime_ns": 1795008643200371918
+    },
+    "sha256": "91ff0fb310a22482dad1575b96000bf335a440fe09297274f10183cb9e1850e1"
+  },
+  "tests/test_executor.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138286,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13329,
+      "mtime_ns": 1794864652478129521,
+      "ctime_ns": 1794864652478129521
+    },
+    "sha256": "fdef2139341b194f1ba69612d84db78e01fe8b22b07639c8298b0512418448c7"
+  },
+  "tests/test_squashfs_xattrs.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138339,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4574,
+      "mtime_ns": 1794940806650518180,
+      "ctime_ns": 1794940806650518180
+    },
+    "sha256": "9809fa5ef3ef8fea902440ed77809f38c5cd41c6542ed9b700b2ecc217444812"
+  },
+  "tests/test_release_pipeline.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138314,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 14686,
+      "mtime_ns": 1794873713410242547,
+      "ctime_ns": 1794873713410242547
+    },
+    "sha256": "c44c44fdd3bcba328b880b3024ef91a5e59b2e641951891269601ee785f51c0e"
+  },
+  "tests/test_control2_prototype.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126394,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6119,
+      "mtime_ns": 1795082150797761729,
+      "ctime_ns": 1795082150797761729
+    },
+    "sha256": "08e586a4f45ea095a2fadeea373467500ccaf8891d1d99b3dc82e3448ab43ec6"
+  },
+  "tests/test_apt_local_archives.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138321,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10861,
+      "mtime_ns": 1794911787440097483,
+      "ctime_ns": 1794911787440097483
+    },
+    "sha256": "43beff1cf3167c612bb2c902f0bf29a4613b0e435b7b60b538a1befe534f36c4"
+  },
+  "tests/test_cleanup_continuacao.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129796,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1544,
+      "mtime_ns": 1795089753800484311,
+      "ctime_ns": 1795089753800484311
+    },
+    "sha256": "474a6d4ecfbf7889e9038616dc8d457565e1c229d9ef9bd49a9d06a1b17e247a"
+  },
+  "tests/test_validar_iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126375,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2497,
+      "mtime_ns": 1794845623920388132,
+      "ctime_ns": 1794845623920388132
+    },
+    "sha256": "358747957f1905dc3fa744ca0d8ea37d2729e68bf87e234422c979f48beae23a"
+  },
+  "tests/test_modern_adapter.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125621,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3866,
+      "mtime_ns": 1795106148254148056,
+      "ctime_ns": 1795106148254148056
+    },
+    "sha256": "623669e6c86d0a0057ffc0489542f5b3d71fb208f2c480a535972df01f6faba4"
+  },
+  "tests/test_installation_plan.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138276,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9003,
+      "mtime_ns": 1794864144810744667,
+      "ctime_ns": 1794864144810744667
+    },
+    "sha256": "9b5e104d72a7bdf8ebedbb0aa1aaa2a0ae50b75bb8fa19291c73bd01a524242e"
+  },
+  "tests/test_prototype_review.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125617,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4078,
+      "mtime_ns": 1795104142385403466,
+      "ctime_ns": 1795104142385403466
+    },
+    "sha256": "be9102f169f14cf8d3b10e1d6a2bee5c562795496a8c681032986d3f4576e3db"
+  },
+  "tests/test_modern_preview.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126389,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3272,
+      "mtime_ns": 1795051522842153626,
+      "ctime_ns": 1795051522842153626
+    },
+    "sha256": "fedae26a64ea4cb1dd1a2f831cbb573f4e7d0846c222f159f2d796c482442e51"
+  },
+  "tests/test_devcontrol.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125813,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 11264,
+      "mtime_ns": 1795180427428535710,
+      "ctime_ns": 1795180427428535710
+    },
+    "sha256": "373d68f128fbbbbdc2e5bd438bd5c99f7c9f7fe6c32db535e9405cb506d24f2e"
+  },
+  "tests/test_cleanup_eight.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129765,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6438,
+      "mtime_ns": 1795046733421595049,
+      "ctime_ns": 1795046733421595049
+    },
+    "sha256": "eccf3ae82fec2824e740b8905bb0530da8cafb3765f22474620f457ac4e3a2bc"
+  },
+  "tests/test_modern_candidate.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101876,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 37380,
+      "mtime_ns": 1795427506962362234,
+      "ctime_ns": 1795427506962362234
+    },
+    "sha256": "36ebefe3bc0f9bde1dad13c696b2f005b3751162d94dc42aaff9f83907652e3f"
+  },
+  "tests/test_release_resume.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138365,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9832,
+      "mtime_ns": 1794943683601880499,
+      "ctime_ns": 1794943683601880499
+    },
+    "sha256": "2f9e5bb59e79d6b5fd4eb2e98ddac2da55a02b787af9073d7d7ed6bfe4d68aa0"
+  },
+  "tests/test_fase3a.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129648,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4116,
+      "mtime_ns": 1794846922339962911,
+      "ctime_ns": 1794846922339962911
+    },
+    "sha256": "d6b28e5c62a2754bb3372f91cd6ca57a32a87d624eef92ee56b3e9e8a26b8f26"
+  },
+  "tests/modelo-relatorio-iso.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129647,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3642,
+      "mtime_ns": 1794846922339962911,
+      "ctime_ns": 1794846922339962911
+    },
+    "sha256": "736b06f9fb1565fa12ad6aea8e8bcbd927f8bb57cea0e04cf9fb52f3fab6cac2"
+  },
+  "tests/test_modern_visual.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101933,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 17009,
+      "mtime_ns": 1795426540334463522,
+      "ctime_ns": 1795426540334463522
+    },
+    "sha256": "39f85427eb52b84fc49954fcb972e0dfe4ce361c5eefa445ba707610c009d251"
+  },
+  "tests/test_devcontrol_gtk.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101925,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 2250,
+      "mtime_ns": 1795382483076363939,
+      "ctime_ns": 1795382483076363939
+    },
+    "sha256": "aab5f9dd3186da60adc3c2013e655490524beb75d8b17c4c5218d6e77c4c0522"
+  },
+  "tests/aceitacao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126244,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2198,
+      "mtime_ns": 1794848862709403125,
+      "ctime_ns": 1794848862709403125
+    },
+    "sha256": "c59c5d253fdbc1c511e090770ebb600e110ce7615206fa634fbd3e4e2e6d30b4"
+  },
+  "tests/test_public_home_isolation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129720,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7068,
+      "mtime_ns": 1795008180979842844,
+      "ctime_ns": 1795008180979842844
+    },
+    "sha256": "118f419c9c163cd47e5d07e67c925be0bc8e06719fc4b201e624d205b68e223d"
+  },
+  "tests/test_package_acquisition.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138295,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7328,
+      "mtime_ns": 1794868233582804056,
+      "ctime_ns": 1794868233582804056
+    },
+    "sha256": "253477f434d655af87ae9f30487bc406158378e09292b3d3139129d3d445f107"
+  },
+  "tests/test_iso_control.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138387,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2896,
+      "mtime_ns": 1794948125637184552,
+      "ctime_ns": 1794948125637184552
+    },
+    "sha256": "3c14d9c1d4acc489af71f30c0ade8b3a460a8311982d637b1eb98aa340786adc"
+  },
+  "tests/test_continuacao_prototypes.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129787,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2212,
+      "mtime_ns": 1795104102503262311,
+      "ctime_ns": 1795104102503262311
+    },
+    "sha256": "dd2aaea46adfec63d424f69222d711fe2c07d746616f773b308bd3f8edaa9053"
+  },
+  "tests/test_modern_candidate_iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101893,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 9584,
+      "mtime_ns": 1795426484849326684,
+      "ctime_ns": 1795426484849326684
+    },
+    "sha256": "b206a155ed2926a573c31850ffd61fa2454258e304a7614dd6f8f82824ab5019"
+  },
+  "tests/test_browser_readonly_audit.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129779,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3239,
+      "mtime_ns": 1795086931671067495,
+      "ctime_ns": 1795086931671067495
+    },
+    "sha256": "538ee1be219dfc110116a8ddbd66625f4ff40bc439ba36ebc961b442af7a49d0"
+  },
+  "tests/test_browser_executor.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126397,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9738,
+      "mtime_ns": 1795081351895654440,
+      "ctime_ns": 1795081351895654440
+    },
+    "sha256": "b59d00a133cd8d1150c62518384735eaf500c746b3be3a6bfa08af76c9c6a094"
+  },
+  "tests/README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126379,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9982,
+      "mtime_ns": 1794915364790626489,
+      "ctime_ns": 1794915364790626489
+    },
+    "sha256": "b333dcedf337c2bcd87a9a1d2c6eb8abb4a5bf93e3b0c4524b71fb50590b3f2e"
+  },
+  "tests/test_browser.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129752,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8927,
+      "mtime_ns": 1795037249857329292,
+      "ctime_ns": 1795037249857329292
+    },
+    "sha256": "0cbbc5400bc5ddb65f0a5d832b294d4f5090224f73a36774879c6ba7f72b4297"
+  },
+  "tests/test_public_payload.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140421,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5334,
+      "mtime_ns": 1794999171664020581,
+      "ctime_ns": 1794999171664020581
+    },
+    "sha256": "1bbf6b0cd7f61f7d60752e7681bc0bbd1fca3069f83d07c662b384c9fcec4918"
+  },
+  "tests/test_public_iso.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129737,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7319,
+      "mtime_ns": 1795015519391565138,
+      "ctime_ns": 1795015519391565138
+    },
+    "sha256": "f721a97b31c155f78e65293cf852ee7d96d355c47c1323880db4ec7aef96a47d"
+  },
+  "tests/test_customization.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125996,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9651,
+      "mtime_ns": 1794850358463567131,
+      "ctime_ns": 1794850358463567131
+    },
+    "sha256": "92fc6f53eb7e69da99c324de371626af40615cd78947be80a89123cd00fee878"
+  },
+  "tests/test_modern_identity.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125823,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 4949,
+      "mtime_ns": 1795308132141190224,
+      "ctime_ns": 1795308132141190224
+    },
+    "sha256": "abcb07b2bee713cfff88871d1a5caa246d8de5689f7116d6133d905e989c4d6e"
+  },
+  "tests/test_runtime_directories.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138345,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1684,
+      "mtime_ns": 1794915191090676331,
+      "ctime_ns": 1794915191090676331
+    },
+    "sha256": "dd3a4098df69d055660e85816ae969caa7bdc34467b2243f4dc70808a186d935"
+  },
+  "tests/test_adminer_php_check.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129784,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2643,
+      "mtime_ns": 1795088065285306354,
+      "ctime_ns": 1795088065285306354
+    },
+    "sha256": "461bede99a42549996a753b129313d562bee5d5f462281ed4baa2f730de3f10a"
+  },
+  "tests/acceptance_minimal_image.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2132341,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4106,
+      "mtime_ns": 1794856560689764384,
+      "ctime_ns": 1794856560689764384
+    },
+    "sha256": "b02b0f0c73c4d1b8f8fae8d1f9c6174adda79d485daa80dda290390fb74e0170"
+  },
+  "tests/test_final_preparation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140392,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 19138,
+      "mtime_ns": 1794996952767597455,
+      "ctime_ns": 1794996952767597455
+    },
+    "sha256": "6d2d320ca40230d83587eb2402c26be13d72dab77e7e8b5e76057761cab08aeb"
+  },
+  "tests/test_isolation_validation.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126016,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5892,
+      "mtime_ns": 1794866185215164104,
+      "ctime_ns": 1794866185215164104
+    },
+    "sha256": "eef9772eca188c3f93b323fd9c044af1e2bf0c9ed5290d53b251b60b6b4c2cc8"
+  },
+  "tests/test_public_acquisition.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140429,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1871,
+      "mtime_ns": 1794999487886266897,
+      "ctime_ns": 1794999487886266897
+    },
+    "sha256": "463003794a40be5b3984e4c4aaa655ab875afa08adfa8de4935c1055c31e5421"
+  },
+  "tests/test_minimal_customization.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131609,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6186,
+      "mtime_ns": 1795308649209351822,
+      "ctime_ns": 1795308649209351822
+    },
+    "sha256": "8ac7c6681a2bae284e2038bec7ea53d7bb8829594142e2e224f45052add0eaa9"
+  },
+  "tests/test_public_application.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129706,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9057,
+      "mtime_ns": 1795006065173787015,
+      "ctime_ns": 1795006065173787015
+    },
+    "sha256": "c259878c533401ea8368e77303e4e1cf550ebd4e056ad1dbbd45acc25747c974"
+  },
+  "tests/test_adminer_plan.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129768,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4072,
+      "mtime_ns": 1795089506158367823,
+      "ctime_ns": 1795089506158367823
+    },
+    "sha256": "ad7100d9946ff0b92b29364c6fc13ec70f4bf2763fb437dc8fa6fe8aacd56611"
+  },
+  "tests/test_modern_pack_controller.py": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125626,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1872,
+      "mtime_ns": 1795105577539030216,
+      "ctime_ns": 1795105577539030216
+    },
+    "sha256": "7ba6a2b5ebaffea8afd9f4afc1ea3f9b4181c249510e7b48e27196e1d1eda891"
+  },
+  "tests/fixtures/browser-smoke.html": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2228917,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 579,
+      "mtime_ns": 1795037458547232304,
+      "ctime_ns": 1795037458547232304
+    },
+    "sha256": "401c10261a1a76b668e6bdc81caddcbcfaec015de47290f7345b4fbc20ab9bc0"
+  },
+  "README.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125984,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4088,
+      "mtime_ns": 1794999642453802560,
+      "ctime_ns": 1794999642453802560
+    },
+    "sha256": "abb03dd14b1ecd234246fbc3345f03abcc619fae6aa4a349a921ef8a9ac3ed11"
+  },
+  ".gitignore": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125985,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 258,
+      "mtime_ns": 1794841577040282997,
+      "ctime_ns": 1794845334536583306
+    },
+    "sha256": "1393da3e23daa21118cce1d2a0ffcdf18357a451d84c68bbd6993a33c23a5694"
+  },
+  "docs/mapa-personalizacao-visual.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129759,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6893,
+      "mtime_ns": 1795037815751151312,
+      "ctime_ns": 1795037815751151312
+    }
+  },
+  "docs/fase4b8-integracao-aprovada.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138390,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4621,
+      "mtime_ns": 1794948332746353597,
+      "ctime_ns": 1794948332746353597
+    }
+  },
+  "docs/probe-systemctl-unshare-aprovado.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129732,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3431,
+      "mtime_ns": 1795012429414870608,
+      "ctime_ns": 1795012429414870608
+    }
+  },
+  "docs/recuperacao-espaco.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138334,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9012,
+      "mtime_ns": 1794910299405382906,
+      "ctime_ns": 1794910299405382906
+    }
+  },
+  "docs/continuacao-adminer-control-modern.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129791,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3332,
+      "mtime_ns": 1795089600900763089,
+      "ctime_ns": 1795089600900763089
+    }
+  },
+  "docs/instalacao-devlite-1.0.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140416,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4095,
+      "mtime_ns": 1795029729416353054,
+      "ctime_ns": 1795029729416353054
+    }
+  },
+  "docs/aquisicao-publica-concluida.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129714,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2721,
+      "mtime_ns": 1795006279161386171,
+      "ctime_ns": 1795006279161386171
+    }
+  },
+  "docs/camada-visual-modern-v2.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101935,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 3363,
+      "mtime_ns": 1795309950970168034,
+      "ctime_ns": 1795309950970168034
+    }
+  },
+  "docs/adaptador-navegador-contrato.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126384,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10648,
+      "mtime_ns": 1795081766038006114,
+      "ctime_ns": 1795081766038006114
+    }
+  },
+  "docs/retomada-prototipos-validacao-proposta.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125619,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5191,
+      "mtime_ns": 1795104237660566113,
+      "ctime_ns": 1795104237660566113
+    }
+  },
+  "docs/plano.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126029,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5915,
+      "mtime_ns": 1794873425140495455,
+      "ctime_ns": 1794873425140495455
+    }
+  },
+  "docs/fase4b3-executor-isolado.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138289,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 17521,
+      "mtime_ns": 1794864698744811488,
+      "ctime_ns": 1794864698744811488
+    }
+  },
+  "docs/limpeza-continuacao-execucao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129798,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1151,
+      "mtime_ns": 1795089783273167065,
+      "ctime_ns": 1795089783273167065
+    }
+  },
+  "docs/execucao-noturna.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126393,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2492,
+      "mtime_ns": 1795051718163262911,
+      "ctime_ns": 1795051718163262911
+    }
+  },
+  "docs/iso-publica-controlada.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129739,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2407,
+      "mtime_ns": 1795017695407917488,
+      "ctime_ns": 1795017695407917488
+    }
+  },
+  "docs/fase4b8-correcao-manifest-snap.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138380,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5792,
+      "mtime_ns": 1794948383134090124,
+      "ctime_ns": 1794948383134090124
+    }
+  },
+  "docs/correcao-systemctl-unshare.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129729,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8007,
+      "mtime_ns": 1795012429415870663,
+      "ctime_ns": 1795012429415870663
+    }
+  },
+  "docs/limpeza-continuacao-correcao-tamanho.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129795,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 694,
+      "mtime_ns": 1795089852020093970,
+      "ctime_ns": 1795089852020093970
+    }
+  },
+  "docs/fase3a-testes-iso.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126998,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 16941,
+      "mtime_ns": 1794849037382034924,
+      "ctime_ns": 1794849037382034924
+    }
+  },
+  "docs/estrategia-camadas.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129640,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4096,
+      "mtime_ns": 1794848862709403125,
+      "ctime_ns": 1794848862709403125
+    }
+  },
+  "docs/fase4b9-validacao-pratica.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138397,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4767,
+      "mtime_ns": 1795029729417353112,
+      "ctime_ns": 1795029729417353112
+    }
+  },
+  "docs/camada-visual-modern-v3.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101904,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 2831,
+      "mtime_ns": 1795427304573785571,
+      "ctime_ns": 1795427304573785571
+    }
+  },
+  "docs/autorizacao-aplicacao-apos-probe.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129734,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4168,
+      "mtime_ns": 1795023231922035009,
+      "ctime_ns": 1795023231922035009
+    }
+  },
+  "docs/fase4a-personalizacao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131673,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 15341,
+      "mtime_ns": 1794850426352910262,
+      "ctime_ns": 1794850426352910262
+    }
+  },
+  "docs/iso-publica-candidata-concluida.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129747,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3546,
+      "mtime_ns": 1795037602566253069,
+      "ctime_ns": 1795037602566253069
+    }
+  },
+  "docs/retomada-publica-concluida.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129742,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2885,
+      "mtime_ns": 1795023374717928987,
+      "ctime_ns": 1795023374717928987
+    }
+  },
+  "docs/limpeza-final-proposta.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140413,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6805,
+      "mtime_ns": 1794998479567753839,
+      "ctime_ns": 1794998479567753839
+    }
+  },
+  "docs/iso-base.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126235,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1599,
+      "mtime_ns": 1794846299609673605,
+      "ctime_ns": 1794846299609673605
+    }
+  },
+  "docs/fase4b8-retomada-verificacao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138371,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6007,
+      "mtime_ns": 1794940933913824133,
+      "ctime_ns": 1794940933913824133
+    }
+  },
+  "docs/conclusao-acelerada.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140433,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3008,
+      "mtime_ns": 1794999682605027847,
+      "ctime_ns": 1794999682605027847
+    }
+  },
+  "docs/fase4b5-preparacao-pacotes.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138299,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 14416,
+      "mtime_ns": 1794870458877029455,
+      "ctime_ns": 1794870458877029455
+    }
+  },
+  "docs/diretriz-devlite-modern.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129745,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2757,
+      "mtime_ns": 1795037815751151312,
+      "ctime_ns": 1795037815751151312
+    }
+  },
+  "docs/fase3b-pipeline.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2130301,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9878,
+      "mtime_ns": 1794849037382034924,
+      "ctime_ns": 1794849037382034924
+    }
+  },
+  "docs/aquisicao-publica-proxima.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129705,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2328,
+      "mtime_ns": 1795003439778303948,
+      "ctime_ns": 1795003439778303948
+    }
+  },
+  "docs/navegador-aplicado-e-revisao-adminer.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129782,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7319,
+      "mtime_ns": 1795088534648512047,
+      "ctime_ns": 1795088534648512047
+    }
+  },
+  "docs/fase2-aquisicao-validacao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129639,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6510,
+      "mtime_ns": 1794846324593164788,
+      "ctime_ns": 1794846324593164788
+    }
+  },
+  "docs/aplicacao-modern-proposta.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125624,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5284,
+      "mtime_ns": 1795104695573312976,
+      "ctime_ns": 1795104695573312976
+    }
+  },
+  "docs/fase4b8-integracao-par-aceito.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125872,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9759,
+      "mtime_ns": 1794938348221767249,
+      "ctime_ns": 1794938348221767249
+    }
+  },
+  "docs/fase4b1-personalizacao-minima.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2132334,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13732,
+      "mtime_ns": 1794859770598122833,
+      "ctime_ns": 1794859770598122833
+    }
+  },
+  "docs/fase4b4-validacao-isolamento.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138297,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13569,
+      "mtime_ns": 1794867526049707470,
+      "ctime_ns": 1794867526049707470
+    }
+  },
+  "docs/autorizacao-iso-publica-candidata.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129741,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3168,
+      "mtime_ns": 1795029729386351337,
+      "ctime_ns": 1795029729386351337
+    }
+  },
+  "docs/fase4b8-geracao-iso-proposta.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138391,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4123,
+      "mtime_ns": 1794967023480179569,
+      "ctime_ns": 1794967023480179569
+    }
+  },
+  "docs/fase4b2-preparacao-programas.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138280,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 18522,
+      "mtime_ns": 1794862819906885831,
+      "ctime_ns": 1794862819906885831
+    }
+  },
+  "docs/recuperacao-definitiva-espaco.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138338,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12449,
+      "mtime_ns": 1794913505269623208,
+      "ctime_ns": 1794913505269623208
+    }
+  },
+  "docs/pacotes-origens.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131704,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5708,
+      "mtime_ns": 1794850426350910135,
+      "ctime_ns": 1794850426350910135
+    }
+  },
+  "docs/devlite-modern-plano.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126392,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5775,
+      "mtime_ns": 1795051718163262911,
+      "ctime_ns": 1795051718163262911
+    }
+  },
+  "docs/arquitetura.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125992,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3816,
+      "mtime_ns": 1794846299609673605,
+      "ctime_ns": 1794846299609673605
+    }
+  },
+  "docs/limpeza-concluida.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125464,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1385,
+      "mtime_ns": 1795003439778303948,
+      "ctime_ns": 1795003439778303948
+    }
+  },
+  "docs/fase4b8-correcao-xattrs.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138374,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6716,
+      "mtime_ns": 1794943804429440099,
+      "ctime_ns": 1794943804429440099
+    }
+  },
+  "docs/autorizacao-conclusao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140430,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5747,
+      "mtime_ns": 1795001929142564617,
+      "ctime_ns": 1795001929142564617
+    }
+  },
+  "docs/seguranca-validacao.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126233,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2359,
+      "mtime_ns": 1795381695337732455,
+      "ctime_ns": 1795381695337732455
+    }
+  },
+  "docs/limpeza-correcao-diagnostico.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140439,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5177,
+      "mtime_ns": 1795003439783304236,
+      "ctime_ns": 1795003439783304236
+    }
+  },
+  "docs/autorizacao-aplicacao-publica.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129715,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6056,
+      "mtime_ns": 1795007452056385223,
+      "ctime_ns": 1795007452056385223
+    }
+  },
+  "docs/devlite-control2-plano.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129769,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 13246,
+      "mtime_ns": 1795082931850510594,
+      "ctime_ns": 1795082931850510594
+    }
+  },
+  "docs/correcao-isolamento-publico.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129724,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7339,
+      "mtime_ns": 1795009055442050033,
+      "ctime_ns": 1795009055442050033
+    }
+  },
+  "docs/fases4b7-9-integradas.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138316,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 44370,
+      "mtime_ns": 1794967023426176531,
+      "ctime_ns": 1794967023426176531
+    }
+  },
+  "docs/devlite-control2-adminer.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129774,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 15897,
+      "mtime_ns": 1795088534648512047,
+      "ctime_ns": 1795088534648512047
+    }
+  },
+  "docs/navegador-e-preparacao-visual.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129760,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11232,
+      "mtime_ns": 1795037815752151368,
+      "ctime_ns": 1795037815752151368
+    }
+  },
+  "docs/modern-correcao-fowner.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125808,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4153,
+      "mtime_ns": 1795106216196997050,
+      "ctime_ns": 1795106216196997050
+    }
+  },
+  "docs/recursos.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126234,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2911,
+      "mtime_ns": 1794846324619165299,
+      "ctime_ns": 1794846324619165299
+    }
+  },
+  "docs/fase4b8-isos-geradas.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138396,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5682,
+      "mtime_ns": 1794967091757020744,
+      "ctime_ns": 1794967091757020744
+    }
+  },
+  "docs/decisoes.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126236,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8190,
+      "mtime_ns": 1794873425141495512,
+      "ctime_ns": 1794873425141495512
+    }
+  },
+  "docs/plano-acelerado-2026-11-19.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129803,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5595,
+      "mtime_ns": 1795099145202716646,
+      "ctime_ns": 1795099145202716646
+    }
+  },
+  "docs/finalizacao-devlite-1.0.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140415,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10647,
+      "mtime_ns": 1794998594431096676,
+      "ctime_ns": 1794998594431096676
+    }
+  },
+  "docs/escopo-final-1.0.md": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125625,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1155,
+      "mtime_ns": 1795108444650126134,
+      "ctime_ns": 1795108444650126134
+    }
+  },
+  "docs/evidencias/pipeline-integrado-atual.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138392,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5129,
+      "mtime_ns": 1794967091756020688,
+      "ctime_ns": 1794967091756020688
+    }
+  },
+  "docs/evidencias/reconstrucao-experimental.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129668,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1431,
+      "mtime_ns": 1794849037379034758,
+      "ctime_ns": 1794849037379034758
+    }
+  },
+  "docs/evidencias/pressao-io-integracao-manifest.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138382,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 574,
+      "mtime_ns": 1794945593846752054,
+      "ctime_ns": 1794945593846752054
+    }
+  },
+  "docs/evidencias/preflight-apos-limpeza-definitiva.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138349,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 634,
+      "mtime_ns": 1794913414222315965,
+      "ctime_ns": 1794913414222315965
+    }
+  },
+  "docs/evidencias/limpeza-autorizada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138333,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2197,
+      "mtime_ns": 1794910208858254435,
+      "ctime_ns": 1794910208858254435
+    }
+  },
+  "docs/evidencias/auditoria-armazenamento-final.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138399,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 30909,
+      "mtime_ns": 1794996880523199999,
+      "ctime_ns": 1794996880523199999
+    }
+  },
+  "docs/evidencias/integracao-em-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138329,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 971,
+      "mtime_ns": 1794938131884783081,
+      "ctime_ns": 1794938131884783081
+    }
+  },
+  "docs/evidencias/limpeza-controlada-dbaxme6_.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140435,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 327,
+      "mtime_ns": 1795001280824655032,
+      "ctime_ns": 1795001280824655032
+    }
+  },
+  "docs/evidencias/navegador-disponibilidade.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129753,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5129,
+      "mtime_ns": 1795037137057894271,
+      "ctime_ns": 1795037137057894271
+    }
+  },
+  "docs/evidencias/pipeline-integrado-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138312,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3165,
+      "mtime_ns": 1794873741883716437,
+      "ctime_ns": 1794873741883716437
+    }
+  },
+  "docs/evidencias/programas-pendentes-metadados.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138363,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6085,
+      "mtime_ns": 1794994356211670285,
+      "ctime_ns": 1794994356211670285
+    }
+  },
+  "docs/evidencias/autorizacao-conclusao-proposta.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140431,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1755,
+      "mtime_ns": 1794999583197524084,
+      "ctime_ns": 1794999583197524084
+    }
+  },
+  "docs/evidencias/instalacao-4b7-tentativa1.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138325,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3915,
+      "mtime_ns": 1794874913498318381,
+      "ctime_ns": 1794874913498318381
+    }
+  },
+  "docs/evidencias/execucao-geral-concluida.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129781,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3600,
+      "mtime_ns": 1795088534648512047,
+      "ctime_ns": 1795088534648512047
+    }
+  },
+  "docs/evidencias/pipeline-integrado-4b7-9.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138303,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4485,
+      "mtime_ns": 1794920406956871504,
+      "ctime_ns": 1794920406956871504
+    }
+  },
+  "docs/evidencias/personalizacao-minima.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138270,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2083,
+      "mtime_ns": 1794859770598122833,
+      "ctime_ns": 1794859770598122833
+    }
+  },
+  "docs/evidencias/instalacao-4b7-epoch-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138340,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 739,
+      "mtime_ns": 1794911889272942897,
+      "ctime_ns": 1794911889272942897
+    }
+  },
+  "docs/evidencias/devlite-control2-prototipo.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129772,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2822,
+      "mtime_ns": 1795082448003586085,
+      "ctime_ns": 1795082448003586085
+    }
+  },
+  "docs/evidencias/integracao-63m6oz2-aprovada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138385,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3369,
+      "mtime_ns": 1794947992261078790,
+      "ctime_ns": 1794947992261078790
+    }
+  },
+  "docs/evidencias/limpeza-duplicatas-revalidadas.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140434,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 548,
+      "mtime_ns": 1794999651030277642,
+      "ctime_ns": 1794999651030277642
+    }
+  },
+  "docs/evidencias/aquisicao-publica-validada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129713,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4239,
+      "mtime_ns": 1795006279160386112,
+      "ctime_ns": 1795006279160386112
+    }
+  },
+  "docs/evidencias/executor-isolado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138272,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3099,
+      "mtime_ns": 1794864698744811488,
+      "ctime_ns": 1794864698744811488
+    }
+  },
+  "docs/evidencias/executor-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138271,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3182,
+      "mtime_ns": 1794864698744811488,
+      "ctime_ns": 1794864698744811488
+    }
+  },
+  "docs/evidencias/preflight-geracao-iso.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138389,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 828,
+      "mtime_ns": 1794948229843786746,
+      "ctime_ns": 1794948229843786746
+    }
+  },
+  "docs/evidencias/integracao-apos-instalacao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126283,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1528,
+      "mtime_ns": 1794919948710218423,
+      "ctime_ns": 1794919948710218423
+    }
+  },
+  "docs/evidencias/correcao-xattrs-proposta.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138375,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1395,
+      "mtime_ns": 1794940933913824133,
+      "ctime_ns": 1794940933913824133
+    }
+  },
+  "docs/evidencias/iso-oficial.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129638,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1458,
+      "mtime_ns": 1794846324595164827,
+      "ctime_ns": 1794846324595164827
+    }
+  },
+  "docs/evidencias/execucao-geral-autorizada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129773,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2510,
+      "mtime_ns": 1795088534649512105,
+      "ctime_ns": 1795088534649512105
+    }
+  },
+  "docs/evidencias/retomada-prototipos-validada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125616,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1713,
+      "mtime_ns": 1795104695573312976,
+      "ctime_ns": 1795104695573312976
+    }
+  },
+  "docs/evidencias/retomada-apos-limpeza-definitiva.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138347,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1501,
+      "mtime_ns": 1794913505266623033,
+      "ctime_ns": 1794913505266623033
+    }
+  },
+  "docs/evidencias/aplicacao-publica-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129733,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4335,
+      "mtime_ns": 1795023148917483235,
+      "ctime_ns": 1795023148917483235
+    }
+  },
+  "docs/evidencias/limpeza-correcao-diagnostico.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140438,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2150,
+      "mtime_ns": 1795001929134564163,
+      "ctime_ns": 1795001929134564163
+    }
+  },
+  "docs/evidencias/geracao-isos-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138395,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8813,
+      "mtime_ns": 1794967023481179625,
+      "ctime_ns": 1794967023481179625
+    }
+  },
+  "docs/evidencias/instalacao-4b7-tentativa5.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138364,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9905,
+      "mtime_ns": 1794919631732644676,
+      "ctime_ns": 1794919631732644676
+    }
+  },
+  "docs/evidencias/instalacao-4b7-novos-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138327,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 790,
+      "mtime_ns": 1794874989546536689,
+      "ctime_ns": 1794874989546536689
+    }
+  },
+  "docs/evidencias/instalacao-4b7-tentativa4.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138344,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6226,
+      "mtime_ns": 1794915107606898937,
+      "ctime_ns": 1794915107606898937
+    }
+  },
+  "docs/evidencias/lvm-plano-acelerado-2026-11-19.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129801,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2331,
+      "mtime_ns": 1795099207514437029,
+      "ctime_ns": 1795099207514437029
+    }
+  },
+  "docs/evidencias/aquisicao-pacotes.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138302,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1256,
+      "mtime_ns": 1794870352512657861,
+      "ctime_ns": 1794870352512657861
+    }
+  },
+  "docs/evidencias/armazenamento-continuacao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129777,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 463769,
+      "mtime_ns": 1795088720517171489,
+      "ctime_ns": 1795088720517171489
+    }
+  },
+  "docs/evidencias/auditoria-privada-final.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140411,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 16675,
+      "mtime_ns": 1794998240999020923,
+      "ctime_ns": 1794998240999020923
+    }
+  },
+  "docs/evidencias/retomada-inputs-selados.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138369,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 423,
+      "mtime_ns": 1794938219429049561,
+      "ctime_ns": 1794938219429049561
+    }
+  },
+  "docs/evidencias/preflight-metadados-reais.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138379,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 911,
+      "mtime_ns": 1794943753386261963,
+      "ctime_ns": 1794943753386261963
+    }
+  },
+  "docs/evidencias/xfce-estrutura-real.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138406,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 15459,
+      "mtime_ns": 1794994767984127917,
+      "ctime_ns": 1794994767984127917
+    }
+  },
+  "docs/evidencias/preparacao-pacotes.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126003,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11853,
+      "mtime_ns": 1794870458875029337,
+      "ctime_ns": 1794870458875029337
+    }
+  },
+  "docs/evidencias/diretriz-devlite-modern.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129762,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 535,
+      "mtime_ns": 1795037815752151368,
+      "ctime_ns": 1795037815752151368
+    }
+  },
+  "docs/evidencias/pacotes-cache-apt.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131705,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 18344,
+      "mtime_ns": 1794850426351910199,
+      "ctime_ns": 1794850426351910199
+    }
+  },
+  "docs/evidencias/retomada-comandos-apos-limpeza-definitiva.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138350,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 751,
+      "mtime_ns": 1794913505266623033,
+      "ctime_ns": 1794913505266623033
+    }
+  },
+  "docs/evidencias/navegador-preparado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129758,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1408,
+      "mtime_ns": 1795037682135683446,
+      "ctime_ns": 1795037682135683446
+    }
+  },
+  "docs/evidencias/limpeza-para-integracao-executada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125490,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4256,
+      "mtime_ns": 1794922165306523434,
+      "ctime_ns": 1794922165306523434
+    }
+  },
+  "docs/evidencias/plano-acelerado-2026-11-19.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129799,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 691,
+      "mtime_ns": 1795099073960450506,
+      "ctime_ns": 1795099073960450506
+    }
+  },
+  "docs/evidencias/mapa-visual-inventario.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129756,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1156,
+      "mtime_ns": 1795037317165168619,
+      "ctime_ns": 1795037317165168619
+    }
+  },
+  "docs/evidencias/correcao-isolamento-publico.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129723,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5888,
+      "mtime_ns": 1795007452056385223,
+      "ctime_ns": 1795007452056385223
+    }
+  },
+  "docs/evidencias/integracao-mlgwqtyc-resultado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138377,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1813,
+      "mtime_ns": 1794943723671401713,
+      "ctime_ns": 1794943723671401713
+    }
+  },
+  "docs/evidencias/auditoria-recuperacao-espaco.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2101721,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5890,
+      "mtime_ns": 1794909831303877691,
+      "ctime_ns": 1794909831303877691
+    }
+  },
+  "docs/evidencias/probe-systemctl-unshare-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129725,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3988,
+      "mtime_ns": 1795012429414870608,
+      "ctime_ns": 1795012429414870608
+    }
+  },
+  "docs/evidencias/execucao-noturna.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126391,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1588,
+      "mtime_ns": 1795051718162262854,
+      "ctime_ns": 1795051718162262854
+    }
+  },
+  "docs/evidencias/adminer-revisao-autorizada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129716,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3488,
+      "mtime_ns": 1795084829198716314,
+      "ctime_ns": 1795084829198716314
+    }
+  },
+  "docs/evidencias/iso-publica-proposta.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129740,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5011,
+      "mtime_ns": 1795023343916220262,
+      "ctime_ns": 1795023343916220262
+    }
+  },
+  "docs/evidencias/preparacao-programas.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138279,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 308742,
+      "mtime_ns": 1794862819905885774,
+      "ctime_ns": 1794862819905885774
+    }
+  },
+  "docs/evidencias/correcao-manifest-proposta.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138381,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1166,
+      "mtime_ns": 1794943804429440099,
+      "ctime_ns": 1794943804429440099
+    }
+  },
+  "docs/evidencias/aceitacao-publica-preparada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140404,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 283,
+      "mtime_ns": 1794996440522053628,
+      "ctime_ns": 1794996440522053628
+    }
+  },
+  "docs/evidencias/plano-limpeza-final.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140412,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11875,
+      "mtime_ns": 1794998479566753781,
+      "ctime_ns": 1794998479566753781
+    }
+  },
+  "docs/evidencias/integracao-quarentena-detalhes.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138370,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4912,
+      "mtime_ns": 1794938272924259147,
+      "ctime_ns": 1794938272924259147
+    }
+  },
+  "docs/evidencias/relato-hyperv-navegador.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129757,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 541,
+      "mtime_ns": 1795037458547232304,
+      "ctime_ns": 1795037458547232304
+    }
+  },
+  "docs/evidencias/limpeza-para-integracao-plano.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138361,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5339,
+      "mtime_ns": 1794920566856859742,
+      "ctime_ns": 1794920566856859742
+    }
+  },
+  "docs/evidencias/integracao-manifest-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138384,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7433,
+      "mtime_ns": 1794948018588474839,
+      "ctime_ns": 1794948018588474839
+    }
+  },
+  "docs/evidencias/retomada-yqlso8i2-resultado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138373,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3200,
+      "mtime_ns": 1794940852611155822,
+      "ctime_ns": 1794940852611155822
+    }
+  },
+  "docs/evidencias/instalacao-4b7-tentativa2.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138323,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6079,
+      "mtime_ns": 1794877375171363531,
+      "ctime_ns": 1794877375171363531
+    }
+  },
+  "docs/evidencias/instalacao-4b7-runtime-corrigido.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138353,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1184,
+      "mtime_ns": 1794915357581213277,
+      "ctime_ns": 1794915357581213277
+    }
+  },
+  "docs/evidencias/preflight-completo-apt-epoch.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138336,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 634,
+      "mtime_ns": 1794911817115801485,
+      "ctime_ns": 1794911817115801485
+    }
+  },
+  "docs/evidencias/programas-inventario-publico.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140409,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 7847,
+      "mtime_ns": 1794997841047922565,
+      "ctime_ns": 1794997841047922565
+    }
+  },
+  "docs/evidencias/modern-fr800yl6-executor-original.py.txt": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125614,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9631,
+      "mtime_ns": 1795106148243147257,
+      "ctime_ns": 1795106148243147257
+    }
+  },
+  "docs/evidencias/limpeza-continuacao-resultado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129800,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6151,
+      "mtime_ns": 1795098950537022113,
+      "ctime_ns": 1795098950537022113
+    }
+  },
+  "docs/evidencias/modern-fr800yl6-interrupcao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125807,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 732,
+      "mtime_ns": 1795106216196997050,
+      "ctime_ns": 1795106216196997050
+    }
+  },
+  "docs/evidencias/limpeza-continuacao-proposta.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129789,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 20950,
+      "mtime_ns": 1795089547174702634,
+      "ctime_ns": 1795089547174702634
+    }
+  },
+  "docs/evidencias/continuacao-prototipos-resultado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129792,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2753,
+      "mtime_ns": 1795089626322211987,
+      "ctime_ns": 1795089626322211987
+    }
+  },
+  "docs/evidencias/probe-real-isolamento.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2125500,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2008,
+      "mtime_ns": 1794867526015705191,
+      "ctime_ns": 1794867526015705191
+    }
+  },
+  "docs/evidencias/conclusao-acelerada-estado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140432,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8070,
+      "mtime_ns": 1794999682605027847,
+      "ctime_ns": 1794999682605027847
+    }
+  },
+  "docs/evidencias/instalacao-4b7-cache-corrigido.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126371,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1042,
+      "mtime_ns": 1794877600934431394,
+      "ctime_ns": 1794877600934431394
+    }
+  },
+  "docs/evidencias/autenticacao-metadados-externos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138403,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3048,
+      "mtime_ns": 1794996296634969932,
+      "ctime_ns": 1794996296634969932
+    }
+  },
+  "docs/evidencias/configuracoes-par-instalado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138352,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6119,
+      "mtime_ns": 1794920208173719526,
+      "ctime_ns": 1794920208173719526
+    }
+  },
+  "docs/evidencias/tamanhos-programas-pendentes.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138407,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 856,
+      "mtime_ns": 1794994839677845258,
+      "ctime_ns": 1794994839677845258
+    }
+  },
+  "docs/evidencias/auditoria-espaco-definitiva.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138341,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 11194,
+      "mtime_ns": 1794913221477040006,
+      "ctime_ns": 1794913221477040006
+    }
+  },
+  "docs/evidencias/retomada-auditoria-metadados.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140424,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 15514,
+      "mtime_ns": 1794999319618045604,
+      "ctime_ns": 1794999319618045604
+    }
+  },
+  "docs/evidencias/instalacao-4b7-runtime-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138354,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 714,
+      "mtime_ns": 1794915357581213277,
+      "ctime_ns": 1794915357581213277
+    }
+  },
+  "docs/evidencias/fase4a-preparacao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2131706,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3443,
+      "mtime_ns": 1794850426351910199,
+      "ctime_ns": 1794850426351910199
+    }
+  },
+  "docs/evidencias/retomada-autorizada-em-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138372,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4953,
+      "mtime_ns": 1794940852709161448,
+      "ctime_ns": 1794940852709161448
+    }
+  },
+  "docs/evidencias/validacao-isolamento.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138296,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6124,
+      "mtime_ns": 1794867526046707269,
+      "ctime_ns": 1794867526046707269
+    }
+  },
+  "docs/evidencias/limpeza-definitiva-autorizada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2117533,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 9437,
+      "mtime_ns": 1794913350825613852,
+      "ctime_ns": 1794913350825613852
+    }
+  },
+  "docs/evidencias/adaptador-navegador-preparado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126385,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12773,
+      "mtime_ns": 1795081766044006453,
+      "ctime_ns": 1795081766044006453
+    }
+  },
+  "docs/evidencias/indices-apt-duplicados-continuacao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129786,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 19263,
+      "mtime_ns": 1795089375623948307,
+      "ctime_ns": 1795089375623948307
+    }
+  },
+  "docs/evidencias/adminer-planejamento.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129776,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2731,
+      "mtime_ns": 1795082969578547786,
+      "ctime_ns": 1795082969578547786
+    }
+  },
+  "docs/evidencias/aceitacao-publica-pendente.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129748,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 8840,
+      "mtime_ns": 1795029746552334300,
+      "ctime_ns": 1795029746552334300
+    }
+  },
+  "docs/evidencias/integracao-encerrada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138367,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4931,
+      "mtime_ns": 1794938348223767368,
+      "ctime_ns": 1794938348223767368
+    }
+  },
+  "docs/evidencias/integracao-xattrs-execucao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138378,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 5093,
+      "mtime_ns": 1794943723749406607,
+      "ctime_ns": 1794943723749406607
+    }
+  },
+  "docs/evidencias/retomada-apos-limpeza.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138335,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1690,
+      "mtime_ns": 1794910299405382906,
+      "ctime_ns": 1794910299405382906
+    }
+  },
+  "docs/evidencias/instalacao-4b7-epoch-corrigido.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138331,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1111,
+      "mtime_ns": 1794911889272942897,
+      "ctime_ns": 1794911889272942897
+    }
+  },
+  "docs/evidencias/instalacao-4b7-nova-tentativa.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138326,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1004,
+      "mtime_ns": 1794874989546536689,
+      "ctime_ns": 1794874989546536689
+    }
+  },
+  "docs/evidencias/download-pacotes-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138290,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 710,
+      "mtime_ns": 1794870458876029396,
+      "ctime_ns": 1794870458876029396
+    }
+  },
+  "docs/evidencias/limpeza-controlada-awoskgnt.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140436,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 2171,
+      "mtime_ns": 1795003306196617761,
+      "ctime_ns": 1795003306196617761
+    }
+  },
+  "docs/evidencias/instalacao-4b7-cache-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138330,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 827,
+      "mtime_ns": 1794877600934431394,
+      "ctime_ns": 1794877600934431394
+    }
+  },
+  "docs/evidencias/instalacao-4b7-tentativa3.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138310,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 6209,
+      "mtime_ns": 1794911512424277846,
+      "ctime_ns": 1794911512424277846
+    }
+  },
+  "docs/evidencias/iso-publica-verificada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129746,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 946,
+      "mtime_ns": 1795029729359349790,
+      "ctime_ns": 1795029729359349790
+    }
+  },
+  "docs/evidencias/correcao-systemctl-unshare.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2129728,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 10371,
+      "mtime_ns": 1795009055440049924,
+      "ctime_ns": 1795009055440049924
+    }
+  },
+  "docs/evidencias/limpeza-retomada-autorizada.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140417,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 2422,
+      "mtime_ns": 1795003357140551231,
+      "ctime_ns": 1795003357140551231
+    }
+  },
+  "docs/evidencias/dependencias-vscode-revisao.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138400,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 25274,
+      "mtime_ns": 1794996440524053741,
+      "ctime_ns": 1794996440524053741
+    }
+  },
+  "docs/evidencias/probe-isolamento-comandos.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2138293,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4455,
+      "mtime_ns": 1794867595343278686,
+      "ctime_ns": 1794867595343278686
+    }
+  },
+  "docs/evidencias/finalizacao-acelerada-estado.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2140408,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4541,
+      "mtime_ns": 1794998627506719397,
+      "ctime_ns": 1794998627506719397
+    }
+  },
+  "sources/xubuntu-24.04.5-minimal-amd64.iso": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 2126373,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3193516032,
+      "mtime_ns": 1794845833070501263,
+      "ctime_ns": 1794845904707909706
+    }
+  },
+  "artifacts/modern-release-vz4edu99/devlite-os-1.0-amd64.iso": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 3182750,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3645177856,
+      "mtime_ns": 1795124015023429399,
+      "ctime_ns": 1795125472665489737
+    }
+  },
+  "artifacts/modern-release-owcgr3mg/devlite-os-1.0-amd64.iso": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 5899002,
+      "mode": 33204,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 3645308928,
+      "mtime_ns": 1795451305084778736,
+      "ctime_ns": 1795452790440745142
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/attempt": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378082,
+      "mode": 16832,
+      "uid": 0,
+      "gid": 0,
+      "size": 4096,
+      "mtime_ns": 1795263616822829414,
+      "ctime_ns": 1795263616822829414
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/layers-ready.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378249,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 129985,
+      "mtime_ns": 1795264175860998009,
+      "ctime_ns": 1795264175860998009
+    },
+    "sha256": "072c8a4cd0db114ba46b0459c26bf942626cb6fe936ea594918553c0136e6462"
+  },
+  "work/modern-candidate-pack-4cnl99z8/execution.lock": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378081,
+      "mode": 33188,
+      "uid": 0,
+      "gid": 0,
+      "size": 64,
+      "mtime_ns": 1795257893703896277,
+      "ctime_ns": 1795257893703896277
+    },
+    "sha256": "cfb0b8b0cf8be63a37584a2df9ece412c214e07dc0b51f018a596a0a00446987"
+  },
+  "work/modern-candidate-pack-4cnl99z8/contract.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378077,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 12296,
+      "mtime_ns": 1795257570224495282,
+      "ctime_ns": 1795257570224495282
+    },
+    "sha256": "babdc55e0604d96180f7df8c2a89d6cd3712934ee7442b60216f9e66f00b25b1"
+  },
+  "work/modern-candidate-pack-4cnl99z8/.devlite-workspace.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378046,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 149,
+      "mtime_ns": 1795257570206494255,
+      "ctime_ns": 1795257570206494255
+    },
+    "sha256": "13340b511d87807955f2f00d4a465b122acca44507e9a1490ee0fa451ab7c4f1"
+  },
+  "work/modern-candidate-pack-4cnl99z8/payload-manifest.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378076,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 4125,
+      "mtime_ns": 1795257570216494825,
+      "ctime_ns": 1795257570216494825
+    },
+    "sha256": "a783106a836e50e01245f978985824fc261425b259c86a4a36402a3cdee51b79"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559509,
+      "mode": 16877,
+      "uid": 0,
+      "gid": 0,
+      "size": 4096,
+      "mtime_ns": 1795264101421918350,
+      "ctime_ns": 1795264101421918350
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/payload": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378047,
+      "mode": 16877,
+      "uid": 0,
+      "gid": 0,
+      "size": 4096,
+      "mtime_ns": 1795257570211494540,
+      "ctime_ns": 1795257893706896447
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/pack-report.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378084,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 13622,
+      "mtime_ns": 1795264175861998063,
+      "ctime_ns": 1795264175862998118
+    },
+    "sha256": "52324cab096f1a4298c8e444d2b380a90e39c3ddb40ea93ef905ba74d49e18e8"
+  },
+  "work/modern-candidate-pack-4cnl99z8/command.json": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 7378078,
+      "mode": 33188,
+      "uid": 1000,
+      "gid": 1000,
+      "size": 1973,
+      "mtime_ns": 1795257570225495339,
+      "ctime_ns": 1795257570225495339
+    },
+    "sha256": "84ca7043a1001f24efe02e2986d33d5ff92b3bd16ba5dec14946505fcebf68bc"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/filesystem.size": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559518,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 11,
+      "mtime_ns": 1795264101421918350,
+      "ctime_ns": 1795264101421918350
+    },
+    "sha256": "5073ebbb777feed1e573c788090cd17d08c52e94af918f9b932166e09785ea19"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.squashfs": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559510,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 1134632960,
+      "mtime_ns": 1795264018469389041,
+      "ctime_ns": 1795264018469389041
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/install-sources.yaml": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559519,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 262,
+      "mtime_ns": 1795264101421918350,
+      "ctime_ns": 1795264101421918350
+    },
+    "sha256": "008d9018b4707b435c0b579732abd299994b7113fdb5d5b89bf7c4899548c38e"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.size": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559516,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 11,
+      "mtime_ns": 1795264101419918241,
+      "ctime_ns": 1795264101419918241
+    },
+    "sha256": "ea74b87843cc29776620d81abd80769f4b16478d7c826332e62992cadd4c53ee"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.live.squashfs": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559511,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 1303142400,
+      "mtime_ns": 1795264101417918131,
+      "ctime_ns": 1795264101418918186
+    }
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/filesystem.manifest": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559514,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 49142,
+      "mtime_ns": 1795264101419918241,
+      "ctime_ns": 1795264101419918241
+    },
+    "sha256": "94e2fe3888772306035b89a777e8bd1b3f48af5978c760accb536702eae0b09c"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.manifest": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559512,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 45169,
+      "mtime_ns": 1795264101418918186,
+      "ctime_ns": 1795264101418918186
+    },
+    "sha256": "ad4b088076fa74c47ee0552fe9c031aa8411f18618d01418a67bbf92a4bc050e"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/devlite-base.manifest.full": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559515,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 43700,
+      "mtime_ns": 1795264101419918241,
+      "ctime_ns": 1795264101419918241
+    },
+    "sha256": "75b2525ddaf5830689a716843cac148adb5cec198ca7127d368cc05f429389ca"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.live.manifest": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559513,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 5659,
+      "mtime_ns": 1795264101418918186,
+      "ctime_ns": 1795264101419918241
+    },
+    "sha256": "d44e192ea413da8e89e57e8c5801e2a951c19a37f355b314fb0d6ea4a3c1d3c4"
+  },
+  "work/modern-candidate-pack-4cnl99z8/published-casper/minimal.live.size": {
+    "metadata": {
+      "dev": 64512,
+      "ino": 8559517,
+      "mode": 33060,
+      "uid": 0,
+      "gid": 0,
+      "size": 11,
+      "mtime_ns": 1795264101421918350,
+      "ctime_ns": 1795264101421918350
+    },
+    "sha256": "a60b951f21008615181b7552fd37c80f4078c3a8ca3bd1481acff5354bb72a0d"
+  }
+}

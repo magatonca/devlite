@@ -1,0 +1,92 @@
+{
+  "recorded_utc": "2026-11-19T14:40:07.509444+00:00",
+  "approved_readonly_queries": {
+    "pvs": {
+      "pv": "/dev/xvda3",
+      "size_bytes": 137434759168,
+      "free_bytes": 0
+    },
+    "vgs": {
+      "vg": "ubuntu-vg",
+      "size_bytes": 137434759168,
+      "free_bytes": 0
+    },
+    "lvs": {
+      "lv": "/dev/ubuntu-vg/ubuntu-lv",
+      "size_bytes": 137434759168,
+      "vg": "ubuntu-vg"
+    }
+  },
+  "lsblk": {
+    "blockdevices": [
+      {
+        "name": "sr0",
+        "path": "/dev/sr0",
+        "type": "rom",
+        "size": 1073741312,
+        "fstype": null,
+        "mountpoints": [
+          null
+        ]
+      },
+      {
+        "name": "xvda",
+        "path": "/dev/xvda",
+        "type": "disk",
+        "size": 139586437120,
+        "fstype": null,
+        "mountpoints": [
+          null
+        ],
+        "children": [
+          {
+            "name": "xvda1",
+            "path": "/dev/xvda1",
+            "type": "part",
+            "size": 1048576,
+            "fstype": null,
+            "mountpoints": [
+              null
+            ]
+          },
+          {
+            "name": "xvda2",
+            "path": "/dev/xvda2",
+            "type": "part",
+            "size": 2147483648,
+            "fstype": "ext4",
+            "mountpoints": [
+              "/boot"
+            ]
+          },
+          {
+            "name": "xvda3",
+            "path": "/dev/xvda3",
+            "type": "part",
+            "size": 137436839424,
+            "fstype": "LVM2_member",
+            "mountpoints": [
+              null
+            ],
+            "children": [
+              {
+                "name": "ubuntu--vg-ubuntu--lv",
+                "path": "/dev/mapper/ubuntu--vg-ubuntu--lv",
+                "type": "lvm",
+                "size": 137434759168,
+                "fstype": "ext4",
+                "mountpoints": [
+                  "/"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "df": "Filesystem                           1B-blocks        Used   Available Use% Mounted on\n/dev/mapper/ubuntu--vg-ubuntu--lv 134947045376 67488604160 61418606592  53% /\n",
+  "free_bytes": 61418606592,
+  "storage_modified": false,
+  "next_action": "expand virtual disk in hypervisor to at least 160 GiB; revalidate layout before approving guest resizing"
+}

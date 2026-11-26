@@ -1,0 +1,104 @@
+{
+  "captured_utc": "2026-11-17T12:55:38.984030+00:00",
+  "method": "debugfs somente leitura, sem -w, sem mount/chroot ou daemon",
+  "configs": {
+    "base": {
+      "/etc/default/locale": {
+        "type": "symlink",
+        "target": "../locale.conf",
+        "resolved_path": "/etc/locale.conf",
+        "resolved_text": "LANG=pt_BR.UTF-8\nLANGUAGE=pt_BR:pt\n"
+      },
+      "/etc/default/keyboard": {
+        "text": "XKBMODEL=\"abnt2\"\nXKBLAYOUT=\"br\"\nXKBVARIANT=\"\"\nXKBOPTIONS=\"\"\nBACKSPACE=\"guess\"\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/timezone": {
+        "text": "America/Sao_Paulo\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/os-release": {
+        "type": "symlink",
+        "target": "../usr/lib/os-release",
+        "resolved_path": "/usr/lib/os-release",
+        "resolved_text": "PRETTY_NAME=\"DevLite OS 1.0 — Developer + Network Edition\"\nNAME=\"DevLite OS\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\nVARIANT=\"Developer + Network Edition\"\nVARIANT_ID=\"developer-network\"\nDEVLITE_VERSION=\"1.0\"\n"
+      },
+      "/usr/lib/os-release": {
+        "text": "PRETTY_NAME=\"DevLite OS 1.0 — Developer + Network Edition\"\nNAME=\"DevLite OS\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\nVARIANT=\"Developer + Network Edition\"\nVARIANT_ID=\"developer-network\"\nDEVLITE_VERSION=\"1.0\"\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/docker/daemon.json": {
+        "text": "{\n  \"log-driver\": \"local\",\n  \"log-opts\": {\n    \"max-size\": \"10m\",\n    \"max-file\": \"3\"\n  }\n}\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/apache2/ports.conf": {
+        "text": "Listen 127.0.0.1:80\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/mysql/mariadb.conf.d/99-devlite.cnf": {
+        "text": "[mysqld]\nbind-address = 127.0.0.1\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/php/8.3/cli/conf.d/99-devlite.ini": {
+        "text": "expose_php = Off\ndisplay_errors = Off\nlog_errors = On\nmemory_limit = 128M\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/localtime": {
+        "type": "symlink",
+        "target": "../usr/share/zoneinfo/America/Sao_Paulo",
+        "resolved_path": "/usr/share/zoneinfo/America/Sao_Paulo"
+      }
+    },
+    "live": {
+      "/etc/default/locale": {
+        "type": "symlink",
+        "target": "../locale.conf",
+        "resolved_path": "/etc/locale.conf",
+        "resolved_text": "LANG=pt_BR.UTF-8\nLANGUAGE=pt_BR:pt\n"
+      },
+      "/etc/default/keyboard": {
+        "text": "XKBMODEL=\"abnt2\"\nXKBLAYOUT=\"br\"\nXKBVARIANT=\"\"\nXKBOPTIONS=\"\"\nBACKSPACE=\"guess\"\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/timezone": {
+        "text": "America/Sao_Paulo\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/os-release": {
+        "type": "symlink",
+        "target": "../usr/lib/os-release",
+        "resolved_path": "/usr/lib/os-release",
+        "resolved_text": "PRETTY_NAME=\"DevLite OS 1.0 — Developer + Network Edition\"\nNAME=\"DevLite OS\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\nVARIANT=\"Developer + Network Edition\"\nVARIANT_ID=\"developer-network\"\nDEVLITE_VERSION=\"1.0\"\n"
+      },
+      "/usr/lib/os-release": {
+        "text": "PRETTY_NAME=\"DevLite OS 1.0 — Developer + Network Edition\"\nNAME=\"DevLite OS\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\nVARIANT=\"Developer + Network Edition\"\nVARIANT_ID=\"developer-network\"\nDEVLITE_VERSION=\"1.0\"\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/docker/daemon.json": {
+        "text": "{\n  \"log-driver\": \"local\",\n  \"log-opts\": {\n    \"max-size\": \"10m\",\n    \"max-file\": \"3\"\n  }\n}\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/apache2/ports.conf": {
+        "text": "Listen 127.0.0.1:80\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/mysql/mariadb.conf.d/99-devlite.cnf": {
+        "text": "[mysqld]\nbind-address = 127.0.0.1\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/php/8.3/cli/conf.d/99-devlite.ini": {
+        "text": "expose_php = Off\ndisplay_errors = Off\nlog_errors = On\nmemory_limit = 128M\n",
+        "diagnostic": "debugfs 1.47.0 (5-Feb-2023)"
+      },
+      "/etc/localtime": {
+        "type": "symlink",
+        "target": "../usr/share/zoneinfo/America/Sao_Paulo",
+        "resolved_path": "/usr/share/zoneinfo/America/Sao_Paulo"
+      }
+    }
+  },
+  "boot_tested": false,
+  "post_install_persistence_tested": false,
+  "config_checks_passed": true,
+  "symlinks_resolved_inside_image": true
+}

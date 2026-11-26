@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "layers": [
+    {
+      "layer": "minimal.squashfs",
+      "epiphany_disable_or_complain_entries": []
+    },
+    {
+      "layer": "minimal.visual.fix.squashfs",
+      "epiphany_disable_or_complain_entries": []
+    },
+    {
+      "layer": "minimal.visual.live.fix.squashfs",
+      "epiphany_disable_or_complain_entries": []
+    },
+    {
+      "layer": "minimal.visual.live.squashfs",
+      "epiphany_disable_or_complain_entries": []
+    },
+    {
+      "layer": "minimal.visual.squashfs",
+      "epiphany_disable_or_complain_entries": []
+    }
+  ],
+  "new_profile_mode": "enforce",
+  "manual_hyper_v_boot_pending": true
+}

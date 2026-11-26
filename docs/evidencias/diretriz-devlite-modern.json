@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-18T21:36:55.753284+00:00",
+  "decision": "DevLite Modern (Option C) only",
+  "appearance": "dark",
+  "desktop": "XFCE",
+  "preferred_dock": "native XFCE bottom panel",
+  "additional_docks": false,
+  "theme_switcher": false,
+  "resident_visual_services": false,
+  "target_ram_gib": 6,
+  "browser_first": true,
+  "browser_applied": false,
+  "visual_plan_approved": false,
+  "visual_changes_applied": false,
+  "iso_generated": false,
+  "free_bytes": 40971358208,
+  "installation_minimum_bytes": 60129542144
+}

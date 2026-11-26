@@ -1,0 +1,31 @@
+{
+  "status": "prepared_awaiting_privileged_approval",
+  "workspace": "/home/magaton/DevLite-OS/work/release-o9fx0a_a",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2",
+  "contract_sha256": "4c26607d67825165b7017993bc0068b0dca26ac02711287a8148f63e2e0667f2",
+  "executor_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd",
+  "previous_quarantined_release": "/home/magaton/DevLite-OS/work/release-qqkumja7",
+  "previous_execution_evidence": "docs/evidencias/instalacao-4b7-tentativa3.json",
+  "cache_files": 243,
+  "cache_bytes": 338284668,
+  "cache_reverified": true,
+  "cache_manifest_sha256": "06ac626af9624e3cf228ae9d6becc896b60c3b7b018f95e07ec1e88ee624ca9b",
+  "new_probe_executed": false,
+  "installation_executed": false,
+  "free_bytes": 72646569984,
+  "required_probe_free_bytes": 60129542144,
+  "tests": {
+    "passed": 166,
+    "failed": 0,
+    "report": "reports/testes-retomada-limpeza-definitiva.txt"
+  },
+  "complete_apt_preflight": "docs/evidencias/preflight-apos-limpeza-definitiva.json",
+  "fix": "aliases canônicos com epoch; preflight APT sem dpkg exige cobertura integral antes de unpack",
+  "source_cache_verified_files": 243,
+  "staged_cache_verified_files": 243,
+  "cleanup_evidence": "docs/evidencias/limpeza-definitiva-autorizada.json",
+  "contracts_revalidated": true,
+  "command_review": "/home/magaton/DevLite-OS/docs/evidencias/retomada-comandos-apos-limpeza-definitiva.json",
+  "iso_generated": false,
+  "vm_executed": false
+}

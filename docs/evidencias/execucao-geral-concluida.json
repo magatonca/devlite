@@ -1,0 +1,81 @@
+{
+  "status": "browser_installed_pair_accepted_pack_space_blocked",
+  "checked_utc": "2026-11-19T11:42:14.647737+00:00",
+  "browser_contract_sha256": "743d4a621b1a2837ffa6612257842c591283abebff64f8faef0ad5886c8073b1",
+  "browser_receipt_sha256": "b94370a01c7c5d86821cba44946f2539c5fb2def0288eaec3a9bfc065e411158",
+  "browser_results": {
+    "base": {
+      "target": "base",
+      "status": "validated",
+      "final_status_sha256": "4232e029dddb5777dac41933e8c77ea7b053d698728eb91398f8aa44c52524fc",
+      "static_integration": "passed",
+      "graphical_launch": "not_tested",
+      "post_install_persistence": "not_tested",
+      "image": {
+        "file": "/home/magaton/DevLite-OS/work/release-browser-2f24tvsg/attempt/base.ext4",
+        "bytes": 12884901888,
+        "sha256": "dcd5692cc7cfbb1a50487b1d332842a46d8184eff729b4528368484a11b44ded"
+      }
+    },
+    "live": {
+      "target": "live",
+      "status": "validated",
+      "final_status_sha256": "2e30a92d2263e11b2fc6c2da401cc7835e75642e5bdcb16b4cf86f8c35cd8ab5",
+      "static_integration": "passed",
+      "graphical_launch": "not_tested",
+      "post_install_persistence": "not_tested",
+      "image": {
+        "file": "/home/magaton/DevLite-OS/work/release-browser-2f24tvsg/attempt/live.ext4",
+        "bytes": 12884901888,
+        "sha256": "91bc8a6b4b042c151a56fd70c91c54fcccd702b4e76027fb03157a3eb856b676"
+      }
+    }
+  },
+  "browser_service_exit_code": 0,
+  "readonly_audit_exit_code": 0,
+  "readonly_audit_receipt_sha256": "4bad3489ac4235a42293014a9347a646feeb68a53eaac070e8dc9c4077ce8968",
+  "protected_public_files_verified_per_view": 5292,
+  "host_critical_unchanged": true,
+  "host_config_unchanged": true,
+  "current_control_source_unchanged": true,
+  "preserved_iso_metadata": {
+    "/home/magaton/DevLite-OS/sources/xubuntu-24.04.5-minimal-amd64.iso": "unchanged",
+    "/home/magaton/DevLite-OS/artifacts/release-1hu5dx5v/devlite-os-1.0-amd64.iso": "unchanged",
+    "/home/magaton/DevLite-OS/artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso": "unchanged"
+  },
+  "full_iso_hashes_recomputed": false,
+  "target_jobs_not_in_host_mountinfo": true,
+  "target_loop_references": {},
+  "units": {
+    "devlite-public-browser-2f24tvsg.service": "ActiveState=inactive\nSubState=dead",
+    "devlite-browser-final-audit-30pydqpr.service": "ActiveState=inactive\nSubState=dead",
+    "devlite-adminer-php-check-w5tie5iq.service": "ActiveState=inactive\nSubState=dead"
+  },
+  "tests": {
+    "passed": 479,
+    "log": "reports/testes-execucao-geral-final.txt"
+  },
+  "free_bytes": 52459094016,
+  "required_pack_bytes": 56001552384,
+  "pack_budget_sufficient": false,
+  "additional_space_required_bytes": 3542458368,
+  "adminer": {
+    "ubuntu_deb_hash_verified": true,
+    "upstream_6_3_mysql_hash_verified": true,
+    "installed": false,
+    "runtime_compatibility_tested": false,
+    "review": "work/adminer-review-11po9k_l",
+    "php83_syntax_passed": true,
+    "php_version": "8.3.6",
+    "php_check_receipt": "work/adminer-php-check-w5tie5iq/result.json",
+    "php_check_receipt_sha256": "b80e05a45a168f8258cc0099e2766f404f2a68826428f8ebc36f87932e4fbfcf",
+    "database_http_functional_tested": false
+  },
+  "control2": "prototype only; current Control preserved",
+  "graphical_browser_tested": false,
+  "post_install_persistence_tested": false,
+  "squashfs_published": false,
+  "iso_generated": false,
+  "files_deleted": false,
+  "df": "Filesystem                           1B-blocks        Used   Available Use% Mounted on\n/dev/mapper/ubuntu--vg-ubuntu--lv 134947045376 76448116736 52459094016  60% /\n"
+}

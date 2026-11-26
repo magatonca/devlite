@@ -1,0 +1,33 @@
+{
+  "tests": 485,
+  "result": "OK",
+  "original_control_preserved": {
+    "overlay/final-candidate/usr/bin/devlite-control": true,
+    "overlay/final-candidate/usr/libexec/devlite-service-control": true
+  },
+  "files_sha256": {
+    "prototypes/control2/adminer_model.py": "1e8f0a10c52e57a74220fed7bd97d719ada66d940270ebefa24993f7d3ab015b",
+    "prototypes/control2/model.py": "56f788d39443f32f7ecac3271a3f7c36dad862b5c24cbd518bac2977010978a4",
+    "tests/test_adminer_plan.py": "ad7100d9946ff0b92b29364c6fc13ec70f4bf2763fb437dc8fa6fe8aacd56611",
+    "tests/test_continuacao_prototypes.py": "11700934596ad3850e764eee4facdaaedb5ed3acb562932685c6f43889a4652a",
+    "prototypes/adminer/policy.php": "66ee12831a5dbfdd491ef8546d6b000c55f500df891514215a93b8a5cfd4a306",
+    "prototypes/adminer/test-policy.php": "168093aef93e8ce1e9b005f4540b77d07c3458828e596f96d80d15c06e0a85ae",
+    "prototypes/adminer/manifest.json": "00f5252b2190db5a144bdb133ac66f670404d93735bd52feef49784483494a36",
+    "prototypes/adminer/apache.conf": "104bbebf416705355a15288ad05f0943ca0e9f15530aeed100a660c64bc4b161",
+    "prototypes/adminer/README.md": "beb19b99463ce31d824461422ed31eeb6cf506073aadb1340f0b758a2b589a8a",
+    "prototypes/adminer/index.php": "4fd73500704c69d969c4cf1ec30a49a908e966473c47e258ce90cc08c0a23c21",
+    "prototypes/devlite-modern/manifest.json": "8a566455e6dd0a4befebc5f72d1add13efdc939e61a16303e17bd7ada90974ad",
+    "prototypes/devlite-modern/README.md": "6869337e05e3fdb8ed4b706c9b907be38fc849aad90e56a2a9b622f338ce2608",
+    "prototypes/devlite-modern/payload/etc/lightdm/lightdm-gtk-greeter.conf": "f1ca87dc21a5b040d88981d8566ae2a6a302e5d8f63ffeefc6f06e6425d6f59d",
+    "prototypes/devlite-modern/payload/etc/dconf/db/devlite.d/00-modern": "7dfbfea318901905fce9c29756ad3c1ba6178c5570d57a1c8e9d95701da25279",
+    "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/panel/default.xml": "e065198eec7a95f519eedc9326fcbe1cb491174009765b2d96fe67e71764f21e",
+    "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml": "e5b083b85c300ba1fbcbc6d758128eda36136b6b1d8ff61785c0d9b21b27c95c",
+    "prototypes/devlite-modern/payload/etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml": "554ad151f2e12bfd0fa9a1018864509b70f6ea0f2244284cae054f2712833317",
+    "prototypes/devlite-modern/payload/usr/share/backgrounds/devlite/devlite-modern.svg": "51bb75ff7573fd22ae7fa85039b7d82c8173c736a485ac1649394451d8450f19"
+  },
+  "image_changes": false,
+  "deletions": false,
+  "php_wrapper_executed": false,
+  "new_iso": false,
+  "df": "Filesystem                           1B-blocks        Used   Available Use% Mounted on\n/dev/mapper/ubuntu--vg-ubuntu--lv 134947045376 76451377152 52455833600  60% /\n"
+}

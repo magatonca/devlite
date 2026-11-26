@@ -1,0 +1,23 @@
+{
+  "probe": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/executar-programas.py",
+    "--probe",
+    "--job",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv",
+    "--approval-sha256",
+    "f15771792cc7e9c1abdaaf6f223e13002fd7436ab55d76ef4fe58b2eefb5b115"
+  ],
+  "install": [
+    "sudo",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/instalar-release-root.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+    "--approval-sha256",
+    "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1"
+  ],
+  "permissions_enabled": false,
+  "blocked_reason": "aguarda aprovação específica; código de runtime mudou e exige novo probe"
+}

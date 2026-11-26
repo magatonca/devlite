@@ -1,0 +1,10 @@
+{
+  "status": "prepared_not_executed",
+  "profile": "public-release",
+  "template": "config/acceptance-public-template.json",
+  "pending_items": 148,
+  "iso_generated": false,
+  "real_vm_tests_executed": false,
+  "vscode_binary_required": false,
+  "node_typescript_required": true
+}

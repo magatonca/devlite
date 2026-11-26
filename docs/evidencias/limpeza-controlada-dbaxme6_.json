@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-11-18T11:10:09.914498+00:00",
+  "deleted": [],
+  "status": "stopped",
+  "plan_sha256": "c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90",
+  "unique_allocated_bytes": 53558140928,
+  "entries": 552420,
+  "error": "Candidate in use by process 112774",
+  "free_bytes_after": 22815924224
+}

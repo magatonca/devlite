@@ -1,0 +1,41 @@
+{
+  "status": "prepared_not_executed",
+  "job": "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+  "contract_sha256": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+  "command": [
+    "sudo",
+    "systemd-run",
+    "--unit=devlite-pack-63m6oz2_",
+    "--wait",
+    "--pipe",
+    "--collect",
+    "--property=MemoryMax=2684354560",
+    "--property=MemorySwapMax=1073741824",
+    "--property=CPUQuota=100%",
+    "--property=TasksMax=128",
+    "--property=RuntimeMaxSec=10800",
+    "--property=KillMode=control-group",
+    "--property=OOMPolicy=kill",
+    "unshare",
+    "--mount",
+    "--propagation",
+    "private",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/integrar-release-root.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+    "--approval-sha256",
+    "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d"
+  ],
+  "stop": [
+    "sudo",
+    "systemctl",
+    "stop",
+    "devlite-pack-63m6oz2_.service"
+  ],
+  "tests_passed": 191,
+  "cache_files_verified": 243,
+  "metadata_preflight": "docs/evidencias/preflight-metadados-reais.json",
+  "authorized": false,
+  "iso_generated": false
+}

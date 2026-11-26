@@ -1,0 +1,104 @@
+{
+  "captured_utc": "2026-11-18T14:33:49.408723+00:00",
+  "status": "diagnostic_completed",
+  "job": "/home/magaton/DevLite-OS/work/release-4i4yb2kf",
+  "contract_sha256": "5407b89b6a297f25e70619185f5c412134200257c52167272d293368f15ed7e9",
+  "exec_session_id": 87222,
+  "service": "devlite-public-4i4yb2kf.service",
+  "invocation_id": "4fedef4be4464c478825319a55a6f481",
+  "external_status": "passed",
+  "internal_status": "passed",
+  "internal_properties_source": "verified_sealed_external_memfd",
+  "attestation_sha256": "186a25bfaf4a223c315a4b204cc77aae8bc8451e7497e7e70c95719d75f4b2d4",
+  "authorized_scope": "isolation diagnostic, legacy query streams and read-only hashes only",
+  "application_executed": false,
+  "new_iso_generated": false,
+  "process_exit_code": 0,
+  "service_runtime": "11min 51.284s",
+  "cpu_time": "2min 14.443s",
+  "memory_peak_reported": "1.3G",
+  "swap_peak_reported": "0B",
+  "root_result": "work/release-4i4yb2kf/isolation-diagnostic-result.json",
+  "source_images": {
+    "base": {
+      "sha256": "1afd8b0caba906a555099faca6066acf4826e9de14867358f9d908be6679f30b",
+      "expected": "1afd8b0caba906a555099faca6066acf4826e9de14867358f9d908be6679f30b",
+      "matches": true
+    },
+    "live": {
+      "sha256": "b69ca4b77ef71470aec0deb74b9bad54bbc1d25a83ae574ab318f6c03d288394",
+      "expected": "b69ca4b77ef71470aec0deb74b9bad54bbc1d25a83ae574ab318f6c03d288394",
+      "matches": true
+    }
+  },
+  "source_images_sha256_verified": true,
+  "legacy_internal_query": {
+    "argv": [
+      "/usr/bin/systemctl",
+      "show",
+      "devlite-public-4i4yb2kf.service",
+      "--no-pager",
+      "--property=LoadState",
+      "--property=ProtectSystem",
+      "--property=ProtectHome",
+      "--property=ReadWritePaths",
+      "--property=PrivateMounts",
+      "--property=PrivateNetwork",
+      "--property=NoNewPrivileges",
+      "--property=MemoryMax",
+      "--property=MemorySwapMax",
+      "--property=TasksMax",
+      "--property=CPUQuotaPerSecUSec",
+      "--property=ExecStart",
+      "--property=InvocationID",
+      "--property=MainPID"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Failed to connect to bus: No data available\n"
+  },
+  "host_critical_files_unchanged": true,
+  "free_bytes": 75996024832,
+  "pack_executed": false,
+  "job_restarted": false,
+  "future_application_job": "/home/magaton/DevLite-OS/work/release-cezaiofx",
+  "future_application_contract_sha256": "e62d4a700ff770fa24b0afe9b013c3b14eb841db60e5a5c3e9bdfd9d79f9c6b3",
+  "future_application_authorized": false,
+  "report_sha256": {
+    "isolation-systemd.json": "00589a21d1e8850a0b440d4f740ab9db7cf82dd93042d2df4613af7c2ca6a90c",
+    "isolation-unshare.json": "02c05979628550845f186395a6dadad5f0c05c66f702281f4ad9fd69da81c96e",
+    "isolation-diagnostic-result.json": "4f62343dc1d9a5ab34a1577336284474d1f64e3ae451a20184270ca6603f46cc"
+  },
+  "flags": {
+    "build_habilitado": false,
+    "downloads_autorizados": false,
+    "criacao_vms_autorizada": false,
+    "instalacao_xubuntu_autorizada": false,
+    "limpeza_automatica": false,
+    "personalizacao_habilitada": false,
+    "repositorios_externos_autorizados": false,
+    "operacoes_privilegiadas_autorizadas": false,
+    "pacotes_na_imagem_habilitados": false,
+    "executor_autorizado": false,
+    "probe_autorizado": false,
+    "recuperacao_autorizada": false,
+    "download_pacotes_autorizado": false,
+    "integracao_camadas_autorizada": false,
+    "iso_final_autorizada": false
+  },
+  "units": {
+    "returncode": 0,
+    "stdout": "UNIT LOAD ACTIVE SUB DESCRIPTION\n\n0 loaded units listed.\nTo show all installed unit files use 'systemctl list-unit-files'.\n"
+  },
+  "loops": {
+    "returncode": 0,
+    "stdout": "{\n   \"loopdevices\": [\n\n   ]\n}\n"
+  },
+  "current_project_mounts": [],
+  "monitoring_pause": {
+    "reason": "automatic approval review hit usage limit",
+    "action_not_executed": "read-only status query",
+    "probe_restarted": false,
+    "resumed_on_user_request": true
+  }
+}

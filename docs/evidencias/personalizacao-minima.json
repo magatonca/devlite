@@ -1,0 +1,65 @@
+{
+  "status": "validado_estruturalmente",
+  "workspace": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz",
+  "uid": 1000,
+  "packages_installed": false,
+  "mounts": false,
+  "chroot": false,
+  "boot": "não testado",
+  "installation": "não testada",
+  "post_install_persistence": "não testada",
+  "md5_entries": 193,
+  "layer_sha256_entries": 2,
+  "sha256": "79e8d7e9ed87d1855a574977b409c55f07213daa22b50271b6e85bdb7cbf00b5",
+  "iso": "/home/magaton/DevLite-OS/artifacts/phase4b1-lgpa3zc7/devlite-os-1.0-basic-experimental.iso",
+  "bytes": 3193896960,
+  "layers": {
+    "minimal.squashfs": {
+      "status": "ok",
+      "entries": 80911,
+      "sha256": "4f43975bf7de81f7291b67e0c0b4801b269345b24101a6053df8c59c20cf7b96",
+      "uncompressed_allocated_bytes": 2385051648
+    },
+    "minimal.live.squashfs": {
+      "status": "ok",
+      "entries": 64656,
+      "sha256": "778cafea24fc0ad1aeefb623a73931595ba6d32671279b98afd460b012bf8524",
+      "uncompressed_allocated_bytes": 2070654976
+    }
+  },
+  "original_preserved": true,
+  "baseline_3b_preserved": true,
+  "free_after": 48388116480,
+  "grub_entries_updated": 4,
+  "unsigned_customized_checksums": true,
+  "source_iso_sha256": "9d47f975696ce496b8be882b6d7cc9079c1ea89fb625ac2c86caa63a4f180033",
+  "baseline_3b_sha256": "2e3a6eecf59d535a4825ff41655c542f6ef2017ccce9a9672891ace2672f2bc7",
+  "root_steps_authorized": [
+    "extract",
+    "apply",
+    "pack"
+  ],
+  "root_steps_completed": true,
+  "base_original_entries": 80894,
+  "live_original_entries": 64656,
+  "configuration_payloads": 21,
+  "live_payloads_mirrored": 0,
+  "compression": {
+    "processors": 1,
+    "memory": "256M",
+    "compressor": "xz",
+    "block_size": 131072
+  },
+  "unit_tests": {
+    "passed": 60
+  },
+  "image_acceptance_tests": {
+    "passed": 5,
+    "failed": 0,
+    "report": "reports/aceitacao-fase4b1.txt"
+  },
+  "logs": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/assembly-logs-zyj3o1in",
+  "gpg_provenance_fingerprint": "843938DF228D22F7B3742BC0D94AA3F0EFE21092",
+  "tests_total_passed": 65,
+  "free_after_acceptance": 48387932160
+}

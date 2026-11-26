@@ -1,0 +1,142 @@
+{
+  "status": "two_isos_verified_bit_identical_real_boot_pending",
+  "release_job": "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+  "contract_sha256": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+  "executor_job": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv",
+  "phases": {
+    "4B.7": "installed_and_audited",
+    "4B.8": "two_isos_structurally_verified_bit_identical",
+    "4B.9": "structural_validation_passed_real_boot_installation_pending"
+  },
+  "tests_passed": 197,
+  "layers": {
+    "minimal.squashfs": {
+      "sha256": "d33c784d13ea16f99a6e386ffde7bc76fc508806e19a036c10b96ab7ca2f923f",
+      "entries": 113885,
+      "uncompressed_bytes": 3734156800
+    },
+    "minimal.live.squashfs": {
+      "sha256": "fae422b8d9dfc13b354947aee23f5088220dd3f843de29b30a92cc7a86c6eee5",
+      "entries": 70459,
+      "uncompressed_bytes": 2078521856
+    }
+  },
+  "integration_evidence": "docs/evidencias/integracao-manifest-execucao.json",
+  "generation_command": [
+    "env",
+    "PYTHONHASHSEED=0",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "python3",
+    "/home/magaton/DevLite-OS/scripts/gerar-isos-controladas.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+    "--approval-sha256",
+    "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+    "--two-builds",
+    "--execute-authorized"
+  ],
+  "generation_authorized": true,
+  "iso_generated": true,
+  "vm_executed": false,
+  "free_bytes": 23643070464,
+  "external_pending": [
+    "Node.js LTS",
+    "TypeScript",
+    "VS Code"
+  ],
+  "generation_authorized_operation_completed": true,
+  "generation_gate_enabled": false,
+  "iso_artifacts": [
+    {
+      "status": "iso_structurally_verified",
+      "iso": "/home/magaton/DevLite-OS/artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+      "bytes": 3550609408,
+      "sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db",
+      "contract_sha256": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+      "validation": {
+        "boot_structure": {
+          "images": [
+            {
+              "id": 1,
+              "platform": "BIOS",
+              "bootable": "y",
+              "emulation": "none",
+              "load_sectors": 4,
+              "lba_2048": 857
+            },
+            {
+              "id": 2,
+              "platform": "UEFI",
+              "bootable": "y",
+              "emulation": "none",
+              "load_sectors": 10160,
+              "lba_2048": 1730990
+            }
+          ],
+          "bios_path": "/boot/grub/i386-pc/eltorito.img",
+          "efi_offset": 3545067520,
+          "efi_bytes": 5201920,
+          "summary": "MBR protective-msdos-label grub2-mbr cyl-align-off GPT",
+          "volume_id": "DevLite OS 1.0 Experimental",
+          "timestamp": "2026090808365000"
+        },
+        "md5_entries": 194,
+        "layer_checksums": 2,
+        "boot_vm": "not_tested",
+        "installation_vm": "not_tested"
+      },
+      "reproducibility": "requires second build of same sealed inputs",
+      "full_edition": false
+    },
+    {
+      "status": "iso_structurally_verified",
+      "iso": "/home/magaton/DevLite-OS/artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+      "bytes": 3550609408,
+      "sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db",
+      "contract_sha256": "bc32e0ce9fb1a95d4b0170c1130f46ec523ddee0871b9fd3915e8f126a91d19d",
+      "validation": {
+        "boot_structure": {
+          "images": [
+            {
+              "id": 1,
+              "platform": "BIOS",
+              "bootable": "y",
+              "emulation": "none",
+              "load_sectors": 4,
+              "lba_2048": 857
+            },
+            {
+              "id": 2,
+              "platform": "UEFI",
+              "bootable": "y",
+              "emulation": "none",
+              "load_sectors": 10160,
+              "lba_2048": 1730990
+            }
+          ],
+          "bios_path": "/boot/grub/i386-pc/eltorito.img",
+          "efi_offset": 3545067520,
+          "efi_bytes": 5201920,
+          "summary": "MBR protective-msdos-label grub2-mbr cyl-align-off GPT",
+          "volume_id": "DevLite OS 1.0 Experimental",
+          "timestamp": "2026090808365000"
+        },
+        "md5_entries": 194,
+        "layer_checksums": 2,
+        "boot_vm": "not_tested",
+        "installation_vm": "not_tested"
+      },
+      "reproducibility": "requires second build of same sealed inputs",
+      "full_edition": false
+    }
+  ],
+  "reproducibility": {
+    "status": "bit_identical",
+    "reference": "/home/magaton/DevLite-OS/artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+    "result": "/home/magaton/DevLite-OS/artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+    "sha256": "7f49f8b03ad0201f70c5deed4879ffedb79bf7b7a3f1f105ca8380be8da3e4db"
+  },
+  "generation_authorization_scope": "Duas construções ISO e comparação, concluídas; gate restaurado false. Nenhuma autorização de VM.",
+  "acceptance_real_pending_items": 131,
+  "artifacts_ignored_by_git": true
+}

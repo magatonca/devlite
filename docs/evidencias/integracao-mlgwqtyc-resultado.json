@@ -1,0 +1,14 @@
+{
+  "job": "/home/magaton/DevLite-OS/work/release-mlgwqtyc",
+  "report": {
+    "status": "quarantined",
+    "iso_generated": false,
+    "resumed_from": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+    "installation_repeated": false,
+    "compression_repeated": false,
+    "error": "too many values to unpack (expected 2)",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/magaton/DevLite-OS/pipeline/devlite/release_resume.py\", line 114, in run\n    values=manifests(states['base'],states['live'],(original/'filesystem.manifest').read_text())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/magaton/DevLite-OS/pipeline/devlite/release_layers.py\", line 138, in manifests\n    name,version=line.split();snaps[name]=version\n    ^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)\n"
+  },
+  "journal": "2026-11-17T18:42:58+00:00 magaton systemd[1]: Started devlite-pack-mlgwqtyc.service - /usr/bin/unshare --mount --propagation private /usr/bin/python3 /home/magaton/DevLite-OS/scripts/integrar-release-root.py --job /home/magaton/DevLite-OS/work/release-mlgwqtyc --approval-sha256 ecca6926e6704a1a1c86a123fbc1f42cff2980395fe291d62c56df733aa34337.\n2026-11-17T19:25:57+00:00 magaton systemd[1]: devlite-pack-mlgwqtyc.service: Main process exited, code=exited, status=1/FAILURE\n2026-11-17T19:25:57+00:00 magaton systemd[1]: devlite-pack-mlgwqtyc.service: Failed with result 'exit-code'.\n2026-11-17T19:25:57+00:00 magaton systemd[1]: devlite-pack-mlgwqtyc.service: Consumed 11min 53.743s CPU time, 2.5G memory peak, 0B memory swap peak.\n",
+  "comparison_evidence": "approved frozen code reached manifests() only after checked_snapshot(merged) returned successfully; no layers-ready attestation was emitted"
+}

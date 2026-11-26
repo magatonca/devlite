@@ -1,0 +1,357 @@
+{
+  "authorized": false,
+  "deleted": false,
+  "candidates": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt/packed",
+      "allocated_bytes": 2343219200,
+      "purpose": "SquashFS intermedi\u00e1rios duplicados",
+      "preserve": "/home/magaton/DevLite-OS/work/release-63m6oz2_/published-casper",
+      "risk": "m\u00e9dio; comparar hashes privados antes de excluir; restaurar caminhos para replay hist\u00f3rico"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/layers/minimal.squashfs",
+      "allocated_bytes": 685367296,
+      "purpose": "C\u00f3pia de camada b\u00e1sica",
+      "preserve": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.squashfs",
+      "risk": "m\u00e9dio; conferir hash e refer\u00eancias antes de excluir"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/layers/minimal.live.squashfs",
+      "allocated_bytes": 1301180416,
+      "purpose": "C\u00f3pia de camada live b\u00e1sica",
+      "preserve": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.live.squashfs",
+      "risk": "m\u00e9dio; conferir hash e refer\u00eancias antes de excluir"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/release-c0srssh8/devlite-os-1.0-ubuntu-experimental.iso",
+      "allocated_bytes": 3550609408,
+      "purpose": "ISO experimental antiga, anterior \u00e0 homologada atual",
+      "preserve": "/home/magaton/DevLite-OS/artifacts/release-1hu5dx5v/devlite-os-1.0-amd64.iso",
+      "risk": "m\u00e9dio; perde c\u00f3pia f\u00edsica hist\u00f3rica; preservar receitas, fontes, hashes e relat\u00f3rios"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/browser-g2xb9f0m/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages",
+      "sha256": "5362b6f24d89c1baf8bbdc2828a11a9af6a555a160bb8907ab095149cee8396e",
+      "allocated_bytes": 7880704,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/browser-g2xb9f0m/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages",
+      "sha256": "e93a4a2e6140c57b800d5c48479e88dc2292c0142e5528b27ce532146382455d",
+      "allocated_bytes": 10686464,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/browser-g2xb9f0m/lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages",
+      "sha256": "cc9d6298fc92c375051a88b9982c20acf1cd70886f308369cde869c6ff2a9f00",
+      "allocated_bytes": 6529024,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/browser-g2xb9f0m/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "f868bf65104160c269a0b30484dd5d0df2bf11e29dc24a5365b605a1b8c2eb1b",
+      "allocated_bytes": 7725056,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-1kyn499g/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-1kyn499g/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-9a_w6n1t/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-9a_w6n1t/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73383936,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-w6yqmave/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/browser-w6yqmave/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-gmevzs73/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-gmevzs73/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-gmevzs73/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-nuy3gtj5/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-nuy3gtj5/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-nuy3gtj5/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_main_binary-amd64_Packages",
+      "sha256": "2c41d564da8702e2fff060a602ca4f815aa2e8a38d77d0ae2505f140c8a2efd7",
+      "allocated_bytes": 7847936,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble-updates_universe_binary-amd64_Packages",
+      "sha256": "adbcd861da88e4b4dbf4cf743ace459510e081e8cf82a238afd6a6ff7032606c",
+      "allocated_bytes": 10674176,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_main_binary-amd64_Packages",
+      "sha256": "5495b1507e9ff8471561c8b8952afdef5af62fb34003b527bb7659da11b7c74a",
+      "allocated_bytes": 6512640,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-whqtc4yu/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-whqtc4yu/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-whqtc4yu/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-eq9zanjf/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-eq9zanjf/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73383936,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-eq9zanjf/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-kxfn932t/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-kxfn932t/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73383936,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-kxfn932t/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-l7hblu4v/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-l7hblu4v/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73379840,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-l7hblu4v/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-zii8eoas/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages",
+      "sha256": "8f6f71ae839c8cba390a7643fcbbdacddb0bc7d12c1583a2dd80a1f8443a30e5",
+      "allocated_bytes": 7168000,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-zii8eoas/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/br.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages",
+      "sha256": "687ffc969e7700137677b9cfe2f614ee2d638052a91a7c9bf31f3f6a3040a99a",
+      "allocated_bytes": 73383936,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-zii8eoas/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "canonical": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc/lists/security.ubuntu.com_ubuntu_dists_noble-security_universe_binary-amd64_Packages",
+      "sha256": "2a4cffd9cb8bc1964b8c49c5400235969348e0151af0812ac9cb12cffd90e45b",
+      "allocated_bytes": 7716864,
+      "nlink": 1,
+      "type": "duplicate_apt_package_index"
+    }
+  ],
+  "recoverable_bytes": 8966557696,
+  "predelete_required": [
+    "canonical_paths",
+    "mounts",
+    "loops",
+    "process_references",
+    "symlinks",
+    "hardlinks",
+    "fresh_canonical_and_duplicate_hashes"
+  ],
+  "preserve_all_accepted_ext4": true
+}

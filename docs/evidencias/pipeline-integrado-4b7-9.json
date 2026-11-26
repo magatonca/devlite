@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "status": "prepared_not_executed",
+  "workspace": "/home/magaton/DevLite-OS/work/release-zii8eoas",
+  "executed": {
+    "install": false,
+    "pack": false,
+    "iso": false,
+    "vm": false
+  },
+  "blockers": [
+    "instalação real não autorizada",
+    "integração root e geração ISO não autorizadas",
+    "Node.js LTS/TypeScript/VS Code fora do cache; não declarar full-edition pronta",
+    "rebase kernel e segunda construção só poderão ser validados após inputs reais"
+  ],
+  "cache_files": 243,
+  "cache_bytes": 338284668,
+  "cache_staged_for_executor": true,
+  "both_signed_snapshots_verified": true,
+  "maintainer_scripts": 313,
+  "packages_with_service_or_privilege_tokens": [
+    "apache2",
+    "containerd",
+    "docker.io",
+    "iperf3",
+    "libc6",
+    "mariadb-server",
+    "openvpn",
+    "php-common"
+  ],
+  "boot_reference": {
+    "bios_uefi_structure": "verified_existing_4B1_only",
+    "efi_unchanged": true,
+    "official": {
+      "images": [
+        {
+          "id": 1,
+          "platform": "BIOS",
+          "bootable": "y",
+          "emulation": "none",
+          "load_sectors": 4,
+          "lba_2048": 801
+        },
+        {
+          "id": 2,
+          "platform": "UEFI",
+          "bootable": "y",
+          "emulation": "none",
+          "load_sectors": 10160,
+          "lba_2048": 1556628
+        }
+      ],
+      "bios_path": "/boot/grub/i386-pc/eltorito.img",
+      "efi_offset": 3187974144,
+      "efi_bytes": 5201920,
+      "summary": "MBR protective-msdos-label grub2-mbr cyl-align-off GPT",
+      "volume_id": "Xubuntu 24.04.5 LTS amd64",
+      "timestamp": "2026090808365000"
+    },
+    "reference": {
+      "images": [
+        {
+          "id": 1,
+          "platform": "BIOS",
+          "bootable": "y",
+          "emulation": "none",
+          "load_sectors": 4,
+          "lba_2048": 857
+        },
+        {
+          "id": 2,
+          "platform": "UEFI",
+          "bootable": "y",
+          "emulation": "none",
+          "load_sectors": 10160,
+          "lba_2048": 1556808
+        }
+      ],
+      "bios_path": "/boot/grub/i386-pc/eltorito.img",
+      "efi_offset": 3188342784,
+      "efi_bytes": 5201920,
+      "summary": "MBR protective-msdos-label grub2-mbr cyl-align-off GPT",
+      "volume_id": "DevLite OS 1.0 Experimental",
+      "timestamp": "2026090808365000"
+    }
+  },
+  "contract_sha256": "583f72f05346d2d96fe589e2486a201231ebac62ee02fd33a14987ded0b86f5f",
+  "installation_required_bytes": 44255549770,
+  "phases": {
+    "4B.7": "cache verificado e preparado; instalação aguardando aprovação",
+    "4B.8": "backend preparado; depende de par instalado e integração root autorizada",
+    "4B.9": "matriz/checklist/validador preparados; BIOS/UEFI/instalação reais pendentes"
+  },
+  "host_comparison": {
+    "critical_files_unchanged": true,
+    "differences": {},
+    "same_mount_namespace": true,
+    "mountinfo_unchanged": true,
+    "loop_backings_unchanged": true
+  },
+  "free_bytes": 72344375296,
+  "tests": {
+    "baseline": 131,
+    "passed": 158,
+    "new": 27,
+    "failed": 0,
+    "report": "reports/testes-release-integrado.txt"
+  },
+  "reference_image_acceptance": {
+    "passed": 5,
+    "report": "reports/aceitacao-referencia-release.txt",
+    "scope": "ISO 4B.1 existente; não ISO final"
+  },
+  "command_review": "/home/magaton/DevLite-OS/work/release-zii8eoas/command-review.json",
+  "user_reported_4b6_completed": true,
+  "repository_4b6_note": "Não há relatório 4B.6 separado neste checkout; aquisição e probe foram verificados diretamente.",
+  "approval_requested_scope": "Uma instalação Base/Live pelo executor aprovado, auditorias, exportação de resumo e restauração da permissão; não pack/ISO/VM.",
+  "latest_execution_evidence": "docs/evidencias/instalacao-4b7-tentativa5.json",
+  "latest_status": "base_and_live_installed_and_audited; accepted_pair; integration_prepared_space_and_approval_pending",
+  "prior_preflight_contract_now_invalidated_by_code_change": true,
+  "latest_tests": {
+    "passed": 168,
+    "report": "reports/testes-apos-instalacao-aceita.txt"
+  },
+  "free_bytes_after_second_attempt": 57913675776,
+  "required_probe_free_bytes": 60129542144,
+  "latest_complete_preflight": "docs/evidencias/preflight-completo-apt-epoch.json",
+  "latest_free_bytes": 44311175168,
+  "latest_config_evidence": "docs/evidencias/configuracoes-par-instalado.json",
+  "latest_integration_plan": "docs/evidencias/integracao-apos-instalacao.json"
+}

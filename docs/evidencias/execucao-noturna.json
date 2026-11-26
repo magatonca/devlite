@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-11-19T01:28:38.161535+00:00",
+  "browser_plan": "/home/magaton/DevLite-OS/work/browser-9a_w6n1t/browser-plan.json",
+  "browser_plan_sha256": "23a6df64555c5d6d7398e377ff0cb6ef4fb3f70eb0c00d0a61750dc92d7426d0",
+  "browser_applied": false,
+  "browser_runtime_tested": false,
+  "browser_blocker": "Executor exige root e montagens; comandos privilegiados vedados nesta execução. Adaptador e contrato novos ainda pendentes.",
+  "browser_acquisition": "não executada; nenhum .deb novo baixado",
+  "tests": {
+    "count": 402,
+    "passed": true,
+    "log": "reports/testes-execucao-noturna.txt"
+  },
+  "preserved_overlay_config_packages": true,
+  "host_critical_files_unchanged": true,
+  "protected_metadata_checked": 283,
+  "protected_metadata_inaccessible_without_root": [
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4",
+    "/home/magaton/DevLite-OS/work/release-cezaiofx/attempt/base.ext4",
+    "/home/magaton/DevLite-OS/work/release-cezaiofx/attempt/live.ext4"
+  ],
+  "current_published_layers": "SHA-256 revalidado pelo planejador browser.prepare/public_inputs nesta execução",
+  "preview": "/home/magaton/DevLite-OS/work/modern-preview-psowhkmp/preview.json",
+  "preview_applied": false,
+  "iso_generated": false,
+  "free_bytes": 64014786560,
+  "minimum_free_bytes": 21474836480,
+  "df": "Filesystem                           1B-blocks        Used   Available Use% Mounted on\n/dev/mapper/ubuntu--vg-ubuntu--lv 134947045376 64892424192 64014786560  51% /\n"
+}

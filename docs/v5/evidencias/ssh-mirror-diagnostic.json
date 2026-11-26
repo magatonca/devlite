@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://br.archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh-server_9.6p1-3ubuntu13.20_amd64.deb",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'br.archive.ubuntu.com'. (_ssl.c:1000)>"
+  },
+  {
+    "url": "http://br.archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh-server_9.6p1-3ubuntu13.20_amd64.deb",
+    "code": 200,
+    "bytes": 511546,
+    "sha256": "5d0d5eb672ddc27601e2da4e8465c5736dc73375a21bc1cd1834fcb08fb155bf"
+  }
+]

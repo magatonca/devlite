@@ -1,0 +1,46 @@
+{
+  "status": "prepared_space_and_privileged_approval_required",
+  "release_job": "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+  "contract_sha256": "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1",
+  "accepted_installation_summary": "/home/magaton/DevLite-OS/work/release-ku78mn3t/installation-result.json",
+  "fsck_occupancy_bytes": {
+    "base": 4292440064,
+    "live": 6307753984
+  },
+  "estimated_pack_required_bytes": 55153508352,
+  "estimation_method": "mesma fórmula 3*Base+5*Live+10GiB usando ocupação total do fsck; estimativa de planejamento, guard real recalcula allocated_usage nas views RO",
+  "free_bytes": 44316717056,
+  "pack_command": [
+    "sudo",
+    "systemd-run",
+    "--unit=devlite-pack-ku78mn3t",
+    "--wait",
+    "--pipe",
+    "--collect",
+    "--property=MemoryMax=2684354560",
+    "--property=MemorySwapMax=1073741824",
+    "--property=CPUQuota=100%",
+    "--property=TasksMax=128",
+    "--property=RuntimeMaxSec=7200",
+    "--property=KillMode=control-group",
+    "--property=OOMPolicy=kill",
+    "unshare",
+    "--mount",
+    "--propagation",
+    "private",
+    "/usr/bin/python3",
+    "/home/magaton/DevLite-OS/scripts/integrar-release-root.py",
+    "--job",
+    "/home/magaton/DevLite-OS/work/release-ku78mn3t",
+    "--approval-sha256",
+    "9e6ca71886ea6d2ef381267a1380aada2ca6fa8df24329119ea1fc4975ad25b1"
+  ],
+  "pack_executed": false,
+  "iso_generated": false,
+  "boot_tested": false,
+  "external_pending": [
+    "Node.js LTS",
+    "TypeScript",
+    "VS Code"
+  ]
+}

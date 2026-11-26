@@ -1,0 +1,134 @@
+{
+  "captured_utc": "2026-11-17T13:02:46.751325+00:00",
+  "candidates": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/attempt/base.ext4",
+      "kind": "failed_or_probe_image",
+      "device": 64512,
+      "inode": 4194938,
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 2545647616,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794911431406605074,
+      "ctime_ns": 1794911431406605074
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt/base.ext4",
+      "kind": "failed_or_probe_image",
+      "device": 64512,
+      "inode": 4195059,
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 2477408256,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794913926958100800,
+      "ctime_ns": 1794913926958100800
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt/base.ext4",
+      "kind": "failed_or_probe_image",
+      "device": 64512,
+      "inode": 4456739,
+      "logical_bytes": 12884901888,
+      "allocated_bytes": 4062806016,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794914964890741411,
+      "ctime_ns": 1794914964890741411
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt/layers/minimal.squashfs",
+      "kind": "squashfs_copy",
+      "device": 64512,
+      "inode": 4195053,
+      "logical_bytes": 685363200,
+      "allocated_bytes": 685367296,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794913639492430138,
+      "ctime_ns": 1794913639492430138,
+      "expected_sha256": "4f43975bf7de81f7291b67e0c0b4801b269345b24101a6053df8c59c20cf7b96",
+      "preserved_source": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.squashfs",
+      "verified_sha256": "4f43975bf7de81f7291b67e0c0b4801b269345b24101a6053df8c59c20cf7b96"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt/layers/minimal.live.squashfs",
+      "kind": "squashfs_copy",
+      "device": 64512,
+      "inode": 4195054,
+      "logical_bytes": 1301176320,
+      "allocated_bytes": 1301180416,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794913716479900503,
+      "ctime_ns": 1794913716479900503,
+      "expected_sha256": "778cafea24fc0ad1aeefb623a73931595ba6d32671279b98afd460b012bf8524",
+      "preserved_source": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.live.squashfs",
+      "verified_sha256": "778cafea24fc0ad1aeefb623a73931595ba6d32671279b98afd460b012bf8524"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt/layers/minimal.squashfs",
+      "kind": "squashfs_copy",
+      "device": 64512,
+      "inode": 4456485,
+      "logical_bytes": 685363200,
+      "allocated_bytes": 685367296,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794914369125665820,
+      "ctime_ns": 1794914369125665820,
+      "expected_sha256": "4f43975bf7de81f7291b67e0c0b4801b269345b24101a6053df8c59c20cf7b96",
+      "preserved_source": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.squashfs",
+      "verified_sha256": "4f43975bf7de81f7291b67e0c0b4801b269345b24101a6053df8c59c20cf7b96"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt/layers/minimal.live.squashfs",
+      "kind": "squashfs_copy",
+      "device": 64512,
+      "inode": 4456486,
+      "logical_bytes": 1301176320,
+      "allocated_bytes": 1301180416,
+      "uid": 0,
+      "links": 1,
+      "mtime_ns": 1794914444760033361,
+      "ctime_ns": 1794914444760033361,
+      "expected_sha256": "778cafea24fc0ad1aeefb623a73931595ba6d32671279b98afd460b012bf8524",
+      "preserved_source": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/result-iso-tree/casper/minimal.live.squashfs",
+      "verified_sha256": "778cafea24fc0ad1aeefb623a73931595ba6d32671279b98afd460b012bf8524"
+    }
+  ],
+  "states": {
+    "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/attempt": {
+      "state": "quarantined",
+      "job_sha256": "a6eb77b71206587013cf3ea28c8d746926982ad23193673cacd8421fba75223c",
+      "error": "Worker falhou: devlite-nuuyxpa1-base",
+      "host_guard_error": null
+    },
+    "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt": {
+      "state": "probe_passed",
+      "job_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd"
+    },
+    "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt": {
+      "state": "quarantined",
+      "job_sha256": "074b36bf080aed4a177e9d1d9badf0ecd575b48fff12c63d3855a186fbef24dd",
+      "error": "Worker falhou: devlite-yqj_nck2-base",
+      "host_guard_error": null
+    }
+  },
+  "free_bytes": 44310786048,
+  "recoverable_allocated_bytes": 13058957312,
+  "projected_free_bytes": 57369743360,
+  "estimated_pack_required_bytes": 55153508352,
+  "estimated_margin_after_cleanup_bytes": 2216235008,
+  "open_candidates": [],
+  "mounts": [],
+  "loop_backings": [],
+  "preserved_accepted_images": [
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/base.ext4",
+    "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt/live.ext4"
+  ],
+  "deleted": false,
+  "cleanup_authorized": false,
+  "risk": "remoção das imagens de falhas antigas impede inspeção binária posterior dessas cópias; logs/hashes/journals e par aceito preservados"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "checked_utc": "2026-11-19T10:09:29.577804+00:00",
+  "status": "planned_security_review_required",
+  "plan": "/home/magaton/DevLite-OS/work/adminer-plan-j1x_gycp/adminer-plan.json",
+  "plan_sha256": "485e80d8d991897a5929dd4a23f4075bf953aaa80c8a8c1afc27a869f30112f3",
+  "availability": {
+    "checked_utc": "2026-11-19T10:05:38.988262+00:00",
+    "method": "HEAD",
+    "requested": "https://archive.ubuntu.com/ubuntu/pool/universe/a/adminer/adminer_4.8.1-2_all.deb",
+    "final": "https://archive.ubuntu.com/ubuntu/pool/universe/a/adminer/adminer_4.8.1-2_all.deb",
+    "status": 200,
+    "content_length": 798606,
+    "body_downloaded": false
+  },
+  "package": {
+    "package": "adminer",
+    "previous": null,
+    "version": "4.8.1-2",
+    "architecture": "all",
+    "sha256": "78f71ebaefe916be6a7cb7bab722f80c1964e36cba68fac5042e0a5a97611d4f",
+    "filename": "pool/universe/a/adminer/adminer_4.8.1-2_all.deb",
+    "download_bytes": 798606,
+    "installed_bytes": 2949120,
+    "depends": "libapache2-mod-php | php-cgi | php-fpm | php, php-mysql | php-mysqli | php-pdo-mysql | php-sqlite3 | php-pgsql",
+    "pre_depends": "",
+    "origin": "Ubuntu"
+  },
+  "chain_authenticated": true,
+  "artifact_downloaded": false,
+  "artifact_hash_verified": false,
+  "security_review_passed": false,
+  "php83_mariadb_runtime_tested": false,
+  "http_isolation_runtime_tested": false,
+  "tests": {
+    "total_passed": 462,
+    "new_adminer": 13,
+    "log": "reports/testes-adminer-planejamento.txt"
+  },
+  "current_control_unchanged": true,
+  "browser_executor_code_seal_preserved": true,
+  "privileged_commands_executed": false,
+  "services_started": false,
+  "layers_changed": false,
+  "iso_generated": false,
+  "free_bytes": 63538814976,
+  "files_sha256": {
+    "prototypes/control2/adminer_model.py": "f00813e92301fe016b74b7f9adf94fc5dfb119ace53ee10ea854369bfa21c861",
+    "prototypes/control2/adminer_plan.py": "4eb52fd69f995d9c896c3a59df38022c58235beec8be86267f34ff520abb4880",
+    "prototypes/control2/app.py": "d08da41fa6a5cbd6892a469776bbb0d295a2dde207aff863c0ef2aaf7aa5c29a",
+    "prototypes/control2/preview.html": "326a2bf3e27761c19abd24d471d4b6bf0e7b05afae26a25235258e8df9afcabb",
+    "tests/test_adminer_plan.py": "1ce0b1f1667c49c2c219e9558881b6f5b72ed8d718b51cdfdc31e182fbb02472"
+  },
+  "sources": [
+    "https://www.adminer.org/",
+    "https://packages.ubuntu.com/noble/adminer",
+    "https://ubuntu.com/security/CVE-2025-43960",
+    "https://ubuntu.com/security/CVE-2026-56705",
+    "https://httpd.apache.org/docs/2.4/bind.html",
+    "https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html",
+    "https://mariadb.com/docs/server/reference/sql-statements/account-management-sql-statements/create-user"
+  ]
+}

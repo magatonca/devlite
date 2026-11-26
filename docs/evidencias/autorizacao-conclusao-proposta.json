@@ -1,0 +1,22 @@
+{
+  "status": "awaiting_explicit_approval",
+  "operations": [
+    "bounded cleanup of the exact 21 paths",
+    "acquire only three pinned public archives as magaton after successful cleanup and budget check"
+  ],
+  "cleanup_command": "sudo env PYTHONDONTWRITEBYTECODE=1 python3 /home/magaton/DevLite-OS/scripts/limpeza-controlada-final.py --plan /home/magaton/DevLite-OS/docs/evidencias/plano-limpeza-final.json --plan-sha256 c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90 --execute-authorized",
+  "acquisition_command": "env PYTHONDONTWRITEBYTECODE=1 python3 /home/magaton/DevLite-OS/scripts/adquirir-payload-publico.py --plan-sha256 2c1be7aae26b6e4969480dafdfaf01dd949a97ecc6ab4d0d95b1bf82762bd261 --download-authorized",
+  "sha256": {
+    "scripts/limpeza-controlada-final.py": "390ff9320c562abe8344f0f0999e430ce96c9b82c69093b0e8fbb3c99dea57de",
+    "pipeline/devlite/final_cleanup.py": "2c692e05c1a77f71596f90ccafd11ed7ac1e4278337dd05febf8e55c46885b29",
+    "scripts/adquirir-payload-publico.py": "446249d125c191c8b8bdc7ebcb7acce2d390c6aebda7827ffc7b1794bb314dab",
+    "pipeline/devlite/final_acquisition.py": "559a8280989d7ae46b1cb458df0685cf82796ded134415ef0641f9f60fb24821",
+    "scripts/preparar-payload-publico.py": "a9bdff5f7d7f2c021e243111ef6ba2e11f38102df59910b5353fa7c30ca384b3",
+    "pipeline/devlite/final_payload.py": "a84ec4fdec0b742a2dbfe9e64a22b56a785ffa00f282f6f54f1bae4ddd6ebb4b",
+    "docs/evidencias/plano-limpeza-final.json": "c0b96d65c99c175f7ccb0d2869579717dc700a7eb80b5625a66df0c083458c90",
+    "packages/final-external-plan.json": "2c1be7aae26b6e4969480dafdfaf01dd949a97ecc6ab4d0d95b1bf82762bd261"
+  },
+  "executed": false,
+  "privileged_application_authorized": false,
+  "iso_generation_authorized": false
+}

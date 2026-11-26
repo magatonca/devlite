@@ -1,0 +1,680 @@
+{
+  "status": "read_only_audit_with_access_limits",
+  "uid": 1000,
+  "workspace": "/home/magaton/DevLite-OS/work/final-storage-qvkw9wjn",
+  "project_usage_lower_bound": {
+    "entries": 305985,
+    "unique_inodes": 304605,
+    "logical_file_bytes": 65046537879,
+    "allocated_bytes": 65716670464,
+    "reclaimable_bytes_if_all_listed_paths_removed": 65716670464,
+    "outside_hardlink_inodes": 0
+  },
+  "largest_groups": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz",
+      "entries": 294120,
+      "unique_inodes": 294054,
+      "logical_file_bytes": 18860323080,
+      "allocated_bytes": 19504250880,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_",
+      "entries": 3817,
+      "unique_inodes": 3817,
+      "logical_file_bytes": 15800042186,
+      "allocated_bytes": 15809499136,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es",
+      "entries": 1902,
+      "unique_inodes": 1902,
+      "logical_file_bytes": 6371616494,
+      "allocated_bytes": 6376312832,
+      "reclaimable_bytes_if_all_listed_paths_removed": 6376312832,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/release-22snj8_v",
+      "entries": 6,
+      "unique_inodes": 6,
+      "logical_file_bytes": 3550611258,
+      "allocated_bytes": 3550633984,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3550633984,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/release-c0srssh8",
+      "entries": 5,
+      "unique_inodes": 5,
+      "logical_file_bytes": 3550610931,
+      "allocated_bytes": 3550629888,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3550629888,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/phase4b1-lgpa3zc7",
+      "entries": 5,
+      "unique_inodes": 5,
+      "logical_file_bytes": 3193898370,
+      "allocated_bytes": 3193917440,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3193917440,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/sources",
+      "entries": 12,
+      "unique_inodes": 12,
+      "logical_file_bytes": 3193680832,
+      "allocated_bytes": 3193716736,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3193716736,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv",
+      "entries": 11,
+      "unique_inodes": 11,
+      "logical_file_bytes": 3193646110,
+      "allocated_bytes": 3193679872,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3193679872,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/phase3b-9adp_k5i",
+      "entries": 6,
+      "unique_inodes": 6,
+      "logical_file_bytes": 3193639603,
+      "allocated_bytes": 3193663488,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3193663488,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase2",
+      "entries": 3344,
+      "unique_inodes": 3246,
+      "logical_file_bytes": 2256929937,
+      "allocated_bytes": 2264465408,
+      "reclaimable_bytes_if_all_listed_paths_removed": 2264465408,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b5-g78yd2oc",
+      "entries": 300,
+      "unique_inodes": 300,
+      "logical_file_bytes": 568009851,
+      "allocated_bytes": 568692736,
+      "reclaimable_bytes_if_all_listed_paths_removed": 229908480,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz",
+      "entries": 252,
+      "unique_inodes": 252,
+      "logical_file_bytes": 338736776,
+      "allocated_bytes": 339283968,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv",
+      "entries": 252,
+      "unique_inodes": 252,
+      "logical_file_bytes": 338736776,
+      "allocated_bytes": 339279872,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1",
+      "entries": 252,
+      "unique_inodes": 252,
+      "logical_file_bytes": 338736777,
+      "allocated_bytes": 339279872,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4",
+      "entries": 252,
+      "unique_inodes": 252,
+      "logical_file_bytes": 338736776,
+      "allocated_bytes": 339279872,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2",
+      "entries": 252,
+      "unique_inodes": 252,
+      "logical_file_bytes": 338736777,
+      "allocated_bytes": 339279872,
+      "reclaimable_bytes_if_all_listed_paths_removed": null,
+      "outside_hardlink_inodes": 243,
+      "complete_inventory": false,
+      "allocated_bytes_are_lower_bound": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-zii8eoas",
+      "entries": 77,
+      "unique_inodes": 77,
+      "logical_file_bytes": 228777548,
+      "allocated_bytes": 229003264,
+      "reclaimable_bytes_if_all_listed_paths_removed": 229003264,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-kxfn932t",
+      "entries": 76,
+      "unique_inodes": 76,
+      "logical_file_bytes": 228776507,
+      "allocated_bytes": 228999168,
+      "reclaimable_bytes_if_all_listed_paths_removed": 228999168,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-eq9zanjf",
+      "entries": 76,
+      "unique_inodes": 76,
+      "logical_file_bytes": 228776507,
+      "allocated_bytes": 228999168,
+      "reclaimable_bytes_if_all_listed_paths_removed": 228999168,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-oo4lx4r7",
+      "entries": 86,
+      "unique_inodes": 86,
+      "logical_file_bytes": 120789986,
+      "allocated_bytes": 121028608,
+      "reclaimable_bytes_if_all_listed_paths_removed": 121028608,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-whqtc4yu",
+      "entries": 86,
+      "unique_inodes": 86,
+      "logical_file_bytes": 120789986,
+      "allocated_bytes": 121028608,
+      "reclaimable_bytes_if_all_listed_paths_removed": 121028608,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-gmevzs73",
+      "entries": 84,
+      "unique_inodes": 84,
+      "logical_file_bytes": 120788862,
+      "allocated_bytes": 121024512,
+      "reclaimable_bytes_if_all_listed_paths_removed": 121024512,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b2-nuy3gtj5",
+      "entries": 47,
+      "unique_inodes": 47,
+      "logical_file_bytes": 116848853,
+      "allocated_bytes": 116977664,
+      "reclaimable_bytes_if_all_listed_paths_removed": 116977664,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-l7hblu4v",
+      "entries": 27,
+      "unique_inodes": 27,
+      "logical_file_bytes": 114304305,
+      "allocated_bytes": 114384896,
+      "reclaimable_bytes_if_all_listed_paths_removed": 114384896,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/reports",
+      "entries": 68,
+      "unique_inodes": 68,
+      "logical_file_bytes": 19694601,
+      "allocated_bytes": 19828736,
+      "reclaimable_bytes_if_all_listed_paths_removed": 19828736,
+      "outside_hardlink_inodes": 0,
+      "complete_inventory": true
+    }
+  ],
+  "access_errors": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/probe-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-wnej6dpv/attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/probe-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/probe-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-nuuyxpa1/attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/probe-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/probe-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-bklz27i4/attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/pack-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/release-63m6oz2_/pack-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/probe-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-1ibq_emz/attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/release-ku78mn3t/pack-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/root",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/root'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/lock/lvm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/lock/lvm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/cryptsetup",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/cryptsetup'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/lvm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/run/lvm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/lib/snapd/cookie",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/lib/snapd/cookie'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/apparmor/d00fa72b.0",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/apparmor/d00fa72b.0'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/apt/archives/partial",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/apt/archives/partial'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/ldconfig",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-live-root/var/cache/ldconfig'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/root",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/root'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/credstore.encrypted",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/credstore.encrypted'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/ssl/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/ssl/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/credstore",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/credstore'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/polkit-1/rules.d",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/etc/polkit-1/rules.d'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/run/hplip",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/run/hplip'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/run/sudo",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/run/sudo'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/tmp/snap-private-tmp",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/tmp/snap-private-tmp'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/spool/cron/crontabs",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/spool/cron/crontabs'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/spool/rsyslog",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/spool/rsyslog'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/snapd/void",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/snapd/void'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/NetworkManager",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/NetworkManager'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/apt/lists/partial",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/apt/lists/partial'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/saned",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/saned'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/lightdm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/lightdm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/polkit-1",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/polkit-1'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/bluetooth",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/lib/bluetooth'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/cache/ldconfig",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/cache/ldconfig'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/cache/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/cache/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/log/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/base-root/var/log/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/root",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/root'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/lock/lvm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/lock/lvm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/cryptsetup",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/cryptsetup'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/lvm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/run/lvm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/lib/snapd/cookie",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/lib/snapd/cookie'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/apparmor/d00fa72b.0",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/apparmor/d00fa72b.0'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/apt/archives/partial",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/apt/archives/partial'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/ldconfig",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/live-root/var/cache/ldconfig'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/root",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/root'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/credstore.encrypted",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/credstore.encrypted'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/ssl/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/ssl/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/credstore",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/credstore'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/polkit-1/rules.d",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/etc/polkit-1/rules.d'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/run/hplip",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/run/hplip'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/run/sudo",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/run/sudo'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/tmp/snap-private-tmp",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/tmp/snap-private-tmp'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/spool/cron/crontabs",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/spool/cron/crontabs'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/spool/rsyslog",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/spool/rsyslog'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/snapd/void",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/snapd/void'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/NetworkManager",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/NetworkManager'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/apt/lists/partial",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/apt/lists/partial'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/saned",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/saned'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/lightdm",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/lightdm'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/polkit-1",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/polkit-1'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/bluetooth",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/lib/bluetooth'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/cache/ldconfig",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/cache/ldconfig'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/cache/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/cache/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/log/private",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b1-dhzezpnz/verify-base-root/var/log/private'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/probe-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/phase4b3-yqj_nck2/attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-mlgwqtyc/pack-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/release-mlgwqtyc/pack-attempt'"
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-yqlso8i2/pack-attempt",
+      "error": "[Errno 13] Permission denied: '/home/magaton/DevLite-OS/work/release-yqlso8i2/pack-attempt'"
+    }
+  ],
+  "candidates": [
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/source-tree",
+      "reason": "Árvore externa de auditoria regenerável pelas ISOs preservadas; logs/relatórios fora do candidato",
+      "risk": "Perde a cópia extraída; reextrair sob autorização se necessária",
+      "complete_inventory": true,
+      "entries": 924,
+      "unique_inodes": 924,
+      "logical_file_bytes": 3185537622,
+      "allocated_bytes": 3187810304,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3187810304,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-8szxc4eu/result-tree",
+      "reason": "Árvore externa de auditoria regenerável pelas ISOs preservadas; logs/relatórios fora do candidato",
+      "risk": "Perde a cópia extraída; reextrair sob autorização se necessária",
+      "complete_inventory": true,
+      "entries": 928,
+      "unique_inodes": 928,
+      "logical_file_bytes": 3542511888,
+      "allocated_bytes": 3544793088,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3544793088,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/source-tree",
+      "reason": "Árvore externa de auditoria regenerável pelas ISOs preservadas; logs/relatórios fora do candidato",
+      "risk": "Perde a cópia extraída; reextrair sob autorização se necessária",
+      "complete_inventory": true,
+      "entries": 924,
+      "unique_inodes": 924,
+      "logical_file_bytes": 3185537622,
+      "allocated_bytes": 3187810304,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3187810304,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/release-63m6oz2_/iso-xoaxo4dp/result-tree",
+      "reason": "Árvore externa de auditoria regenerável pelas ISOs preservadas; logs/relatórios fora do candidato",
+      "risk": "Perde a cópia extraída; reextrair sob autorização se necessária",
+      "complete_inventory": true,
+      "entries": 928,
+      "unique_inodes": 928,
+      "logical_file_bytes": 3542511888,
+      "allocated_bytes": 3544805376,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3544805376,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es/source-tree",
+      "reason": "Árvore de auditoria antiga 3B, com ISOs/fontes e inventários preservados",
+      "risk": "Perde cópia extraída; confirmar que nenhum contrato ativo a usa",
+      "complete_inventory": true,
+      "entries": 924,
+      "unique_inodes": 924,
+      "logical_file_bytes": 3185537622,
+      "allocated_bytes": 3187802112,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3187802112,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-frka50es/result-tree",
+      "reason": "Árvore de auditoria antiga 3B, com ISOs/fontes e inventários preservados",
+      "risk": "Perde cópia extraída; confirmar que nenhum contrato ativo a usa",
+      "complete_inventory": true,
+      "entries": 924,
+      "unique_inodes": 924,
+      "logical_file_bytes": 3185537622,
+      "allocated_bytes": 3187814400,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3187814400,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/work/phase3b-reproduction-jvzarclv/reproduced.iso",
+      "reason": "Reprodução histórica 3B; relatório de reprodução e ISO experimental 3B preservados",
+      "risk": "Remover somente após revalidar a igualdade por SHA-256 com a referência",
+      "complete_inventory": true,
+      "entries": 1,
+      "unique_inodes": 1,
+      "logical_file_bytes": 3193634816,
+      "allocated_bytes": 3193638912,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3193638912,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    },
+    {
+      "path": "/home/magaton/DevLite-OS/artifacts/release-22snj8_v/devlite-os-1.0-ubuntu-experimental.iso",
+      "reason": "Segunda ISO bit a bit idêntica; principal e prova de reprodução preservadas",
+      "risk": "Opcional: perde segunda cópia física; preservar se desejada para auditoria",
+      "complete_inventory": true,
+      "entries": 1,
+      "unique_inodes": 1,
+      "logical_file_bytes": 3550609408,
+      "allocated_bytes": 3550613504,
+      "reclaimable_bytes_if_all_listed_paths_removed": 3550613504,
+      "outside_hardlink_inodes": 0,
+      "approved": false,
+      "deleted": false
+    }
+  ],
+  "free_bytes": 22821490688,
+  "deleted": false,
+  "approved_for_cleanup": false,
+  "scope_note": "Blocos reais e hardlinks considerados. Diretórios privados inacessíveis não são estimados como vazios; consumo total é limite inferior. Grupos podem compartilhar inodes; não somar seus totais cegamente."
+}

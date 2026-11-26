@@ -1,0 +1,32 @@
+{
+  "minimal.squashfs": {
+    "expected_from_verified_iso": "72c74045749b790d01ceae52387a0ca1054c3a99848a93520d5057fef6fea4a0",
+    "actual": "72c74045749b790d01ceae52387a0ca1054c3a99848a93520d5057fef6fea4a0",
+    "match": true,
+    "bytes": 1134632960
+  },
+  "minimal.visual.fix.squashfs": {
+    "expected_from_verified_iso": "2c089e00ae733843732824638e56e7cf8a1ee9cc463564e24a2d603be42f8d1d",
+    "actual": "2c089e00ae733843732824638e56e7cf8a1ee9cc463564e24a2d603be42f8d1d",
+    "match": true,
+    "bytes": 8192
+  },
+  "minimal.visual.live.fix.squashfs": {
+    "expected_from_verified_iso": "f082a0b0af4ad1b805186947ebb3ac77838468615c07ef9e54851925e346bbc1",
+    "actual": "f082a0b0af4ad1b805186947ebb3ac77838468615c07ef9e54851925e346bbc1",
+    "match": true,
+    "bytes": 8192
+  },
+  "minimal.visual.live.squashfs": {
+    "expected_from_verified_iso": "013cd6ec9b6b934128a755f3c384d05337e741cc7021f76ab17fb4915e68b0d9",
+    "actual": "013cd6ec9b6b934128a755f3c384d05337e741cc7021f76ab17fb4915e68b0d9",
+    "match": true,
+    "bytes": 1303142400
+  },
+  "minimal.visual.squashfs": {
+    "expected_from_verified_iso": "8d1b78e2ebd2dbb21e6c309907a3d415d05fa16b5e5f5eff8d16b74d27b2f6b0",
+    "actual": "8d1b78e2ebd2dbb21e6c309907a3d415d05fa16b5e5f5eff8d16b74d27b2f6b0",
+    "match": true,
+    "bytes": 4096
+  }
+}

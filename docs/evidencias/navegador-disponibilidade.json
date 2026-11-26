@@ -1,0 +1,128 @@
+{
+  "checked_utc": "2026-11-18T21:25:37.058069+00:00",
+  "components_downloaded": false,
+  "method": "HEAD only; response bodies never read",
+  "results": [
+    {
+      "package": "epiphany-browser",
+      "version": "46.5-0ubuntu1",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/e/epiphany-browser/epiphany-browser_46.5-0ubuntu1_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 774314,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/universe/e/epiphany-browser/epiphany-browser_46.5-0ubuntu1_amd64.deb",
+      "content_length": "774314",
+      "available": true
+    },
+    {
+      "package": "epiphany-browser-data",
+      "version": "46.5-0ubuntu1",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/e/epiphany-browser/epiphany-browser-data_46.5-0ubuntu1_all.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 1600952,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/universe/e/epiphany-browser/epiphany-browser-data_46.5-0ubuntu1_all.deb",
+      "content_length": "1600952",
+      "available": true
+    },
+    {
+      "package": "libadwaita-1-0",
+      "version": "1.5.0-1ubuntu2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/liba/libadwaita-1/libadwaita-1-0_1.5.0-1ubuntu2_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 408094,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/liba/libadwaita-1/libadwaita-1-0_1.5.0-1ubuntu2_amd64.deb",
+      "content_length": "408094",
+      "available": true
+    },
+    {
+      "package": "libgee-0.8-2",
+      "version": "0.20.6-1build2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libgee-0.8/libgee-0.8-2_0.20.6-1build2_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 221192,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libgee-0.8/libgee-0.8-2_0.20.6-1build2_amd64.deb",
+      "content_length": "221192",
+      "available": true
+    },
+    {
+      "package": "libgranite-7-7",
+      "version": "7.4.0-1build3",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/granite-7/libgranite-7-7_7.4.0-1build3_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 96618,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/granite-7/libgranite-7-7_7.4.0-1build3_amd64.deb",
+      "content_length": "96618",
+      "available": true
+    },
+    {
+      "package": "libgranite-7-common",
+      "version": "7.4.0-1build3",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/granite-7/libgranite-7-common_7.4.0-1build3_all.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 32504,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/granite-7/libgranite-7-common_7.4.0-1build3_all.deb",
+      "content_length": "32504",
+      "available": true
+    },
+    {
+      "package": "libjavascriptcoregtk-6.0-1",
+      "version": "2.52.6-0ubuntu0.24.04.2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libjavascriptcoregtk-6.0-1_2.52.6-0ubuntu0.24.04.2_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 8157658,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libjavascriptcoregtk-6.0-1_2.52.6-0ubuntu0.24.04.2_amd64.deb",
+      "content_length": "8157658",
+      "available": true
+    },
+    {
+      "package": "libportal-gtk4-1",
+      "version": "0.7.1-5build5",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libportal/libportal-gtk4-1_0.7.1-5build5_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 11484,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libportal/libportal-gtk4-1_0.7.1-5build5_amd64.deb",
+      "content_length": "11484",
+      "available": true
+    },
+    {
+      "package": "libportal1",
+      "version": "0.7.1-5build5",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libportal/libportal1_0.7.1-5build5_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 44704,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libportal/libportal1_0.7.1-5build5_amd64.deb",
+      "content_length": "44704",
+      "available": true
+    },
+    {
+      "package": "libwebkitgtk-6.0-4",
+      "version": "2.52.6-0ubuntu0.24.04.2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libwebkitgtk-6.0-4_2.52.6-0ubuntu0.24.04.2_amd64.deb",
+      "method": "HEAD",
+      "body_read": false,
+      "expected_bytes": 25314002,
+      "status": 200,
+      "final_url": "https://archive.ubuntu.com/ubuntu/pool/main/w/webkit2gtk/libwebkitgtk-6.0-4_2.52.6-0ubuntu0.24.04.2_amd64.deb",
+      "content_length": "25314002",
+      "available": true
+    }
+  ],
+  "all_available": true
+}

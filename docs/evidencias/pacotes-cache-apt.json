@@ -1,0 +1,360 @@
+{
+  "data": "2026-11-16",
+  "indices_atualizados": false,
+  "assinaturas_revalidadas": false,
+  "resolver_do_alvo_executado": false,
+  "packages": {
+    "apache2": {
+      "candidate": "2.4.58-1ubuntu8.19",
+      "architecture": "amd64",
+      "section": "web",
+      "depends": "apache2-bin (= 2.4.58-1ubuntu8.19), apache2-data (= 2.4.58-1ubuntu8.19), apache2-utils (= 2.4.58-1ubuntu8.19), media-types, perl:any, procps",
+      "pre_depends": "init-system-helpers (>= 1.54~)",
+      "noble_archive_visible": true
+    },
+    "atril": {
+      "candidate": "1.26.2-3build2",
+      "architecture": "amd64",
+      "section": "universe/x11",
+      "depends": "atril-common (>= 1.26.2-3build2), libatrildocument3t64 (= 1.26.2-3build2), libatrilview3t64 (= 1.26.2-3build2), shared-mime-info, dconf-gsettings-backend | gsettings-backend, libatk1.0-0t64 (>= 1.12.4), libc6 (>= 2.34), libcaja-extension1 (>= 1.18), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgtk-3-0t64 (>= 3.21.5), libice6 (>= 1:1.0.0), libsecret-1-0 (>= 0.7), libsm6, libxml2 (>= 2.7.4)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "ca-certificates": {
+      "candidate": "20260816ubuntu0.24.04.2",
+      "architecture": "all",
+      "section": "misc",
+      "depends": "openssl (>= 1.1.1), debconf (>= 0.5) | debconf-2.0",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "composer": {
+      "candidate": "2.7.1-2",
+      "architecture": "all",
+      "section": "universe/php",
+      "depends": "php-cli, php-common, php-composer-ca-bundle (>= 1.0), php-composer-ca-bundle (<< 2~~), php-composer-class-map-generator (>= 1.0), php-composer-class-map-generator (<< 2~~), php-composer-metadata-minifier (>= 1.0), php-composer-metadata-minifier (<< 2~~), php-composer-semver (>= 3.2.5), php-composer-semver (<< 4~~), php-composer-spdx-licenses (>= 1.5.7), php-composer-spdx-licenses (<< 2~~), php-composer-xdebug-handler (>> 2.0.2), php-json-schema (>= 5.2.11), php-json-schema (<< 6~~), php-psr-log, jsonlint (>= 1.4), jsonlint (<< 2~~), php-symfony-console (>> 5.4.11), php-symfony-filesystem (>> 5.4), php-symfony-finder (>> 5.4), php-symfony-process (>> 5.4), php-react-promise (>> 2.8), php-composer-pcre (>> 2.1), php-seld-signal-handler (>= 2.0), php-seld-signal-handler (<< 3~~)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "console-setup": {
+      "candidate": "1.226ubuntu1.1",
+      "architecture": "all",
+      "section": "utils",
+      "depends": "console-setup-linux | console-setup-freebsd | hurd, xkb-data (>= 0.9), keyboard-configuration (= 1.226ubuntu1.1), debconf (>= 0.5) | debconf-2.0",
+      "pre_depends": "debconf | debconf-2.0",
+      "noble_archive_visible": true
+    },
+    "docker-compose-v2": {
+      "candidate": "2.40.3+ds1-0ubuntu1~24.04.1",
+      "architecture": "amd64",
+      "section": "universe/admin",
+      "depends": "libc6 (>= 2.34)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "docker.io": {
+      "candidate": "29.1.3-0ubuntu3~24.04.2",
+      "architecture": "amd64",
+      "section": "universe/admin",
+      "depends": "adduser, containerd (>= 1.2.6-0ubuntu1~), iptables, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libnftables1 (>= 1.0.2), libsystemd0 (>= 209~)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "elementary-xfce-icon-theme": {
+      "candidate": "0.19-1",
+      "architecture": "all",
+      "section": "universe/x11",
+      "depends": "",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "gh": {
+      "candidate": "2.45.0-1ubuntu0.3",
+      "architecture": "amd64",
+      "section": "universe/utils",
+      "depends": "libc6 (>= 2.34)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "git": {
+      "candidate": "1:2.43.0-1ubuntu7.4",
+      "architecture": "amd64",
+      "section": "vcs",
+      "depends": "libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.63.0), libexpat1 (>= 2.0.1), libpcre2-8-0 (>= 10.34), zlib1g (>= 1:1.2.2), perl, liberror-perl, git-man (>> 1:2.43.0), git-man (<< 1:2.43.0-.)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "greybird-gtk-theme": {
+      "candidate": "3.23.3-1",
+      "architecture": "all",
+      "section": "universe/x11",
+      "depends": "gtk2-engines-murrine",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "iperf3": {
+      "candidate": "3.16-1build2",
+      "architecture": "amd64",
+      "section": "universe/net",
+      "depends": "debconf, adduser, libc6 (>= 2.34), libiperf0 (>= 3.1.3), debconf (>= 0.5) | debconf-2.0",
+      "pre_depends": "init-system-helpers (>= 1.54~)",
+      "noble_archive_visible": true
+    },
+    "keyboard-configuration": {
+      "candidate": "1.226ubuntu1.1",
+      "architecture": "all",
+      "section": "utils",
+      "depends": "debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, xkb-data (>= 2.41~), xkb-data (<< 2.41A)",
+      "pre_depends": "debconf | debconf-2.0",
+      "noble_archive_visible": true
+    },
+    "language-pack-gnome-pt": {
+      "candidate": "1:24.04+20260905",
+      "architecture": "all",
+      "section": "translations",
+      "depends": "language-pack-gnome-pt-base (>= 1:24.04+20260905), language-pack-pt",
+      "pre_depends": "dpkg (>= 1.16.1)",
+      "noble_archive_visible": true
+    },
+    "language-pack-pt": {
+      "candidate": "1:24.04+20260905",
+      "architecture": "all",
+      "section": "translations",
+      "depends": "language-pack-pt-base (>= 1:24.04+20260905)",
+      "pre_depends": "dpkg (>= 1.16.1)",
+      "noble_archive_visible": true
+    },
+    "language-pack-pt-base": {
+      "candidate": "1:24.04+20260905",
+      "architecture": "all",
+      "section": "translations",
+      "depends": "locales (>= 2.3.6), language-pack-pt (>= 1:24.04+20260905)",
+      "pre_depends": "dpkg (>= 1.16.1)",
+      "noble_archive_visible": true
+    },
+    "libapache2-mod-php": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "php",
+      "depends": "libapache2-mod-php8.3",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "libreoffice-calc": {
+      "candidate": "4:24.2.7-0ubuntu0.24.04.7",
+      "architecture": "amd64",
+      "section": "editors",
+      "depends": "libreoffice-base-core (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-common (>= 1:7.0.0~alpha~), libreoffice-core (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-uiconfig-calc (= 4:24.2.7-0ubuntu0.24.04.7), lp-solve, ucf, libc6 (>= 2.38), libetonyek-0.1-1, libgcc-s1 (>= 3.0), libicu74 (>= 74.1-1~), libmwaw-0.3-3, libodfgen-0.1-1, liborcus-0.18-0 (>= 0.19.2), liborcus-parser-0.18-0 (>= 0.19.2), librevenge-0.0-0, libstdc++6 (>= 13.1), libuno-cppu3t64 (>= 4.4.0~alpha), libuno-cppuhelpergcc3-3t64 (>= 1:7.4.0~alpha), libuno-sal3t64 (>= 1:7.3.0~beta1), libuno-salhelpergcc3-3t64 (>= 3.6.0~beta), libwps-0.4-4, libxml2 (>= 2.7.4), uno-libs-private",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "libreoffice-help-pt-br": {
+      "candidate": "4:24.2.7-0ubuntu0.24.04.7",
+      "architecture": "all",
+      "section": "doc",
+      "depends": "libreoffice-common (>= 1:6.1.0~), libreoffice-l10n-pt-br, libreoffice-help-common (= 4:24.2.7-0ubuntu0.24.04.7)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "libreoffice-impress": {
+      "candidate": "4:24.2.7-0ubuntu0.24.04.7",
+      "architecture": "amd64",
+      "section": "editors",
+      "depends": "libreoffice-common (>= 1:7.0.0~alpha~), libreoffice-core (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-draw (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-uiconfig-impress (= 4:24.2.7-0ubuntu0.24.04.7), ucf, libc6 (>= 2.38), libepoxy0 (>= 1.0), libetonyek-0.1-1, libgcc-s1 (>= 3.0), libmwaw-0.3-3, libodfgen-0.1-1, librevenge-0.0-0, libstdc++6 (>= 13.1), libuno-cppu3t64 (>= 4.4.0~alpha), libuno-cppuhelpergcc3-3t64 (>= 4.0.0~alpha), libuno-sal3t64 (>= 1:7.3.0~beta1), libuno-salhelpergcc3-3t64 (>= 1.4.0), uno-libs-private",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "libreoffice-l10n-pt-br": {
+      "candidate": "4:24.2.7-0ubuntu0.24.04.7",
+      "architecture": "all",
+      "section": "localization",
+      "depends": "libreoffice-common (>= 1:7.0.0~alpha~), locales | locales-all, ucf",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "libreoffice-writer": {
+      "candidate": "4:24.2.7-0ubuntu0.24.04.7",
+      "architecture": "amd64",
+      "section": "editors",
+      "depends": "libreoffice-base-core (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-common (>= 1:7.0.0~alpha~), libreoffice-core (= 4:24.2.7-0ubuntu0.24.04.7), libreoffice-uiconfig-writer (= 4:24.2.7-0ubuntu0.24.04.7), ucf, libabw-0.1-1, libc6 (>= 2.38), libe-book-0.1-1, libepubgen-0.1-1 (>= 0.1.0), libetonyek-0.1-1, libgcc-s1 (>= 3.0), libicu74 (>= 74.1-1~), libmwaw-0.3-3, libodfgen-0.1-1, librevenge-0.0-0, libstdc++6 (>= 13.1), libuno-cppu3t64 (>= 4.4.0~alpha), libuno-cppuhelpergcc3-3t64 (>= 1:7.4.0~alpha), libuno-sal3t64 (>= 1:7.3.0~beta1), libuno-salhelpergcc3-3t64 (>= 1.4.0), libwpd-0.10-10, libwpg-0.3-3, libwps-0.4-4, libxml2 (>= 2.7.4), uno-libs-private, zlib1g (>= 1:1.1.4)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "locales": {
+      "candidate": "2.39-0ubuntu8.12",
+      "architecture": "all",
+      "section": "libs",
+      "depends": "libc-bin (>> 2.39), debconf (>= 0.5) | debconf-2.0",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "mariadb-server": {
+      "candidate": "1:10.11.14-0ubuntu0.24.04.1",
+      "architecture": "amd64",
+      "section": "universe/database",
+      "depends": "galera-4 (>= 26.4), gawk, iproute2, libdbi-perl, lsof, mariadb-client (>= 1:10.11.14-0ubuntu0.24.04.1), mariadb-server-core (>= 1:10.11.14-0ubuntu0.24.04.1), passwd, perl (>= 5.6), procps, psmisc, rsync, socat, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libpam0g (>= 0.99.7.1), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)",
+      "pre_depends": "adduser (>= 3.40), debconf, mariadb-common (>= 1:10.11.14-0ubuntu0.24.04.1), init-system-helpers (>= 1.54~)",
+      "noble_archive_visible": true
+    },
+    "network-manager": {
+      "candidate": "1.46.0-1ubuntu2.8",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.24.0), libglib2.0-0t64 (>= 2.68.0), libgnutls30t64 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.10.0), libndp0 (>= 1.2), libnetplan1 (>= 1.0~), libnewt0.52 (>= 0.52.24), libnm0 (= 1.46.0-1ubuntu2.8), libpsl5t64 (>= 0.13.0), libreadline8t64 (>= 6.0), libselinux1 (>= 3.1~), libsystemd0 (>= 209), libteamdctl0 (>= 1.9), libudev1 (>= 183), netplan.io (>= 1.0~), python3-netplan (>= 1.0~), default-dbus-system-bus | dbus-system-bus, udev, adduser, polkitd | policykit-1",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "network-manager-openvpn": {
+      "candidate": "1.10.2-4ubuntu0.2",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "libc6 (>= 2.38), libglib2.0-0t64 (>= 2.36.0), libnm0 (>= 1.7.0), network-manager, openvpn, adduser",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "network-manager-openvpn-gnome": {
+      "candidate": "1.10.2-4ubuntu0.2",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "libc6 (>= 2.34), libglib2.0-0t64 (>= 2.34.0), libgtk-3-0t64 (>= 3.4), libgtk-4-1 (>= 4.0.0), libnm0 (>= 1.7.0), libnma-gtk4-0 (>= 1.8.34), libnma0 (>= 1.8.0), libsecret-1-0 (>= 0.18), network-manager-openvpn (= 1.10.2-4ubuntu0.2)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "nmap": {
+      "candidate": "7.94+git20230807.3be01efb1+dfsg-3build2",
+      "architecture": "amd64",
+      "section": "universe/net",
+      "depends": "nmap-common (= 7.94+git20230807.3be01efb1+dfsg-3build2), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), liblinear4 (>= 2.01+dfsg), liblua5.4-0 (>= 5.4.6), libpcap0.8t64 (>= 1.5.1), libpcre2-8-0 (>= 10.32), libssh2-1t64 (>= 1.2.9), libssl3t64 (>= 3.0.0), libstdc++6 (>= 11), zlib1g (>= 1:1.1.4)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "openssh-client": {
+      "candidate": "1:9.6p1-3ubuntu13.20",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "adduser, passwd, libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.13), zlib1g (>= 1:1.1.4)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "openvpn": {
+      "candidate": "2.6.19-0ubuntu0.24.04.5",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libcap-ng0 (>= 0.7.9), liblz4-1 (>= 0.0~r130), liblzo2-2 (>= 2.02), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpam0g (>= 0.99.7.1), libpkcs11-helper1t64 (>= 1.28), libssl3t64 (>= 3.0.0), libsystemd0",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-cli": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "php",
+      "depends": "php8.3-cli",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-curl": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "php",
+      "depends": "php-common, php8.3-curl",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-mbstring": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "universe/php",
+      "depends": "php-common, php8.3-mbstring",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-mysql": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "php",
+      "depends": "php-common, php8.3-mysql",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-xml": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "php",
+      "depends": "php-common, php8.3-xml",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "php-zip": {
+      "candidate": "2:8.3+93ubuntu2",
+      "architecture": "all",
+      "section": "universe/php",
+      "depends": "php-common, php8.3-zip",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "remmina": {
+      "candidate": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "architecture": "amd64",
+      "section": "gnome",
+      "depends": "libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavahi-ui-gtk3-0 (>= 0.6.30), libayatana-appindicator3-1 (>= 0.4.90), libc6 (>= 2.34), libcairo2 (>= 1.6.0), libcurl4t64 (>= 7.16.2), libgcrypt20 (>= 1.10.0), libglib2.0-0t64 (>= 2.79.0), libgtk-3-0t64 (>= 3.21.5), libjson-glib-1.0-0 (>= 1.5.2), libpango-1.0-0 (>= 1.14.0), libsodium23 (>= 1.0.10), libssh-4 (>= 0.8.1), libssl3t64 (>= 3.0.0), libvte-2.91-0 (>= 0.51.90), remmina-common (= 1.4.43+dfsg-0ubuntu0.24.04.2), default-dbus-session-bus | dbus-session-bus",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "remmina-plugin-rdp": {
+      "candidate": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "architecture": "amd64",
+      "section": "gnome",
+      "depends": "libc6 (>= 2.38), libcairo2 (>= 1.6.0), libcups2t64 (>= 1.6.0), libfreerdp-client3-3 (>= 3.0.0), libfreerdp3-3 (>= 3.11.1), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.79.0), libgtk-3-0t64 (>= 3.21.4), libwinpr3-3 (>= 3.17.0), remmina (= 1.4.43+dfsg-0ubuntu0.24.04.2)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "remmina-plugin-vnc": {
+      "candidate": "1.4.43+dfsg-0ubuntu0.24.04.2",
+      "architecture": "amd64",
+      "section": "gnome",
+      "depends": "libc6 (>= 2.34), libcairo2 (>= 1.6.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.26.0), libgtk-3-0t64 (>= 3.9.12), libvncclient1 (>= 0.9.14), remmina (= 1.4.43+dfsg-0ubuntu0.24.04.2)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "tcpdump": {
+      "candidate": "4.99.4-3ubuntu4.24.04.1",
+      "architecture": "amd64",
+      "section": "net",
+      "depends": "adduser, libc6 (>= 2.38), libpcap0.8t64 (>= 1.9.1), libssl3t64 (>= 3.0.0)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "tzdata": {
+      "candidate": "2026e-0ubuntu0.24.04.1",
+      "architecture": "all",
+      "section": "libs",
+      "depends": "debconf (>= 0.5) | debconf-2.0",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "wireshark": {
+      "candidate": "4.2.2-1.1build3",
+      "architecture": "amd64",
+      "section": "universe/net",
+      "depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.10.0), libglib2.0-0t64 (>= 2.75.3), libminizip1t64, libnl-3-200 (>= 3.2.21), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200 (>= 3.2.7), libpcap0.8t64 (>= 1.5.1), libqt6core5compat6 (>= 6.2.1), libqt6core6t64 (>= 6.4.0), libqt6gui6t64 (>= 6.4.0), libqt6multimedia6 (>= 6.2.1), libqt6printsupport6t64 (>= 6.1.2), libqt6widgets6t64 (>= 6.3.0), libspeexdsp1 (>= 1.2.1), libstdc++6 (>= 13.1), libwireshark17t64 (>= 4.1.1), libwiretap14t64 (>= 4.1.0), libwsutil15t64 (>= 4.1.1rc0), wireshark-common (= 4.2.2-1.1build3), libqt6svg6",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "xfce4": {
+      "candidate": "4.18",
+      "architecture": "all",
+      "section": "universe/x11",
+      "depends": "libxfce4ui-utils (>= 4.18.0), thunar (>= 4.18.0), xfce4-appfinder (>= 4.18.0), xfce4-panel (>= 4.18.0), xfce4-pulseaudio-plugin, xfce4-session (>= 4.18.0), xfce4-settings (>= 4.18.0), xfconf (>= 4.18.0), xfdesktop4 (>= 4.18.0), xfwm4 (>= 4.18.0)",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    },
+    "xubuntu-default-settings": {
+      "candidate": "24.04.4",
+      "architecture": "all",
+      "section": "universe/x11",
+      "depends": "dbus-user-session, lightdm-gtk-greeter (>= 2.0.1-1), systemd (>= 231-1~), x11-common (>= 1:7.6+7ubuntu2), xfce4-session (>= 4.12.1-3ubuntu2~), xubuntu-artwork (>= 12.10.1~), dconf-gsettings-backend | gsettings-backend",
+      "pre_depends": "",
+      "noble_archive_visible": true
+    }
+  }
+}

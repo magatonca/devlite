@@ -1,0 +1,460 @@
+{
+  "method": "read-only unsquashfs listings/cat; no mount, chroot or target executable",
+  "packages": {
+    "installed-base": {
+      "installed_count": 1403,
+      "status_sha256": "4232e029dddb5777dac41933e8c77ea7b053d698728eb91398f8aa44c52524fc",
+      "selected": {
+        "snapd": {
+          "Version": "2.76.3+ubuntu24.04",
+          "Depends": "adduser, apparmor (>= 2.10.95-0ubuntu2.2), ca-certificates, fuse3 (>= 3.10.5-1) | fuse, libcap2-bin, openssh-client, squashfs-tools, systemd, udev, default-dbus-session-bus | dbus-session-bus, libblkid1 (>= 2.17.2), libc6 (>= 2.38), libfuse3-3 (>= 3.12.0), liblzma5 (>= 5.1.1alpha+20120614), liblzo2-2 (>= 2.02), libudev1 (>= 183), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": null,
+          "Recommends": "gnupg",
+          "Suggests": "zenity | kdialog"
+        },
+        "cloud-init": {
+          "Version": "26.1-0ubuntu1~24.04.1",
+          "Depends": "cloud-guest-utils | cloud-utils, dhcpcd-base, iproute2, netplan.io, procps, python3, python3-debconf, python3-requests, python3-serial, debconf (>= 0.5) | debconf-2.0, python3-configobj, python3-jinja2, python3-jsonpatch, python3-jsonschema, python3-oauthlib, python3-yaml, python3:any",
+          "Pre-Depends": null,
+          "Recommends": "eatmydata, gdisk, gnupg, python3-apt, software-properties-common",
+          "Suggests": "openssh-server, ssh-import-id"
+        },
+        "openssh-server": null,
+        "openssh-client": {
+          "Version": "1:9.6p1-3ubuntu13.20",
+          "Depends": "adduser, passwd, libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.13), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": null,
+          "Recommends": "xauth",
+          "Suggests": "keychain, libpam-ssh, monkeysphere, ssh-askpass"
+        },
+        "apache2": {
+          "Version": "2.4.58-1ubuntu8.19",
+          "Depends": "apache2-bin (= 2.4.58-1ubuntu8.19), apache2-data (= 2.4.58-1ubuntu8.19), apache2-utils (= 2.4.58-1ubuntu8.19), media-types, perl:any, procps",
+          "Pre-Depends": "init-system-helpers (>= 1.54~)",
+          "Recommends": "ssl-cert",
+          "Suggests": "apache2-doc, apache2-suexec-pristine | apache2-suexec-custom, www-browser, ufw"
+        },
+        "mariadb-server": {
+          "Version": "1:10.11.14-0ubuntu0.24.04.1",
+          "Depends": "galera-4 (>= 26.4), gawk, iproute2, libdbi-perl, lsof, mariadb-client (>= 1:10.11.14-0ubuntu0.24.04.1), mariadb-server-core (>= 1:10.11.14-0ubuntu0.24.04.1), passwd, perl (>= 5.6), procps, psmisc, rsync, socat, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libpam0g (>= 0.99.7.1), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": "adduser (>= 3.40), debconf, mariadb-common (>= 1:10.11.14-0ubuntu0.24.04.1), init-system-helpers (>= 1.54~)",
+          "Recommends": "libhtml-template-perl, mariadb-plugin-provider-bzip2, mariadb-plugin-provider-lz4, mariadb-plugin-provider-lzma, mariadb-plugin-provider-lzo, mariadb-plugin-provider-snappy, pv",
+          "Suggests": "mailx, mariadb-test, netcat-openbsd"
+        },
+        "docker.io": {
+          "Version": "29.1.3-0ubuntu3~24.04.2",
+          "Depends": "adduser, containerd (>= 1.2.6-0ubuntu1~), iptables, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libnftables1 (>= 1.0.2), libsystemd0 (>= 209~)",
+          "Pre-Depends": null,
+          "Recommends": "ca-certificates, git, pigz, ubuntu-fan, xz-utils, apparmor",
+          "Suggests": "aufs-tools, btrfs-progs, cgroupfs-mount | cgroup-lite, debootstrap, docker-buildx, docker-compose-v2, docker-doc, rinse, zfs-fuse | zfsutils"
+        },
+        "containerd": {
+          "Version": "2.2.1-0ubuntu1~24.04.4",
+          "Depends": "runc, libc6 (>= 2.34)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "apport": {
+          "Version": "2.28.3-0ubuntu0.1",
+          "Depends": "apport-core-dump-handler | python3-zstandard, apport-core-dump-handler | systemd-coredump, gir1.2-glib-2.0 (>= 1.29.17), python3, python3-apport (>= 2.28.3-0ubuntu0.1), python3-gi, sensible-utils",
+          "Pre-Depends": null,
+          "Recommends": "apport-symptoms, python3-systemd",
+          "Suggests": "apport-gtk | apport-kde, pkexec, polkitd"
+        },
+        "kerneloops": {
+          "Version": "0.12+git20140509-6ubuntu8",
+          "Depends": "libc6 (>= 2.34), libcurl3t64-gnutls (>= 7.16.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libglib2.0-0t64 (>= 2.14.0), lsb-base",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "kerneloops-applet"
+        },
+        "modemmanager": {
+          "Version": "1.23.4-0ubuntu2",
+          "Depends": "libc6 (>= 2.38), libglib2.0-0t64 (>= 2.56.0), libgudev-1.0-0 (>= 212), libmbim-glib4 (>= 1.30.0), libmbim-proxy, libmm-glib0 (>= 1.23.4), libpolkit-gobject-1-0 (>= 0.99), libqmi-glib5 (>= 1.34.0), libqmi-proxy, libqrtr-glib0 (>= 1.0.0), libsystemd0 (>= 209), polkitd",
+          "Pre-Depends": null,
+          "Recommends": "libmbim-utils, libqmi-utils, usb-modeswitch",
+          "Suggests": null
+        },
+        "avahi-daemon": {
+          "Version": "0.8-13ubuntu6.2",
+          "Depends": "libavahi-common3 (= 0.8-13ubuntu6.2), libavahi-core7 (= 0.8-13ubuntu6.2), libc6 (>= 2.38), libcap2 (>= 1:2.10), libdaemon0 (>= 0.14), libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.0.1), adduser, default-dbus-system-bus | dbus-system-bus",
+          "Pre-Depends": null,
+          "Recommends": "libnss-mdns",
+          "Suggests": "avahi-autoipd"
+        },
+        "cups": {
+          "Version": "2.4.7-1.2ubuntu7.14",
+          "Depends": "cups-client (>= 2.4.7-1.2ubuntu7.14), cups-common (>= 2.4.7-1.2ubuntu7.14), cups-core-drivers (>= 2.4.7-1.2ubuntu7.14), cups-daemon (>= 2.4.7-1.2ubuntu7.14), cups-filters, cups-ppdc, cups-server-common (>= 2.4.7-1.2ubuntu7.14), debconf (>= 0.5) | debconf-2.0, ghostscript, libcups2t64 (= 2.4.7-1.2ubuntu7.14), poppler-utils, procps, libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5), libusb-1.0-0 (>= 2:1.0.16)",
+          "Pre-Depends": null,
+          "Recommends": "avahi-daemon, colord",
+          "Suggests": "cups-bsd, cups-pdf, foomatic-db-compressed-ppds | foomatic-db, smbclient, udev"
+        },
+        "ubuntu-advantage-tools": null,
+        "ubuntu-pro-client": {
+          "Version": "37.2ubuntu~24.04.1",
+          "Depends": "python3-yaml, python3:any, libapt-pkg6.0t64 (>= 1.9~), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libjson-c5 (>= 0.15), libstdc++6 (>= 13.1), python3-apt, distro-info (>= 0.18ubuntu0.18.04.1), python3-pkg-resources",
+          "Pre-Depends": null,
+          "Recommends": "ubuntu-pro-client-l10n",
+          "Suggests": null
+        },
+        "sysstat": {
+          "Version": "12.6.1-2",
+          "Depends": "ucf (>= 2.003), xz-utils, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libsensors5 (>= 1:3.5.0)",
+          "Pre-Depends": null,
+          "Recommends": "systemd | cron | cron-daemon",
+          "Suggests": "isag"
+        },
+        "apparmor": {
+          "Version": "4.0.1really4.0.1-0ubuntu0.24.04.7",
+          "Depends": "debconf, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "apparmor-profiles-extra, apparmor-utils"
+        },
+        "ufw": {
+          "Version": "0.36.2-6",
+          "Depends": "iptables, ucf, python3:any, debconf (>= 0.5) | debconf-2.0",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "rsyslog"
+        },
+        "network-manager": {
+          "Version": "1.46.0-1ubuntu2.8",
+          "Depends": "libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.24.0), libglib2.0-0t64 (>= 2.68.0), libgnutls30t64 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.10.0), libndp0 (>= 1.2), libnetplan1 (>= 1.0~), libnewt0.52 (>= 0.52.24), libnm0 (= 1.46.0-1ubuntu2.8), libpsl5t64 (>= 0.13.0), libreadline8t64 (>= 6.0), libselinux1 (>= 3.1~), libsystemd0 (>= 209), libteamdctl0 (>= 1.9), libudev1 (>= 183), netplan.io (>= 1.0~), python3-netplan (>= 1.0~), default-dbus-system-bus | dbus-system-bus, udev, adduser, polkitd | policykit-1",
+          "Pre-Depends": null,
+          "Recommends": "ppp, dnsmasq-base, modemmanager, network-manager-pptp, wireless-regdb, wpasupplicant, libpam-systemd",
+          "Suggests": "avahi-autoipd, libteam-utils, iptables"
+        },
+        "systemd-resolved": {
+          "Version": "255.4-1ubuntu8.17",
+          "Depends": "libc6 (>= 2.39), libssl3t64 (>= 3.0.0), libsystemd-shared (= 255.4-1ubuntu8.17), systemd (= 255.4-1ubuntu8.17), default-dbus-system-bus | dbus-system-bus",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "polkitd"
+        },
+        "thermald": null,
+        "systemd-timesyncd": {
+          "Version": "255.4-1ubuntu8.17",
+          "Depends": "libc6 (>= 2.34), libsystemd-shared (= 255.4-1ubuntu8.17), systemd",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "chrony": null,
+        "policykit-1": {
+          "Version": "124-2ubuntu1.24.04.3",
+          "Depends": "pkexec (>= 124-2ubuntu1.24.04.3), polkitd (>= 124-2ubuntu1.24.04.3)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "polkitd": {
+          "Version": "124-2ubuntu1.24.04.3",
+          "Depends": "adduser | systemd-sysusers, default-dbus-system-bus | dbus-system-bus, default-logind | logind, xml-core (>= 0.14), libc6 (>= 2.38), libduktape207 (>= 2.0.3), libexpat1 (>= 2.0.1), libglib2.0-0t64 (>= 2.79.0), libpam0g (>= 0.99.7.1), libpolkit-agent-1-0 (= 124-2ubuntu1.24.04.3), libpolkit-gobject-1-0 (= 124-2ubuntu1.24.04.3), libsystemd0 (>= 253)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "polkitd-pkla (>= 121+compat0.1)"
+        },
+        "php8.3-fpm": null,
+        "casper": null,
+        "subiquity": null,
+        "ubuntu-desktop-bootstrap": null,
+        "xubuntu-desktop-minimal": {
+          "Version": "2.262",
+          "Depends": "alsa-base, alsa-utils, anacron, bc, ca-certificates, dmz-cursor-theme, doc-base, fontconfig, fonts-dejavu-core, foomatic-db-compressed-ppds, ghostscript, gtk2-engines-pixbuf, initramfs-tools, inputattach, language-selector-common, libasound2-plugins, libsasl2-modules, libu2f-udev, lightdm, lightdm-gtk-greeter, openprinting-ppds, printer-driver-pnm2ppa, rfkill, spice-vdagent, thunar, thunar-volman, ubuntu-drivers-common, unzip, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xdg-utils, xfce4-appfinder, xfce4-notifyd, xfce4-panel, xfce4-session, xfce4-settings, xfdesktop4, xfwm4, xkb-data, xorg, xterm, xubuntu-artwork, xubuntu-default-settings, zip",
+          "Pre-Depends": null,
+          "Recommends": "avahi-daemon, bluez, bluez-cups, cloud-init, cups, cups-bsd, cups-client, cups-filters, dbus-x11, fonts-liberation, fonts-noto-cjk, fonts-noto-color-emoji, fonts-noto-core, fonts-noto-hinted, fonts-opensymbol, fonts-symbola, fonts-ubuntu, fwupd, fwupd-signed, gucharmap, hplip, kerneloops, laptop-detect, libfuse2t64, libnotify-bin, libnss-mdns, libpam-gnome-keyring, mate-polkit, memtest86+, network-manager-gnome, numlockx, packagekit, pavucontrol, pcmciautils, pinentry-gnome3, pipewire, pipewire-pulse, policykit-desktop-privileges, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-m2300w, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, snapd, software-properties-gtk, synaptic, wireplumber, xcape, xfce4-indicator-plugin, xfce4-power-manager, xfce4-pulseaudio-plugin, xfce4-screensaver, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin, xserver-xorg-input-all",
+          "Suggests": null
+        }
+      },
+      "reverse_direct_names": {
+        "snapd": {
+          "command-not-found": {
+            "Suggests": [
+              "snapd"
+            ]
+          },
+          "libsnapd-glib-2-1": {
+            "Suggests": [
+              "snapd"
+            ]
+          },
+          "xubuntu-desktop-minimal": {
+            "Recommends": [
+              "snapd"
+            ]
+          }
+        },
+        "cloud-init": {
+          "cloud-guest-utils": {
+            "Suggests": [
+              "cloud-init"
+            ]
+          },
+          "xubuntu-desktop-minimal": {
+            "Recommends": [
+              "cloud-init"
+            ]
+          }
+        }
+      },
+      "limitations": "Installed status only; alternative/virtual dependencies are not a complete APT removal simulation."
+    },
+    "live-delta-status": {
+      "installed_count": 1544,
+      "status_sha256": "2e30a92d2263e11b2fc6c2da401cc7835e75642e5bdcb16b4cf86f8c35cd8ab5",
+      "selected": {
+        "snapd": {
+          "Version": "2.76.3+ubuntu24.04",
+          "Depends": "adduser, apparmor (>= 2.10.95-0ubuntu2.2), ca-certificates, fuse3 (>= 3.10.5-1) | fuse, libcap2-bin, openssh-client, squashfs-tools, systemd, udev, default-dbus-session-bus | dbus-session-bus, libblkid1 (>= 2.17.2), libc6 (>= 2.38), libfuse3-3 (>= 3.12.0), liblzma5 (>= 5.1.1alpha+20120614), liblzo2-2 (>= 2.02), libudev1 (>= 183), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": null,
+          "Recommends": "gnupg",
+          "Suggests": "zenity | kdialog"
+        },
+        "cloud-init": {
+          "Version": "26.1-0ubuntu1~24.04.1",
+          "Depends": "cloud-guest-utils | cloud-utils, dhcpcd-base, iproute2, netplan.io, procps, python3, python3-debconf, python3-requests, python3-serial, debconf (>= 0.5) | debconf-2.0, python3-configobj, python3-jinja2, python3-jsonpatch, python3-jsonschema, python3-oauthlib, python3-yaml, python3:any",
+          "Pre-Depends": null,
+          "Recommends": "eatmydata, gdisk, gnupg, python3-apt, software-properties-common",
+          "Suggests": "openssh-server, ssh-import-id"
+        },
+        "openssh-server": null,
+        "openssh-client": {
+          "Version": "1:9.6p1-3ubuntu13.20",
+          "Depends": "adduser, passwd, libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.13), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": null,
+          "Recommends": "xauth",
+          "Suggests": "keychain, libpam-ssh, monkeysphere, ssh-askpass"
+        },
+        "apache2": {
+          "Version": "2.4.58-1ubuntu8.19",
+          "Depends": "apache2-bin (= 2.4.58-1ubuntu8.19), apache2-data (= 2.4.58-1ubuntu8.19), apache2-utils (= 2.4.58-1ubuntu8.19), media-types, perl:any, procps",
+          "Pre-Depends": "init-system-helpers (>= 1.54~)",
+          "Recommends": "ssl-cert",
+          "Suggests": "apache2-doc, apache2-suexec-pristine | apache2-suexec-custom, www-browser, ufw"
+        },
+        "mariadb-server": {
+          "Version": "1:10.11.14-0ubuntu0.24.04.1",
+          "Depends": "galera-4 (>= 26.4), gawk, iproute2, libdbi-perl, lsof, mariadb-client (>= 1:10.11.14-0ubuntu0.24.04.1), mariadb-server-core (>= 1:10.11.14-0ubuntu0.24.04.1), passwd, perl (>= 5.6), procps, psmisc, rsync, socat, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libpam0g (>= 0.99.7.1), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)",
+          "Pre-Depends": "adduser (>= 3.40), debconf, mariadb-common (>= 1:10.11.14-0ubuntu0.24.04.1), init-system-helpers (>= 1.54~)",
+          "Recommends": "libhtml-template-perl, mariadb-plugin-provider-bzip2, mariadb-plugin-provider-lz4, mariadb-plugin-provider-lzma, mariadb-plugin-provider-lzo, mariadb-plugin-provider-snappy, pv",
+          "Suggests": "mailx, mariadb-test, netcat-openbsd"
+        },
+        "docker.io": {
+          "Version": "29.1.3-0ubuntu3~24.04.2",
+          "Depends": "adduser, containerd (>= 1.2.6-0ubuntu1~), iptables, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libnftables1 (>= 1.0.2), libsystemd0 (>= 209~)",
+          "Pre-Depends": null,
+          "Recommends": "ca-certificates, git, pigz, ubuntu-fan, xz-utils, apparmor",
+          "Suggests": "aufs-tools, btrfs-progs, cgroupfs-mount | cgroup-lite, debootstrap, docker-buildx, docker-compose-v2, docker-doc, rinse, zfs-fuse | zfsutils"
+        },
+        "containerd": {
+          "Version": "2.2.1-0ubuntu1~24.04.4",
+          "Depends": "runc, libc6 (>= 2.34)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "apport": {
+          "Version": "2.28.3-0ubuntu0.1",
+          "Depends": "apport-core-dump-handler | python3-zstandard, apport-core-dump-handler | systemd-coredump, gir1.2-glib-2.0 (>= 1.29.17), python3, python3-apport (>= 2.28.3-0ubuntu0.1), python3-gi, sensible-utils",
+          "Pre-Depends": null,
+          "Recommends": "apport-symptoms, python3-systemd",
+          "Suggests": "apport-gtk | apport-kde, pkexec, polkitd"
+        },
+        "kerneloops": {
+          "Version": "0.12+git20140509-6ubuntu8",
+          "Depends": "libc6 (>= 2.34), libcurl3t64-gnutls (>= 7.16.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libglib2.0-0t64 (>= 2.14.0), lsb-base",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "kerneloops-applet"
+        },
+        "modemmanager": {
+          "Version": "1.23.4-0ubuntu2",
+          "Depends": "libc6 (>= 2.38), libglib2.0-0t64 (>= 2.56.0), libgudev-1.0-0 (>= 212), libmbim-glib4 (>= 1.30.0), libmbim-proxy, libmm-glib0 (>= 1.23.4), libpolkit-gobject-1-0 (>= 0.99), libqmi-glib5 (>= 1.34.0), libqmi-proxy, libqrtr-glib0 (>= 1.0.0), libsystemd0 (>= 209), polkitd",
+          "Pre-Depends": null,
+          "Recommends": "libmbim-utils, libqmi-utils, usb-modeswitch",
+          "Suggests": null
+        },
+        "avahi-daemon": {
+          "Version": "0.8-13ubuntu6.2",
+          "Depends": "libavahi-common3 (= 0.8-13ubuntu6.2), libavahi-core7 (= 0.8-13ubuntu6.2), libc6 (>= 2.38), libcap2 (>= 1:2.10), libdaemon0 (>= 0.14), libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.0.1), adduser, default-dbus-system-bus | dbus-system-bus",
+          "Pre-Depends": null,
+          "Recommends": "libnss-mdns",
+          "Suggests": "avahi-autoipd"
+        },
+        "cups": {
+          "Version": "2.4.7-1.2ubuntu7.14",
+          "Depends": "cups-client (>= 2.4.7-1.2ubuntu7.14), cups-common (>= 2.4.7-1.2ubuntu7.14), cups-core-drivers (>= 2.4.7-1.2ubuntu7.14), cups-daemon (>= 2.4.7-1.2ubuntu7.14), cups-filters, cups-ppdc, cups-server-common (>= 2.4.7-1.2ubuntu7.14), debconf (>= 0.5) | debconf-2.0, ghostscript, libcups2t64 (= 2.4.7-1.2ubuntu7.14), poppler-utils, procps, libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5), libusb-1.0-0 (>= 2:1.0.16)",
+          "Pre-Depends": null,
+          "Recommends": "avahi-daemon, colord",
+          "Suggests": "cups-bsd, cups-pdf, foomatic-db-compressed-ppds | foomatic-db, smbclient, udev"
+        },
+        "ubuntu-advantage-tools": null,
+        "ubuntu-pro-client": {
+          "Version": "37.2ubuntu~24.04.1",
+          "Depends": "python3-yaml, python3:any, libapt-pkg6.0t64 (>= 1.9~), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libjson-c5 (>= 0.15), libstdc++6 (>= 13.1), python3-apt, distro-info (>= 0.18ubuntu0.18.04.1), python3-pkg-resources",
+          "Pre-Depends": null,
+          "Recommends": "ubuntu-pro-client-l10n",
+          "Suggests": null
+        },
+        "sysstat": {
+          "Version": "12.6.1-2",
+          "Depends": "ucf (>= 2.003), xz-utils, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libsensors5 (>= 1:3.5.0)",
+          "Pre-Depends": null,
+          "Recommends": "systemd | cron | cron-daemon",
+          "Suggests": "isag"
+        },
+        "apparmor": {
+          "Version": "4.0.1really4.0.1-0ubuntu0.24.04.7",
+          "Depends": "debconf, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "apparmor-profiles-extra, apparmor-utils"
+        },
+        "ufw": {
+          "Version": "0.36.2-6",
+          "Depends": "iptables, ucf, python3:any, debconf (>= 0.5) | debconf-2.0",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "rsyslog"
+        },
+        "network-manager": {
+          "Version": "1.46.0-1ubuntu2.8",
+          "Depends": "libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.24.0), libglib2.0-0t64 (>= 2.68.0), libgnutls30t64 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.10.0), libndp0 (>= 1.2), libnetplan1 (>= 1.0~), libnewt0.52 (>= 0.52.24), libnm0 (= 1.46.0-1ubuntu2.8), libpsl5t64 (>= 0.13.0), libreadline8t64 (>= 6.0), libselinux1 (>= 3.1~), libsystemd0 (>= 209), libteamdctl0 (>= 1.9), libudev1 (>= 183), netplan.io (>= 1.0~), python3-netplan (>= 1.0~), default-dbus-system-bus | dbus-system-bus, udev, adduser, polkitd | policykit-1",
+          "Pre-Depends": null,
+          "Recommends": "ppp, dnsmasq-base, modemmanager, network-manager-pptp, wireless-regdb, wpasupplicant, libpam-systemd",
+          "Suggests": "avahi-autoipd, libteam-utils, iptables"
+        },
+        "systemd-resolved": {
+          "Version": "255.4-1ubuntu8.17",
+          "Depends": "libc6 (>= 2.39), libssl3t64 (>= 3.0.0), libsystemd-shared (= 255.4-1ubuntu8.17), systemd (= 255.4-1ubuntu8.17), default-dbus-system-bus | dbus-system-bus",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "polkitd"
+        },
+        "thermald": {
+          "Version": "2.5.6-2ubuntu0.24.04.5",
+          "Depends": "libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.3.1), libglib2.0-0t64 (>= 2.79.0), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 13.1), libupower-glib3 (>= 0.99.0), libxml2 (>= 2.7.4)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "systemd-timesyncd": {
+          "Version": "255.4-1ubuntu8.17",
+          "Depends": "libc6 (>= 2.34), libsystemd-shared (= 255.4-1ubuntu8.17), systemd",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "chrony": null,
+        "policykit-1": {
+          "Version": "124-2ubuntu1.24.04.3",
+          "Depends": "pkexec (>= 124-2ubuntu1.24.04.3), polkitd (>= 124-2ubuntu1.24.04.3)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "polkitd": {
+          "Version": "124-2ubuntu1.24.04.3",
+          "Depends": "adduser | systemd-sysusers, default-dbus-system-bus | dbus-system-bus, default-logind | logind, xml-core (>= 0.14), libc6 (>= 2.38), libduktape207 (>= 2.0.3), libexpat1 (>= 2.0.1), libglib2.0-0t64 (>= 2.79.0), libpam0g (>= 0.99.7.1), libpolkit-agent-1-0 (= 124-2ubuntu1.24.04.3), libpolkit-gobject-1-0 (= 124-2ubuntu1.24.04.3), libsystemd0 (>= 253)",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": "polkitd-pkla (>= 121+compat0.1)"
+        },
+        "php8.3-fpm": null,
+        "casper": {
+          "Version": "1.498",
+          "Depends": "libc6 (>= 2.38), libplymouth5 (>= 0.9.2), initramfs-tools (>= 0.92bubuntu55), busybox-initramfs (>= 1:1.1.3-4ubuntu3), dmsetup, user-setup, sudo, eject, uuid-runtime, localechooser-data (>= 2.65ubuntu1) | ubiquity, util-linux (>= 2.15-1), file, lzma, udev (>= 174), cifs-utils, finalrd, fdisk",
+          "Pre-Depends": null,
+          "Recommends": null,
+          "Suggests": null
+        },
+        "subiquity": null,
+        "ubuntu-desktop-bootstrap": null,
+        "xubuntu-desktop-minimal": {
+          "Version": "2.262",
+          "Depends": "alsa-base, alsa-utils, anacron, bc, ca-certificates, dmz-cursor-theme, doc-base, fontconfig, fonts-dejavu-core, foomatic-db-compressed-ppds, ghostscript, gtk2-engines-pixbuf, initramfs-tools, inputattach, language-selector-common, libasound2-plugins, libsasl2-modules, libu2f-udev, lightdm, lightdm-gtk-greeter, openprinting-ppds, printer-driver-pnm2ppa, rfkill, spice-vdagent, thunar, thunar-volman, ubuntu-drivers-common, unzip, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xdg-utils, xfce4-appfinder, xfce4-notifyd, xfce4-panel, xfce4-session, xfce4-settings, xfdesktop4, xfwm4, xkb-data, xorg, xterm, xubuntu-artwork, xubuntu-default-settings, zip",
+          "Pre-Depends": null,
+          "Recommends": "avahi-daemon, bluez, bluez-cups, cloud-init, cups, cups-bsd, cups-client, cups-filters, dbus-x11, fonts-liberation, fonts-noto-cjk, fonts-noto-color-emoji, fonts-noto-core, fonts-noto-hinted, fonts-opensymbol, fonts-symbola, fonts-ubuntu, fwupd, fwupd-signed, gucharmap, hplip, kerneloops, laptop-detect, libfuse2t64, libnotify-bin, libnss-mdns, libpam-gnome-keyring, mate-polkit, memtest86+, network-manager-gnome, numlockx, packagekit, pavucontrol, pcmciautils, pinentry-gnome3, pipewire, pipewire-pulse, policykit-desktop-privileges, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-m2300w, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, snapd, software-properties-gtk, synaptic, wireplumber, xcape, xfce4-indicator-plugin, xfce4-power-manager, xfce4-pulseaudio-plugin, xfce4-screensaver, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin, xserver-xorg-input-all",
+          "Suggests": null
+        }
+      },
+      "reverse_direct_names": {
+        "snapd": {
+          "command-not-found": {
+            "Suggests": [
+              "snapd"
+            ]
+          },
+          "libsnapd-glib-2-1": {
+            "Suggests": [
+              "snapd"
+            ]
+          },
+          "xubuntu-desktop-minimal": {
+            "Recommends": [
+              "snapd"
+            ]
+          }
+        },
+        "cloud-init": {
+          "cloud-guest-utils": {
+            "Suggests": [
+              "cloud-init"
+            ]
+          },
+          "xubuntu-desktop-minimal": {
+            "Recommends": [
+              "cloud-init"
+            ]
+          }
+        }
+      },
+      "limitations": "Installed status only; alternative/virtual dependencies are not a complete APT removal simulation."
+    }
+  },
+  "masks": {
+    "minimal.squashfs": "drwxr-xr-x 0/0                     369 2026-09-08 07:27 squashfs-root\ndrwxr-xr-x 0/0                    3879 2026-11-19 10:32 squashfs-root/etc\ndrwxr-xr-x 0/0                     270 2026-09-08 07:26 squashfs-root/etc/systemd\ndrwxr-xr-x 0/0                    1296 2026-11-17 12:02 squashfs-root/etc/systemd/system\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/apache2.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/containerd.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/docker.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/docker.socket -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/iperf3.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/mariadb.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:02 squashfs-root/etc/systemd/system/mysql.service -> /dev/null\n",
+    "minimal.visual.squashfs": "drwxr-xr-x 0/0                      37 2026-09-08 08:36 squashfs-root\ndrwxr-xr-x 0/0                      64 2026-09-08 08:36 squashfs-root/etc\n",
+    "minimal.visual.fix.squashfs": "drwxrwxr-x 0/0                      26 2026-11-23 12:43 squashfs-root\n",
+    "minimal.visual.live.squashfs": "drwxr-xr-x 0/0                     154 2026-09-08 07:34 squashfs-root\ndrwxr-xr-x 0/0                    1133 2026-11-19 11:03 squashfs-root/etc\ndrwxr-xr-x 0/0                      64 2026-09-08 07:34 squashfs-root/etc/systemd\ndrwxr-xr-x 0/0                     822 2026-11-17 12:22 squashfs-root/etc/systemd/system\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/apache2.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/containerd.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/docker.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/docker.socket -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/iperf3.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/mariadb.service -> /dev/null\nlrwxrwxrwx 0/0                       9 2026-11-17 12:22 squashfs-root/etc/systemd/system/mysql.service -> /dev/null\n",
+    "minimal.visual.live.fix.squashfs": "drwxrwxr-x 0/0                      48 2026-11-23 12:46 squashfs-root\ndrwxrwxr-x 0/0                      26 2026-11-23 12:46 squashfs-root/etc\n"
+  },
+  "units": {
+    "docker.service": "[Unit]\nDescription=Docker Application Container Engine\nDocumentation=https://docs.docker.com\nAfter=network-online.target firewalld.service containerd.service\nWants=network-online.target\nRequires=docker.socket\nWants=containerd.service\n\n[Service]\nType=notify\n# the default is not to use systemd for cgroups because the delegate issues still\n# exists and systemd currently does not support the cgroup feature set required\n# for containers run by docker\nExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock\nExecReload=/bin/kill -s HUP $MAINPID\nTimeoutSec=0\nRestartSec=2\nRestart=always\n\n# Note that StartLimit* options were moved from \"Service\" to \"Unit\" in systemd 229.\n# Both the old, and new location are accepted by systemd 229 and up, so using the old location\n# to make them work for either version of systemd.\nStartLimitBurst=3\n\n# Note that StartLimitInterval was renamed to StartLimitIntervalSec in systemd 230.\n# Both the old, and new name are accepted by systemd 230 and up, so using the old name to make\n# this option work for either version of systemd.\nStartLimitInterval=60s\n\n# Having non-zero Limit*s causes performance problems due to accounting overhead\n# in the kernel. We recommend using cgroups to do container-local accounting.\nLimitNOFILE=infinity\nLimitNPROC=infinity\nLimitCORE=infinity\n\n# Comment TasksMax if your systemd version does not support it.\n# Only systemd 226 and above support this option.\nTasksMax=infinity\n\n# set delegate yes so that systemd does not reset the cgroups of docker containers\nDelegate=yes\n\n# kill only the docker process, not all processes in the cgroup\nKillMode=process\nOOMScoreAdjust=-500\n\n[Install]\nWantedBy=multi-user.target\n",
+    "docker.socket": "[Unit]\nDescription=Docker Socket for the API\n\n[Socket]\nListenStream=/run/docker.sock\nSocketMode=0660\nSocketUser=root\nSocketGroup=docker\n\n[Install]\nWantedBy=sockets.target\n",
+    "containerd.service": "# Copyright The containerd Authors.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#     http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n\n[Unit]\nDescription=containerd container runtime\nDocumentation=https://containerd.io\nAfter=network.target dbus.service\n\n[Service]\nExecStartPre=-/sbin/modprobe overlay\nExecStart=/usr/bin/containerd\n\nType=notify\nDelegate=yes\nKillMode=process\nRestart=always\nRestartSec=5\n\n# Having non-zero Limit*s causes performance problems due to accounting overhead\n# in the kernel. We recommend using cgroups to do container-local accounting.\nLimitNPROC=infinity\nLimitCORE=infinity\n\n# Comment TasksMax if your systemd version does not supports it.\n# Only systemd 226 and above support this version.\nTasksMax=infinity\nOOMScoreAdjust=-999\n\n[Install]\nWantedBy=multi-user.target\n",
+    "apache2.service": "[Unit]\nDescription=The Apache HTTP Server\nAfter=network.target remote-fs.target nss-lookup.target\nDocumentation=https://httpd.apache.org/docs/2.4/\n\n[Service]\nType=forking\nEnvironment=APACHE_STARTED_BY_SYSTEMD=true\nExecStart=/usr/sbin/apachectl start\nExecStop=/usr/sbin/apachectl graceful-stop\nExecReload=/usr/sbin/apachectl graceful\nKillMode=mixed\nPrivateTmp=true\nRestart=on-abort\nOOMPolicy=continue\n\n[Install]\nWantedBy=multi-user.target\n",
+    "mariadb.service": "# It's not recommended to modify this file in-place, because it will be\n# overwritten during package upgrades.  If you want to customize, the\n# best way is to create a file \"/etc/systemd/system/mariadb.service\",\n# containing\n#\t.include /usr/lib/systemd/system/mariadb.service\n#\t...make your changes here...\n# or create a file \"/etc/systemd/system/mariadb.service.d/foo.conf\",\n# which doesn't need to include \".include\" call and which will be parsed\n# after the file mariadb.service itself is parsed.\n#\n# For more info about custom unit files, see systemd.unit(5) or\n# https://mariadb.com/kb/en/mariadb/systemd/\n#\n# Copyright notice:\n#\n# This file is free software; you can redistribute it and/or modify it\n# under the terms of the GNU Lesser General Public License as published by\n# the Free Software Foundation; either version 2.1 of the License, or\n# (at your option) any later version.\n\n[Unit]\nDescription=MariaDB 10.11.14 database server\nDocumentation=man:mariadbd(8)\nDocumentation=https://mariadb.com/kb/en/library/systemd/\nAfter=network.target\n\n[Install]\nWantedBy=multi-user.target\n\n\n[Service]\n\n##############################################################################\n## Core requirements\n##\n\nType=notify\n\n# Setting this to true can break replication and the Type=notify settings\n# See also bind-address mariadbd option.\nPrivateNetwork=false\n\n##############################################################################\n## Package maintainers\n##\n\nUser=mysql\nGroup=mysql\n\n# CAP_IPC_LOCK To allow memlock to be used as non-root user\n# These are enabled by default\nAmbientCapabilities=CAP_IPC_LOCK\n\n# PrivateDevices=true implies NoNewPrivileges=true and\n# SUID auth_pam_tool suddenly doesn't do setuid anymore\nPrivateDevices=false\n\n# Prevent writes to /usr, /boot, and /etc\nProtectSystem=full\n\n\n\n# Doesn't yet work properly with SELinux enabled\n# NoNewPrivileges=true\n\n# Prevent accessing /home, /root and /run/user\nProtectHome=true\n\n# Execute pre and post scripts as root, otherwise it does it as User=\nPermissionsStartOnly=true\n\nExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld\n\n# Perform automatic wsrep recovery. When server is started without wsrep,\n# galera_recovery simply returns an empty string. In any case, however,\n# the script is not expected to return with a non-zero status.\n# It is always safe to unset _WSREP_START_POSITION environment variable.\n# Do not panic if galera_recovery script is not available. (MDEV-10538)\nExecStartPre=/bin/sh -c \"systemctl unset-environment _WSREP_START_POSITION\"\nExecStartPre=/bin/sh -c \"[ ! -e /usr/bin/galera_recovery ] && VAR= || \\\n VAR=`/usr/bin/galera_recovery`; [ $? -eq 0 ] \\\n && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1\"\n\n# Needed to create system tables etc.\n# ExecStartPre=/usr/bin/mariadb-install-db -u mysql\n\n# Start main service\n# MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf\n# Use the [Service] section and Environment=\"MYSQLD_OPTS=...\".\n# This isn't a replacement for my.cnf.\n# _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster\nExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION\n\n# Unset _WSREP_START_POSITION environment variable.\nExecStartPost=/bin/sh -c \"systemctl unset-environment _WSREP_START_POSITION\"\n\nExecStartPost=/etc/mysql/debian-start\n\nKillSignal=SIGTERM\n\n# Don't want to see an automated SIGKILL ever\nSendSIGKILL=no\n\n# Restart crashed server only, on-failure would also restart, for example, when\n# my.cnf contains unknown option\nRestart=on-abnormal\nRestartSec=5s\n\nUMask=007\n\n##############################################################################\n## USERs can override\n##\n##\n## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf\n## and adding/setting the following under [Service] will override this file's\n## settings.\n\n# Useful options not previously available in [mysqld_safe]\n\n# Kernels like killing mariadbd when out of memory because its big.\n# Lets temper that preference a little.\n# OOMScoreAdjust=-600\n\n# Explicitly start with high IO priority\n# BlockIOWeight=1000\n\n# If you don't use the /tmp directory for SELECT ... OUTFILE and\n# LOAD DATA INFILE you can enable PrivateTmp=true for a little more security.\nPrivateTmp=false\n\n# Set an explicit Start and Stop timeout of 900 seconds (15 minutes!)\n# this is the same value as used in SysV init scripts in the past\n# Galera might need a longer timeout, check the KB if you want to change this:\n# https://mariadb.com/kb/en/library/systemd/#configuring-the-systemd-service-timeout\nTimeoutStartSec=900\nTimeoutStopSec=900\n\n# Set the maximium number of tasks (threads) to 99% of what the system can\n# handle as set by the kernel, reserve the 1% for a remote ssh connection,\n# some monitoring, or that backup cron job. Without the directive this would\n# be 15% (see DefaultTasksMax in systemd man pages).\nTasksMax=99%\n\n##\n## Options previously available to be set via [mysqld_safe]\n## that now needs to be set by systemd config files as mysqld_safe\n## isn't executed.\n##\n\n# Number of files limit. previously [mysqld_safe] open-files-limit\nLimitNOFILE=32768\n# For liburing and io_uring_setup()\nLimitMEMLOCK=524288\n# Maximium core size. previously [mysqld_safe] core-file-size\n# LimitCore=\n\n# Nice priority. previously [mysqld_safe] nice\n# Nice=-5\n\n# Timezone. previously [mysqld_safe] timezone\n# Environment=\"TZ=UTC\"\n\n# Library substitutions. previously [mysqld_safe] malloc-lib with explicit paths\n# (in LD_LIBRARY_PATH) and library name (in LD_PRELOAD).\n# Environment=\"LD_LIBRARY_PATH=/path1 /path2\" \"LD_PRELOAD=\n\n# Flush caches. previously [mysqld_safe] flush-caches=1\n# ExecStartPre=sync\n# ExecStartPre=sysctl -q -w vm.drop_caches=3\n\n# numa-interleave=1 equalivant\n# Change ExecStart=numactl --interleave=all /usr/sbin/mariadbd......\n\n# crash-script equalivent\n# FailureAction=\n",
+    "snapd.service": "[Unit]\nDescription=Snap Daemon\nAfter=snapd.socket\nAfter=time-set.target\nAfter=snapd.mounts.target\nWants=time-set.target\nWants=snapd.mounts.target\nRequires=snapd.socket\nOnFailure=snapd.failure.service\n# This is handled by snapd\n# X-Snapd-Snap: do-not-start\n\n[Service]\n# Disabled because it breaks lxd\n# (https://bugs.launchpad.net/snapd/+bug/1709536)\n#Nice=-5\nOOMScoreAdjust=-900\nExecStart=/usr/lib/snapd/snapd\nEnvironmentFile=-/etc/environment\nEnvironmentFile=-/var/lib/snapd/environment/snapd.conf\nRestart=always\n# with systemd v254+, skip going through failed state during restart\nRestartMode=direct\nWatchdogSec=5m\nType=notify\nNotifyAccess=all\nSuccessExitStatus=42\nRestartPreventExitStatus=42\nKillMode=process\nKeyringMode=shared\n\n[Install]\nWantedBy=multi-user.target\n",
+    "snapd.socket": "[Unit]\nDescription=Socket activation for snappy daemon\n\n[Socket]\nListenStream=/run/snapd.socket\nListenStream=/run/snapd-snap.socket\nSocketMode=0666\n# these are the defaults, but can't hurt to specify them anyway:\nSocketUser=root\nSocketGroup=root\n\n[Install]\nWantedBy=sockets.target\n",
+    "snapd.seeded.service": "[Unit]\nDescription=Wait until snapd is fully seeded\nAfter=snapd.socket\nRequires=snapd.socket\n\n[Service]\nType=oneshot\nExecStart=/usr/bin/snap wait system seed.loaded\nRemainAfterExit=true\n\n[Install]\nWantedBy=multi-user.target cloud-final.service\n# This is handled special in snapd\n# X-Snapd-Snap: do-not-start\n",
+    "cloud-init.service": "[Unit]\n# https://docs.cloud-init.io/en/latest/explanation/boot.html\nDescription=Cloud-init: Network Stage\nDefaultDependencies=no\nWants=cloud-init-local.service\nWants=sshd-keygen.service\nWants=sshd.service\nAfter=cloud-init-local.service\nAfter=systemd-networkd-wait-online.service\nAfter=networking.service\nBefore=network-online.target\nBefore=sshd-keygen.service\nBefore=sshd.service\nBefore=systemd-user-sessions.service\nBefore=sysinit.target\nBefore=shutdown.target\nConflicts=shutdown.target\nConditionPathExists=!/etc/cloud/cloud-init.disabled\nConditionKernelCommandLine=!cloud-init=disabled\nConditionEnvironment=!KERNEL_CMDLINE=cloud-init=disabled\n\n[Service]\nType=oneshot\nExecStart=/usr/bin/cloud-init init\nRemainAfterExit=yes\nTimeoutSec=0\n\n# Output needs to appear in instance console output\nStandardOutput=journal+console\n\n[Install]\nWantedBy=cloud-init.target\n",
+    "cloud-init-local.service": "[Unit]\n# https://docs.cloud-init.io/en/latest/explanation/boot.html\nDescription=Cloud-init: Local Stage (pre-network)\nDefaultDependencies=no\nWants=network-pre.target\nAfter=hv_kvp_daemon.service\nAfter=systemd-remount-fs.service\nBefore=network-pre.target\nBefore=shutdown.target\nBefore=sysinit.target\nConflicts=shutdown.target\nRequiresMountsFor=/var/lib/cloud\nConditionPathExists=!/etc/cloud/cloud-init.disabled\nConditionKernelCommandLine=!cloud-init=disabled\nConditionEnvironment=!KERNEL_CMDLINE=cloud-init=disabled\n\n[Service]\nType=oneshot\nExecStart=/usr/bin/cloud-init init --local\nRemainAfterExit=yes\nTimeoutSec=0\n\n# Output needs to appear in instance console output\nStandardOutput=journal+console\n\n[Install]\nWantedBy=cloud-init.target\n",
+    "cloud-config.service": "[Unit]\n# https://docs.cloud-init.io/en/latest/explanation/boot.html\nDescription=Cloud-init: Config Stage\nAfter=network-online.target cloud-config.target\nWants=network-online.target cloud-config.target\nConditionPathExists=!/etc/cloud/cloud-init.disabled\nConditionKernelCommandLine=!cloud-init=disabled\nConditionEnvironment=!KERNEL_CMDLINE=cloud-init=disabled\n\n[Service]\nType=oneshot\nExecStart=/usr/bin/cloud-init modules --mode=config\nRemainAfterExit=yes\nTimeoutSec=0\n\n# Output needs to appear in instance console output\nStandardOutput=journal+console\n\n[Install]\nWantedBy=cloud-init.target\n",
+    "cloud-final.service": "[Unit]\n# https://docs.cloud-init.io/en/latest/explanation/boot.html\nDescription=Cloud-init: Final Stage\nAfter=network-online.target time-sync.target cloud-config.service rc-local.service\nAfter=multi-user.target\nBefore=apt-daily.service\nWants=network-online.target cloud-config.service\nConditionPathExists=!/etc/cloud/cloud-init.disabled\nConditionKernelCommandLine=!cloud-init=disabled\nConditionEnvironment=!KERNEL_CMDLINE=cloud-init=disabled\n\n\n[Service]\nType=oneshot\nExecStart=/usr/bin/cloud-init modules --mode=final\nRemainAfterExit=yes\nTimeoutSec=0\nKillMode=process\nTasksMax=infinity\n\n# Output needs to appear in instance console output\nStandardOutput=journal+console\n\n[Install]\nWantedBy=cloud-init.target\n",
+    "xubuntu-installer.service": "[Unit]\nDescription=Xubuntu Installer\nPartOf=graphical-session.target\nAfter=graphical-session.target\n\n# Never run in GDM\nConflicts=gnome-session@gnome-login.target\n\n[Service]\nType=oneshot\nExecStart=sh -c \"/snap/bin/ubuntu-desktop-bootstrap --try-or-install\"\nRestart=no\n"
+  },
+  "critical_paths": {
+    "minimal.squashfs": "drwxr-xr-x 0/0                     369 2026-09-08 07:27 squashfs-root\ndrwxr-xr-x 0/0                    3879 2026-11-19 10:32 squashfs-root/etc\ndrwxr-xr-x 0/0                      95 2026-09-08 07:28 squashfs-root/etc/cloud\ndrwxr-xr-x 0/0                      53 2026-11-17 12:05 squashfs-root/etc/ssh\n-rw-r--r-- 0/0                    1649 2026-08-31 18:38 squashfs-root/etc/ssh/ssh_config\ndrwxr-xr-x 0/0                       3 2026-08-31 18:38 squashfs-root/etc/ssh/ssh_config.d\ndrwxr-xr-x 0/0                     214 2026-09-08 07:25 squashfs-root/usr\ndrwxr-xr-x 0/0                    6841 2026-11-19 10:32 squashfs-root/usr/sbin\ndrwxr-xr-x 0/0                     208 2026-11-17 12:04 squashfs-root/var\ndrwxr-xr-x 0/0                    1165 2026-11-17 12:05 squashfs-root/var/lib\ndrwxr-xr-x 0/0                     191 2026-09-08 07:27 squashfs-root/var/lib/snapd\ndrwxr-xr-x 0/0                      30 2026-09-08 07:27 squashfs-root/var/lib/snapd/snaps\ndrwxr-xr-x 0/0                       3 2026-07-07 08:06 squashfs-root/var/lib/snapd/snaps/partial\n",
+    "minimal.visual.squashfs": "drwxr-xr-x 0/0                      37 2026-09-08 08:36 squashfs-root\ndrwxr-xr-x 0/0                      64 2026-09-08 08:36 squashfs-root/etc\ndrwxr-xr-x 0/0                      28 2026-09-08 08:36 squashfs-root/usr\n",
+    "minimal.visual.fix.squashfs": "drwxrwxr-x 0/0                      26 2026-11-23 12:43 squashfs-root\ndrwxrwxr-x 0/0                      26 2026-11-23 12:43 squashfs-root/usr\n",
+    "minimal.visual.live.squashfs": "drwxr-xr-x 0/0                     154 2026-09-08 07:34 squashfs-root\ndrwxr-xr-x 0/0                    1133 2026-11-19 11:03 squashfs-root/etc\ndrwxr-xr-x 0/0                      51 2026-09-08 07:34 squashfs-root/etc/cloud\ndrwxr-xr-x 0/0                       3 2026-11-17 12:25 squashfs-root/etc/ssh\ndrwxr-xr-x 0/0                     176 2026-09-08 07:25 squashfs-root/usr\ndrwxr-xr-x 0/0                    6626 2026-11-19 11:03 squashfs-root/usr/sbin\ndrwxr-xr-x 0/0                     109 2026-11-17 12:23 squashfs-root/var\ndrwxr-xr-x 0/0                     347 2026-11-17 12:25 squashfs-root/var/lib\ndrwxr-xr-x 0/0                     242 2026-09-08 07:34 squashfs-root/var/lib/snapd\ndrwxr-xr-x 0/0                      75 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed\ndrwxr-xr-x 0/0                     157 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions\n-rw-r--r-- 0/0                    1666 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/account\n-rw-r--r-- 0/0                    2439 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/account-key\n-rw-r--r-- 0/0                    4556 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/core22_2437.assert\n-rw-r--r-- 0/0                     957 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/model\n-rw-r--r-- 0/0                    4556 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/snapd_27738.assert\n-rw-r--r-- 0/0                    4574 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/assertions/ubuntu-desktop-bootstrap_572.assert\n-rw-r--r-- 0/0                     282 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/seed.yaml\ndrwxr-xr-x 0/0                     104 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/snaps\n-rw------- 0/0                77586432 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/snaps/core22_2437.snap\n-rw------- 0/0                52711424 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/snaps/snapd_27738.snap\n-rw------- 0/0               118587392 2026-09-08 07:34 squashfs-root/var/lib/snapd/seed/snaps/ubuntu-desktop-bootstrap_572.snap\ndrwxr-xr-x 0/0                     104 2026-09-08 07:34 squashfs-root/var/lib/snapd/snaps\n-rw------- 0/0                77586432 2026-09-08 07:34 squashfs-root/var/lib/snapd/snaps/core22_2437.snap\n-rw------- 0/0                52711424 2026-09-08 07:34 squashfs-root/var/lib/snapd/snaps/snapd_27738.snap\n-rw------- 0/0               118587392 2026-09-08 07:34 squashfs-root/var/lib/snapd/snaps/ubuntu-desktop-bootstrap_572.snap\n",
+    "minimal.visual.live.fix.squashfs": "drwxrwxr-x 0/0                      48 2026-11-23 12:46 squashfs-root\ndrwxrwxr-x 0/0                      26 2026-11-23 12:46 squashfs-root/etc\ndrwxrwxr-x 0/0                      26 2026-11-23 12:45 squashfs-root/usr\ndrwxrwxr-x 0/0                      26 2026-11-23 12:44 squashfs-root/var\ndrwxrwxr-x 0/0                      28 2026-11-23 12:44 squashfs-root/var/lib\ndrwxrwxr-x 0/0                      30 2026-11-23 12:44 squashfs-root/var/lib/snapd\n"
+  },
+  "devcontrol_sources": {
+    "minimal.visual.fix.squashfs": {
+      "embedded_sha256": "4fd7e3af4a4e520dd4ce8d75d781789c5d161e4d294d40a91612b9f768475f12",
+      "prototype_sha256": "4fd7e3af4a4e520dd4ce8d75d781789c5d161e4d294d40a91612b9f768475f12",
+      "match": true,
+      "read_only_header": "\"\"\"Read-only, bounded host information for the DevControl GTK prototype.\"\"\""
+    },
+    "minimal.visual.live.fix.squashfs": {
+      "embedded_sha256": "4fd7e3af4a4e520dd4ce8d75d781789c5d161e4d294d40a91612b9f768475f12",
+      "prototype_sha256": "4fd7e3af4a4e520dd4ce8d75d781789c5d161e4d294d40a91612b9f768475f12",
+      "match": true,
+      "read_only_header": "\"\"\"Read-only, bounded host information for the DevControl GTK prototype.\"\"\""
+    }
+  }
+}
