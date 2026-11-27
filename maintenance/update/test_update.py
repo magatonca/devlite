@@ -6,10 +6,25 @@ from unittest.mock import patch
 from types import SimpleNamespace
 
 from maintenance.update import updater
-from maintenance.update.build import build
+from maintenance.update.build import ROOT, build
 
 
 class UpdateTests(unittest.TestCase):
+    def test_download_reports_progress_for_all_assets(self):
+        def fetch(_url, _limit, progress):
+            progress(0.5)
+            return b'fixture'
+
+        with tempfile.TemporaryDirectory() as directory:
+            reports = []
+            folder = Path(directory)
+            with patch.object(updater, 'fetch', side_effect=fetch):
+                updater.download('v1.0.2', folder, lambda rate, message: reports.append((rate, message)))
+            self.assertEqual(len(list(folder.iterdir())), 3)
+            self.assertEqual(sorted(rate for rate, _ in reports), [rate for rate, _ in reports])
+            self.assertEqual(reports[0][0], 0)
+            self.assertEqual(reports[-1][0], 1)
+
     def test_latest_allows_skipping_intermediate_releases(self):
         import json
 
@@ -69,20 +84,35 @@ class UpdateTests(unittest.TestCase):
                   patch.object(Path, 'lstat', root_owned),
                   patch.object(updater, 'installed', return_value='1.0.3'),
                   patch.object(updater, 'newer', side_effect=lambda a, b: a > b),
-                  patch.object(updater, 'verify', return_value=dpkg_package) as verify,
-                  patch.object(updater.subprocess, 'run') as run):
+                  patch.object(updater, 'verify', side_effect=[dpkg_package, Path('/previous.deb')]) as verify,
+                  patch.object(updater, 'install_verified') as install):
                 updater.privileged('restore')
-                verify.assert_called_once_with('v1.0.1', dpkg_package.parent)
-                run.assert_called_once_with(
-                    ['/usr/bin/dpkg', '--force-confold', '--install', str(dpkg_package)],
-                    env=updater.ENV, check=True)
+                self.assertEqual(verify.call_args_list[0].args, ('v1.0.1', dpkg_package.parent))
+                install.assert_called_once_with(dpkg_package, '1.0.1', Path('/previous.deb'), '1.0.3',
+                                                downgrade=True, progress=None)
                 self.assertIn('recuperação v1.0.1 · concluída', updater.history())
 
+    def test_dependency_plan_rejects_changes_before_calling_dpkg(self):
+        with (patch.object(updater.subprocess, 'check_output', return_value='Inst another-package (2)'),
+              patch.object(updater.subprocess, 'run') as run):
+            with self.assertRaisesRegex(ValueError, 'Dependências'):
+                updater.install_verified(Path('/new.deb'), '1.0.2', Path('/old.deb'), '1.0.1')
+            run.assert_not_called()
+
+    def test_install_failure_restores_configured_previous_version(self):
+        with (patch.object(updater.subprocess, 'check_output', return_value='Inst devlite-update [1.0.1] (1.0.2)'),
+              patch.object(updater.subprocess, 'run', side_effect=[subprocess.CalledProcessError(1, 'dpkg'), None]) as run,
+              patch.object(updater, 'package_state', side_effect=[('half-configured', '1.0.2'), ('installed', '1.0.1')])):
+            with self.assertRaisesRegex(ValueError, 'versão 1.0.1 foi restaurada'):
+                updater.install_verified(Path('/new.deb'), '1.0.2', Path('/old.deb'), '1.0.1')
+            self.assertEqual(run.call_args_list[1].args[0][-1], '/old.deb')
+
     def test_package_manifest_signature_and_tamper_detection(self):
+        tag = 'v' + (ROOT / 'VERSION').read_text().strip()
         with tempfile.TemporaryDirectory(prefix='du-', dir='/tmp') as folder:
             root = Path(folder)
             out = root / 'release'
-            package = out / updater.package_name('v1.0.1')
+            package = out / updater.package_name(tag)
             home = root / 'g'
             home.mkdir(mode=0o700)
             gpg = ['/usr/bin/gpg', '--homedir', str(home), '--batch']
@@ -116,15 +146,15 @@ class UpdateTests(unittest.TestCase):
                     return info
 
                 with patch.object(Path, 'lstat', lstat):
-                    self.assertEqual(updater.verify('v1.0.1', out, key), package)
+                    self.assertEqual(updater.verify(tag, out, key), package)
                     with package.open('ab') as stream:
                         stream.write(b'modificado')
                     with self.assertRaisesRegex(ValueError, 'SHA-256 divergente'):
-                        updater.verify('v1.0.1', out, key)
+                        updater.verify(tag, out, key)
                     with (out / 'SHA256SUMS').open('a') as stream:
                         stream.write('modificado')
                     with self.assertRaises(subprocess.CalledProcessError):
-                        updater.verify('v1.0.1', out, key)
+                        updater.verify(tag, out, key)
             finally:
                 subprocess.run(['/usr/bin/gpgconf', '--homedir', str(home), '--kill', 'gpg-agent'],
                                check=False, capture_output=True, timeout=10)

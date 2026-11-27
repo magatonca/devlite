@@ -1,5 +1,11 @@
 # Alterações da DevLite OS
 
+## 1.0.2
+
+- Aba Atualizações com versões em destaque, data da consulta, notas da release e histórico em seções próprias.
+- Progresso de download e etapas de instalação, com confirmação da assinatura e do SHA-256.
+- Pacote cumulativo, com a mesma chave de lançamento e recuperação da versão anterior.
+
 ## 1.0.1
 
 - Padrões XFCE com Whisker DevLite, painel de 40 px e terminal de alto contraste.

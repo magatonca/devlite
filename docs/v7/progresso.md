@@ -226,3 +226,15 @@ O remoto público magatonca/devlite foi confirmado. A referência local v1.0.0 a
 ## Finalização da atualização 1.0.1
 
 O pacote de release incorpora a chave pública OpenPGP exportada no momento da assinatura. O build rejeita material de chave privada e o script confirma que a chave do DEB coincide com o arquivo público usado para verificar o manifesto. A primeira instalação verifica a impressão digital por canal independente antes de instalar. Os testes exercitam assinatura e adulteração, rejeição de chave privada, recuperação e consulta que salta versões intermediárias. A geração da chave definitiva exige frase secreta via pinentry no terminal do mantenedor. O roteiro de manutenção cobre backup cifrado, revogação e instalação. O envio de commits e tags e a publicação da Release dependem de autorização separada.
+
+## DevLite OS 1.0.2
+
+O usuário homologou a 1.0.1 instalada a partir do GitHub no notebook, incluindo o DevControl 3.1 e a aba Atualizações. A 1.0.2 usa a mesma chave OpenPGP e mantém o pacote cumulativo, a validação obrigatória de assinatura e SHA-256 e a recuperação de uma versão assinada em cache.
+
+A aba foi organizada em cartões de versão, data da última consulta da sessão, CHANGELOG, status de assinatura, progresso e histórico. O download mostra o progresso dos arquivos e a instalação indica etapas do worker administrativo, sem estimar a porcentagem interna do dpkg.
+
+O aviso de acesso do usuário `_apt` pertence à instalação local inicial, quando o APT tenta ler um DEB em diretório privado. As atualizações do DevControl usam o dpkg diretamente sobre a cópia root verificada. Nenhum diretório foi aberto para `_apt`, e a segurança do cache permanece inalterada.
+
+O teste gráfico automatizado usa GTK em Xvfb a 1366×768 e simula consulta, download, verificação e instalação. Após assinatura e autorização de publicação, a 1.0.2 precisará ser a última Release estável para que a 1.0.1 a ofereça pelo DevControl. A instalação e recuperação no notebook físico ficam para a homologação desse ciclo.
+
+Na transição da 1.0.1, as dependências do DEB permanecem idênticas e o pós-instalação deixa de regenerar um GRUB inalterado. O worker já instalado na 1.0.1 verifica a publicação e chama dpkg diretamente. Se houver uma falha externa nessa primeira transição, a recuperação assinada em cache continua disponível, mas o worker antigo não a aciona automaticamente. A partir da 1.0.2, uma simulação APT bloqueia mudanças em outros pacotes, é guardada a referência à versão anterior verificada e, se o dpkg falhar após modificar o pacote, o worker tenta restaurar essa versão e confirma o estado configurado. Falhas simultâneas de instalação e recuperação são reportadas para diagnóstico.

@@ -47,20 +47,33 @@ class ReleaseRedirect(urllib.request.HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def fetch(url, limit):
+def fetch(url, limit, progress=None):
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), ReleaseRedirect())
     request = urllib.request.Request(url, headers={'User-Agent': 'DevLite-Update'})
     with opener.open(request, timeout=12) as response:
-        data = response.read(limit + 1)
-    if len(data) > limit:
-        raise ValueError('Arquivo excede o tamanho permitido.')
+        size = response.headers.get('Content-Length', '')
+        expected = int(size) if size.isdecimal() and len(size) <= 10 else 0
+        if expected > limit:
+            raise ValueError('Arquivo excede o tamanho permitido.')
+        data = bytearray()
+        while chunk := response.read(min(256 * 1024, limit + 1 - len(data))):
+            data.extend(chunk)
+            if len(data) > limit:
+                raise ValueError('Arquivo excede o tamanho permitido.')
+            if progress and expected:
+                progress(min(len(data) / expected, 1))
     return data
 
 
-def installed():
+def package_state():
     result = subprocess.run(['/usr/bin/dpkg-query', '-W', '-f=${db:Status-Status} ${Version}',
                              PACKAGE], env=ENV, capture_output=True, text=True, timeout=10)
     status, _, current = result.stdout.partition(' ')
+    return status, current.strip()
+
+
+def installed():
+    status, current = package_state()
     return current if status not in ('', 'not-installed', 'config-files') else '1.0.0'
 
 
@@ -82,10 +95,17 @@ def newer(a, b):
                           env=ENV, timeout=10).returncode == 0
 
 
-def download(tag, folder):
+def download(tag, folder, progress=None):
     name = package_name(tag)
-    for asset, size in [('SHA256SUMS', 4096), ('SHA256SUMS.sig', 16384), (name, MAX_PACKAGE)]:
-        (folder / asset).write_bytes(fetch(f'{RELEASE}/{tag}/{asset}', size))
+    assets = [('SHA256SUMS', 4096), ('SHA256SUMS.sig', 16384), (name, MAX_PACKAGE)]
+    for index, (asset, size) in enumerate(assets):
+        def report(fraction):
+            if progress:
+                progress((index + fraction) / len(assets), f'Baixando {asset}…')
+
+        report(0)
+        (folder / asset).write_bytes(fetch(f'{RELEASE}/{tag}/{asset}', size, report))
+        report(1)
 
 
 def verify(tag, folder, keyring=None):
@@ -128,7 +148,38 @@ def history():
                       for item in map(json.loads, reversed(records)))
 
 
-def privileged(action, tag=None, expected=None):
+def install_verified(package, target, previous, previous_version, *, downgrade=False, progress=None):
+    plan = subprocess.check_output(
+        ['/usr/bin/apt-get', '-s', '--no-remove', '--allow-downgrades', 'install', str(package)],
+        env=ENV, text=True, timeout=30, stderr=subprocess.STDOUT)
+    for line in plan.splitlines():
+        fields = line.split()
+        if fields and fields[0] in ('Inst', 'Conf', 'Remv', 'Purg'):
+            if len(fields) < 2 or fields[0] not in ('Inst', 'Conf') or fields[1] not in (PACKAGE, PACKAGE + ':' + ARCH):
+                raise ValueError('Dependências do DEB exigem mudanças em outros pacotes. Atualização interrompida.')
+    command = ['/usr/bin/dpkg', '--force-confold']
+    try:
+        if progress:
+            progress('dpkg')
+        options = [] if downgrade else ['--refuse-downgrade']
+        subprocess.run([*command, *options, '--install', str(package)], env=ENV, check=True)
+        if package_state() != ('installed', target):
+            raise ValueError('O dpkg não confirmou a configuração da versão solicitada.')
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
+        if package_state() == ('installed', previous_version):
+            raise
+        if previous is None:
+            raise ValueError('A recuperação falhou. Verifique dpkg --audit.') from error
+        try:
+            subprocess.run([*command, '--install', str(previous)], env=ENV, check=True)
+            if package_state() != ('installed', previous_version):
+                raise ValueError('O dpkg não confirmou a versão restaurada.')
+        except (OSError, ValueError, subprocess.SubprocessError) as recovery:
+            raise ValueError(f'Falha de instalação e de recuperação. Verifique dpkg --audit. {recovery}') from error
+        raise ValueError(f'A instalação falhou. A versão {previous_version} foi restaurada.') from error
+
+
+def privileged(action, tag=None, expected=None, progress=None):
     if os.geteuid() != 0:
         raise ValueError('É necessária autorização administrativa.')
     if action == 'install':
@@ -157,6 +208,8 @@ def privileged(action, tag=None, expected=None):
             raise ValueError('A atualização precisa ser mais recente que a versão instalada.')
         result = 'falhou'
         try:
+            if progress:
+                progress('prepare')
             destination = cache / tag
             if not destination.exists() and action == 'install':
                 with tempfile.TemporaryDirectory(dir=cache, prefix='fetch-') as temporary:
@@ -178,12 +231,18 @@ def privileged(action, tag=None, expected=None):
             package = verify(tag, destination)
             if action == 'install' and digest(package) != expected:
                 raise ValueError('A publicação mudou desde a verificação na interface.')
-            # dpkg installs only the verified local package. Dependencies are
-            # resolved on initial installation through official Ubuntu APT.
-            args = ['/usr/bin/dpkg', '--force-confold', '--refuse-downgrade']
-            if action == 'restore':
-                args.remove('--refuse-downgrade')
-            subprocess.run([*args, '--install', str(package)], env=ENV, check=True)
+            previous_tag = 'v' + current
+            version(previous_tag)
+            previous_dir = cache / previous_tag
+            previous = None
+            if (previous_dir / 'installed').is_file():
+                previous = verify(previous_tag, previous_dir)
+            elif action == 'install':
+                raise ValueError('Falta uma cópia verificada da versão instalada para recuperação.')
+            if progress:
+                progress('verified')
+            install_verified(package, version(tag), previous, current,
+                             downgrade=action == 'restore', progress=progress)
             (destination / 'installed').touch()
             result = 'concluída'
         finally:
@@ -200,12 +259,15 @@ def digest(path):
 
 
 def main(argv):
+    def progress(stage):
+        print(f'DEVLITE_PROGRESS {stage}', flush=True)
+
     if len(argv) == 3 and argv[1] == 'verify-local' and os.geteuid() != 0:
         print(verify(argv[2], Path.cwd()))
     elif len(argv) == 4 and argv[1] == 'install':
-        privileged('install', argv[2], argv[3])
+        privileged('install', argv[2], argv[3], progress)
     elif argv[1:] == ['restore']:
-        privileged('restore')
+        privileged('restore', progress=progress)
     else:
         raise ValueError('Operação de atualização inválida.')
 
