@@ -3,7 +3,10 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from v7.desktop import ICON, apply
+from xml.etree import ElementTree
+
+from v7.assemble import LEAVES, STACKS, render_grub
+from v7.desktop import GENERIC_PANEL, ICON, PANEL, apply
 
 
 class DesktopDefaultsTests(unittest.TestCase):
@@ -16,11 +19,32 @@ class DesktopDefaultsTests(unittest.TestCase):
             user = root / 'home/ana/.config/xfce4/panel/whiskermenu-1.rc'
             user.parent.mkdir(parents=True)
             user.write_text('button-icon=personalizado\n')
+            user_panel = user.parent.parent / 'xfconf/xfce-perchannel-xml/xfce4-panel.xml'
+            user_panel.parent.mkdir(parents=True)
+            user_panel.write_text('<channel name="xfce4-panel" version="1.0" />\n')
             written = apply(root, live=True)
             profile = root / 'etc/skel/.config/xfce4/panel/whiskermenu-1.rc'
             self.assertIn(f'button-icon=/{ICON}', profile.read_text().splitlines())
             self.assertIn('button-title=Menu DevLite OS', profile.read_text().splitlines())
             self.assertEqual(user.read_text(), 'button-icon=personalizado\n')
+            self.assertEqual(user_panel.read_text(), '<channel name="xfce4-panel" version="1.0" />\n')
+            self.assertEqual((root / PANEL).read_bytes(), (root / GENERIC_PANEL).read_bytes())
+            panel = ElementTree.parse(root / PANEL)
+            main = panel.find("./property[@name='panels']/property[@name='panel-1']")
+            for name, value in {'position': 'p=10;x=0;y=0', 'mode': '0', 'length': '100',
+                                'nrows': '1', 'size': '40'}.items():
+                self.assertEqual(main.find(f"property[@name='{name}']").get('value'), value)
+            plugins = panel.find("./property[@name='plugins']")
+            order = [plugins.find(f"property[@name='plugin-{item.get('value')}']")
+                     for item in main.findall("property[@name='plugin-ids']/value")]
+            self.assertEqual(order[0].get('value'), 'whiskermenu')
+            self.assertEqual(order[0].find("property[@name='button-icon']").get('value'), f'/{ICON}')
+            self.assertEqual(order[0].find("property[@name='button-title']").get('value'),
+                             'Menu DevLite OS')
+            self.assertEqual(order[-1].get('value'), 'clock')
+            self.assertEqual(order[3].find("property[@name='expand']").get('value'), 'true')
+            self.assertEqual((root / 'etc/default/grub.d/99-devlite-branding.cfg').read_text(),
+                             "GRUB_DISTRIBUTOR='DevLite OS 1.0'\n")
             for name in written:
                 self.assertEqual((root / name).stat().st_mode & 0o777,
                                  0o755 if name in ('usr/libexec/devlite-install-vscode',
@@ -34,6 +58,14 @@ class DesktopDefaultsTests(unittest.TestCase):
                 self.assertEqual(colors['ColorForeground'], '#F0F6FC')
                 self.assertEqual(colors['ColorBackground'], '#131926')
                 self.assertEqual(len(colors['ColorPalette'].split(';')), 16)
+
+    def test_live_grub_avoids_inherited_splash(self):
+        previous = STACKS['live'][-1]
+        new = LEAVES['live']
+        other = 'echo splash\n'
+        source = f'  linux /casper/vmlinuz layerfs-path={previous} --- quiet splash\n'
+        self.assertEqual(render_grub(other + source),
+                         other + f'  linux /casper/vmlinuz layerfs-path={new} --- quiet nosplash\n')
 
 
 class RuntimeDiagnosticsTests(unittest.TestCase):

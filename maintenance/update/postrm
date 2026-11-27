@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+if [ "$1" = purge ] && command -v update-grub >/dev/null && [ -s /boot/grub/grub.cfg ]; then
+    update-grub
+fi

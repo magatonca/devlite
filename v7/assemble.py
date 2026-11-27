@@ -92,6 +92,8 @@ def render_grub(text):
             if tokens != [STACKS['live'][-1]]:
                 raise ValueError('Unexpected inherited Live layer')
             line = line.replace('layerfs-path=' + tokens[0], 'layerfs-path=' + LEAVES['live'])
+            # The inherited Live initrd embeds the Xubuntu Plymouth artwork.
+            line = re.sub(r'(?<!\S)splash(?!\S)', 'nosplash', line)
         lines.append(line)
     return ''.join(lines)
 

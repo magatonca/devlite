@@ -1,0 +1,7 @@
+# Sourced by Xsession after the stock Ubuntu XDG paths have been set.
+case "${DESKTOP_SESSION:-}" in
+    xubuntu|xfce)
+        export XDG_CONFIG_DIRS="/usr/share/devlite-update/xdg-config:${XDG_CONFIG_DIRS:-/etc/xdg}"
+        export XDG_DATA_DIRS="/usr/share/devlite-update/xdg-data:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+        ;;
+esac

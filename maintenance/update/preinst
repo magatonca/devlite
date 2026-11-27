@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+case "$1" in
+    install|upgrade)
+        if [ ! -f /usr/lib/devlite/devcontrol/app.py ] ||
+           [ ! -r /usr/share/icons/hicolor/scalable/apps/devlite.svg ]; then
+            echo 'Este pacote requer uma instalação existente da DevLite OS.' >&2
+            exit 1
+        fi
+        ;;
+esac

@@ -9,6 +9,8 @@ DIRECTORY = Path(__file__).resolve().parent
 OVERLAY = DIRECTORY / 'overlay'
 LIVE_OVERLAY = DIRECTORY / 'live-overlay'
 ICON = 'usr/share/icons/hicolor/scalable/apps/devlite.svg'
+PANEL = 'etc/xdg/xdg-xubuntu/xfce4/panel/default.xml'
+GENERIC_PANEL = 'etc/xdg/xfce4/panel/default.xml'
 
 
 def apply(root, *, live=False):
@@ -38,6 +40,11 @@ def apply(root, *, live=False):
                         if item == root:
                             break
                 written.append(relative)
+    # XFCE reads the system panel layout on first use. The same layout must
+    # be available when the session does not use the distro-specific XDG path.
+    prepare_parent(root, GENERIC_PANEL)
+    put(root, GENERIC_PANEL, (OVERLAY / PANEL).read_text())
+    written.append(GENERIC_PANEL)
     return written
 
 

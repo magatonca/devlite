@@ -192,7 +192,7 @@ A base Jammy 22.04.5 foi verificada com a chave de imagens oficiais Ubuntu e ins
 
 ## Correções testáveis após primeiro boot no Hyper-V
 
-- A candidata devlite-v7-qp0v0ufg iniciou em UEFI. Sessão, snapd, seed, serviço Subiquity, socket e AppArmor ativo foram confirmados pelo operador. O acesso SSH direto à VM 172.20.107.56:22 expirou no servidor. O estado dos aplicativos na VM segue em diagnóstico.
+- A candidata devlite-v7-qp0v0ufg iniciou em UEFI. Sessão, snapd, seed, serviço Subiquity, socket e AppArmor ativo foram confirmados pelo operador. O acesso SSH direto à VM na porta 22 expirou no servidor. O estado dos aplicativos na VM segue em diagnóstico.
 - A espera do launcher usava uma consulta à configuração protegida snap wait system seed.loaded, recusada para o usuário. O novo launcher consulta, sem sudo, a unidade snapd.seeded e a disponibilidade do Snap. Tem timeout e notificação de falha. O atalho e helper XFCE do Firefox usam o mesmo launcher, mantendo as associações MIME e os controles do Snap.
 - O instalador ganhou atalho Live executável com SVG DevLite, associação StartupWMClass para ubuntu_bootstrap e marcação de confiança via metadados XFCE após confirmação de identidade do atalho. O autostart passa a configurar o Whisker usando o plugin ativo. As modificações do atalho são exclusivas do Live. O autostart antigo só procurava pela entrada ubuntu-desktop-bootstrap e foi retirado do Live.
 - 37 testes direcionados e verificador com zero erros. A homologação de Firefox, renderização Flutter, identidade na barra, instalação em disco descartável e Secure Boot ainda depende do teste na VM. A ABI dos ELF já havia passado no core22, mas esse teste não mede a inicialização do engine, a renderização dos assets ou o acesso ao socket pelo usuário gráfico.
@@ -216,3 +216,13 @@ A base Jammy 22.04.5 foi verificada com a chave de imagens oficiais Ubuntu e ins
 - Após disponibilizar pelo menos 2 GiB adicionais e autorizar, revisar e executar work/v7-final-review-oAD2doVk/provisionar.sh com bash. Em seguida iniciar devlite-v7-pack.service manualmente e montar o pack publicado como magaton via v7/build-manual.sh --assemble.
 
 - Limpeza autorizada de três cópias regeneráveis e sem montagens ativas. Removidos somente work/v7-jammy-3IwC5ToX/build-root e work/v7-snap-gl-4catswN7/{input,verify}. Recuperados 2.238.115.840 bytes. Disponíveis 36.435.877.888 bytes após a operação, acima do piso do provisionador com reserva de 10 GiB. Bundle, manifesto e Snap corrigido passaram no SHA-256 antes e depois. Nenhum provisionamento ou build foi iniciado.
+
+A homologação física e o roteiro de manutenção da 1.0 estão em [Manutenção pós-instalação](manutencao-1.0.md).
+
+A manutenção 1.0.1 usa um único DEB e GitHub Releases. Veja [Geração, assinatura e recuperação](atualizacao-1.0.1.md).
+
+O remoto público magatonca/devlite foi confirmado. A referência local v1.0.0 aponta para a6e39cca, com 174 arquivos idênticos ao snapshot da ISO instalada. O fluxo prepare/publish está em maintenance/update/release.sh.
+
+## Finalização da atualização 1.0.1
+
+O pacote de release incorpora a chave pública OpenPGP exportada no momento da assinatura. O build rejeita material de chave privada e o script confirma que a chave do DEB coincide com o arquivo público usado para verificar o manifesto. A primeira instalação verifica a impressão digital por canal independente antes de instalar. Os testes exercitam assinatura e adulteração, rejeição de chave privada, recuperação e consulta que salta versões intermediárias. A geração da chave definitiva exige frase secreta via pinentry no terminal do mantenedor. O roteiro de manutenção cobre backup cifrado, revogação e instalação. O envio de commits e tags e a publicação da Release dependem de autorização separada.

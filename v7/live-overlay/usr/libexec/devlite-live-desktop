@@ -15,22 +15,3 @@ if [ -f "$shortcut" ] && [ ! -L "$shortcut" ] && cmp -s "$source_file" "$shortcu
     gio set "$shortcut" metadata::xfce-exe-checksum "$checksum" || :
     gio set "$shortcut" metadata::trusted true || :
 fi
-config=${XDG_CONFIG_HOME:-"$HOME/.config"}/xfce4/panel
-mkdir -p -- "$config"
-changed=no
-for plugin in $(xfconf-query -c xfce4-panel -lv | awk '$1 ~ /^\/plugins\/plugin-[0-9]+$/ && $2 == "whiskermenu" {sub(/^.*plugin-/, "", $1); print $1}'); do
-    settings="$config/whiskermenu-$plugin.rc"
-    [ ! -L "$settings" ] || continue
-    icon=/usr/share/icons/hicolor/scalable/apps/devlite.svg
-    grep -Fxq "button-icon=$icon" "$settings" 2>/dev/null && continue
-    tmp=$(mktemp "$config/.devlite-whisker-XXXXXX")
-    if [ -f "$settings" ]; then
-        sed '/^button-icon=/d; /^button-title=/d' "$settings" > "$tmp"
-    fi
-    printf 'button-icon=%s\nbutton-title=Menu DevLite OS\n' "$icon" >> "$tmp"
-    mv -T -- "$tmp" "$settings"
-    changed=yes
-done
-if [ "$changed" = yes ]; then
-    xfce4-panel --restart
-fi
